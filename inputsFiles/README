@@ -1,0 +1,24 @@
+README 
+
+Data set: protein mutation and evaluation potential mutation (pVHL), for more details, please check the bibliografy
+
+This data set has a 256 examples and 16 attributes whit class includes, the description of attribustes is:
+
+1. AAWt : wild aminioacid
+2. AAMt : mutated aminoacid
+3. Sstruct : classification of mutation
+4. SaccW : values of bonds cys-cys for wild type
+5. ShbondsW : bonds cys-cys for wild type
+6. SaccM : values of bonds cys-cys for mutated type
+7. ShbondsM : similar to 5.
+8. yDDG : values give by SSD software
+9. Result : values give by SSD software
+10. Positiontype : values give by MOSST
+11. ProteinPropens : values give by MOSST
+12. Positionaccept : values give by MOSST
+13. MOSST : score of MOSST
+14. SectorSuperficie : interaction sector in protein with other regulatory molecules
+15. Functionalrelevancefunction : classification in bibliography
+16. Clinical : {D,N} if mutation is clinical relevant or no.
+
+
