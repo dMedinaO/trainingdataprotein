@@ -12,8 +12,9 @@ from proyect.CCTraining import processPerformance
 
 class naiveBayes(object):
 
-    def __init__(self, matrix):#constructor de la clase...
+    def __init__(self, matrix, validator):#constructor de la clase...
 
+        self.validator = validator
         self.matrix = matrix
         self.classAttribute = []
         self.dataWC = []
@@ -32,16 +33,16 @@ class naiveBayes(object):
     def applyAlgorithmGaussian(self):
         clf = GaussianNB()
         clf = clf.fit(self.dataWC, self.classAttribute)
-        performanceData = performanceScore.performanceAlgoritmo('GaussianNB', 'Naive Bayes algoritmo', 'CV=10')
-        performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,10)
+        performanceData = performanceScore.performanceAlgoritmo('GaussianNB', 'Naive Bayes algoritmo', str(self.validator))
+        performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
         self.performanceDataList.append(performanceData)
 
     #metodo que permite aplicar el algoritmo como bernulli
     def applyAlgorithmBernoulliNB(self):
         clf = BernoulliNB()
         clf = clf.fit(self.dataWC, self.classAttribute)
-        performanceData = performanceScore.performanceAlgoritmo('BernoulliNB', 'Naive Bayes algoritmo', 'CV=10')
-        performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,10)
+        performanceData = performanceScore.performanceAlgoritmo('BernoulliNB', 'Naive Bayes algoritmo', str(self.validator))
+        performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
         self.performanceDataList.append(performanceData)
 
     #metodo que permite procesar la performance...

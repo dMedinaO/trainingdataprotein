@@ -11,8 +11,9 @@ from proyect.CCTraining import processPerformance
 
 class knnAlgorithm(object):
 
-    def __init__(self, matrix):#constructor de la clase...
+    def __init__(self, matrix, validator):#constructor de la clase...
 
+        self.validator = validator
         self.matrix = matrix
         self.algorithmList = ['auto', 'ball_tree', 'kd_tree', 'brute']
         self.weightsList = ['uniform', 'distance']
@@ -42,8 +43,8 @@ class knnAlgorithm(object):
                         clf = KNeighborsClassifier(n_neighbors=i,metric=metric,algorithm=value,weights=weight, n_jobs=-1)
                         clf = clf.fit(self.dataWC, self.classAttribute)
                         descripcion = "KNN con %d vecinos peso: %s metrica: %s" % (i, weight, metric)
-                        performanceData = performanceScore.performanceAlgoritmo(value, descripcion, 'CV=10')
-                        performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,10)
+                        performanceData = performanceScore.performanceAlgoritmo(value, descripcion, str(self.validator))
+                        performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
                         self.performanceDataList.append(performanceData)
 
     #metodo que permite procesar la performance...

@@ -1,0 +1,13 @@
+Atributo,performance,algoritmo,descripcion,validacion
+A,0.60,auto,KNN con 3 vecinos peso: uniform metrica: minkowski,CV=2
+B,0.55,SAMME,AdaBoostClassifier con 10 estimadores,CV=2
+C,0.8,rbf,nuSVC,CV=2
+F,0.73,SAMME,AdaBoostClassifier con 20 estimadores,CV=2
+H,0.58,sigmoid,nuSVC,CV=2
+M,0.55,BernoulliNB,Naive Bayes algoritmo,CV=2
+O,0.59,750,GradientBoostingClassifier,CV=2
+P,0.77,poly,SVC,CV=2
+R,0.63,SAMME,AdaBoostClassifier con 50 estimadores,CV=2
+T,0.82,gini,DecisionTreeClassifier splitter:random,CV=2
+U,1,SAMME,AdaBoostClassifier con 50 estimadores,CV=2
+Z,0.76,entropy,RandomForest n_estimators: 10,CV=2

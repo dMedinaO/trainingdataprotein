@@ -4,6 +4,7 @@ tiene los metodos necesarios para efectuar estas operaciones...
 '''
 
 import pandas as pd
+import subprocess
 
 class document(object):
     def __init__(self, nameFile, pathOutput):
@@ -31,3 +32,10 @@ class document(object):
         #hacemos que el archivo se exporte en csv mediante pandas
         df = pd.DataFrame(matrixData)
         df.to_csv(fileExport, sep=',',header=header, index=False)
+
+    #metodo que permite crear un directorio...
+    def createDir(self, nameDir):
+
+        command = "mkdir -p %s" % (nameDir)
+        subprocess.call(command, shell=True)
+        

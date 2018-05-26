@@ -12,12 +12,6 @@ import sys
 import os
 import subprocess
 
-#funcion que permite agregar los elementos de los resultados al arreglo...
-def addElementPerformanceResponse(ListPerformance, listFull):
-
-    for element in ListPerformance:
-        listFull.append(element)
-
 #recibimos los datos de entrada...
 nameFile = sys.argv[1]
 pathOutput = sys.argv[2]
@@ -39,14 +33,14 @@ normalObject = normalize.NormalizeData(process.header, process.matrixData, pathO
 normalObject.createMatrixNorm()
 
 #comenzamos con la ejecucion de los algoritmos de aprendizaje supervisado...
-naiveBayesValue = naiveBayes.naiveBayes(normalObject.matrixNormalized)
-adaBoostValue = adaBoost.adaBoost(normalObject.matrixNormalized)
-knnAlgorithmValue = knnAlgorithm.knnAlgorithm(normalObject.matrixNormalized)
-decisionTreesValue = decisionTrees.decisionTrees(normalObject.matrixNormalized)
-gradientTreeBoostValues = gradientTreeBoost.gradientTreeBoost(normalObject.matrixNormalized)
-nuSVCValue = nuSVC.nuSVC(normalObject.matrixNormalized)
-SVCValue = SVC.SVCObjet(normalObject.matrixNormalized)
-randomForestValue = randomForest.randomForest(normalObject.matrixNormalized)
+naiveBayesValue = naiveBayes.naiveBayes(normalObject.matrixNormalized, 10)
+adaBoostValue = adaBoost.adaBoost(normalObject.matrixNormalized, 10)
+knnAlgorithmValue = knnAlgorithm.knnAlgorithm(normalObject.matrixNormalized, 10)
+decisionTreesValue = decisionTrees.decisionTrees(normalObject.matrixNormalized, 10)
+gradientTreeBoostValues = gradientTreeBoost.gradientTreeBoost(normalObject.matrixNormalized, 10)
+nuSVCValue = nuSVC.nuSVC(normalObject.matrixNormalized, 10)
+SVCValue = SVC.SVCObjet(normalObject.matrixNormalized, 10)
+randomForestValue = randomForest.randomForest(normalObject.matrixNormalized, 10)
 
 ListResultAlgorithm = [naiveBayesValue, adaBoostValue, knnAlgorithmValue, decisionTreesValue, gradientTreeBoostValues, nuSVCValue, SVCValue, randomForestValue]
 

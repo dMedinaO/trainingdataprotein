@@ -11,8 +11,9 @@ from proyect.CCTraining import processPerformance
 
 class randomForest(object):
 
-    def __init__(self, matrix):#constructor de la clase...
+    def __init__(self, matrix, validator):#constructor de la clase...
 
+        self.validator = validator
         self.matrix = matrix
         self.criterionList = ['gini', 'entropy']
         self.n_estimatorsList = [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]
@@ -40,8 +41,8 @@ class randomForest(object):
                 clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=n_estimators, n_jobs=-1, criterion=criterion)
                 clf = clf.fit(self.dataWC, self.classAttribute)
                 descripcion = "RandomForest, n_estimators: %d" % n_estimators
-                performanceData = performanceScore.performanceAlgoritmo(criterion, descripcion, 'CV=10')
-                performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,10)
+                performanceData = performanceScore.performanceAlgoritmo(criterion, descripcion, str(self.validator))
+                performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
                 self.performanceDataList.append(performanceData)
 
     #metodo que permite procesar la performance...

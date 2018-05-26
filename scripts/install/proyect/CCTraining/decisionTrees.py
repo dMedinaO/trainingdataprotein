@@ -11,8 +11,9 @@ from proyect.CCTraining import processPerformance
 
 class decisionTrees(object):
 
-    def __init__(self, matrix):#constructor de la clase...
+    def __init__(self, matrix, validator):#constructor de la clase...
 
+        self.validator = validator
         self.matrix = matrix
         self.criterionList = ['gini', 'entropy']
         self.spliterList = ['best', 'random']
@@ -39,8 +40,8 @@ class decisionTrees(object):
                 clf = DecisionTreeClassifier(random_state=0, criterion=criterion, splitter=splitter)
                 clf = clf.fit(self.dataWC, self.classAttribute)
                 descripcion = "DecisionTreeClassifier splitter:%s" % splitter
-                performanceData = performanceScore.performanceAlgoritmo(criterion, descripcion, 'CV=10')
-                performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,10)
+                performanceData = performanceScore.performanceAlgoritmo(criterion, descripcion, str(self.validator))
+                performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
                 self.performanceDataList.append(performanceData)
 
     #metodo que permite procesar la performance...
