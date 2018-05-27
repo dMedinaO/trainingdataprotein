@@ -19,3 +19,4 @@ subprocess.call(command, shell=True)
 
 #hacemos la instancia al procesamiento de la informacion....
 checkGroup = checkSplitterBySector.evaluateSplitSectorSuperfice(nameFile, pathOutputProcessFile, ',', 13)
+checkGroup.checkAttributesInMatrix()

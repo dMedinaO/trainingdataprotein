@@ -1,0 +1,70 @@
+algoritmo,description,validation,accuracy,recall,precision,neg_log_loss,f1,ftwo_scorer
+GaussianNB,Naive Bayes algoritmo,2,0.583333333333,0.0,0.0,-14.3911568312,0.0,0.0
+BernoulliNB,Naive Bayes algoritmo,2,0.291666666667,0.0,0.0,-2.16661934807,0.0,0.0
+SAMME,AdaBoostClassifier con 10 estimadores,2,0.416666666667,0.0,0.0,-0.896595020852,0.0,0.0
+SAMME,AdaBoostClassifier con 20 estimadores,2,0.458333333333,0.0,0.0,-1.02159502085,0.0,0.0
+SAMME,AdaBoostClassifier con 50 estimadores,2,0.416666666667,0.0,0.0,-1.02159502085,0.0,0.0
+SAMME,AdaBoostClassifier con 100 estimadores,2,0.416666666667,0.0,0.0,-0.896595020852,0.0,0.0
+SAMME,AdaBoostClassifier con 150 estimadores,2,0.416666666667,0.0,0.0,-1.02159502085,0.0,0.0
+SAMME,AdaBoostClassifier con 200 estimadores,2,0.416666666667,0.0,0.0,-0.896595020852,0.0,0.0
+SAMME,AdaBoostClassifier con 250 estimadores,2,0.291666666667,0.0,0.0,-1.06326168752,0.0,0.0
+SAMME,AdaBoostClassifier con 500 estimadores,2,0.416666666667,0.0,0.0,-0.896595020852,0.0,0.0
+SAMME,AdaBoostClassifier con 750 estimadores,2,0.291666666667,0.0,0.0,-0.896595020852,0.0,0.0
+SAMME,AdaBoostClassifier con 1000 estimadores,2,0.291666666667,0.0,0.0,-1.02159502085,0.0,0.0
+SAMME,AdaBoostClassifier con 1500 estimadores,2,0.416666666667,0.0,0.0,-0.854928354185,0.0,0.0
+SAMME.R,AdaBoostClassifier con 10 estimadores,2,0.291666666667,0.0,0.0,-20.1476195637,0.0,0.0
+SAMME.R,AdaBoostClassifier con 20 estimadores,2,0.291666666667,0.0,0.0,-20.1476195637,0.0,0.0
+SAMME.R,AdaBoostClassifier con 50 estimadores,2,0.416666666667,0.0,0.0,-24.4649666131,0.0,0.0
+SAMME.R,AdaBoostClassifier con 100 estimadores,2,0.458333333333,0.0,0.0,-20.1476195637,0.0,0.0
+SAMME.R,AdaBoostClassifier con 150 estimadores,2,0.583333333333,0.0,0.0,-14.3911568312,0.0,0.0
+SAMME.R,AdaBoostClassifier con 200 estimadores,2,0.416666666667,0.0,0.0,-24.4649666131,0.0,0.0
+SAMME.R,AdaBoostClassifier con 250 estimadores,2,0.291666666667,0.0,0.0,-14.3911568312,0.0,0.0
+SAMME.R,AdaBoostClassifier con 500 estimadores,2,0.291666666667,0.0,0.0,-20.1476195637,0.0,0.0
+SAMME.R,AdaBoostClassifier con 750 estimadores,2,0.416666666667,0.0,0.0,-20.1476195637,0.0,0.0
+SAMME.R,AdaBoostClassifier con 1000 estimadores,2,0.416666666667,0.0,0.0,-20.1476195637,0.0,0.0
+SAMME.R,AdaBoostClassifier con 1500 estimadores,2,0.416666666667,0.0,0.0,-24.4649666131,0.0,0.0
+gini,DecisionTreeClassifier splitter:best,2,0.0,0.0,0.0,-34.5387763949,0.0,0.0
+gini,DecisionTreeClassifier splitter:random,2,0.166666666667,0.0,0.0,-28.7823136624,0.0,0.0
+entropy,DecisionTreeClassifier splitter:best,2,0.0,0.0,0.0,-34.5387763949,0.0,0.0
+entropy,DecisionTreeClassifier splitter:random,2,0.166666666667,0.0,0.0,-28.7823136624,0.0,0.0
+10,GradientBoostingClassifier,2,0.166666666667,0.0,0.0,-1.28784923351,0.0,0.0
+20,GradientBoostingClassifier,2,0.166666666667,0.0,0.0,-1.73970955297,0.0,0.0
+50,GradientBoostingClassifier,2,0.166666666667,0.0,0.0,-3.82216305562,0.0,0.0
+100,GradientBoostingClassifier,2,0.166666666667,0.0,0.0,-4.77413820854,0.0,0.0
+150,GradientBoostingClassifier,2,0.166666666667,0.0,0.0,-4.75907826251,0.0,0.0
+200,GradientBoostingClassifier,2,0.166666666667,0.0,0.0,-4.90710731029,0.0,0.0
+250,GradientBoostingClassifier,2,0.166666666667,0.0,0.0,-4.95068019291,0.0,0.0
+500,GradientBoostingClassifier,2,0.166666666667,0.0,0.0,-4.70837007667,0.0,0.0
+750,GradientBoostingClassifier,2,0.166666666667,0.0,0.0,-5.35710533363,0.0,0.0
+1000,GradientBoostingClassifier,2,0.166666666667,0.0,0.0,-4.86076062545,0.0,0.0
+1500,GradientBoostingClassifier,2,0.166666666667,0.0,0.0,-4.54045034745,0.0,0.0
+linear,nuSVC,2,0.166666666667,0.5,0.166666666667,-10.6712515128,0.25,0.357142857143
+poly,nuSVC,2,0.166666666667,0.5,0.166666666667,-10.5466571838,0.25,0.357142857143
+rbf,nuSVC,2,0.541666666667,0.5,0.166666666667,-10.6586708876,0.25,0.357142857143
+sigmoid,nuSVC,2,0.166666666667,0.5,0.166666666667,-10.7579368357,0.25,0.357142857143
+linear,SVC,2,0.541666666667,0.0,0.0,-0.504847416514,0.0,0.0
+poly,SVC,2,0.166666666667,0.0,0.0,-0.401837841953,0.0,0.0
+rbf,SVC,2,0.708333333333,0.0,0.0,-0.610783450406,0.0,0.0
+sigmoid,SVC,2,0.541666666667,0.0,0.0,-0.573225773353,0.0,0.0
+gini,"RandomForest, n_estimators: 10",2,0.708333333333,0.0,0.0,-6.41974059191,0.0,0.0
+gini,"RandomForest, n_estimators: 20",2,0.291666666667,0.0,0.0,-1.15241875795,0.0,0.0
+gini,"RandomForest, n_estimators: 50",2,0.458333333333,0.0,0.0,-1.19757678346,0.0,0.0
+gini,"RandomForest, n_estimators: 100",2,0.291666666667,0.0,0.0,-1.25917829918,0.0,0.0
+gini,"RandomForest, n_estimators: 150",2,0.166666666667,0.0,0.0,-1.33354875458,0.0,0.0
+gini,"RandomForest, n_estimators: 200",2,0.291666666667,0.0,0.0,-1.33414871923,0.0,0.0
+gini,"RandomForest, n_estimators: 250",2,0.291666666667,0.0,0.0,-1.34732104037,0.0,0.0
+gini,"RandomForest, n_estimators: 500",2,0.291666666667,0.0,0.0,-1.37869615829,0.0,0.0
+gini,"RandomForest, n_estimators: 750",2,0.291666666667,0.0,0.0,-1.36810588912,0.0,0.0
+gini,"RandomForest, n_estimators: 1000",2,0.291666666667,0.0,0.0,-1.37390098082,0.0,0.0
+gini,"RandomForest, n_estimators: 1500",2,0.291666666667,0.0,0.0,-1.40334114539,0.0,0.0
+entropy,"RandomForest, n_estimators: 10",2,0.708333333333,0.0,0.0,-6.41974059191,0.0,0.0
+entropy,"RandomForest, n_estimators: 20",2,0.291666666667,0.0,0.0,-1.15241875795,0.0,0.0
+entropy,"RandomForest, n_estimators: 50",2,0.458333333333,0.0,0.0,-1.19757678346,0.0,0.0
+entropy,"RandomForest, n_estimators: 100",2,0.291666666667,0.0,0.0,-1.25917829918,0.0,0.0
+entropy,"RandomForest, n_estimators: 150",2,0.166666666667,0.0,0.0,-1.33354875458,0.0,0.0
+entropy,"RandomForest, n_estimators: 200",2,0.291666666667,0.0,0.0,-1.33414871923,0.0,0.0
+entropy,"RandomForest, n_estimators: 250",2,0.291666666667,0.0,0.0,-1.34732104037,0.0,0.0
+entropy,"RandomForest, n_estimators: 500",2,0.291666666667,0.0,0.0,-1.37869615829,0.0,0.0
+entropy,"RandomForest, n_estimators: 750",2,0.291666666667,0.0,0.0,-1.36810588912,0.0,0.0
+entropy,"RandomForest, n_estimators: 1000",2,0.291666666667,0.0,0.0,-1.37390098082,0.0,0.0
+entropy,"RandomForest, n_estimators: 1500",2,0.291666666667,0.0,0.0,-1.40334114539,0.0,0.0

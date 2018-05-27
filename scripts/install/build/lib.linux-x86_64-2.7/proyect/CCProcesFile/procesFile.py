@@ -97,3 +97,14 @@ class processDataSet(object):
 
         #exportamos el documento a csv con la informacion nueva...
         document.document('dataSetTransform.csv', self.pathOutput).createExportFileWithPandas(self.matrixData, self.header)
+
+    #metodo que permite hacer el procedimiento sin exportar la matriz
+    def checkAttributesInMatrixNotExport(self):
+
+        self.changeValueClassAttribute()#hacemos el cambio del atributo clase...
+        listIndex = self.getIndexDiscreteAttributes()#obtenemos los indices de atributos discretos
+
+        #hacemos las modificaciones correspondientes
+        for index in listIndex:
+            dictValues = self.getValuesAttributes(index)
+            self.changeValuesAttributeByIndex(index, dictValues)
