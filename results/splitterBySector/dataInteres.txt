@@ -1,0 +1,2 @@
+('For n_clusters =', 13, 'The average silhouette_score is :', -0.40164507665425164)
+Coeficiente siluetas:  -0.401645076654
