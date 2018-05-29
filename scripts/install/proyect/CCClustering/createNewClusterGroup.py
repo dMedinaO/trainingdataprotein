@@ -71,8 +71,13 @@ class createGroups(object):
             normalObject.createMatrixNorm()
 
             pathTraining = self.nameDir+str(number)+"/Training/"
+            #creamos el directorio...
+            self.createDirForOutput(pathTraining)
+
             #entrenamiento de modelos...
-            self.trainingDataSet(normalObject, pathTraining)
+            for i in range(2, 6):#hacemos validaciones cruzadas distintas con respecto al tipo de dato que se genere...
+                pathTrainingCV = self.nameDir+str(number)+"/Training/"+str(i)+"/"
+                self.trainingDataSet(normalObject, pathTrainingCV)
 
     #metodo que permite hacer el entrenamiento del set de datos...
     def trainingDataSet(self, normalObject, pathDir):

@@ -7,6 +7,7 @@ from proyect.CCProcesFile import procesFile
 from proyect.CCStatistic import normalize
 from proyect.CCTraining import naiveBayes, adaBoost, knnAlgorithm, decisionTrees, gradientTreeBoost, nuSVC, SVC, randomForest, performanceScore, processPerformance
 from proyect.CCTraining import resumeResult
+from proyect.CCStatistic import boxPlotData
 
 import sys
 import os
@@ -25,6 +26,10 @@ process = procesFile.processDataSet(nameFile, pathOutputProcessFile, ',')
 process.processMatrixData()
 process.checkAttributesInMatrix()
 
+boxValue = boxPlotData.boxPlotObject(process.matrixData, process.header, pathOutput)
+boxValue.createBoxPlot()
+
+'''
 #hacemos la instancia para la normalizacion de los datos, creamos un directorio previamente...
 pathOuputNormaliced = "%sNormaliced/" % pathOutput
 command = "mkdir -p %sNormaliced" % pathOutput
@@ -51,3 +56,4 @@ subprocess.call(command, shell=True)
 
 #hacemos la instancia al objeto...
 resumen = resumeResult.resumePerformance(ListResultAlgorithm, pathOuputTraining)
+'''

@@ -60,20 +60,25 @@ class createGroups(object):
                         row.append(element[i])
                     row.append(element[-2])
                     matrixForGroup.append(row)
-                    document.document(nameFile, pathOutputForGroup).createExportFileWithPandas(matrixForGroup, self.header)
+            document.document(nameFile, pathOutputForGroup).createExportFileWithPandas(matrixForGroup, self.header)
 
-                    #creamos el directorio para normalizar la informacion del grupo y poder entrenar el modelo...
-                    pathNormaliced = self.nameDir+str(number)+"/Normaliced/"
-                    self.createDirForOutput(pathNormaliced)
-                    print "Normaliced group"
-                    #hacemos la instancia para la normalizacion de los datos, creamos un directorio previamente...
-                    normalObject = normalize.NormalizeData(self.header, matrixForGroup, pathNormaliced)
-                    normalObject.createMatrixNorm()
+            #creamos el directorio para normalizar la informacion del grupo y poder entrenar el modelo...
+            pathNormaliced = self.nameDir+str(number)+"/Normaliced/"
+            self.createDirForOutput(pathNormaliced)
+            print "Normaliced group"
+            #hacemos la instancia para la normalizacion de los datos, creamos un directorio previamente...
+            normalObject = normalize.NormalizeData(self.header, matrixForGroup, pathNormaliced)
+            normalObject.createMatrixNorm()
 
-                    pathTraining = self.nameDir+str(number)+"/Training/"
-                    #entrenamiento de modelos...
-                    self.trainingDataSet(normalObject, pathTraining)
-                    
+            pathTraining = self.nameDir+str(number)+"/Training/"
+            #creamos el directorio...
+            self.createDirForOutput(pathTraining)
+
+            #entrenamiento de modelos...
+            for i in range(2, 6):#hacemos validaciones cruzadas distintas con respecto al tipo de dato que se genere...
+                pathTrainingCV = self.nameDir+str(number)+"/Training/"+str(i)+"/"
+                self.trainingDataSet(normalObject, pathTrainingCV)
+
     #metodo que permite hacer el entrenamiento del set de datos...
     def trainingDataSet(self, normalObject, pathDir):
 
