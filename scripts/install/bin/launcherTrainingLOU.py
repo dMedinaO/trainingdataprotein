@@ -22,9 +22,9 @@ nameFileCSV = namePathInput+nameCSV
 #hacemos la lectura del archivo
 df = pd.read_csv(nameFileCSV, sep=',')
 
-ListResultAlgorithm = []
 #por cada grupo hacemos el entrenamiento...
 for i in range(len(df['grupo'])):
+    ListResultAlgorithm = []
     #accedemos al directorio...
     dirData = namePathInput+df['grupo'][i]+"_Attribute/"
     dirDataNormal = dirData+"normaliced/dataSetNormaliced.csv"
@@ -93,7 +93,7 @@ for i in range(len(df['grupo'])):
     for algorithm in ['auto', 'ball_tree', 'kd_tree', 'brute']:
         for weight in ['uniform', 'distance']:
             for metric in ['minkowski', 'euclidean']:
-                for i in range(2, 10):
+                for i in range(2, 5):
                     print "Apply KNN: %d, %s, %s, %s" % (i, algorithm, weight, metric)
                     knn = knnAlgorithm.knnAlgorithmLOU(process.matrixData, algorithm, weight, metric, i)
                     knn.applyAlgorithm()
