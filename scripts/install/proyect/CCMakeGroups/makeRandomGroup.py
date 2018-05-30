@@ -116,7 +116,7 @@ class makeGroup(object):
         for algorithm in ['auto', 'ball_tree', 'kd_tree', 'brute']:
             for weight in ['uniform', 'distance']:
                 for metric in ['minkowski', 'euclidean']:
-                    for i in range(2, 10):
+                    for i in range(2, 5):
                         print "Apply KNN: %d, %s, %s, %s" % (i, algorithm, weight, metric)
                         knn = knnAlgorithm.knnAlgorithmLOU(process.matrixData, algorithm, weight, metric, i)
                         knn.applyAlgorithm()
