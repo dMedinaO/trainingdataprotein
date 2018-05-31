@@ -40,10 +40,10 @@ class processPDB(object):
             nameResidue = "%s-%d-%s" % (element.resname, int(fullID[3][1]), fullID[2])
             self.header.append(nameResidue)
 
-    #metodo que permite generar la matriz de elementos...
-    def createMatrixEnergyVoid(self):
+    #metodo que permite crear la matrix con solo 0...
+    def generateMatrixOnes(self):
 
-        self.matrixData = []
+        matrixData = []
         self.createHeader()#creamos el header...
 
         #creamos los elementos de la matriz...
@@ -54,8 +54,22 @@ class processPDB(object):
             #completamos con 0....
             for j in range(len(self.ListResidues)):
                 row.append(0)
-            self.matrixData.append(row)
+            matrixData.append(row)
+        return matrixData
 
-        #exportamos el documento...
-        nameFile = "matrix_energy_pdb_%s.csv" % self.codePDB
-        document.document(nameFile, self.pathOutput).createExportFileWithPandas(self.matrixData, self.header)
+    #metodo que permite generar la matriz de elementos...
+    def createMatrixEnergyVoid(self):
+
+        matrixData = self.generateMatrixOnes()
+
+        #exportamos el documento, crearemos diversos documentos con respecto a los calculos de energia...
+        nameFile = "matrix_energy_H_Bonds_Network_pdb_%s.csv" % self.codePDB
+        document.document(nameFile, self.pathOutput).createExportFileWithPandas(matrixData, self.header)
+        nameFile = "matrix_energy_H_Bonds_All_pdb_%s.csv" % self.codePDB
+        document.document(nameFile, self.pathOutput).createExportFileWithPandas(matrixData, self.header)
+        nameFile = "matrix_energy_Covalent_pdb_%s.csv" % self.codePDB
+        document.document(nameFile, self.pathOutput).createExportFileWithPandas(matrixData, self.header)
+        nameFile = "matrix_energy_SideChain_pdb_%s.csv" % self.codePDB
+        document.document(nameFile, self.pathOutput).createExportFileWithPandas(matrixData, self.header)
+        nameFile = "matrix_energy_Esteric_pdb_%s.csv" % self.codePDB
+        document.document(nameFile, self.pathOutput).createExportFileWithPandas(matrixData, self.header)

@@ -11,6 +11,22 @@ class document(object):
         self.nameFile = nameFile
         self.pathOutput = pathOutput
 
+    #metodo que permite una lectura normal de documento...
+    def readNormalDocument(self):
+
+        #comenzamos con la lectura del archivo...
+        fileOpen = open(self.nameFile, 'r')
+        data = []
+        line = fileOpen.readline()
+
+        while line:
+            line = line.replace("\n", "")
+            data.append(line)
+            line = fileOpen.readline()
+        fileOpen.close()
+
+        return data
+
     #metodo que permite leer un archivo de texto...
     def readDocument(self):
 
@@ -38,4 +54,3 @@ class document(object):
 
         command = "mkdir -p %s" % (nameDir)
         subprocess.call(command, shell=True)
-        

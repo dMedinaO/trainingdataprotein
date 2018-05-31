@@ -3,6 +3,8 @@ permite procesar el archivo PDB, generar las matrices y evaluar diversas caracte
 '''
 
 from proyect.CCProcessPDB import processPDB
+from proyect.CCProcessPDB import calculateHBondsBestNetwork
+
 import sys
 import subprocess
 
@@ -11,6 +13,7 @@ import subprocess
 pathFile = sys.argv[1]
 namePDB = sys.argv[2]
 pathOutput = sys.argv[3]
+responseWhatIf = sys.argv[4]
 data = namePDB.split('.')
 codePDB = data[0]
 
@@ -24,5 +27,11 @@ print "Process PDB"
 processPDBObject = processPDB.processPDB(codePDB, pathFile, namePDB, pathOutput)
 processPDBObject.getAllResiduesPDB()
 
-print "Create Energy Matrix Void"
-processPDBObject.createMatrixEnergyVoid()
+#hacemos el procesamiento de la informacion con los datos
+print "Create Energy Matrix for HBonds optim hBondsNetwork"
+nameMatrix = "matrix_energy_H_Bonds_Network_pdb_%s.csv" % codePDB
+hBondsNetworkValue = calculateHBondsBestNetwork.hBondsNetwork(processPDBObject, responseWhatIf, nameMatrix, pathOutput)
+hBondsNetworkValue.processResponseWI()
+hBondsNetworkValue.createDictValues()
+hBondsNetworkValue.processHBondsSearch()
+hBondsNetworkValue.exportDocument()
