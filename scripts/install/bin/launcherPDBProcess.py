@@ -2,8 +2,7 @@
 permite procesar el archivo PDB, generar las matrices y evaluar diversas caracteristicas...
 '''
 
-from proyect.CCProcessPDB import processPDB
-from proyect.CCProcessPDB import calculateHBondsBestNetwork
+from proyect.CCProcessPDB import processPDB, calculateHBondsBestNetwork, parserDegreePhiPsi, calculateCovalentEnergy
 
 import sys
 import subprocess
@@ -14,6 +13,8 @@ pathFile = sys.argv[1]
 namePDB = sys.argv[2]
 pathOutput = sys.argv[3]
 responseWhatIf = sys.argv[4]
+degreeFile = sys.argv[5]
+
 data = namePDB.split('.')
 codePDB = data[0]
 
@@ -35,3 +36,15 @@ hBondsNetworkValue.processResponseWI()
 hBondsNetworkValue.createDictValues()
 hBondsNetworkValue.processHBondsSearch()
 hBondsNetworkValue.exportDocument()
+
+#hacemos el procesamiento de las energias covalentes...
+print "Process degreee values for protein"
+nameMatrix = "matrix_energy_Covalent_pdb_%s.csv" % codePDB
+parserDegree = parserDegreePhiPsi.degreeValues(degreeFile, pathOutput)
+covalenteValues = calculateCovalentEnergy.covalenteEnergyProcess(processPDBObject, parserDegree, nameMatrix, pathOutput)
+covalenteValues.processELOC1()
+covalenteValues.processELOC2()
+covalenteValues.processELOC3()
+
+print covalenteValues.processPDBObject.header
+covalenteValues.exportMatrix()
