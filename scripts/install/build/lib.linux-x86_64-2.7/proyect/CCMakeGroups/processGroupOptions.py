@@ -33,6 +33,15 @@ class processOption(object):
             sumData+=dist
         return math.sqrt(sumData)
 
+    #metodo que permite buscar las posiciones donde se encuentran los maximos y minimos...
+    def searchIndex(self, distances, value):
+        index=0
+        for i in range(len(distances)):
+            if distances[i] == value:
+                index = i
+                break
+        return index
+
     #metodo que permite calcular la distancia maxima y la minima al centroide...
     def calculateMaxMinDistanceToCentroide(self, ListVector, centroide):
 
@@ -42,5 +51,7 @@ class processOption(object):
 
         maxDist = max(distances)
         minDist = min(distances)
+        indexMax = self.searchIndex(distances, maxDist)
+        indexMin = self.searchIndex(distances, minDist)
 
-        return maxDist, minDist
+        return maxDist, minDist, indexMax, indexMin

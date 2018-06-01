@@ -6,6 +6,7 @@ hacia otros grupos...
 '''
 
 from proyect.CCMakeGroups import processGroupOptions
+from proyect.CCMakeGroups import descriptionDistanceGroups
 
 class groupDescription(object):
 
@@ -17,7 +18,17 @@ class groupDescription(object):
         self.ListVector = ListVector
         self.ListClass = ListClass
         self.transformData()
+        self.dataDistances = {}
 
+    #metodo que permite mostrar las distancias de un grupo con el resto...
+    def showDistancesForGroup(self):
+
+        print "Distances for group: ", self.name
+        for key in self.dataDistances:
+            print "---------------------------------"
+            print "distancia con grupo ", key
+            print self.dataDistances[key].max_max
+            print "---------------------------------"
     #metodo que permite hacer la transformacion de datos...
     def transformData(self):
         for i in range(len(self.ListVector)):
@@ -27,8 +38,7 @@ class groupDescription(object):
     def processAttributesGroup(self):
 
         self.centroide = self.processOptionObject.calculateCentroide(self.ListVector)#calculamos el centroide
-        self.maxDist, self.minDist = self.processOptionObject.calculateMaxMinDistanceToCentroide(self.ListVector, self.centroide)#calculamos  las distancias al centroide
+        self.maxDist, self.minDist, indexMax, indexMin = self.processOptionObject.calculateMaxMinDistanceToCentroide(self.ListVector, self.centroide)#calculamos  las distancias al centroide
 
-        print self.centroide
-        print self.maxDist
-        print self.minDist
+        self.vectorMax = self.ListVector[indexMax]
+        self.vectorMin = self.ListVector[indexMin]
