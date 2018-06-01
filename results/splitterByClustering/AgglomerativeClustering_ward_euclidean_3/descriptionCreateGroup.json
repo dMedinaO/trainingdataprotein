@@ -1,1 +1,1 @@
-{"numberK": 3, "affinity": "euclidean", "method": "AgglomerativeClustering", "linkage": "ward", "coeficiente_siluetas": 0.51135945346610379}
+{"numberK": 3, "affinity": "euclidean", "method": "AgglomerativeClustering", "linkage": "ward", "coeficiente_siluetas": 0.51135945346610368}
