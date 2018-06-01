@@ -3,6 +3,7 @@ permite procesar el archivo PDB, generar las matrices y evaluar diversas caracte
 '''
 
 from proyect.CCProcessPDB import processPDB, calculateHBondsBestNetwork, parserDegreePhiPsi, calculateCovalentEnergy
+from proyect.CCProcessPDB import joinMatrixEnergy
 
 import sys
 import subprocess
@@ -48,3 +49,9 @@ covalenteValues.processELOC3()
 
 print covalenteValues.processPDBObject.header
 covalenteValues.exportMatrix()
+
+print "Join Matrix Full"
+nameMatrix = "matrix_energy_full_pdb_%s.csv" % codePDB
+joinMatrix = joinMatrixEnergy.fullMatrixEnergy(processPDBObject, hBondsNetworkValue, covalenteValues, nameMatrix, pathOutput)
+joinMatrix.createFullMatrix()
+joinMatrix.createMatrixRemoveCol()
