@@ -1,0 +1,4 @@
+SVC,linear,degree=3 gamma=10 probability=True,cv=10,0.591429,0.000000,0.000000,-0.661954,0.000000,0.000000
+SVC,poly,degree=3 gamma=10 probability=True,cv=10,0.428571,0.266667,0.203333,-0.753580,0.221667,0.243914
+SVC,rbf,degree=3 gamma=10 probability=True,cv=10,0.502857,0.000000,0.000000,-0.660741,0.000000,0.000000
+SVC,sigmoid,degree=3 gamma=10 probability=True,cv=10,0.591429,0.000000,0.000000,-0.689436,0.000000,0.000000

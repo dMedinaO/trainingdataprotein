@@ -1,0 +1,4 @@
+DecisionTreeClassifier,gini,splitter=best,cv=10,0.539683,0.491667,0.436667,-15.898802,0.444048,0.467672
+DecisionTreeClassifier,gini,splitter=random,cv=10,0.574603,0.533333,0.515000,-14.692686,0.503175,0.515753
+DecisionTreeClassifier,entropy,splitter=best,cv=10,0.536508,0.458333,0.396667,-16.008449,0.412143,0.435744
+DecisionTreeClassifier,entropy,splitter=random,cv=10,0.530159,0.425000,0.392143,-16.227743,0.394156,0.408860

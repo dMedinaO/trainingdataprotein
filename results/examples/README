@@ -1,0 +1,49 @@
+README
+
+Descripción de los documentos existentes en el directorio examples.
+
+-->Trabajo set de datos aleatorio por división de grupos.
+
+1. tablaResumenPerformanceParaHistograma: archivo para utilizar como base en las performance de los random set
+con mismos grupos y mismas distribuciones de ejemplos, la idea es generar copias de este template para los 13 grupos generados.
+
+NOTA: Se debe seleccionar el mejor valor de performance para cada uno, puede que el algoritmo varíe, pero sólo deja el mejor
+algoritmo para la performance de precision. (datos en directorio splitterRandomBySector)
+
+NOTA2: Son 100 iteraciones.
+
+-->Trabajo set de datos aleatorio FULL.
+
+2. tablaResumenPerformanceParaHistograma: también utilizar el mismo archivo y con el mismo criterio en las performance de entrenamiento
+full random. (directorio randomFullData)
+
+Nota: en general, no todas las iteraciones tienen los mismos grupos, para ello, simplemente se tomo el numero de grupos real y hacer la distribución según ello.
+
+Nota2: Son 100 Iteraciones,
+
+-->Trabajo entrenamiento de datos
+
+3.tablaResumenPerformanceGroupParaBarChart: completar las tablas que existen en dicho archivo, estas permiten trabajar con los datos para generar graficos
+de barras de performance. (los datos los encontrarás en el directorio splitterBySector, en cada sub sector, en el directorio training)
+
+La idea del grafico es comparar la mejor performance en cada caso para la validación cruzada como para el leave one out,
+
+El gráfico ejemplo se adjunta en documento: exampleBarChart.js, junto con sus instrucciones de uso:
+Nota: debes descargar la imagen que generes de cada gráfico,
+Nota2: es un gráfico donde se comparan las tres performance, en las distintas condiciones.
+
+-->Trabajo set de datos según clustering y diversas validaciones cruzadas...
+
+La información la encontrarás en el directorio splitterByClustering
+
+Revisando al ojo, me di cuenta, que los resultados no se vieron afectados en base a la aplicación de diferentes validaciones cruzadas
+Lo que si afectó fue la aplicación de distintas formas de división y las distintas cantidades de grupos.
+
+El objetivo es comparar estas divisiones con las cantidades de grupos obtenidos, es decir, por ejemplo:
+
+1. Para todas las divisiones con 2 elementos (Te lo indica el último Número del nombre de cada directorio), existe un único directorio con 5 grupos.
+Completar la tabla resumen expuesta en: tablaResumenClustering.
+
+2. Utilizar el ejemplo exampleClusteringCompare.js en el directorio para obtener el grafico de interés.
+
+3. Descargar las imágenes y almacenar los resultados de manera ordenada.

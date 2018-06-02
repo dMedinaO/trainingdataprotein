@@ -6,6 +6,9 @@ valores asociados a los puntos de interes...
 from proyect.CCMakeGroups import generateSplitterGroup
 from proyect.CCMakeGroups import descriptionDistanceGroups
 from proyect.CCProcesFile import document
+from proyect.CCStatistic import anovaTest
+
+from sklearn.metrics import silhouette_samples, silhouette_score
 
 class groupList(object):
 
@@ -51,3 +54,28 @@ class groupList(object):
         #exportamos el documento...
         nameFile = "matrixMaxDistanceOriginal.csv"
         document.document(nameFile, self.pathOutput).createExportFileWithPandas(matrixData, header)
+
+    #metodo que permite aplicar el coeficiente de siluetas a los grupos
+    def applySilohuetteCoeficient(self):
+        labels = []
+        matrix = []
+        for i in range(len(self.splitterObject.ListGroup)):
+            for element in self.splitterObject.ListGroup[i].ListVector:
+                labels.append(i)
+                matrix.append(element)
+
+        #hacemos el procesamiento del coeficiente de siluetas general y el por cada grupo...
+        self.silhouette_avg = silhouette_score(matrix, labels)
+
+    #metodo que permite hacer el analisis anova de los datos...
+    def processAnovaTest(self):
+
+        for i in range(len(self.splitterObject.ListGroup)):
+            matrixData = []
+            for element in self.splitterObject.ListGroup[i].ListVector:
+                matrixData.append(element)
+
+            #aplicamos el test anova...
+            anova = anovaTest.anovaTest(matrixData)
+            anova.anovaTestValue()
+            break

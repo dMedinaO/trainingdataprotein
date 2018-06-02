@@ -14,3 +14,5 @@ splitter = sys.argv[3]
 processGroupObject = processGroup.groupList(nameFile, pathOutput, splitter)
 processGroupObject.processDistancesObject()
 processGroupObject.exportDistancesToMatrix()
+processGroupObject.applySilohuetteCoeficient()
+processGroupObject.processAnovaTest()
