@@ -1,4 +1,0 @@
-NuSVC,linear,degree=3 gamma=10 probability=True,cv=10,0.414762,0.216667,0.275000,-0.725871,0.225714,0.217926
-NuSVC,poly,degree=3 gamma=10 probability=True,cv=10,0.474286,0.383333,0.325000,-0.683297,0.346825,0.365972
-NuSVC,rbf,degree=3 gamma=10 probability=True,cv=10,0.533810,0.383333,0.465000,-0.685978,0.398571,0.385678
-NuSVC,sigmoid,degree=3 gamma=10 probability=True,cv=10,0.442381,0.266667,0.366667,-0.686150,0.293810,0.274771
