@@ -78,4 +78,72 @@ class groupList(object):
             #aplicamos el test anova...
             anova = anovaTest.anovaTest(matrixData)
             anova.anovaTestValue()
-            break
+            print "--------------------"
+
+    #metodo que permite obtener el valor mayor y menor...
+    def getMaxMinValue(self, dictValues):
+
+        ListData = []
+        for data in dictValues:
+            ListData.append(dictValues[data])
+
+        return max(ListData), min(ListData)
+    #metodo que permite calcular la proporcion....
+    def calculateProportion(self, dicClass):
+
+        numberClass=0
+        sumValue=0
+
+        for data in dicClass:
+            numberClass+=1
+            sumValue+=dicClass[data]
+
+        proportion = {}
+        for data in dicClass:
+            proportion.update({data:float(dicClass[data])/float(sumValue)})
+
+        #obtenemos el mayor y el menor...
+        maxData, minData = self.getMaxMinValue(proportion)
+
+        proportionValue = minData/maxData
+        return proportionValue
+
+    #metodo que permite evaluar la proporcion de las clases...
+    def evaluateProportionClass(self, ListData):
+
+        dicClass = {}
+        data=[]
+        #recolectamos las clases unicas...
+        for element in ListData:
+            data.append(element)
+        data = list(set(data))
+
+        for value in data:
+            cont=0
+            for element in ListData:
+                if value == element:
+                    cont+=1
+            #actualizamos el diccionario...
+            dicClass.update({str(value):cont})
+        return self.calculateProportion(dicClass)
+
+    #metodo que permite evaluar los grupos que necesitan unirse...
+    def evaluateGroupJoin(self):
+
+        self.ListJoin=[]
+        self.ListValidGroup = []
+        for element in self.splitterObject.ListGroup:
+
+            if len(element.ListVector)<=20:#chequeamos el numero de elementos...
+                print "Menor a 20, ", element.name
+                self.ListJoin.append(element)
+            else:#evaluamos la proporcion de las clases...
+                proportion = self.evaluateProportionClass(element.ListClass)
+                print  "Valor de proporcion ", proportion
+                if proportion<0.4:
+                    print "Proporcion fallida, ", element.name
+                    self.ListJoin.append(element)
+                else:
+                    self.ListValidGroup.append(element)
+        print len(self.ListJoin)
+        print len(self.ListValidGroup)

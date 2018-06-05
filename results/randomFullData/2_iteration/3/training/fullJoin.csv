@@ -1,0 +1,229 @@
+AdaBoostClassifier,SAMME,n_estimators=10,cv=10,0.626162,0.520000,0.621429,-0.684023,0.517172,0.511692
+AdaBoostClassifier,SAMME,n_estimators=20,cv=10,0.615051,0.480000,0.617143,-0.686162,0.498283,0.481163
+AdaBoostClassifier,SAMME,n_estimators=50,cv=10,0.613232,0.520000,0.675833,-0.688864,0.543907,0.522438
+AdaBoostClassifier,SAMME,n_estimators=100,cv=10,0.635455,0.520000,0.712500,-0.689993,0.558510,0.528358
+AdaBoostClassifier,SAMME,n_estimators=150,cv=10,0.638586,0.500000,0.700833,-0.690348,0.536209,0.508326
+AdaBoostClassifier,SAMME,n_estimators=200,cv=10,0.669899,0.570000,0.755833,-0.690739,0.604874,0.576820
+AdaBoostClassifier,SAMME,n_estimators=250,cv=10,0.640606,0.550000,0.690833,-0.691162,0.567969,0.550521
+AdaBoostClassifier,SAMME,n_estimators=500,cv=10,0.647475,0.610000,0.660357,-0.691729,0.592399,0.598220
+AdaBoostClassifier,SAMME,n_estimators=750,cv=10,0.658586,0.585000,0.668690,-0.692151,0.586447,0.579945
+AdaBoostClassifier,SAMME,n_estimators=1000,cv=10,0.627273,0.565000,0.663333,-0.692097,0.571429,0.564734
+AdaBoostClassifier,SAMME,n_estimators=1500,cv=10,0.627273,0.590000,0.638333,-0.692106,0.582143,0.583008
+AdaBoostClassifier,SAMME.R,n_estimators=10,cv=10,0.587980,0.460000,0.518333,-0.699209,0.467888,0.459546
+AdaBoostClassifier,SAMME.R,n_estimators=20,cv=10,0.620202,0.530000,0.624921,-0.669480,0.558759,0.522404
+AdaBoostClassifier,SAMME.R,n_estimators=50,cv=10,0.572828,0.545000,0.571746,-0.664089,0.529942,0.526330
+AdaBoostClassifier,SAMME.R,n_estimators=100,cv=10,0.582828,0.490000,0.548889,-0.672855,0.496609,0.487607
+AdaBoostClassifier,SAMME.R,n_estimators=150,cv=10,0.646566,0.540000,0.723690,-0.677965,0.572082,0.545230
+AdaBoostClassifier,SAMME.R,n_estimators=200,cv=10,0.614343,0.495000,0.695833,-0.681116,0.533922,0.502521
+AdaBoostClassifier,SAMME.R,n_estimators=250,cv=10,0.605253,0.495000,0.662500,-0.681862,0.526779,0.500544
+AdaBoostClassifier,SAMME.R,n_estimators=500,cv=10,0.603030,0.535000,0.637500,-0.682253,0.538395,0.552614
+AdaBoostClassifier,SAMME.R,n_estimators=750,cv=10,0.644343,0.560000,0.694167,-0.682631,0.556317,0.536391
+AdaBoostClassifier,SAMME.R,n_estimators=1000,cv=10,0.613030,0.515000,0.669167,-0.683967,0.525365,0.512115
+AdaBoostClassifier,SAMME.R,n_estimators=1500,cv=10,0.613939,0.515000,0.673810,-0.684362,0.529654,0.514595
+DecisionTreeClassifier,gini,splitter=best,cv=10,0.593030,0.495000,0.617143,-14.056235,0.525873,0.504000
+DecisionTreeClassifier,gini,splitter=random,cv=10,0.547576,0.650000,0.519444,-15.626180,0.562772,0.606787
+DecisionTreeClassifier,entropy,splitter=best,cv=10,0.521313,0.470000,0.491667,-16.533259,0.469410,0.467217
+DecisionTreeClassifier,entropy,splitter=random,cv=10,0.541515,0.480000,0.530000,-15.835506,0.481133,0.475567
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=10,cv=10,0.585960,0.515000,0.546190,-0.654505,0.522193,0.496342
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=20,cv=10,0.615051,0.515000,0.544762,-0.659778,0.520538,0.532494
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=50,cv=10,0.647475,0.590000,0.639167,-0.702891,0.599524,0.583829
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=100,cv=10,0.619293,0.620000,0.649167,-0.843076,0.609459,0.590526
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=150,cv=10,0.651515,0.595000,0.619167,-0.991166,0.597811,0.633827
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=200,cv=10,0.651515,0.620000,0.645833,-1.115118,0.594715,0.630580
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=250,cv=10,0.638384,0.620000,0.662500,-1.273232,0.599239,0.579104
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=500,cv=10,0.638384,0.620000,0.627500,-1.767638,0.586411,0.595144
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=750,cv=10,0.627273,0.620000,0.642976,-1.706295,0.575697,0.599091
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=1000,cv=10,0.627273,0.620000,0.642976,-1.735314,0.557839,0.572775
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=1500,cv=10,0.627273,0.620000,0.642976,-1.771260,0.586411,0.572775
+Naive Bayes,GaussianNB,---,cv=10,0.526263,0.325000,0.490000,-1.693443,0.371667,0.340245
+Naive Bayes,BernoulliNB,---,cv=10,0.611111,0.305000,0.566667,-0.702665,0.387619,0.332743
+NearestNeighbort,auto,weight=uniform metric=minkowski k = 1,cv=10,0.575758,0.525000,0.571111,-14.652814,0.532143,0.523848
+NearestNeighbort,auto,weight=uniform metric=minkowski k = 2,cv=10,0.589798,0.230000,0.725000,-7.072999,0.339365,0.263300
+NearestNeighbort,auto,weight=uniform metric=minkowski k = 3,cv=10,0.503131,0.415000,0.466667,-4.829222,0.428506,0.418031
+NearestNeighbort,auto,weight=uniform metric=minkowski k = 4,cv=10,0.610909,0.325000,0.708333,-3.816099,0.430794,0.359162
+NearestNeighbort,auto,weight=uniform metric=minkowski k = 5,cv=10,0.552424,0.435000,0.540000,-2.419470,0.466053,0.444581
+NearestNeighbort,auto,weight=uniform metric=minkowski k = 6,cv=10,0.608889,0.350000,0.625000,-1.761518,0.430873,0.376541
+NearestNeighbort,auto,weight=uniform metric=minkowski k = 7,cv=10,0.650202,0.535000,0.648333,-1.026879,0.562482,0.541902
+NearestNeighbort,auto,weight=uniform metric=minkowski k = 8,cv=10,0.619091,0.330000,0.691667,-1.035640,0.424524,0.360146
+NearestNeighbort,auto,weight=uniform metric=minkowski k = 9,cv=10,0.620202,0.425000,0.625000,-1.018125,0.478492,0.442038
+NearestNeighbort,auto,weight=uniform metric=minkowski k = 10,cv=10,0.577778,0.265000,0.508333,-0.703246,0.324524,0.283989
+NearestNeighbort,auto,weight=uniform metric=euclidean k = 1,cv=10,0.575758,0.525000,0.571111,-14.652814,0.532143,0.523848
+NearestNeighbort,auto,weight=uniform metric=euclidean k = 2,cv=10,0.589798,0.230000,0.725000,-7.072999,0.339365,0.263300
+NearestNeighbort,auto,weight=uniform metric=euclidean k = 3,cv=10,0.503131,0.415000,0.466667,-4.829222,0.428506,0.418031
+NearestNeighbort,auto,weight=uniform metric=euclidean k = 4,cv=10,0.610909,0.325000,0.708333,-3.816099,0.430794,0.359162
+NearestNeighbort,auto,weight=uniform metric=euclidean k = 5,cv=10,0.552424,0.435000,0.540000,-2.419470,0.466053,0.444581
+NearestNeighbort,auto,weight=uniform metric=euclidean k = 6,cv=10,0.608889,0.350000,0.625000,-1.761518,0.430873,0.376541
+NearestNeighbort,auto,weight=uniform metric=euclidean k = 7,cv=10,0.650202,0.535000,0.648333,-1.026879,0.562482,0.541902
+NearestNeighbort,auto,weight=uniform metric=euclidean k = 8,cv=10,0.619091,0.330000,0.691667,-1.035640,0.424524,0.360146
+NearestNeighbort,auto,weight=uniform metric=euclidean k = 9,cv=10,0.620202,0.425000,0.625000,-1.018125,0.478492,0.442038
+NearestNeighbort,auto,weight=uniform metric=euclidean k = 10,cv=10,0.577778,0.265000,0.508333,-0.703246,0.324524,0.283989
+NearestNeighbort,auto,weight=distance metric=minkowski k = 1,cv=10,0.575758,0.525000,0.571111,-14.652814,0.532143,0.523848
+NearestNeighbort,auto,weight=distance metric=minkowski k = 2,cv=10,0.575758,0.525000,0.571111,-7.065829,0.532143,0.523848
+NearestNeighbort,auto,weight=distance metric=minkowski k = 3,cv=10,0.480909,0.415000,0.451667,-4.828228,0.420173,0.414460
+NearestNeighbort,auto,weight=distance metric=minkowski k = 4,cv=10,0.578687,0.510000,0.597500,-3.819235,0.515836,0.507739
+NearestNeighbort,auto,weight=distance metric=minkowski k = 5,cv=10,0.552424,0.435000,0.540000,-2.427658,0.466053,0.444581
+NearestNeighbort,auto,weight=distance metric=minkowski k = 6,cv=10,0.617980,0.485000,0.667857,-1.772853,0.526111,0.495938
+NearestNeighbort,auto,weight=distance metric=minkowski k = 7,cv=10,0.608889,0.490000,0.616190,-1.040761,0.515079,0.495003
+NearestNeighbort,auto,weight=distance metric=minkowski k = 8,cv=10,0.629091,0.440000,0.655000,-1.042492,0.491768,0.454976
+NearestNeighbort,auto,weight=distance metric=minkowski k = 9,cv=10,0.590909,0.400000,0.600000,-1.022494,0.452554,0.416464
+NearestNeighbort,auto,weight=distance metric=minkowski k = 10,cv=10,0.643333,0.470000,0.661667,-0.704384,0.522460,0.486477
+NearestNeighbort,auto,weight=distance metric=euclidean k = 1,cv=10,0.575758,0.525000,0.571111,-14.652814,0.532143,0.523848
+NearestNeighbort,auto,weight=distance metric=euclidean k = 2,cv=10,0.575758,0.525000,0.571111,-7.065829,0.532143,0.523848
+NearestNeighbort,auto,weight=distance metric=euclidean k = 3,cv=10,0.480909,0.415000,0.451667,-4.828228,0.420173,0.414460
+NearestNeighbort,auto,weight=distance metric=euclidean k = 4,cv=10,0.578687,0.510000,0.597500,-3.819235,0.515836,0.507739
+NearestNeighbort,auto,weight=distance metric=euclidean k = 5,cv=10,0.552424,0.435000,0.540000,-2.427658,0.466053,0.444581
+NearestNeighbort,auto,weight=distance metric=euclidean k = 6,cv=10,0.617980,0.485000,0.667857,-1.772853,0.526111,0.495938
+NearestNeighbort,auto,weight=distance metric=euclidean k = 7,cv=10,0.608889,0.490000,0.616190,-1.040761,0.515079,0.495003
+NearestNeighbort,auto,weight=distance metric=euclidean k = 8,cv=10,0.629091,0.440000,0.655000,-1.042492,0.491768,0.454976
+NearestNeighbort,auto,weight=distance metric=euclidean k = 9,cv=10,0.590909,0.400000,0.600000,-1.022494,0.452554,0.416464
+NearestNeighbort,auto,weight=distance metric=euclidean k = 10,cv=10,0.643333,0.470000,0.661667,-0.704384,0.522460,0.486477
+NearestNeighbort,ball_tree,weight=uniform metric=minkowski k = 1,cv=10,0.575758,0.525000,0.571111,-14.652814,0.532143,0.523848
+NearestNeighbort,ball_tree,weight=uniform metric=minkowski k = 2,cv=10,0.589798,0.230000,0.725000,-7.072999,0.339365,0.263300
+NearestNeighbort,ball_tree,weight=uniform metric=minkowski k = 3,cv=10,0.503131,0.415000,0.466667,-4.829222,0.428506,0.418031
+NearestNeighbort,ball_tree,weight=uniform metric=minkowski k = 4,cv=10,0.610909,0.325000,0.708333,-3.816099,0.430794,0.359162
+NearestNeighbort,ball_tree,weight=uniform metric=minkowski k = 5,cv=10,0.552424,0.435000,0.540000,-2.419470,0.466053,0.444581
+NearestNeighbort,ball_tree,weight=uniform metric=minkowski k = 6,cv=10,0.608889,0.350000,0.625000,-1.761518,0.430873,0.376541
+NearestNeighbort,ball_tree,weight=uniform metric=minkowski k = 7,cv=10,0.650202,0.535000,0.648333,-1.026879,0.562482,0.541902
+NearestNeighbort,ball_tree,weight=uniform metric=minkowski k = 8,cv=10,0.619091,0.330000,0.691667,-1.035640,0.424524,0.360146
+NearestNeighbort,ball_tree,weight=uniform metric=minkowski k = 9,cv=10,0.620202,0.425000,0.625000,-1.018125,0.478492,0.442038
+NearestNeighbort,ball_tree,weight=uniform metric=minkowski k = 10,cv=10,0.577778,0.265000,0.508333,-0.703246,0.324524,0.283989
+NearestNeighbort,ball_tree,weight=uniform metric=euclidean k = 1,cv=10,0.575758,0.525000,0.571111,-14.652814,0.532143,0.523848
+NearestNeighbort,ball_tree,weight=uniform metric=euclidean k = 2,cv=10,0.589798,0.230000,0.725000,-7.072999,0.339365,0.263300
+NearestNeighbort,ball_tree,weight=uniform metric=euclidean k = 3,cv=10,0.503131,0.415000,0.466667,-4.829222,0.428506,0.418031
+NearestNeighbort,ball_tree,weight=uniform metric=euclidean k = 4,cv=10,0.610909,0.325000,0.708333,-3.816099,0.430794,0.359162
+NearestNeighbort,ball_tree,weight=uniform metric=euclidean k = 5,cv=10,0.552424,0.435000,0.540000,-2.419470,0.466053,0.444581
+NearestNeighbort,ball_tree,weight=uniform metric=euclidean k = 6,cv=10,0.608889,0.350000,0.625000,-1.761518,0.430873,0.376541
+NearestNeighbort,ball_tree,weight=uniform metric=euclidean k = 7,cv=10,0.650202,0.535000,0.648333,-1.026879,0.562482,0.541902
+NearestNeighbort,ball_tree,weight=uniform metric=euclidean k = 8,cv=10,0.619091,0.330000,0.691667,-1.035640,0.424524,0.360146
+NearestNeighbort,ball_tree,weight=uniform metric=euclidean k = 9,cv=10,0.620202,0.425000,0.625000,-1.018125,0.478492,0.442038
+NearestNeighbort,ball_tree,weight=uniform metric=euclidean k = 10,cv=10,0.577778,0.265000,0.508333,-0.703246,0.324524,0.283989
+NearestNeighbort,ball_tree,weight=distance metric=minkowski k = 1,cv=10,0.575758,0.525000,0.571111,-14.652814,0.532143,0.523848
+NearestNeighbort,ball_tree,weight=distance metric=minkowski k = 2,cv=10,0.575758,0.525000,0.571111,-7.065829,0.532143,0.523848
+NearestNeighbort,ball_tree,weight=distance metric=minkowski k = 3,cv=10,0.480909,0.415000,0.451667,-4.828228,0.420173,0.414460
+NearestNeighbort,ball_tree,weight=distance metric=minkowski k = 4,cv=10,0.578687,0.510000,0.597500,-3.819235,0.515836,0.507739
+NearestNeighbort,ball_tree,weight=distance metric=minkowski k = 5,cv=10,0.552424,0.435000,0.540000,-2.427658,0.466053,0.444581
+NearestNeighbort,ball_tree,weight=distance metric=minkowski k = 6,cv=10,0.617980,0.485000,0.667857,-1.772853,0.526111,0.495938
+NearestNeighbort,ball_tree,weight=distance metric=minkowski k = 7,cv=10,0.608889,0.490000,0.616190,-1.040761,0.515079,0.495003
+NearestNeighbort,ball_tree,weight=distance metric=minkowski k = 8,cv=10,0.629091,0.440000,0.655000,-1.042492,0.491768,0.454976
+NearestNeighbort,ball_tree,weight=distance metric=minkowski k = 9,cv=10,0.590909,0.400000,0.600000,-1.022494,0.452554,0.416464
+NearestNeighbort,ball_tree,weight=distance metric=minkowski k = 10,cv=10,0.643333,0.470000,0.661667,-0.704384,0.522460,0.486477
+NearestNeighbort,ball_tree,weight=distance metric=euclidean k = 1,cv=10,0.575758,0.525000,0.571111,-14.652814,0.532143,0.523848
+NearestNeighbort,ball_tree,weight=distance metric=euclidean k = 2,cv=10,0.575758,0.525000,0.571111,-7.065829,0.532143,0.523848
+NearestNeighbort,ball_tree,weight=distance metric=euclidean k = 3,cv=10,0.480909,0.415000,0.451667,-4.828228,0.420173,0.414460
+NearestNeighbort,ball_tree,weight=distance metric=euclidean k = 4,cv=10,0.578687,0.510000,0.597500,-3.819235,0.515836,0.507739
+NearestNeighbort,ball_tree,weight=distance metric=euclidean k = 5,cv=10,0.552424,0.435000,0.540000,-2.427658,0.466053,0.444581
+NearestNeighbort,ball_tree,weight=distance metric=euclidean k = 6,cv=10,0.617980,0.485000,0.667857,-1.772853,0.526111,0.495938
+NearestNeighbort,ball_tree,weight=distance metric=euclidean k = 7,cv=10,0.608889,0.490000,0.616190,-1.040761,0.515079,0.495003
+NearestNeighbort,ball_tree,weight=distance metric=euclidean k = 8,cv=10,0.629091,0.440000,0.655000,-1.042492,0.491768,0.454976
+NearestNeighbort,ball_tree,weight=distance metric=euclidean k = 9,cv=10,0.590909,0.400000,0.600000,-1.022494,0.452554,0.416464
+NearestNeighbort,ball_tree,weight=distance metric=euclidean k = 10,cv=10,0.643333,0.470000,0.661667,-0.704384,0.522460,0.486477
+NearestNeighbort,kd_tree,weight=uniform metric=minkowski k = 1,cv=10,0.575758,0.525000,0.571111,-14.652814,0.532143,0.523848
+NearestNeighbort,kd_tree,weight=uniform metric=minkowski k = 2,cv=10,0.589798,0.230000,0.725000,-7.072999,0.339365,0.263300
+NearestNeighbort,kd_tree,weight=uniform metric=minkowski k = 3,cv=10,0.503131,0.415000,0.466667,-4.829222,0.428506,0.418031
+NearestNeighbort,kd_tree,weight=uniform metric=minkowski k = 4,cv=10,0.610909,0.325000,0.708333,-3.816099,0.430794,0.359162
+NearestNeighbort,kd_tree,weight=uniform metric=minkowski k = 5,cv=10,0.552424,0.435000,0.540000,-2.419470,0.466053,0.444581
+NearestNeighbort,kd_tree,weight=uniform metric=minkowski k = 6,cv=10,0.608889,0.350000,0.625000,-1.761518,0.430873,0.376541
+NearestNeighbort,kd_tree,weight=uniform metric=minkowski k = 7,cv=10,0.650202,0.535000,0.648333,-1.026879,0.562482,0.541902
+NearestNeighbort,kd_tree,weight=uniform metric=minkowski k = 8,cv=10,0.619091,0.330000,0.691667,-1.035640,0.424524,0.360146
+NearestNeighbort,kd_tree,weight=uniform metric=minkowski k = 9,cv=10,0.620202,0.425000,0.625000,-1.018125,0.478492,0.442038
+NearestNeighbort,kd_tree,weight=uniform metric=minkowski k = 10,cv=10,0.577778,0.265000,0.508333,-0.703246,0.324524,0.283989
+NearestNeighbort,kd_tree,weight=uniform metric=euclidean k = 1,cv=10,0.575758,0.525000,0.571111,-14.652814,0.532143,0.523848
+NearestNeighbort,kd_tree,weight=uniform metric=euclidean k = 2,cv=10,0.589798,0.230000,0.725000,-7.072999,0.339365,0.263300
+NearestNeighbort,kd_tree,weight=uniform metric=euclidean k = 3,cv=10,0.503131,0.415000,0.466667,-4.829222,0.428506,0.418031
+NearestNeighbort,kd_tree,weight=uniform metric=euclidean k = 4,cv=10,0.610909,0.325000,0.708333,-3.816099,0.430794,0.359162
+NearestNeighbort,kd_tree,weight=uniform metric=euclidean k = 5,cv=10,0.552424,0.435000,0.540000,-2.419470,0.466053,0.444581
+NearestNeighbort,kd_tree,weight=uniform metric=euclidean k = 6,cv=10,0.608889,0.350000,0.625000,-1.761518,0.430873,0.376541
+NearestNeighbort,kd_tree,weight=uniform metric=euclidean k = 7,cv=10,0.650202,0.535000,0.648333,-1.026879,0.562482,0.541902
+NearestNeighbort,kd_tree,weight=uniform metric=euclidean k = 8,cv=10,0.619091,0.330000,0.691667,-1.035640,0.424524,0.360146
+NearestNeighbort,kd_tree,weight=uniform metric=euclidean k = 9,cv=10,0.620202,0.425000,0.625000,-1.018125,0.478492,0.442038
+NearestNeighbort,kd_tree,weight=uniform metric=euclidean k = 10,cv=10,0.577778,0.265000,0.508333,-0.703246,0.324524,0.283989
+NearestNeighbort,kd_tree,weight=distance metric=minkowski k = 1,cv=10,0.575758,0.525000,0.571111,-14.652814,0.532143,0.523848
+NearestNeighbort,kd_tree,weight=distance metric=minkowski k = 2,cv=10,0.575758,0.525000,0.571111,-7.065829,0.532143,0.523848
+NearestNeighbort,kd_tree,weight=distance metric=minkowski k = 3,cv=10,0.480909,0.415000,0.451667,-4.828228,0.420173,0.414460
+NearestNeighbort,kd_tree,weight=distance metric=minkowski k = 4,cv=10,0.578687,0.510000,0.597500,-3.819235,0.515836,0.507739
+NearestNeighbort,kd_tree,weight=distance metric=minkowski k = 5,cv=10,0.552424,0.435000,0.540000,-2.427658,0.466053,0.444581
+NearestNeighbort,kd_tree,weight=distance metric=minkowski k = 6,cv=10,0.617980,0.485000,0.667857,-1.772853,0.526111,0.495938
+NearestNeighbort,kd_tree,weight=distance metric=minkowski k = 7,cv=10,0.608889,0.490000,0.616190,-1.040761,0.515079,0.495003
+NearestNeighbort,kd_tree,weight=distance metric=minkowski k = 8,cv=10,0.629091,0.440000,0.655000,-1.042492,0.491768,0.454976
+NearestNeighbort,kd_tree,weight=distance metric=minkowski k = 9,cv=10,0.590909,0.400000,0.600000,-1.022494,0.452554,0.416464
+NearestNeighbort,kd_tree,weight=distance metric=minkowski k = 10,cv=10,0.643333,0.470000,0.661667,-0.704384,0.522460,0.486477
+NearestNeighbort,kd_tree,weight=distance metric=euclidean k = 1,cv=10,0.575758,0.525000,0.571111,-14.652814,0.532143,0.523848
+NearestNeighbort,kd_tree,weight=distance metric=euclidean k = 2,cv=10,0.575758,0.525000,0.571111,-7.065829,0.532143,0.523848
+NearestNeighbort,kd_tree,weight=distance metric=euclidean k = 3,cv=10,0.480909,0.415000,0.451667,-4.828228,0.420173,0.414460
+NearestNeighbort,kd_tree,weight=distance metric=euclidean k = 4,cv=10,0.578687,0.510000,0.597500,-3.819235,0.515836,0.507739
+NearestNeighbort,kd_tree,weight=distance metric=euclidean k = 5,cv=10,0.552424,0.435000,0.540000,-2.427658,0.466053,0.444581
+NearestNeighbort,kd_tree,weight=distance metric=euclidean k = 6,cv=10,0.617980,0.485000,0.667857,-1.772853,0.526111,0.495938
+NearestNeighbort,kd_tree,weight=distance metric=euclidean k = 7,cv=10,0.608889,0.490000,0.616190,-1.040761,0.515079,0.495003
+NearestNeighbort,kd_tree,weight=distance metric=euclidean k = 8,cv=10,0.629091,0.440000,0.655000,-1.042492,0.491768,0.454976
+NearestNeighbort,kd_tree,weight=distance metric=euclidean k = 9,cv=10,0.590909,0.400000,0.600000,-1.022494,0.452554,0.416464
+NearestNeighbort,kd_tree,weight=distance metric=euclidean k = 10,cv=10,0.643333,0.470000,0.661667,-0.704384,0.522460,0.486477
+NearestNeighbort,brute,weight=uniform metric=minkowski k = 1,cv=10,0.575758,0.525000,0.571111,-14.652814,0.532143,0.523848
+NearestNeighbort,brute,weight=uniform metric=minkowski k = 2,cv=10,0.589798,0.230000,0.725000,-7.072999,0.339365,0.263300
+NearestNeighbort,brute,weight=uniform metric=minkowski k = 3,cv=10,0.503131,0.415000,0.466667,-4.829222,0.428506,0.418031
+NearestNeighbort,brute,weight=uniform metric=minkowski k = 4,cv=10,0.610909,0.325000,0.708333,-3.816099,0.430794,0.359162
+NearestNeighbort,brute,weight=uniform metric=minkowski k = 5,cv=10,0.552424,0.435000,0.540000,-2.419470,0.466053,0.444581
+NearestNeighbort,brute,weight=uniform metric=minkowski k = 6,cv=10,0.608889,0.350000,0.625000,-1.761518,0.430873,0.376541
+NearestNeighbort,brute,weight=uniform metric=minkowski k = 7,cv=10,0.650202,0.535000,0.648333,-1.026879,0.562482,0.541902
+NearestNeighbort,brute,weight=uniform metric=minkowski k = 8,cv=10,0.619091,0.330000,0.691667,-1.035640,0.424524,0.360146
+NearestNeighbort,brute,weight=uniform metric=minkowski k = 9,cv=10,0.620202,0.425000,0.625000,-1.018125,0.478492,0.442038
+NearestNeighbort,brute,weight=uniform metric=minkowski k = 10,cv=10,0.577778,0.265000,0.508333,-0.703246,0.324524,0.283989
+NearestNeighbort,brute,weight=uniform metric=euclidean k = 1,cv=10,0.575758,0.525000,0.571111,-14.652814,0.532143,0.523848
+NearestNeighbort,brute,weight=uniform metric=euclidean k = 2,cv=10,0.589798,0.230000,0.725000,-7.072999,0.339365,0.263300
+NearestNeighbort,brute,weight=uniform metric=euclidean k = 3,cv=10,0.503131,0.415000,0.466667,-4.829222,0.428506,0.418031
+NearestNeighbort,brute,weight=uniform metric=euclidean k = 4,cv=10,0.610909,0.325000,0.708333,-3.816099,0.430794,0.359162
+NearestNeighbort,brute,weight=uniform metric=euclidean k = 5,cv=10,0.552424,0.435000,0.540000,-2.419470,0.466053,0.444581
+NearestNeighbort,brute,weight=uniform metric=euclidean k = 6,cv=10,0.608889,0.350000,0.625000,-1.761518,0.430873,0.376541
+NearestNeighbort,brute,weight=uniform metric=euclidean k = 7,cv=10,0.650202,0.535000,0.648333,-1.026879,0.562482,0.541902
+NearestNeighbort,brute,weight=uniform metric=euclidean k = 8,cv=10,0.619091,0.330000,0.691667,-1.035640,0.424524,0.360146
+NearestNeighbort,brute,weight=uniform metric=euclidean k = 9,cv=10,0.620202,0.425000,0.625000,-1.018125,0.478492,0.442038
+NearestNeighbort,brute,weight=uniform metric=euclidean k = 10,cv=10,0.577778,0.265000,0.508333,-0.703246,0.324524,0.283989
+NearestNeighbort,brute,weight=distance metric=minkowski k = 1,cv=10,0.575758,0.525000,0.571111,-14.652814,0.532143,0.523848
+NearestNeighbort,brute,weight=distance metric=minkowski k = 2,cv=10,0.575758,0.525000,0.571111,-7.065829,0.532143,0.523848
+NearestNeighbort,brute,weight=distance metric=minkowski k = 3,cv=10,0.480909,0.415000,0.451667,-4.828228,0.420173,0.414460
+NearestNeighbort,brute,weight=distance metric=minkowski k = 4,cv=10,0.578687,0.510000,0.597500,-3.819235,0.515836,0.507739
+NearestNeighbort,brute,weight=distance metric=minkowski k = 5,cv=10,0.552424,0.435000,0.540000,-2.427658,0.466053,0.444581
+NearestNeighbort,brute,weight=distance metric=minkowski k = 6,cv=10,0.617980,0.485000,0.667857,-1.772853,0.526111,0.495938
+NearestNeighbort,brute,weight=distance metric=minkowski k = 7,cv=10,0.608889,0.490000,0.616190,-1.040761,0.515079,0.495003
+NearestNeighbort,brute,weight=distance metric=minkowski k = 8,cv=10,0.629091,0.440000,0.655000,-1.042492,0.491768,0.454976
+NearestNeighbort,brute,weight=distance metric=minkowski k = 9,cv=10,0.590909,0.400000,0.600000,-1.022494,0.452554,0.416464
+NearestNeighbort,brute,weight=distance metric=minkowski k = 10,cv=10,0.643333,0.470000,0.661667,-0.704384,0.522460,0.486477
+NearestNeighbort,brute,weight=distance metric=euclidean k = 1,cv=10,0.575758,0.525000,0.571111,-14.652814,0.532143,0.523848
+NearestNeighbort,brute,weight=distance metric=euclidean k = 2,cv=10,0.575758,0.525000,0.571111,-7.065829,0.532143,0.523848
+NearestNeighbort,brute,weight=distance metric=euclidean k = 3,cv=10,0.480909,0.415000,0.451667,-4.828228,0.420173,0.414460
+NearestNeighbort,brute,weight=distance metric=euclidean k = 4,cv=10,0.578687,0.510000,0.597500,-3.819235,0.515836,0.507739
+NearestNeighbort,brute,weight=distance metric=euclidean k = 5,cv=10,0.552424,0.435000,0.540000,-2.427658,0.466053,0.444581
+NearestNeighbort,brute,weight=distance metric=euclidean k = 6,cv=10,0.617980,0.485000,0.667857,-1.772853,0.526111,0.495938
+NearestNeighbort,brute,weight=distance metric=euclidean k = 7,cv=10,0.608889,0.490000,0.616190,-1.040761,0.515079,0.495003
+NearestNeighbort,brute,weight=distance metric=euclidean k = 8,cv=10,0.629091,0.440000,0.655000,-1.042492,0.491768,0.454976
+NearestNeighbort,brute,weight=distance metric=euclidean k = 9,cv=10,0.590909,0.400000,0.600000,-1.022494,0.452554,0.416464
+NearestNeighbort,brute,weight=distance metric=euclidean k = 10,cv=10,0.643333,0.470000,0.661667,-0.704384,0.522460,0.486477
+NuSVC,linear,degree=3 gamma=10 probability=True,cv=10,0.404444,0.430000,0.367857,-0.746612,0.383761,0.407648
+NuSVC,poly,degree=3 gamma=10 probability=True,cv=10,0.540404,0.470000,0.545079,-0.712814,0.462222,0.460396
+NuSVC,rbf,degree=3 gamma=10 probability=True,cv=10,0.554444,0.405000,0.553788,-0.700978,0.425119,0.404399
+NuSVC,sigmoid,degree=3 gamma=10 probability=True,cv=10,0.628384,0.600000,0.605000,-0.693652,0.588016,0.592304
+RandomForestClassifier,RandomForest,n_estimators=10 max_depth=2 random_state=0 criterion= gini,cv=10,0.593030,0.470000,0.582143,-0.697887,0.486219,0.469959
+RandomForestClassifier,RandomForest,n_estimators=20 max_depth=2 random_state=0 criterion= gini,cv=10,0.603030,0.320000,0.558333,-0.691028,0.394762,0.345191
+RandomForestClassifier,RandomForest,n_estimators=50 max_depth=2 random_state=0 criterion= gini,cv=10,0.552626,0.325000,0.575000,-0.688886,0.399524,0.349587
+RandomForestClassifier,RandomForest,n_estimators=100 max_depth=2 random_state=0 criterion= gini,cv=10,0.575960,0.375000,0.601667,-0.679048,0.441190,0.396343
+RandomForestClassifier,RandomForest,n_estimators=150 max_depth=2 random_state=0 criterion= gini,cv=10,0.565758,0.375000,0.568333,-0.684916,0.431667,0.393419
+RandomForestClassifier,RandomForest,n_estimators=200 max_depth=2 random_state=0 criterion= gini,cv=10,0.583939,0.395000,0.593333,-0.684904,0.451905,0.413429
+RandomForestClassifier,RandomForest,n_estimators=250 max_depth=2 random_state=0 criterion= gini,cv=10,0.583939,0.395000,0.593333,-0.684391,0.451905,0.413429
+RandomForestClassifier,RandomForest,n_estimators=500 max_depth=2 random_state=0 criterion= gini,cv=10,0.563737,0.370000,0.590000,-0.678636,0.435635,0.391555
+RandomForestClassifier,RandomForest,n_estimators=750 max_depth=2 random_state=0 criterion= gini,cv=10,0.552626,0.370000,0.556667,-0.677183,0.426111,0.388631
+RandomForestClassifier,RandomForest,n_estimators=1000 max_depth=2 random_state=0 criterion= gini,cv=10,0.574848,0.395000,0.600000,-0.677492,0.451190,0.412118
+RandomForestClassifier,RandomForest,n_estimators=1500 max_depth=2 random_state=0 criterion= gini,cv=10,0.563737,0.370000,0.590000,-0.678495,0.435635,0.391555
+RandomForestClassifier,RandomForest,n_estimators=10 max_depth=2 random_state=0 criterion= entropy,cv=10,0.593030,0.470000,0.582143,-0.697887,0.486219,0.469959
+RandomForestClassifier,RandomForest,n_estimators=20 max_depth=2 random_state=0 criterion= entropy,cv=10,0.603030,0.320000,0.558333,-0.691028,0.394762,0.345191
+RandomForestClassifier,RandomForest,n_estimators=50 max_depth=2 random_state=0 criterion= entropy,cv=10,0.552626,0.325000,0.575000,-0.688886,0.399524,0.349587
+RandomForestClassifier,RandomForest,n_estimators=100 max_depth=2 random_state=0 criterion= entropy,cv=10,0.575960,0.375000,0.601667,-0.679048,0.441190,0.396343
+RandomForestClassifier,RandomForest,n_estimators=150 max_depth=2 random_state=0 criterion= entropy,cv=10,0.565758,0.375000,0.568333,-0.684916,0.431667,0.393419
+RandomForestClassifier,RandomForest,n_estimators=200 max_depth=2 random_state=0 criterion= entropy,cv=10,0.583939,0.395000,0.593333,-0.684904,0.451905,0.413429
+RandomForestClassifier,RandomForest,n_estimators=250 max_depth=2 random_state=0 criterion= entropy,cv=10,0.583939,0.395000,0.593333,-0.684391,0.451905,0.413429
+RandomForestClassifier,RandomForest,n_estimators=500 max_depth=2 random_state=0 criterion= entropy,cv=10,0.563737,0.370000,0.590000,-0.678636,0.435635,0.391555
+RandomForestClassifier,RandomForest,n_estimators=750 max_depth=2 random_state=0 criterion= entropy,cv=10,0.552626,0.370000,0.556667,-0.677183,0.426111,0.388631
+RandomForestClassifier,RandomForest,n_estimators=1000 max_depth=2 random_state=0 criterion= entropy,cv=10,0.574848,0.395000,0.600000,-0.677492,0.451190,0.412118
+RandomForestClassifier,RandomForest,n_estimators=1500 max_depth=2 random_state=0 criterion= entropy,cv=10,0.563737,0.370000,0.590000,-0.678495,0.435635,0.391555
+SVC,linear,degree=3 gamma=10 probability=True,cv=10,0.556667,0.125000,0.400000,-0.702817,0.186667,0.143791
+SVC,poly,degree=3 gamma=10 probability=True,cv=10,0.531111,0.470000,0.525000,-0.705567,0.461111,0.460582
+SVC,rbf,degree=3 gamma=10 probability=True,cv=10,0.596869,0.395000,0.641667,-0.712924,0.452879,0.412947
+SVC,sigmoid,degree=3 gamma=10 probability=True,cv=10,0.542424,0.000000,0.000000,-0.677291,0.000000,0.000000

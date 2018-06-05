@@ -7,6 +7,7 @@ from proyect.CCProcesFile import procesFile, splitAttributeBySectorSuperfice
 from proyect.CCStatistic import normalize
 from proyect.CCTraining import naiveBayes, adaBoost, knnAlgorithm, decisionTrees, gradientTreeBoost, nuSVC, SVC, randomForest, performanceScore, processPerformance
 from proyect.CCTraining import resumeResult
+from proyect.CCTraining import mlpClf
 
 import sys
 import os
@@ -46,7 +47,23 @@ for element in createGroups.resumeGroup:
     #entrenamos...
     print "Training attribute", element[0]
     ListResultAlgorithm = []
+    mlpValue = mlpClf.mlpModel(normalObject.matrixNormalized,2)
+    ListResultAlgorithm.append(mlpValue)
+    
     try:
+        #hacemos la instancia para la normalizacion de los datos, creamos un directorio previamente...
+        pathTraining = "%s%s_Attribute/training/" % (pathOutput, element[0])
+        command = "mkdir -p %s" % pathTraining
+        subprocess.call(command, shell=True)
+
+        #hacemos la instancia al objeto...
+        resumen = resumeResult.resumePerformance(ListResultAlgorithm, pathTraining)
+    except:
+        pass
+
+'''
+    try:
+
         naiveBayesValue = naiveBayes.naiveBayes(normalObject.matrixNormalized,2)
         ListResultAlgorithm.append(naiveBayesValue)
     except:
@@ -90,14 +107,4 @@ for element in createGroups.resumeGroup:
         ListResultAlgorithm.append(randomForestValue)
     except:
         pass
-
-    try:
-        #hacemos la instancia para la normalizacion de los datos, creamos un directorio previamente...
-        pathTraining = "%s%s_Attribute/training/" % (pathOutput, element[0])
-        command = "mkdir -p %s" % pathTraining
-        subprocess.call(command, shell=True)
-
-        #hacemos la instancia al objeto...
-        resumen = resumeResult.resumePerformance(ListResultAlgorithm, pathTraining)
-    except:
-        pass
+'''

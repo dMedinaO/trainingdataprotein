@@ -41,13 +41,18 @@ class makeGroup(object):
         document.document('dataSetRandom.csv', dirPath).createExportFileWithPandas(matrixRandom, self.header)
         print "Process documento..."
         process = self.processRandomMatrix(dirPath)#procesamos la matrix y generamos la transformacion...
-        print "Normalice Process..."
-        self.normalizacionData(dirPath, process)
-
-        #creamos el directorio de entrenamiento...
-        print "Training Data Set..."
-        dirDataNormal = dirPath+"dataSetNormaliced.csv"
-        self.trainingModelDataSet(dirDataNormal, dirPath)
+        try:
+            print "Normalice Process..."
+            self.normalizacionData(dirPath, process)
+        except:
+            pass
+        try:
+            #creamos el directorio de entrenamiento...
+            print "Training Data Set..."
+            dirDataNormal = dirPath+"dataSetNormaliced.csv"
+            self.trainingModelDataSet(dirDataNormal, dirPath)
+        except:
+            pass
 
     #metodo que permite poder implementar el entrenamiento del modelo, las validaciones seran con LOU
     def trainingModelDataSet(self, dirDataNormal, dirDataTraining):
