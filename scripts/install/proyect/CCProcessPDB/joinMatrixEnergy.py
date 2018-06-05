@@ -6,6 +6,7 @@ la cual sera o correspondera a la matriz de adyacencia, esto permitira la poster
 
 from proyect.CCProcessPDB import processPDB, calculateHBondsBestNetwork, parserDegreePhiPsi, calculateCovalentEnergy
 from proyect.CCProcesFile import document
+from proyect.CCProcessPDB import createGraph
 
 class fullMatrixEnergy(object):
 
@@ -37,3 +38,11 @@ class fullMatrixEnergy(object):
         for element in self.matrixFull:
             matrixValue.append(element[1:])
         document.document('matrixFullForHeatMap.csv', self.pathOutput).createExportFileWithPandas(matrixValue, headerData)
+
+    #metodo que permite trabajar con los elementos de la matriz generada para crear grafos...
+    def createGraphData(self):
+
+        self.graphCreator = createGraph.createGraph(self.matrixFull, self.processPDBObject.header, self.pathOutput)
+        self.graphCreator.addNodesToGraph()
+        self.graphCreator.addEdgeToGraph()
+        self.graphCreator.showGraph()

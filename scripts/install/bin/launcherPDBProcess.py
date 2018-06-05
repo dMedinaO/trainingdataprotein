@@ -55,3 +55,4 @@ nameMatrix = "matrix_energy_full_pdb_%s.csv" % codePDB
 joinMatrix = joinMatrixEnergy.fullMatrixEnergy(processPDBObject, hBondsNetworkValue, covalenteValues, nameMatrix, pathOutput)
 joinMatrix.createFullMatrix()
 joinMatrix.createMatrixRemoveCol()
+joinMatrix.createGraphData()
