@@ -1,0 +1,14 @@
+AAWt,AAMt,Sstruct,SaccW,ShbondsW,SaccM,ShbondsM,yDDG,Result,Positiontype,ProteinPropens,Positionaccept,MOSST,SectorSuperficie,Functionalrelevancefunction,Clinical
+S,D,L,11.1,N,28.8,U,-0.7,E,N,0.5,0.91,-0.7,R,0.5,N
+V,I,A,52.6,N,74.5,N,0.3,N,I,0,1,-1.1,T,0.8,N
+V,D,L,111.8,N,93.3,S,-0.4,N,N,0.5,0.62,-0.4,H,0.55,N
+G,V,L,0,N,5.5,N,-1.5,D,I,0,1,-0.6,O,0.15,N
+Y,D,L,14.4,S,19.1,U,-2.6,L,V,0.2,0.48,-0.1,Z,0.8,D
+K,R,A,65.1,S,64.1,S,-0.4,N,N,0.1,0.8,0,F,0.5,N
+P,S,B,61,N,89.4,N,0,N,N,0.1,0.76,-0.1,Z,0.2,N
+L,Q,A,1.4,N,2.3,N,-3.1,L,I,0,1,-0.9,Z,0.1,D
+P,R,E,19.6,N,26.2,N,3.3,U,N,-0.1,0.6,-0.5,O,0.15,D
+R,C,B,18.3,N,27.8,U,0.9,T,N,0.5,0.85,-0.7,Z,0.8,N
+R,G,B,18.3,N,42.6,N,-2.1,L,N,0.5,0.85,-0.8,Z,0.8,D
+G,R,L,0,N,3.2,N,-0.9,E,I,0,1,-0.8,O,0.15,N
+V,I,A,40.3,N,36.1,N,0.6,N,N,0.6,0.87,0.3,T,0.6,N
