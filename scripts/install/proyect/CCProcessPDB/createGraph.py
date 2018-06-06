@@ -7,6 +7,7 @@ La matriz a trabajar sera normalizada para que no existan datos demasiado despro
 import networkx as nx
 import matplotlib.pyplot as plt
 from sklearn import preprocessing
+from sklearn.preprocessing import StandardScaler
 
 class createGraph(object):
 
@@ -36,6 +37,10 @@ class createGraph(object):
     def addEdgeToGraph(self):
 
         matrixRemove = self.removeFirstCol()
+        #scaler = StandardScaler()
+        #scaler.fit(matrixRemove)
+        #matrixRemove = scaler.transform(matrixRemove)
+
         matrixRemove = preprocessing.normalize(matrixRemove, norm='l2')
         for i in range (len(matrixRemove)):
             for j in range (len(matrixRemove[i])):
@@ -51,5 +56,5 @@ class createGraph(object):
     #metodo que permite visualizar el grafo...
     def showGraph(self):
 
-        nx.draw_spectral(self.grafo, node_color='black', node_size=50, line_color='grey', linewidths=0, width=0.1)
+        nx.draw_spectral(self.grafo, node_color='black', node_size=120, line_color='grey', linewidths=0, width=0.2)
         plt.show()
