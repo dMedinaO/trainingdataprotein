@@ -4,7 +4,7 @@ informacion, la generacion de estadisticas y los entrenamientos de modelos...
 '''
 
 from proyect.CCProcesFile import procesFile, splitAttributeBySectorSuperfice
-from proyect.CCStatistic import normalize
+from proyect.CCStatistic import normalize, createHistogramForAttributeWebView, scatterPlotMatrix, createMatrixCoor
 from proyect.CCTraining import naiveBayes, adaBoost, knnAlgorithm, decisionTrees, gradientTreeBoost, nuSVC, SVC, randomForest, performanceScore, processPerformance
 from proyect.CCTraining import resumeResult
 from proyect.CCTraining import mlpClf
@@ -35,6 +35,43 @@ for element in createGroups.resumeGroup:
     process.processMatrixData()
     process.checkAttributesInMatrix()
 
+    #trabajamos con las instancias para el desarrollo de los graficos de interes....
+    #generacion de estadisticas... #creacion del path...
+    pathOutputStatistic = "%s%s_Attribute/statistic/" % (pathOutput, element[0])
+    command = "mkdir -p %s" % pathOutputStatistic
+    subprocess.call(command, shell=True)
+
+    #hacemos la matriz de correlacion...
+    pathCorr = pathOutputStatistic+"correlation/"
+    command = "mkdir -p %s" % pathCorr
+    subprocess.call(command, shell=True)
+
+    correlationOb = createMatrixCoor.correlationMatrix( process.matrixData, process.header, pathCorr, 'Correlation matrix between the features')
+    correlationOb.exportMatrixCor()
+
+'''
+    #hacemos el scatter plot...
+    pathScatter = pathOutputStatistic+"scatterPlot/"
+    command = "mkdir -p %s" % pathScatter
+    subprocess.call(command, shell=True)
+
+    scatter = scatterPlotMatrix.scatterMatrixPlot( process.matrixData, process.header, pathScatter, process.header[-1])
+    scatter.exportScatter()
+
+
+    #histogramas... creamos el directorio...
+    pathHistogram = pathOutputStatistic+"histogram/"
+    command = "mkdir -p %s" % pathHistogram
+    subprocess.call(command, shell=True)
+
+    for i in range (len(process.header)-1):#para todos los elementos menos la clase...
+        dataExport = process.getDataByIndex(i)
+        nameFileExport = "%s%s_Histograme.js" % (pathHistogram, process.header[i])
+        title = "Histogram for %s" % process.header[i]
+        webHistogram = createHistogramForAttributeWebView.createHistograma(dataExport, nameFileExport, title)
+        webHistogram.createFile()
+
+
     #normalizamos...
     print "Normaliced attribute ", element[0]
     #hacemos la instancia para la normalizacion de los datos, creamos un directorio previamente...
@@ -49,7 +86,7 @@ for element in createGroups.resumeGroup:
     ListResultAlgorithm = []
     mlpValue = mlpClf.mlpModel(normalObject.matrixNormalized,2)
     ListResultAlgorithm.append(mlpValue)
-    
+
     try:
         #hacemos la instancia para la normalizacion de los datos, creamos un directorio previamente...
         pathTraining = "%s%s_Attribute/training/" % (pathOutput, element[0])
@@ -61,7 +98,6 @@ for element in createGroups.resumeGroup:
     except:
         pass
 
-'''
     try:
 
         naiveBayesValue = naiveBayes.naiveBayes(normalObject.matrixNormalized,2)

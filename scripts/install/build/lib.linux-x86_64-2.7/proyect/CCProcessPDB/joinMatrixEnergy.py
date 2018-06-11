@@ -10,8 +10,9 @@ from proyect.CCProcessPDB import createGraph
 
 class fullMatrixEnergy(object):
 
-    def __init__(self, processPDBObject, hBondsNetworkValue, covalenteValues, nameFileMatrix, pathOutput):
+    def __init__(self, processPDBObject, hBondsNetworkValue, covalenteValues, nameFileMatrix, pathOutput, codePDB):
 
+        self.codePDB = codePDB
         self.processPDBObject = processPDBObject
         self.hBondsNetworkValue = hBondsNetworkValue
         self.covalenteValues = covalenteValues
@@ -37,12 +38,13 @@ class fullMatrixEnergy(object):
 
         for element in self.matrixFull:
             matrixValue.append(element[1:])
-        document.document('matrixFullForHeatMap.csv', self.pathOutput).createExportFileWithPandas(matrixValue, headerData)
+        nameFileMatrixData = 'matrixFullForHeatMap_%s.csv' % self.codePDB
+        document.document(nameFileMatrixData, self.pathOutput).createExportFileWithPandas(matrixValue, headerData)
 
     #metodo que permite trabajar con los elementos de la matriz generada para crear grafos...
     def createGraphData(self):
 
-        self.graphCreator = createGraph.createGraph(self.matrixFull, self.processPDBObject.header, self.pathOutput)
+        self.graphCreator = createGraph.createGraph(self.matrixFull, self.processPDBObject.header, self.pathOutput, self.codePDB)
         self.graphCreator.createGraphExportJS()
         #self.graphCreator.addNodesToGraph()
         #self.graphCreator.addEdgeToGraph()

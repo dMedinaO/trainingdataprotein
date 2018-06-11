@@ -34,16 +34,20 @@ class mlpModel(object):
         for activation in self.activationList:
             for solver in self.solverList:
                 for learning_rate in self.learning_rateList:
-                    try:
-                        print "MLPClassifier, activation: %s, solver: %s, learning_rate: %s" % (activation, solver, learning_rate)
-                        clf = MLPClassifier(hidden_layer_sizes=(30,30,30), activation=activation, solver=solver, learning_rate=learning_rate)
-                        clf = clf.fit(self.dataWC, self.classAttribute)
-                        descripcion = "MLPClassifier, activation: %s, solver: %s, learning_rate: %s" % (activation, solver, learning_rate)
-                        performanceData = performanceScore.performanceAlgoritmo('MLP', descripcion, str(self.validator))
-                        performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
-                        self.performanceDataList.append(performanceData)
-                    except:
-                        pass
+                    ListCapas = [5, 10, 15]
+                    for c1 in ListCapas:
+                        for c2 in ListCapas:
+                            for c3 in ListCapas:
+                                try:
+                                    print "MLPClassifier, activation: %s, solver: %s, learning_rate: %s %dX%dX%d" % (activation, solver, learning_rate, c1, c2, c3)
+                                    clf = MLPClassifier(hidden_layer_sizes=(c1,c2,c3), activation=activation, solver=solver, learning_rate=learning_rate)
+                                    clf = clf.fit(self.dataWC, self.classAttribute)
+                                    descripcion = "MLPClassifier, activation: %s, solver: %s, learning_rate: %s, capas: %d-%d-%d" % (activation, solver, learning_rate, c1, c2, c3)
+                                    performanceData = performanceScore.performanceAlgoritmo('MLP', descripcion, str(self.validator))
+                                    performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
+                                    self.performanceDataList.append(performanceData)
+                                except:
+                                    pass
 
     #metodo que permite procesar la performance...
     def processValuesScore(self):

@@ -17,9 +17,10 @@ from networkx.algorithms import bipartite
 
 class createGraph(object):
 
-    def __init__(self, matrixData, header, pathOutput):
+    def __init__(self, matrixData, header, pathOutput, codePDB):
 
         self.matrixData = matrixData
+        self.codePDB = codePDB
         self.header = header[1:]
         self.pathOutput = pathOutput
         self.grafo = nx.Graph(attr="Aminoacidos")#representa al grafo a generar...
@@ -75,7 +76,8 @@ class createGraph(object):
     #metodo que permite crear el archivo de salida...
     def createFileData(self, nodeList, linksList):
 
-        fileWrite = open('dataExport.js', 'w')
+        nameFile = self.pathOutput+self.codePDB+"_graph.js"
+        fileWrite = open(nameFile, 'w')
         fileWrite.write('var graph = {\n\n')
 
         #comenzamos a escribir la seccion de los nodos...

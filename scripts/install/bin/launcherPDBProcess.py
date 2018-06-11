@@ -52,7 +52,7 @@ covalenteValues.exportMatrix()
 
 print "Join Matrix Full"
 nameMatrix = "matrix_energy_full_pdb_%s.csv" % codePDB
-joinMatrix = joinMatrixEnergy.fullMatrixEnergy(processPDBObject, hBondsNetworkValue, covalenteValues, nameMatrix, pathOutput)
+joinMatrix = joinMatrixEnergy.fullMatrixEnergy(processPDBObject, hBondsNetworkValue, covalenteValues, nameMatrix, pathOutput, codePDB)
 joinMatrix.createFullMatrix()
 joinMatrix.createMatrixRemoveCol()
 joinMatrix.createGraphData()

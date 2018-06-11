@@ -55,6 +55,14 @@ class processDataSet(object):
                 pass
         return listIndex
 
+    #obtener todos los valores del set de datos segun un indice...
+    def getDataByIndex(self, index):
+
+        dataExport = []
+        for element in self.matrixData:
+            dataExport.append(element[index])
+        return dataExport
+        
     #obtenemos la lista segun el indice y hacemos los calculos de conversion...
     def getValuesAttributes(self, index):
 
