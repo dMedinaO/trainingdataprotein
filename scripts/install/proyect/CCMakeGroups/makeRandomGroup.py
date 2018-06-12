@@ -22,6 +22,10 @@ class makeGroup(object):
 
         self.processGroup()
 
+    def __init__(self):
+
+        print "void building"
+        
     #metodo que permite generar los grupos dado el diccionario obtenido...
     def processGroup(self):
 
