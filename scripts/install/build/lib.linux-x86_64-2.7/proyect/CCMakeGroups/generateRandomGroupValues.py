@@ -43,8 +43,10 @@ class groupRandomGenerator(object):
 
                 #generamos la matriz del grupo...
                 matrixGroup = []
+                actualPos=0
                 for row in range(self.ListGroupMembers[group-1]):
-                    matrixGroup.append(self.matrixData[row])
+                    matrixGroup.append(self.matrixData[self.indexRandom[actualPos]])
+                    actualPos+=1
 
                 #procesamos la matrix para remover el indice...
                 matrixGroupRemove = self.removeSectorSuperfice(matrixGroup)

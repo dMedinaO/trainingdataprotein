@@ -1,8 +1,6 @@
 '''
-clase que tiene la responsabilidad de generar n grupos aleatorios, normalizarlos y hacer el entrenamiento con LOU como
-forma de validacion...
-Nota: Si el numero de grupos es mayor a 7, se divide el set de datos en la cantidad de grupos y al ultimo elemento se le
-agrega la parte entera faltante...
+Clase que tiene la responsabilidad de generar los elementos aleatorios del grupo 13...
+genera elementos aleatorios con considerar el atributo sector superfice...
 '''
 import random
 import subprocess
@@ -15,12 +13,13 @@ from proyect.CCTraining.LOU import processResult
 
 class groupRandomGenerator(object):
 
-    def __init__(self, numberGroup, pathOutput, matrixData, header, iterator):
+    def __init__(self, numberGroup, pathOutput, matrixData, header, iterator, dictGroup):
 
         self.numberGroup = numberGroup
         self.pathOutput = pathOutput
         self.matrixData = matrixData
         self.header = header
+        self.dictGroup = dictGroup
         self.iterator = iterator
 
     #metodo que permite generar las iteraciones...
@@ -31,27 +30,22 @@ class groupRandomGenerator(object):
             namePath = "%s%d_iteration/" % (self.pathOutput, i)
             #print namePath
             self.createDir(namePath)
-
             self.createRandomIndex()
-            self.processGroupRand()
 
-
-            #comenzamos a crear los directorios para los grupos...
-            for group in range(1, self.numberGroup+1):
-                namePathGroup = "%sgroup_%d/" % (namePath, group)
+            #por cada elemento en el diccionario:
+            for group in self.dictGroup:
+                namePathGroup = "%sgroup_%s/" % (namePath, group)
                 self.createDir(namePathGroup)
 
                 #generamos la matriz del grupo...
                 matrixGroup = []
                 actualPos=0
-                for row in range(self.ListGroupMembers[group-1]):
+                for row in range(self.dictGroup[group]):#cada elemento en la cantidad...
                     matrixGroup.append(self.matrixData[self.indexRandom[actualPos]])
                     actualPos+=1
 
-                #procesamos la matrix para remover el indice...
-                matrixGroupRemove = self.removeSectorSuperfice(matrixGroup)
                 #importamos la matriz....
-                document.document("matrixRandom.csv", namePathGroup).createExportFileWithPandas(matrixGroupRemove, self.header)
+                document.document("matrixRandom.csv", namePathGroup).createExportFileWithPandas(matrixGroup, self.header)
 
                 print "Process documento..."
                 process = self.processRandomMatrix(namePathGroup)#procesamos la matrix y generamos la transformacion...
@@ -106,31 +100,3 @@ class groupRandomGenerator(object):
 
         #hacemos shuffle a los indices para que se encuentren desordenados...
         random.shuffle(self.indexRandom)
-
-    #metodo que permite el procesamiento de la data para hacer los grupos aleatorios...
-    def processGroupRand(self):
-        self.ListGroupMembers = []
-        if self.numberGroup <=7:
-            while True:
-                ListMemberGroup = self.createNumberMembers()
-                dataSum = sum(ListMemberGroup)
-                if dataSum < len(self.indexRandom)-20:
-                    ListMemberGroup.append(len(self.indexRandom)-dataSum)
-                    self.ListGroupMembers = ListMemberGroup
-                    break
-        else:
-            dataValue = int(len(self.indexRandom)/self.numberGroup)
-            resto = len(self.indexRandom) - (dataValue*self.numberGroup)
-            for i in range(self.numberGroup):
-                self.ListGroupMembers.append(dataValue)
-            self.ListGroupMembers[0]+=resto
-
-    #metodo que permite crear la lista de cantidad de integrantes por grupo, nota: los grupos no pueden tener menos de 20 elementos
-    def createNumberMembers(self):
-
-        ListMemberGroup =[]
-
-        for i in range(self.numberGroup-1):
-            ListMemberGroup.append(random.randint(20,len(self.indexRandom)))
-
-        return ListMemberGroup

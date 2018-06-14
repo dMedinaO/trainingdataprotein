@@ -1,0 +1,5 @@
+1 "Von Hippel-Lindau disease | Genetic and Rare Diseases Information Center (GARD) – an NCATS Program". rarediseases.info.nih.gov. Retrieved 2018-04-17.
+2. https://www.repository.cam.ac.uk/bitstream/handle/1810/245435/Hum.%20Mol.%20Genet.-2014-Gossage-hmg_ddu321.pdf?sequence=3
+3. Beroud, C., Joly, D., Gallou, C., Staroz, F., Orfanelli, M.T. and Junien, C. (1998) Software and database for the analysis of mutations in the VHL gene. Nucleic Acids Res. 26, 256 – 258.
+4. Nordstrom-O’Brien, M., van der Luijt, R.B., van Rooijen, E., van den Ouweland, A.M., Majoor-Krakauer, D.F., Lolkema, M.P., van Brussel, A., Voest, E.E. and Giles, R.H. (2010) Genetic analysis of von Hippel-Lindau disease. Hum. Mutat.31, 521 – 537.
+
