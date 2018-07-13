@@ -1,0 +1,17 @@
+algorithm,description,validation,accuracy,group,iterator
+NuSVC,kernel: rbf,LOU,0.896551724138,6,16
+NuSVC,kernel: sigmoid,LOU,0.896551724138,6,16
+SAMME.R,20- AdaBoostClassifier,LOU,0.869565217391,6,18
+SAMME.R,100- AdaBoostClassifier,LOU,0.869565217391,6,18
+SAMME.R,250- AdaBoostClassifier,LOU,0.869565217391,6,18
+SAMME.R,500- AdaBoostClassifier,LOU,0.869565217391,6,18
+SAMME.R,750- AdaBoostClassifier,LOU,0.869565217391,6,18
+SAMME.R,1000- AdaBoostClassifier,LOU,0.869565217391,6,18
+SAMME.R,1500- AdaBoostClassifier,LOU,0.869565217391,6,18
+SAMME,10- AdaBoostClassifier,LOU,0.861111111111,6,56
+SAMME.R,250- AdaBoostClassifier,LOU,0.92,6,74
+SAMME,250- AdaBoostClassifier,LOU,0.863636363636,6,76
+SAMME,750- AdaBoostClassifier,LOU,0.863636363636,6,76
+SAMME.R,50- AdaBoostClassifier,LOU,0.863636363636,6,76
+SAMME.R,200- AdaBoostClassifier,LOU,0.863636363636,6,76
+SAMME.R,250- AdaBoostClassifier,LOU,0.863636363636,6,76

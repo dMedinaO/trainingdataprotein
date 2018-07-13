@@ -1,0 +1,18 @@
+algorithm,description,validation,accuracy,group,iterator
+NuSVC,kernel: linear,LOU,1.0,3,36
+NuSVC,kernel: linear,LOU,1.0,3,36
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,1.0,3,57
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,1.0,3,57
+gini,DecisionTreeClassifier gini best,LOU,1.0,3,57
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,3,57
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,1.0,3,57
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,1.0,3,57
+gini,DecisionTreeClassifier gini best,LOU,1.0,3,57
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,3,57
+SAMME.R,50- AdaBoostClassifier,LOU,0.90625,3,66
+SAMME.R,100- AdaBoostClassifier,LOU,0.90625,3,66
+SAMME.R,150- AdaBoostClassifier,LOU,0.90625,3,66
+SAMME.R,200- AdaBoostClassifier,LOU,0.90625,3,66
+SAMME.R,250- AdaBoostClassifier,LOU,0.90625,3,66
+SAMME.R,500- AdaBoostClassifier,LOU,0.90625,3,66
+SAMME.R,750- AdaBoostClassifier,LOU,0.90625,3,66

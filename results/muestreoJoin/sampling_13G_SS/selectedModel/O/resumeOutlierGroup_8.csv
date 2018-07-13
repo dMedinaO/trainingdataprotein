@@ -1,0 +1,347 @@
+algorithm,description,validation,accuracy,group,iterator
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.794871794872,O,3
+gini,DecisionTreeClassifier gini best,LOU,0.794871794872,O,3
+entropy,DecisionTreeClassifier entropy best,LOU,0.794871794872,O,3
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.794871794872,O,3
+gini,DecisionTreeClassifier gini best,LOU,0.794871794872,O,3
+entropy,DecisionTreeClassifier entropy best,LOU,0.794871794872,O,3
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.794871794872,O,3
+gini,DecisionTreeClassifier gini best,LOU,0.794871794872,O,3
+entropy,DecisionTreeClassifier entropy best,LOU,0.794871794872,O,3
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.794871794872,O,3
+gini,DecisionTreeClassifier gini best,LOU,0.794871794872,O,3
+entropy,DecisionTreeClassifier entropy best,LOU,0.794871794872,O,3
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.794871794872,O,3
+gini,DecisionTreeClassifier gini best,LOU,0.794871794872,O,3
+entropy,DecisionTreeClassifier entropy best,LOU,0.794871794872,O,3
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.794871794872,O,3
+gini,DecisionTreeClassifier gini best,LOU,0.794871794872,O,3
+entropy,DecisionTreeClassifier entropy best,LOU,0.794871794872,O,3
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.794871794872,O,3
+gini,DecisionTreeClassifier gini best,LOU,0.794871794872,O,3
+entropy,DecisionTreeClassifier entropy best,LOU,0.794871794872,O,3
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.794871794872,O,3
+gini,DecisionTreeClassifier gini best,LOU,0.794871794872,O,3
+entropy,DecisionTreeClassifier entropy best,LOU,0.794871794872,O,3
+RandomForestClassifier,gini - 200,LOU,0.794871794872,O,5
+RandomForestClassifier,gini - 200,LOU,0.794871794872,O,5
+RandomForestClassifier,gini - 200,LOU,0.794871794872,O,5
+RandomForestClassifier,gini - 200,LOU,0.794871794872,O,5
+RandomForestClassifier,gini - 200,LOU,0.794871794872,O,5
+RandomForestClassifier,gini - 200,LOU,0.794871794872,O,5
+RandomForestClassifier,gini - 200,LOU,0.794871794872,O,5
+RandomForestClassifier,gini - 200,LOU,0.794871794872,O,5
+NuSVC,kernel: sigmoid,LOU,0.794871794872,O,21
+auto,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+auto,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+ball_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+ball_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+kd_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+kd_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+brute,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+brute,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+NuSVC,kernel: sigmoid,LOU,0.794871794872,O,21
+auto,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+auto,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+ball_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+ball_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+kd_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+kd_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+brute,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+brute,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+NuSVC,kernel: sigmoid,LOU,0.794871794872,O,21
+auto,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+auto,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+ball_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+ball_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+kd_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+kd_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+brute,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+brute,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+NuSVC,kernel: sigmoid,LOU,0.794871794872,O,21
+auto,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+auto,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+ball_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+ball_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+kd_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+kd_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+brute,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+brute,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+NuSVC,kernel: sigmoid,LOU,0.794871794872,O,21
+auto,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+auto,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+ball_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+ball_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+kd_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+kd_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+brute,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+brute,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+NuSVC,kernel: sigmoid,LOU,0.794871794872,O,21
+auto,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+auto,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+ball_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+ball_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+kd_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+kd_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+brute,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+brute,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+NuSVC,kernel: sigmoid,LOU,0.794871794872,O,21
+auto,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+auto,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+ball_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+ball_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+kd_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+kd_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+brute,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+brute,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+NuSVC,kernel: sigmoid,LOU,0.794871794872,O,21
+auto,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+auto,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+ball_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+ball_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+kd_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+kd_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+brute,minkowski-distance KNN: 2,LOU,0.794871794872,O,21
+brute,euclidean-distance KNN: 2,LOU,0.794871794872,O,21
+SAMME,10- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,750- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,1000- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,50- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,250- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,750- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,10- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,750- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,1000- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,50- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,250- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,750- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,10- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,750- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,1000- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,50- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,250- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,750- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,50- AdaBoostClassifier,LOU,0.820512820513,O,24
+SAMME,500- AdaBoostClassifier,LOU,0.820512820513,O,24
+SAMME.R,10- AdaBoostClassifier,LOU,0.820512820513,O,24
+SAMME.R,20- AdaBoostClassifier,LOU,0.820512820513,O,24
+SAMME.R,200- AdaBoostClassifier,LOU,0.820512820513,O,24
+SAMME.R,500- AdaBoostClassifier,LOU,0.820512820513,O,24
+SAMME.R,1000- AdaBoostClassifier,LOU,0.820512820513,O,24
+SAMME.R,1500- AdaBoostClassifier,LOU,0.820512820513,O,24
+SAMME,10- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,750- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,1000- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,50- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,250- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,750- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,10- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,750- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,1000- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,50- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,250- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,750- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,10- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,750- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,1000- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,50- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,250- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,750- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,10- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,750- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,1000- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,50- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,250- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,750- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,10- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,750- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,1000- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,50- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,250- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME.R,750- AdaBoostClassifier,LOU,0.794871794872,O,24
+SAMME,50- AdaBoostClassifier,LOU,0.820512820513,O,24
+SAMME,500- AdaBoostClassifier,LOU,0.820512820513,O,24
+SAMME.R,10- AdaBoostClassifier,LOU,0.820512820513,O,24
+SAMME.R,20- AdaBoostClassifier,LOU,0.820512820513,O,24
+SAMME.R,200- AdaBoostClassifier,LOU,0.820512820513,O,24
+SAMME.R,500- AdaBoostClassifier,LOU,0.820512820513,O,24
+SAMME.R,1000- AdaBoostClassifier,LOU,0.820512820513,O,24
+SAMME.R,1500- AdaBoostClassifier,LOU,0.820512820513,O,24
+auto,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+auto,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+ball_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+ball_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+kd_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+kd_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+brute,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+brute,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+auto,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+auto,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+ball_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+ball_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+kd_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+kd_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+brute,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+brute,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+auto,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+auto,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+ball_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+ball_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+kd_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+kd_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+brute,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+brute,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+auto,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+auto,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+ball_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+ball_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+kd_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+kd_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+brute,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+brute,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+auto,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+auto,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+ball_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+ball_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+kd_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+kd_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+brute,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+brute,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+auto,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+auto,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+ball_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+ball_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+kd_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+kd_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+brute,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+brute,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+auto,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+auto,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+ball_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+ball_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+kd_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+kd_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+brute,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+brute,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+auto,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+auto,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+ball_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+ball_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+kd_tree,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+kd_tree,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+brute,minkowski-distance KNN: 2,LOU,0.794871794872,O,56
+brute,euclidean-distance KNN: 2,LOU,0.794871794872,O,56
+NuSVC,kernel: linear,LOU,0.794871794872,O,71
+NuSVC,kernel: linear,LOU,0.794871794872,O,71
+NuSVC,kernel: linear,LOU,0.794871794872,O,71
+NuSVC,kernel: linear,LOU,0.794871794872,O,71
+NuSVC,kernel: linear,LOU,0.794871794872,O,71
+NuSVC,kernel: linear,LOU,0.794871794872,O,71
+NuSVC,kernel: linear,LOU,0.794871794872,O,71
+NuSVC,kernel: linear,LOU,0.794871794872,O,71
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.794871794872,O,75
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.794871794872,O,75
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.794871794872,O,75
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.794871794872,O,75
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.794871794872,O,75
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.794871794872,O,75
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.794871794872,O,75
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.794871794872,O,75
+SVC,sigmoid,LOU,0.794871794872,O,77
+SVC,sigmoid,LOU,0.794871794872,O,77
+SVC,sigmoid,LOU,0.794871794872,O,77
+SVC,sigmoid,LOU,0.794871794872,O,77
+SVC,sigmoid,LOU,0.794871794872,O,77
+SVC,sigmoid,LOU,0.794871794872,O,77
+SVC,sigmoid,LOU,0.794871794872,O,77
+SVC,sigmoid,LOU,0.794871794872,O,77
+SVC,poly,LOU,0.794871794872,O,82
+NuSVC,kernel: rbf,LOU,0.794871794872,O,82
+auto,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+auto,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+ball_tree,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+ball_tree,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+kd_tree,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+kd_tree,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+brute,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+brute,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+SVC,poly,LOU,0.794871794872,O,82
+NuSVC,kernel: rbf,LOU,0.794871794872,O,82
+auto,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+auto,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+ball_tree,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+ball_tree,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+kd_tree,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+kd_tree,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+brute,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+brute,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+SVC,poly,LOU,0.794871794872,O,82
+NuSVC,kernel: rbf,LOU,0.794871794872,O,82
+auto,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+auto,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+ball_tree,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+ball_tree,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+kd_tree,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+kd_tree,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+brute,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+brute,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+SVC,poly,LOU,0.794871794872,O,82
+NuSVC,kernel: rbf,LOU,0.794871794872,O,82
+auto,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+auto,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+ball_tree,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+ball_tree,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+kd_tree,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+kd_tree,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+brute,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+brute,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+SVC,poly,LOU,0.794871794872,O,82
+NuSVC,kernel: rbf,LOU,0.794871794872,O,82
+auto,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+auto,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+ball_tree,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+ball_tree,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+kd_tree,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+kd_tree,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+brute,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+brute,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+SVC,poly,LOU,0.794871794872,O,82
+NuSVC,kernel: rbf,LOU,0.794871794872,O,82
+auto,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+auto,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+ball_tree,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+ball_tree,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+kd_tree,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+kd_tree,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+brute,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+brute,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+SVC,poly,LOU,0.794871794872,O,82
+NuSVC,kernel: rbf,LOU,0.794871794872,O,82
+auto,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+auto,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+ball_tree,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+ball_tree,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+kd_tree,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+kd_tree,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+brute,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+brute,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+SVC,poly,LOU,0.794871794872,O,82
+NuSVC,kernel: rbf,LOU,0.794871794872,O,82
+auto,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+auto,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+ball_tree,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+ball_tree,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+kd_tree,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+kd_tree,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+brute,minkowski-distance KNN: 3,LOU,0.794871794872,O,82
+brute,euclidean-distance KNN: 3,LOU,0.794871794872,O,82
+gini,DecisionTreeClassifier gini best,LOU,0.794871794872,O,95
+gini,DecisionTreeClassifier gini best,LOU,0.794871794872,O,95
+gini,DecisionTreeClassifier gini best,LOU,0.794871794872,O,95
+entropy,DecisionTreeClassifier entropy best,LOU,0.820512820513,O,95
+gini,DecisionTreeClassifier gini best,LOU,0.794871794872,O,95
+gini,DecisionTreeClassifier gini best,LOU,0.794871794872,O,95
+gini,DecisionTreeClassifier gini best,LOU,0.794871794872,O,95
+gini,DecisionTreeClassifier gini best,LOU,0.794871794872,O,95
+gini,DecisionTreeClassifier gini best,LOU,0.794871794872,O,95
+entropy,DecisionTreeClassifier entropy best,LOU,0.820512820513,O,95

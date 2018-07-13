@@ -71,7 +71,7 @@ class createGraph(object):
     #funcion que permite buscar los sub grupos dentro del grafo generado...
     def searchSubGrafos(self):
 
-        print apxa.k_components(self.grafo)
+        print  nx.all_pairs_node_connectivity(self.grafo)
 
     #metodo que permite crear el archivo de salida...
     def createFileData(self, nodeList, linksList):

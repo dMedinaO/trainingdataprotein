@@ -1,0 +1,4 @@
+algorithm,description,validation,accuracy,group,iterator
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.928571428571,1,78
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.928571428571,1,78
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.928571428571,1,78

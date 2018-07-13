@@ -1,0 +1,15 @@
+algorithm,description,validation,accuracy,group,iterator
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.913043478261,2,11
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.913043478261,2,11
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.913043478261,2,11
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.913043478261,2,11
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.913043478261,2,11
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.913043478261,2,11
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.913043478261,2,11
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.913043478261,2,11
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.913043478261,2,11
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.913043478261,2,11
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.913043478261,2,11
+SAMME,150- AdaBoostClassifier,LOU,0.913043478261,2,11
+SAMME,200- AdaBoostClassifier,LOU,0.913043478261,2,11
+SAMME.R,500- AdaBoostClassifier,LOU,0.913043478261,2,11

@@ -1,0 +1,15 @@
+algorithm,description,validation,accuracy,group,iterator
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,1.0,8,30
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,1.0,8,30
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,1.0,8,30
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,1.0,8,30
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,1.0,8,30
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,1.0,8,30
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,1.0,8,30
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,1.0,8,30
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,1.0,8,30
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,1.0,8,30
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,8,30
+SAMME,50- AdaBoostClassifier,LOU,1.0,8,30
+SAMME,100- AdaBoostClassifier,LOU,1.0,8,30
+SAMME.R,10- AdaBoostClassifier,LOU,1.0,8,30

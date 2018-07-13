@@ -45,8 +45,8 @@ class fullMatrixEnergy(object):
     def createGraphData(self):
 
         self.graphCreator = createGraph.createGraph(self.matrixFull, self.processPDBObject.header, self.pathOutput, self.codePDB)
-        self.graphCreator.createGraphExportJS()
-        #self.graphCreator.addNodesToGraph()
-        #self.graphCreator.addEdgeToGraph()
+        #self.graphCreator.createGraphExportJS()
+        self.graphCreator.addNodesToGraph()
+        self.graphCreator.addEdgeToGraph()
         #self.graphCreator.showGraph()
-        #self.graphCreator.searchSubGrafos()
+        self.graphCreator.searchSubGrafos()

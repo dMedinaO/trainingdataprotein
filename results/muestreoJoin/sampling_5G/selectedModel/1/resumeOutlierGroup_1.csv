@@ -1,0 +1,17 @@
+algorithm,description,validation,accuracy,group,iterator
+SAMME,50- AdaBoostClassifier,LOU,0.818181818182,1,6
+SAMME,1500- AdaBoostClassifier,LOU,0.818181818182,1,6
+SAMME.R,10- AdaBoostClassifier,LOU,0.818181818182,1,6
+SAMME.R,20- AdaBoostClassifier,LOU,0.818181818182,1,6
+auto,minkowski-uniform KNN: 2,LOU,0.818181818182,1,6
+auto,euclidean-uniform KNN: 2,LOU,0.818181818182,1,6
+ball_tree,minkowski-uniform KNN: 2,LOU,0.818181818182,1,6
+ball_tree,euclidean-uniform KNN: 2,LOU,0.818181818182,1,6
+kd_tree,minkowski-uniform KNN: 2,LOU,0.818181818182,1,6
+kd_tree,euclidean-uniform KNN: 2,LOU,0.818181818182,1,6
+brute,minkowski-uniform KNN: 2,LOU,0.818181818182,1,6
+brute,euclidean-uniform KNN: 2,LOU,0.818181818182,1,6
+NuSVC,kernel: poly,LOU,0.826086956522,1,55
+NuSVC,kernel: poly,LOU,0.814814814815,1,65
+SVC,rbf,LOU,0.809523809524,1,94
+NuSVC,kernel: rbf,LOU,0.809523809524,1,94

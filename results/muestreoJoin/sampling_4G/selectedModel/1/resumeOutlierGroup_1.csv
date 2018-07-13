@@ -1,0 +1,15 @@
+algorithm,description,validation,accuracy,group,iterator
+gini,DecisionTreeClassifier gini best,LOU,0.818181818182,1,31
+SAMME.R,1000- AdaBoostClassifier,LOU,0.785714285714,1,44
+SAMME.R,1500- AdaBoostClassifier,LOU,0.785714285714,1,44
+SAMME,50- AdaBoostClassifier,LOU,0.772727272727,1,48
+SAMME,1000- AdaBoostClassifier,LOU,0.772727272727,1,48
+SVC,sigmoid,LOU,0.782608695652,1,56
+auto,minkowski-distance KNN: 2,LOU,0.782608695652,1,56
+auto,euclidean-distance KNN: 2,LOU,0.782608695652,1,56
+ball_tree,minkowski-distance KNN: 2,LOU,0.782608695652,1,56
+ball_tree,euclidean-distance KNN: 2,LOU,0.782608695652,1,56
+kd_tree,minkowski-distance KNN: 2,LOU,0.782608695652,1,56
+kd_tree,euclidean-distance KNN: 2,LOU,0.782608695652,1,56
+brute,minkowski-distance KNN: 2,LOU,0.782608695652,1,56
+brute,euclidean-distance KNN: 2,LOU,0.782608695652,1,56

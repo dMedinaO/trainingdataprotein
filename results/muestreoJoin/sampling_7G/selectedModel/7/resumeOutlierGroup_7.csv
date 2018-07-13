@@ -1,0 +1,16 @@
+algorithm,description,validation,accuracy,group,iterator
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.84375,7,45
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.84375,7,45
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.84375,7,45
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.84375,7,45
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.84375,7,45
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.84375,7,45
+SAMME,10- AdaBoostClassifier,LOU,0.861111111111,7,56
+auto,minkowski-distance KNN: 4,LOU,0.833333333333,7,97
+auto,euclidean-distance KNN: 4,LOU,0.833333333333,7,97
+ball_tree,minkowski-distance KNN: 4,LOU,0.833333333333,7,97
+ball_tree,euclidean-distance KNN: 4,LOU,0.833333333333,7,97
+kd_tree,minkowski-distance KNN: 4,LOU,0.833333333333,7,97
+kd_tree,euclidean-distance KNN: 4,LOU,0.833333333333,7,97
+brute,minkowski-distance KNN: 4,LOU,0.833333333333,7,97
+brute,euclidean-distance KNN: 4,LOU,0.833333333333,7,97

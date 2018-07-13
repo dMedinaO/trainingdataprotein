@@ -1,0 +1,33 @@
+algorithm,description,validation,accuracy,group,iterator
+SVC,poly,LOU,0.827586206897,4,56
+gini,DecisionTreeClassifier gini random,LOU,0.857142857143,4,78
+entropy,DecisionTreeClassifier entropy random,LOU,0.857142857143,4,78
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.85,4,79
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.85,4,79
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.85,4,79
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.85,4,79
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.85,4,79
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.85,4,79
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.85,4,79
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.85,4,79
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.85,4,79
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.85,4,79
+RandomForestClassifier,gini - 250,LOU,0.833333333333,4,97
+RandomForestClassifier,gini - 500,LOU,0.833333333333,4,97
+RandomForestClassifier,gini - 750,LOU,0.833333333333,4,97
+RandomForestClassifier,gini - 1000,LOU,0.833333333333,4,97
+RandomForestClassifier,gini - 1500,LOU,0.833333333333,4,97
+RandomForestClassifier,entropy - 150,LOU,0.833333333333,4,97
+RandomForestClassifier,entropy - 250,LOU,0.833333333333,4,97
+RandomForestClassifier,entropy - 500,LOU,0.833333333333,4,97
+RandomForestClassifier,entropy - 750,LOU,0.833333333333,4,97
+RandomForestClassifier,entropy - 1000,LOU,0.833333333333,4,97
+RandomForestClassifier,entropy - 1500,LOU,0.833333333333,4,97
+auto,minkowski-distance KNN: 2,LOU,0.833333333333,4,97
+auto,euclidean-distance KNN: 2,LOU,0.833333333333,4,97
+ball_tree,minkowski-distance KNN: 2,LOU,0.833333333333,4,97
+ball_tree,euclidean-distance KNN: 2,LOU,0.833333333333,4,97
+kd_tree,minkowski-distance KNN: 2,LOU,0.833333333333,4,97
+kd_tree,euclidean-distance KNN: 2,LOU,0.833333333333,4,97
+brute,minkowski-distance KNN: 2,LOU,0.833333333333,4,97
+brute,euclidean-distance KNN: 2,LOU,0.833333333333,4,97

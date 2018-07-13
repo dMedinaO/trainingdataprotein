@@ -1,0 +1,5 @@
+algorithm,description,validation,accuracy,group,iterator
+SAMME.R,150- AdaBoostClassifier,LOU,0.788461538462,2,2
+Naive Bayes,BernoulliNB,LOU,0.84,2,16
+RandomForestClassifier,gini - 10,LOU,0.782608695652,2,51
+gini,DecisionTreeClassifier gini random,LOU,0.777777777778,2,56

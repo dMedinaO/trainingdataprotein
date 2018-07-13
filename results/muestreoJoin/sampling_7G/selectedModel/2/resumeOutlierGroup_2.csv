@@ -1,0 +1,26 @@
+algorithm,description,validation,accuracy,group,iterator
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.863636363636,2,19
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.863636363636,2,19
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.863636363636,2,19
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.863636363636,2,19
+SAMME,200- AdaBoostClassifier,LOU,0.863636363636,2,19
+SAMME,250- AdaBoostClassifier,LOU,0.863636363636,2,19
+SAMME,500- AdaBoostClassifier,LOU,0.863636363636,2,19
+SAMME,750- AdaBoostClassifier,LOU,0.863636363636,2,19
+SAMME,1000- AdaBoostClassifier,LOU,0.863636363636,2,19
+SAMME,1500- AdaBoostClassifier,LOU,0.863636363636,2,19
+SAMME.R,50- AdaBoostClassifier,LOU,0.863636363636,2,19
+SAMME.R,100- AdaBoostClassifier,LOU,0.863636363636,2,19
+SAMME.R,150- AdaBoostClassifier,LOU,0.863636363636,2,19
+SAMME.R,200- AdaBoostClassifier,LOU,0.863636363636,2,19
+SAMME.R,750- AdaBoostClassifier,LOU,0.863636363636,2,19
+SAMME.R,1000- AdaBoostClassifier,LOU,0.863636363636,2,19
+SAMME.R,1500- AdaBoostClassifier,LOU,0.863636363636,2,19
+NuSVC,kernel: poly,LOU,0.904761904762,2,56
+NuSVC,kernel: rbf,LOU,0.904761904762,2,56
+SAMME.R,150- AdaBoostClassifier,LOU,0.870967741935,2,66
+SAMME.R,200- AdaBoostClassifier,LOU,0.870967741935,2,66
+SVC,rbf,LOU,0.863636363636,2,74
+NuSVC,kernel: rbf,LOU,0.863636363636,2,74
+NuSVC,kernel: poly,LOU,0.909090909091,2,74
+SAMME.R,150- AdaBoostClassifier,LOU,0.909090909091,2,74

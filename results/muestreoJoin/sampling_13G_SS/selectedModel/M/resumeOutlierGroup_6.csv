@@ -1,0 +1,1115 @@
+algorithm,description,validation,accuracy,group,iterator
+SVC,poly,LOU,0.888888888889,M,11
+NuSVC,kernel: sigmoid,LOU,0.888888888889,M,11
+SVC,poly,LOU,0.888888888889,M,11
+NuSVC,kernel: sigmoid,LOU,0.888888888889,M,11
+SVC,poly,LOU,0.888888888889,M,11
+NuSVC,kernel: sigmoid,LOU,0.888888888889,M,11
+SVC,poly,LOU,0.888888888889,M,11
+NuSVC,kernel: sigmoid,LOU,0.888888888889,M,11
+SVC,poly,LOU,0.888888888889,M,11
+NuSVC,kernel: sigmoid,LOU,0.888888888889,M,11
+SVC,poly,LOU,0.888888888889,M,11
+NuSVC,kernel: sigmoid,LOU,0.888888888889,M,11
+SVC,poly,LOU,0.888888888889,M,11
+NuSVC,kernel: sigmoid,LOU,0.888888888889,M,11
+SVC,poly,LOU,0.888888888889,M,11
+NuSVC,kernel: sigmoid,LOU,0.888888888889,M,11
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,21
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,200- AdaBoostClassifier,LOU,0.944444444444,M,21
+SAMME.R,250- AdaBoostClassifier,LOU,0.944444444444,M,21
+SAMME.R,750- AdaBoostClassifier,LOU,0.944444444444,M,21
+SAMME.R,200- AdaBoostClassifier,LOU,0.944444444444,M,21
+SAMME.R,250- AdaBoostClassifier,LOU,0.944444444444,M,21
+SAMME.R,750- AdaBoostClassifier,LOU,0.944444444444,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,21
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,21
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,200- AdaBoostClassifier,LOU,0.944444444444,M,21
+SAMME.R,250- AdaBoostClassifier,LOU,0.944444444444,M,21
+SAMME.R,750- AdaBoostClassifier,LOU,0.944444444444,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,21
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,21
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,21
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,21
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,21
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,21
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,21
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,27
+gini,DecisionTreeClassifier gini random,LOU,0.888888888889,M,27
+entropy,DecisionTreeClassifier entropy random,LOU,0.888888888889,M,27
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,200- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,250- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.944444444444,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.944444444444,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.944444444444,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.944444444444,M,27
+gini,DecisionTreeClassifier gini best,LOU,0.944444444444,M,27
+entropy,DecisionTreeClassifier entropy best,LOU,0.944444444444,M,27
+SAMME.R,20- AdaBoostClassifier,LOU,0.944444444444,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.944444444444,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.944444444444,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.944444444444,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.944444444444,M,27
+gini,DecisionTreeClassifier gini best,LOU,0.944444444444,M,27
+entropy,DecisionTreeClassifier entropy best,LOU,0.944444444444,M,27
+SAMME.R,20- AdaBoostClassifier,LOU,0.944444444444,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,27
+gini,DecisionTreeClassifier gini random,LOU,0.888888888889,M,27
+entropy,DecisionTreeClassifier entropy random,LOU,0.888888888889,M,27
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,200- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,250- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,27
+gini,DecisionTreeClassifier gini random,LOU,0.888888888889,M,27
+entropy,DecisionTreeClassifier entropy random,LOU,0.888888888889,M,27
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,200- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,250- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.944444444444,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.944444444444,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.944444444444,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.944444444444,M,27
+gini,DecisionTreeClassifier gini best,LOU,0.944444444444,M,27
+entropy,DecisionTreeClassifier entropy best,LOU,0.944444444444,M,27
+SAMME.R,20- AdaBoostClassifier,LOU,0.944444444444,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,27
+gini,DecisionTreeClassifier gini random,LOU,0.888888888889,M,27
+entropy,DecisionTreeClassifier entropy random,LOU,0.888888888889,M,27
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,200- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,250- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,27
+gini,DecisionTreeClassifier gini random,LOU,0.888888888889,M,27
+entropy,DecisionTreeClassifier entropy random,LOU,0.888888888889,M,27
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,200- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,250- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,27
+gini,DecisionTreeClassifier gini random,LOU,0.888888888889,M,27
+entropy,DecisionTreeClassifier entropy random,LOU,0.888888888889,M,27
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,200- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,250- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,27
+gini,DecisionTreeClassifier gini random,LOU,0.888888888889,M,27
+entropy,DecisionTreeClassifier entropy random,LOU,0.888888888889,M,27
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,200- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,250- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,27
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,27
+gini,DecisionTreeClassifier gini random,LOU,0.888888888889,M,27
+entropy,DecisionTreeClassifier entropy random,LOU,0.888888888889,M,27
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,200- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,250- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,27
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,500- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,750- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,500- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,750- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,500- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,750- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,500- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,750- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,500- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,750- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,500- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,750- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,500- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,750- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,500- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,750- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,34
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,34
+RandomForestClassifier,gini - 150,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 200,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 250,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 500,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 750,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 150,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 200,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 250,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 500,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 750,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 1000,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 1500,LOU,0.888888888889,M,37
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 150,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 200,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 250,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 500,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 750,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 150,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 200,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 250,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 500,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 750,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 1000,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 1500,LOU,0.888888888889,M,37
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 150,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 200,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 250,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 500,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 750,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 150,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 200,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 250,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 500,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 750,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 1000,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 1500,LOU,0.888888888889,M,37
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 150,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 200,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 250,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 500,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 750,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 150,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 200,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 250,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 500,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 750,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 1000,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 1500,LOU,0.888888888889,M,37
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 150,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 200,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 250,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 500,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 750,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 150,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 200,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 250,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 500,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 750,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 1000,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 1500,LOU,0.888888888889,M,37
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 150,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 200,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 250,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 500,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 750,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 150,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 200,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 250,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 500,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 750,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 1000,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 1500,LOU,0.888888888889,M,37
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 150,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 200,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 250,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 500,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 750,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 150,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 200,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 250,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 500,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 750,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 1000,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 1500,LOU,0.888888888889,M,37
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 150,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 200,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 250,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 500,LOU,0.888888888889,M,37
+RandomForestClassifier,gini - 750,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 150,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 200,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 250,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 500,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 750,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 1000,LOU,0.888888888889,M,37
+RandomForestClassifier,entropy - 1500,LOU,0.888888888889,M,37
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,37
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,46
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.944444444444,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.944444444444,M,46
+gini,DecisionTreeClassifier gini best,LOU,0.944444444444,M,46
+entropy,DecisionTreeClassifier entropy best,LOU,0.944444444444,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.944444444444,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.944444444444,M,46
+gini,DecisionTreeClassifier gini best,LOU,0.944444444444,M,46
+entropy,DecisionTreeClassifier entropy best,LOU,0.944444444444,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,46
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,46
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.944444444444,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.944444444444,M,46
+gini,DecisionTreeClassifier gini best,LOU,0.944444444444,M,46
+entropy,DecisionTreeClassifier entropy best,LOU,0.944444444444,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,46
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,46
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,46
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,46
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,46
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,46
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,46
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,47
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,47
+gini,DecisionTreeClassifier gini best,LOU,0.888888888889,M,56
+entropy,DecisionTreeClassifier entropy best,LOU,0.888888888889,M,56
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,500- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,750- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,56
+gini,DecisionTreeClassifier gini best,LOU,0.888888888889,M,56
+entropy,DecisionTreeClassifier entropy best,LOU,0.888888888889,M,56
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,500- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,750- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,56
+gini,DecisionTreeClassifier gini best,LOU,0.888888888889,M,56
+entropy,DecisionTreeClassifier entropy best,LOU,0.888888888889,M,56
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,500- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,750- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,56
+gini,DecisionTreeClassifier gini best,LOU,0.888888888889,M,56
+entropy,DecisionTreeClassifier entropy best,LOU,0.888888888889,M,56
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,500- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,750- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,56
+gini,DecisionTreeClassifier gini best,LOU,0.888888888889,M,56
+entropy,DecisionTreeClassifier entropy best,LOU,0.888888888889,M,56
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,500- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,750- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,56
+gini,DecisionTreeClassifier gini best,LOU,0.888888888889,M,56
+entropy,DecisionTreeClassifier entropy best,LOU,0.888888888889,M,56
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,500- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,750- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,56
+gini,DecisionTreeClassifier gini best,LOU,0.888888888889,M,56
+entropy,DecisionTreeClassifier entropy best,LOU,0.888888888889,M,56
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,500- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,750- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,56
+gini,DecisionTreeClassifier gini best,LOU,0.888888888889,M,56
+entropy,DecisionTreeClassifier entropy best,LOU,0.888888888889,M,56
+SAMME,10- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,20- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,50- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,100- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,150- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,200- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,250- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,500- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,750- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,1000- AdaBoostClassifier,LOU,0.888888888889,M,56
+SAMME,1500- AdaBoostClassifier,LOU,0.888888888889,M,56
+Naive Bayes,BernoulliNB,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,58
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,200- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,250- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,58
+Naive Bayes,BernoulliNB,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,58
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,200- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,250- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,58
+Naive Bayes,BernoulliNB,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,58
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,200- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,250- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,58
+Naive Bayes,BernoulliNB,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,58
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,200- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,250- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,58
+Naive Bayes,BernoulliNB,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,58
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,200- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,250- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,58
+Naive Bayes,BernoulliNB,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,58
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,200- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,250- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,58
+Naive Bayes,BernoulliNB,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,58
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,200- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,250- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,58
+Naive Bayes,BernoulliNB,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.888888888889,M,58
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.888888888889,M,58
+SAMME.R,10- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,20- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,50- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,100- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,150- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,200- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,250- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,500- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,750- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,1000- AdaBoostClassifier,LOU,0.888888888889,M,58
+SAMME.R,1500- AdaBoostClassifier,LOU,0.888888888889,M,58
+NuSVC,kernel: sigmoid,LOU,0.888888888889,M,59
+NuSVC,kernel: sigmoid,LOU,0.888888888889,M,59
+NuSVC,kernel: sigmoid,LOU,0.888888888889,M,59
+NuSVC,kernel: sigmoid,LOU,0.888888888889,M,59
+NuSVC,kernel: sigmoid,LOU,0.888888888889,M,59
+NuSVC,kernel: sigmoid,LOU,0.888888888889,M,59
+NuSVC,kernel: sigmoid,LOU,0.888888888889,M,59
+NuSVC,kernel: sigmoid,LOU,0.888888888889,M,59
+auto,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+auto,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+auto,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+auto,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+ball_tree,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+ball_tree,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+ball_tree,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+ball_tree,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+kd_tree,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+kd_tree,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+kd_tree,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+kd_tree,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+brute,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+brute,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+brute,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+brute,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+auto,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+auto,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+auto,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+auto,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+ball_tree,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+ball_tree,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+ball_tree,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+ball_tree,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+kd_tree,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+kd_tree,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+kd_tree,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+kd_tree,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+brute,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+brute,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+brute,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+brute,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+auto,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+auto,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+auto,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+auto,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+ball_tree,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+ball_tree,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+ball_tree,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+ball_tree,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+kd_tree,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+kd_tree,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+kd_tree,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+kd_tree,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+brute,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+brute,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+brute,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+brute,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+auto,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+auto,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+auto,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+auto,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+ball_tree,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+ball_tree,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+ball_tree,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+ball_tree,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+kd_tree,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+kd_tree,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+kd_tree,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+kd_tree,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+brute,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+brute,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+brute,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+brute,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+auto,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+auto,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+auto,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+auto,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+ball_tree,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+ball_tree,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+ball_tree,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+ball_tree,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+kd_tree,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+kd_tree,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+kd_tree,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+kd_tree,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+brute,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+brute,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+brute,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+brute,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+auto,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+auto,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+auto,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+auto,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+ball_tree,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+ball_tree,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+ball_tree,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+ball_tree,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+kd_tree,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+kd_tree,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+kd_tree,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+kd_tree,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+brute,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+brute,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+brute,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+brute,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+auto,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+auto,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+auto,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+auto,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+ball_tree,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+ball_tree,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+ball_tree,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+ball_tree,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+kd_tree,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+kd_tree,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+kd_tree,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+kd_tree,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+brute,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+brute,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+brute,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+brute,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+auto,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+auto,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+auto,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+auto,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+ball_tree,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+ball_tree,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+ball_tree,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+ball_tree,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+kd_tree,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+kd_tree,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+kd_tree,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+kd_tree,euclidean-distance KNN: 4,LOU,0.888888888889,M,94
+brute,minkowski-distance KNN: 3,LOU,0.888888888889,M,94
+brute,minkowski-distance KNN: 4,LOU,0.888888888889,M,94
+brute,euclidean-distance KNN: 3,LOU,0.888888888889,M,94
+brute,euclidean-distance KNN: 4,LOU,0.888888888889,M,94

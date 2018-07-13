@@ -1,0 +1,6 @@
+algorithm,description,validation,accuracy,group,iterator
+SAMME.R,150- AdaBoostClassifier,LOU,0.916666666667,1,7
+SAMME.R,250- AdaBoostClassifier,LOU,0.85,1,22
+SAMME.R,500- AdaBoostClassifier,LOU,0.85,1,22
+SAMME.R,1500- AdaBoostClassifier,LOU,0.85,1,22
+NuSVC,kernel: poly,LOU,1.0,1,32

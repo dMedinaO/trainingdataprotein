@@ -1,0 +1,7 @@
+algorithm,description,validation,accuracy,group,iterator
+SAMME,1500- AdaBoostClassifier,LOU,0.846153846154,4,43
+SAMME,200- AdaBoostClassifier,LOU,0.814814814815,4,56
+SAMME,500- AdaBoostClassifier,LOU,0.814814814815,4,56
+SAMME,1500- AdaBoostClassifier,LOU,0.814814814815,4,56
+SAMME.R,50- AdaBoostClassifier,LOU,0.814814814815,4,56
+SVC,sigmoid,LOU,0.826086956522,4,64

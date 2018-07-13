@@ -1,0 +1,25 @@
+algorithm,description,validation,accuracy,group,iterator
+SAMME.R,200- AdaBoostClassifier,LOU,0.961538461538,1,11
+RandomForestClassifier,gini - 200,LOU,0.884615384615,1,11
+RandomForestClassifier,gini - 250,LOU,0.884615384615,1,11
+RandomForestClassifier,gini - 500,LOU,0.884615384615,1,11
+RandomForestClassifier,gini - 750,LOU,0.884615384615,1,11
+RandomForestClassifier,gini - 1000,LOU,0.884615384615,1,11
+RandomForestClassifier,gini - 1500,LOU,0.884615384615,1,11
+RandomForestClassifier,entropy - 200,LOU,0.884615384615,1,11
+RandomForestClassifier,entropy - 250,LOU,0.884615384615,1,11
+RandomForestClassifier,entropy - 500,LOU,0.884615384615,1,11
+RandomForestClassifier,entropy - 1500,LOU,0.884615384615,1,11
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.884615384615,1,11
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.884615384615,1,11
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.884615384615,1,11
+SAMME.R,100- AdaBoostClassifier,LOU,0.884615384615,1,11
+SAMME.R,150- AdaBoostClassifier,LOU,0.884615384615,1,11
+SAMME.R,250- AdaBoostClassifier,LOU,0.884615384615,1,11
+SAMME.R,500- AdaBoostClassifier,LOU,0.884615384615,1,11
+SAMME,750- AdaBoostClassifier,LOU,0.884615384615,1,45
+SAMME.R,10- AdaBoostClassifier,LOU,0.884615384615,1,45
+SAMME.R,100- AdaBoostClassifier,LOU,0.884615384615,1,45
+SAMME.R,150- AdaBoostClassifier,LOU,0.884615384615,1,45
+SAMME.R,500- AdaBoostClassifier,LOU,0.884615384615,1,45
+SAMME.R,1500- AdaBoostClassifier,LOU,0.884615384615,1,45

@@ -1,0 +1,23 @@
+algorithm,description,validation,accuracy,group,iterator
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.869565217391,1,9
+SAMME,1000- AdaBoostClassifier,LOU,0.869565217391,1,9
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.869565217391,1,9
+SAMME,1000- AdaBoostClassifier,LOU,0.869565217391,1,9
+entropy,DecisionTreeClassifier entropy random,LOU,0.857142857143,1,16
+auto,minkowski-uniform KNN: 4,LOU,0.869565217391,1,24
+auto,euclidean-uniform KNN: 4,LOU,0.869565217391,1,24
+ball_tree,minkowski-uniform KNN: 4,LOU,0.869565217391,1,24
+ball_tree,euclidean-uniform KNN: 4,LOU,0.869565217391,1,24
+kd_tree,minkowski-uniform KNN: 4,LOU,0.869565217391,1,24
+kd_tree,euclidean-uniform KNN: 4,LOU,0.869565217391,1,24
+brute,minkowski-uniform KNN: 4,LOU,0.869565217391,1,24
+brute,euclidean-uniform KNN: 4,LOU,0.869565217391,1,24
+auto,minkowski-uniform KNN: 4,LOU,0.869565217391,1,24
+auto,euclidean-uniform KNN: 4,LOU,0.869565217391,1,24
+ball_tree,minkowski-uniform KNN: 4,LOU,0.869565217391,1,24
+ball_tree,euclidean-uniform KNN: 4,LOU,0.869565217391,1,24
+kd_tree,minkowski-uniform KNN: 4,LOU,0.869565217391,1,24
+kd_tree,euclidean-uniform KNN: 4,LOU,0.869565217391,1,24
+brute,minkowski-uniform KNN: 4,LOU,0.869565217391,1,24
+brute,euclidean-uniform KNN: 4,LOU,0.869565217391,1,24
+SAMME.R,10- AdaBoostClassifier,LOU,0.864864864865,1,69

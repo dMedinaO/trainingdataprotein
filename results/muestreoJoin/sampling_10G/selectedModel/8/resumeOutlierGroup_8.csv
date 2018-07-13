@@ -1,0 +1,32 @@
+algorithm,description,validation,accuracy,group,iterator
+SAMME,1000- AdaBoostClassifier,LOU,0.88,8,2
+SAMME,1500- AdaBoostClassifier,LOU,0.88,8,2
+SAMME.R,10- AdaBoostClassifier,LOU,0.88,8,2
+SAMME,1000- AdaBoostClassifier,LOU,0.88,8,2
+SAMME,1500- AdaBoostClassifier,LOU,0.88,8,2
+SAMME.R,10- AdaBoostClassifier,LOU,0.88,8,2
+SAMME,1000- AdaBoostClassifier,LOU,0.88,8,2
+SAMME,1500- AdaBoostClassifier,LOU,0.88,8,2
+SAMME.R,10- AdaBoostClassifier,LOU,0.88,8,2
+SAMME,1000- AdaBoostClassifier,LOU,0.88,8,2
+SAMME,1500- AdaBoostClassifier,LOU,0.88,8,2
+SAMME.R,10- AdaBoostClassifier,LOU,0.88,8,2
+SAMME.R,200- AdaBoostClassifier,LOU,0.88,8,44
+SAMME.R,200- AdaBoostClassifier,LOU,0.88,8,44
+SAMME.R,200- AdaBoostClassifier,LOU,0.88,8,44
+SAMME.R,200- AdaBoostClassifier,LOU,0.88,8,44
+SAMME.R,20- AdaBoostClassifier,LOU,0.88,8,60
+SAMME.R,20- AdaBoostClassifier,LOU,0.88,8,60
+SAMME.R,20- AdaBoostClassifier,LOU,0.88,8,60
+SAMME.R,20- AdaBoostClassifier,LOU,0.88,8,60
+NuSVC,kernel: linear,LOU,0.96,8,81
+NuSVC,kernel: poly,LOU,0.96,8,81
+NuSVC,kernel: rbf,LOU,0.96,8,81
+SVC,rbf,LOU,0.88,8,91
+NuSVC,kernel: rbf,LOU,0.88,8,91
+SVC,rbf,LOU,0.88,8,91
+NuSVC,kernel: rbf,LOU,0.88,8,91
+SVC,rbf,LOU,0.88,8,91
+NuSVC,kernel: rbf,LOU,0.88,8,91
+SVC,rbf,LOU,0.88,8,91
+NuSVC,kernel: rbf,LOU,0.88,8,91

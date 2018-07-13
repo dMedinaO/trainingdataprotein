@@ -1,0 +1,11 @@
+algorithm,description,validation,accuracy,group,iterator
+SVC,sigmoid,LOU,0.809523809524,2,44
+SVC,rbf,LOU,0.8,2,73
+Naive Bayes,BernoulliNB,LOU,0.863636363636,2,77
+Naive Bayes,GaussianNB,LOU,0.809523809524,2,78
+gini,DecisionTreeClassifier gini random,LOU,0.857142857143,2,78
+entropy,DecisionTreeClassifier entropy random,LOU,0.857142857143,2,78
+gini,DecisionTreeClassifier gini random,LOU,0.857142857143,2,78
+entropy,DecisionTreeClassifier entropy random,LOU,0.857142857143,2,78
+SAMME.R,50- AdaBoostClassifier,LOU,0.857142857143,2,97
+SAMME.R,50- AdaBoostClassifier,LOU,0.857142857143,2,97

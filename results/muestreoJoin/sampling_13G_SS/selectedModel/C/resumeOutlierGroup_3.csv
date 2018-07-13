@@ -1,0 +1,196 @@
+algorithm,description,validation,accuracy,group,iterator
+gini,DecisionTreeClassifier gini best,LOU,1.0,C,22
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,C,22
+gini,DecisionTreeClassifier gini best,LOU,1.0,C,22
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,C,22
+gini,DecisionTreeClassifier gini best,LOU,1.0,C,22
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,C,22
+gini,DecisionTreeClassifier gini best,LOU,1.0,C,22
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,C,22
+gini,DecisionTreeClassifier gini best,LOU,1.0,C,22
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,C,22
+gini,DecisionTreeClassifier gini best,LOU,1.0,C,31
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,C,31
+SAMME.R,200- AdaBoostClassifier,LOU,1.0,C,31
+gini,DecisionTreeClassifier gini best,LOU,1.0,C,31
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,C,31
+SAMME.R,200- AdaBoostClassifier,LOU,1.0,C,31
+gini,DecisionTreeClassifier gini best,LOU,1.0,C,31
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,C,31
+SAMME.R,200- AdaBoostClassifier,LOU,1.0,C,31
+gini,DecisionTreeClassifier gini best,LOU,1.0,C,31
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,C,31
+SAMME.R,200- AdaBoostClassifier,LOU,1.0,C,31
+gini,DecisionTreeClassifier gini best,LOU,1.0,C,31
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,C,31
+SAMME.R,200- AdaBoostClassifier,LOU,1.0,C,31
+SAMME,10- AdaBoostClassifier,LOU,1.0,C,37
+SAMME,20- AdaBoostClassifier,LOU,1.0,C,37
+SAMME.R,100- AdaBoostClassifier,LOU,1.0,C,37
+SAMME.R,750- AdaBoostClassifier,LOU,1.0,C,37
+SAMME.R,1000- AdaBoostClassifier,LOU,1.0,C,37
+SAMME,10- AdaBoostClassifier,LOU,1.0,C,37
+SAMME,20- AdaBoostClassifier,LOU,1.0,C,37
+SAMME.R,100- AdaBoostClassifier,LOU,1.0,C,37
+SAMME.R,750- AdaBoostClassifier,LOU,1.0,C,37
+SAMME.R,1000- AdaBoostClassifier,LOU,1.0,C,37
+SAMME,10- AdaBoostClassifier,LOU,1.0,C,37
+SAMME,20- AdaBoostClassifier,LOU,1.0,C,37
+SAMME.R,100- AdaBoostClassifier,LOU,1.0,C,37
+SAMME.R,750- AdaBoostClassifier,LOU,1.0,C,37
+SAMME.R,1000- AdaBoostClassifier,LOU,1.0,C,37
+SAMME,10- AdaBoostClassifier,LOU,1.0,C,37
+SAMME,20- AdaBoostClassifier,LOU,1.0,C,37
+SAMME.R,100- AdaBoostClassifier,LOU,1.0,C,37
+SAMME.R,750- AdaBoostClassifier,LOU,1.0,C,37
+SAMME.R,1000- AdaBoostClassifier,LOU,1.0,C,37
+SAMME,10- AdaBoostClassifier,LOU,1.0,C,37
+SAMME,20- AdaBoostClassifier,LOU,1.0,C,37
+SAMME.R,100- AdaBoostClassifier,LOU,1.0,C,37
+SAMME.R,750- AdaBoostClassifier,LOU,1.0,C,37
+SAMME.R,1000- AdaBoostClassifier,LOU,1.0,C,37
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,1.0,C,58
+SAMME,10- AdaBoostClassifier,LOU,1.0,C,58
+SAMME,200- AdaBoostClassifier,LOU,1.0,C,58
+SAMME,750- AdaBoostClassifier,LOU,1.0,C,58
+SAMME.R,20- AdaBoostClassifier,LOU,1.0,C,58
+SAMME.R,150- AdaBoostClassifier,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,1.0,C,58
+SAMME,10- AdaBoostClassifier,LOU,1.0,C,58
+SAMME,200- AdaBoostClassifier,LOU,1.0,C,58
+SAMME,750- AdaBoostClassifier,LOU,1.0,C,58
+SAMME.R,20- AdaBoostClassifier,LOU,1.0,C,58
+SAMME.R,150- AdaBoostClassifier,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,1.0,C,58
+SAMME,10- AdaBoostClassifier,LOU,1.0,C,58
+SAMME,200- AdaBoostClassifier,LOU,1.0,C,58
+SAMME,750- AdaBoostClassifier,LOU,1.0,C,58
+SAMME.R,20- AdaBoostClassifier,LOU,1.0,C,58
+SAMME.R,150- AdaBoostClassifier,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,1.0,C,58
+SAMME,10- AdaBoostClassifier,LOU,1.0,C,58
+SAMME,200- AdaBoostClassifier,LOU,1.0,C,58
+SAMME,750- AdaBoostClassifier,LOU,1.0,C,58
+SAMME.R,20- AdaBoostClassifier,LOU,1.0,C,58
+SAMME.R,150- AdaBoostClassifier,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,1.0,C,58
+SAMME,10- AdaBoostClassifier,LOU,1.0,C,58
+SAMME,200- AdaBoostClassifier,LOU,1.0,C,58
+SAMME,750- AdaBoostClassifier,LOU,1.0,C,58
+SAMME.R,20- AdaBoostClassifier,LOU,1.0,C,58
+SAMME.R,150- AdaBoostClassifier,LOU,1.0,C,58
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,1.0,C,98
+gini,DecisionTreeClassifier gini best,LOU,1.0,C,98
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,C,98
+SAMME,10- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,20- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,50- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,100- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,150- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,250- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,500- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,750- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,1000- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,1500- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,10- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,50- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,200- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,250- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,500- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,1500- AdaBoostClassifier,LOU,1.0,C,98
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,1.0,C,98
+gini,DecisionTreeClassifier gini best,LOU,1.0,C,98
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,C,98
+SAMME,10- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,20- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,50- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,100- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,150- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,250- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,500- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,750- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,1000- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,1500- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,10- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,50- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,200- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,250- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,500- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,1500- AdaBoostClassifier,LOU,1.0,C,98
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,1.0,C,98
+gini,DecisionTreeClassifier gini best,LOU,1.0,C,98
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,C,98
+SAMME,10- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,20- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,50- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,100- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,150- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,250- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,500- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,750- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,1000- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,1500- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,10- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,50- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,200- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,250- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,500- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,1500- AdaBoostClassifier,LOU,1.0,C,98
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,1.0,C,98
+gini,DecisionTreeClassifier gini best,LOU,1.0,C,98
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,C,98
+SAMME,10- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,20- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,50- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,100- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,150- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,250- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,500- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,750- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,1000- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,1500- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,10- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,50- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,200- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,250- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,500- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,1500- AdaBoostClassifier,LOU,1.0,C,98
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,1.0,C,98
+gini,DecisionTreeClassifier gini best,LOU,1.0,C,98
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,C,98
+SAMME,10- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,20- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,50- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,100- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,150- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,250- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,500- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,750- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,1000- AdaBoostClassifier,LOU,1.0,C,98
+SAMME,1500- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,10- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,50- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,200- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,250- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,500- AdaBoostClassifier,LOU,1.0,C,98
+SAMME.R,1500- AdaBoostClassifier,LOU,1.0,C,98

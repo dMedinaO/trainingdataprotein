@@ -1,0 +1,56 @@
+algorithm,description,validation,accuracy,group,iterator
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,5,19
+RandomForestClassifier,gini - 50,LOU,0.952380952381,5,19
+NuSVC,kernel: poly,LOU,0.952380952381,5,19
+NuSVC,kernel: rbf,LOU,0.952380952381,5,19
+gini,DecisionTreeClassifier gini best,LOU,0.952380952381,5,19
+entropy,DecisionTreeClassifier entropy best,LOU,1.0,5,19
+RandomForestClassifier,gini - 50,LOU,0.952380952381,5,19
+NuSVC,kernel: poly,LOU,0.952380952381,5,19
+NuSVC,kernel: rbf,LOU,0.952380952381,5,19
+gini,DecisionTreeClassifier gini best,LOU,0.952380952381,5,19
+RandomForestClassifier,gini - 50,LOU,0.952380952381,5,19
+NuSVC,kernel: poly,LOU,0.952380952381,5,19
+NuSVC,kernel: rbf,LOU,0.952380952381,5,19
+gini,DecisionTreeClassifier gini best,LOU,0.952380952381,5,19
+SAMME,500- AdaBoostClassifier,LOU,0.952380952381,5,34
+SAMME,500- AdaBoostClassifier,LOU,0.952380952381,5,34
+SAMME,500- AdaBoostClassifier,LOU,0.952380952381,5,34
+NuSVC,kernel: poly,LOU,1.0,5,56
+NuSVC,kernel: linear,LOU,0.952380952381,5,56
+NuSVC,kernel: poly,LOU,1.0,5,56
+NuSVC,kernel: linear,LOU,0.952380952381,5,56
+NuSVC,kernel: linear,LOU,0.952380952381,5,56
+NuSVC,kernel: rbf,LOU,0.952380952381,5,60
+NuSVC,kernel: rbf,LOU,0.952380952381,5,60
+NuSVC,kernel: rbf,LOU,0.952380952381,5,60
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.952380952381,5,90
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.952380952381,5,90

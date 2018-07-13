@@ -1,0 +1,3 @@
+algorithm,description,validation,accuracy,group,iterator
+NuSVC,kernel: sigmoid,LOU,0.875,4,64
+SAMME.R,10- AdaBoostClassifier,LOU,0.868421052632,4,69

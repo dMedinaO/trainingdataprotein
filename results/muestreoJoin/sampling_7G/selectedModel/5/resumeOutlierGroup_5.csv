@@ -1,0 +1,34 @@
+algorithm,description,validation,accuracy,group,iterator
+auto,minkowski-uniform KNN: 3,LOU,0.9,5,24
+auto,euclidean-uniform KNN: 3,LOU,0.9,5,24
+ball_tree,minkowski-uniform KNN: 3,LOU,0.9,5,24
+ball_tree,euclidean-uniform KNN: 3,LOU,0.9,5,24
+kd_tree,minkowski-uniform KNN: 3,LOU,0.9,5,24
+kd_tree,euclidean-uniform KNN: 3,LOU,0.9,5,24
+brute,minkowski-uniform KNN: 3,LOU,0.9,5,24
+brute,euclidean-uniform KNN: 3,LOU,0.9,5,24
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.9,5,57
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.9,5,57
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.9,5,57
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.9,5,57
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.9,5,57
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.9,5,57
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.9,5,57
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.9,5,57
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.9,5,57
+GradientBoostingClassifier,GradientBoostingClassifier 1000,LOU,0.9,5,57
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.9,5,57
+SAMME,20- AdaBoostClassifier,LOU,0.9,5,57
+SAMME,50- AdaBoostClassifier,LOU,0.9,5,57
+SAMME,100- AdaBoostClassifier,LOU,0.9,5,57
+SAMME,150- AdaBoostClassifier,LOU,0.9,5,57
+SAMME,200- AdaBoostClassifier,LOU,0.9,5,57
+SAMME,250- AdaBoostClassifier,LOU,0.9,5,57
+SAMME,1500- AdaBoostClassifier,LOU,0.9,5,57
+SAMME.R,10- AdaBoostClassifier,LOU,0.9,5,57
+gini,DecisionTreeClassifier gini best,LOU,0.95,5,57
+entropy,DecisionTreeClassifier entropy best,LOU,0.95,5,57
+SAMME.R,20- AdaBoostClassifier,LOU,0.95,5,57
+entropy,DecisionTreeClassifier entropy random,LOU,0.857142857143,5,72
+NuSVC,kernel: linear,LOU,1.0,5,97
+NuSVC,kernel: poly,LOU,1.0,5,97

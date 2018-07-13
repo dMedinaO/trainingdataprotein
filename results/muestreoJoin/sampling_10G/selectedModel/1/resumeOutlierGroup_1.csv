@@ -1,0 +1,40 @@
+algorithm,description,validation,accuracy,group,iterator
+SAMME,1500- AdaBoostClassifier,LOU,0.967741935484,1,2
+SAMME.R,10- AdaBoostClassifier,LOU,0.838709677419,1,2
+SAMME.R,20- AdaBoostClassifier,LOU,0.838709677419,1,2
+SAMME.R,1000- AdaBoostClassifier,LOU,0.838709677419,1,2
+SAMME.R,1500- AdaBoostClassifier,LOU,0.838709677419,1,2
+SAMME.R,10- AdaBoostClassifier,LOU,0.838709677419,1,2
+SAMME.R,20- AdaBoostClassifier,LOU,0.838709677419,1,2
+SAMME.R,1000- AdaBoostClassifier,LOU,0.838709677419,1,2
+SAMME.R,1500- AdaBoostClassifier,LOU,0.838709677419,1,2
+RandomForestClassifier,gini - 150,LOU,0.838709677419,1,81
+RandomForestClassifier,gini - 200,LOU,0.838709677419,1,81
+RandomForestClassifier,gini - 250,LOU,0.838709677419,1,81
+RandomForestClassifier,gini - 500,LOU,0.838709677419,1,81
+RandomForestClassifier,gini - 750,LOU,0.838709677419,1,81
+RandomForestClassifier,gini - 1000,LOU,0.838709677419,1,81
+RandomForestClassifier,gini - 1500,LOU,0.838709677419,1,81
+RandomForestClassifier,entropy - 150,LOU,0.838709677419,1,81
+RandomForestClassifier,entropy - 200,LOU,0.838709677419,1,81
+RandomForestClassifier,entropy - 250,LOU,0.838709677419,1,81
+RandomForestClassifier,entropy - 500,LOU,0.838709677419,1,81
+RandomForestClassifier,entropy - 750,LOU,0.838709677419,1,81
+RandomForestClassifier,entropy - 1000,LOU,0.838709677419,1,81
+RandomForestClassifier,entropy - 1500,LOU,0.838709677419,1,81
+RandomForestClassifier,gini - 150,LOU,0.838709677419,1,81
+RandomForestClassifier,gini - 200,LOU,0.838709677419,1,81
+RandomForestClassifier,gini - 250,LOU,0.838709677419,1,81
+RandomForestClassifier,gini - 500,LOU,0.838709677419,1,81
+RandomForestClassifier,gini - 750,LOU,0.838709677419,1,81
+RandomForestClassifier,gini - 1000,LOU,0.838709677419,1,81
+RandomForestClassifier,gini - 1500,LOU,0.838709677419,1,81
+RandomForestClassifier,entropy - 150,LOU,0.838709677419,1,81
+RandomForestClassifier,entropy - 200,LOU,0.838709677419,1,81
+RandomForestClassifier,entropy - 250,LOU,0.838709677419,1,81
+RandomForestClassifier,entropy - 500,LOU,0.838709677419,1,81
+RandomForestClassifier,entropy - 750,LOU,0.838709677419,1,81
+RandomForestClassifier,entropy - 1000,LOU,0.838709677419,1,81
+RandomForestClassifier,entropy - 1500,LOU,0.838709677419,1,81
+NuSVC,kernel: rbf,LOU,0.838709677419,1,91
+NuSVC,kernel: rbf,LOU,0.838709677419,1,91

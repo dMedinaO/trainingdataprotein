@@ -1,0 +1,46 @@
+algorithm,description,validation,accuracy,group,iterator
+RandomForestClassifier,gini - 10,LOU,0.857142857143,3,25
+NuSVC,kernel: poly,LOU,0.857142857143,3,25
+gini,DecisionTreeClassifier gini random,LOU,0.857142857143,3,25
+entropy,DecisionTreeClassifier entropy random,LOU,0.857142857143,3,25
+SAMME.R,750- AdaBoostClassifier,LOU,0.857142857143,3,25
+RandomForestClassifier,gini - 10,LOU,0.857142857143,3,25
+NuSVC,kernel: poly,LOU,0.857142857143,3,25
+gini,DecisionTreeClassifier gini random,LOU,0.857142857143,3,25
+entropy,DecisionTreeClassifier entropy random,LOU,0.857142857143,3,25
+SAMME.R,750- AdaBoostClassifier,LOU,0.857142857143,3,25
+RandomForestClassifier,gini - 10,LOU,0.857142857143,3,25
+NuSVC,kernel: poly,LOU,0.857142857143,3,25
+gini,DecisionTreeClassifier gini random,LOU,0.857142857143,3,25
+entropy,DecisionTreeClassifier entropy random,LOU,0.857142857143,3,25
+SAMME.R,750- AdaBoostClassifier,LOU,0.857142857143,3,25
+RandomForestClassifier,gini - 10,LOU,0.857142857143,3,27
+NuSVC,kernel: poly,LOU,0.857142857143,3,27
+gini,DecisionTreeClassifier gini random,LOU,0.857142857143,3,27
+entropy,DecisionTreeClassifier entropy random,LOU,0.857142857143,3,27
+SAMME.R,750- AdaBoostClassifier,LOU,0.857142857143,3,27
+RandomForestClassifier,gini - 10,LOU,0.857142857143,3,27
+NuSVC,kernel: poly,LOU,0.857142857143,3,27
+gini,DecisionTreeClassifier gini random,LOU,0.857142857143,3,27
+entropy,DecisionTreeClassifier entropy random,LOU,0.857142857143,3,27
+SAMME.R,750- AdaBoostClassifier,LOU,0.857142857143,3,27
+RandomForestClassifier,gini - 10,LOU,0.857142857143,3,27
+NuSVC,kernel: poly,LOU,0.857142857143,3,27
+gini,DecisionTreeClassifier gini random,LOU,0.857142857143,3,27
+entropy,DecisionTreeClassifier entropy random,LOU,0.857142857143,3,27
+SAMME.R,750- AdaBoostClassifier,LOU,0.857142857143,3,27
+RandomForestClassifier,gini - 10,LOU,0.857142857143,3,36
+NuSVC,kernel: poly,LOU,0.857142857143,3,36
+gini,DecisionTreeClassifier gini random,LOU,0.857142857143,3,36
+entropy,DecisionTreeClassifier entropy random,LOU,0.857142857143,3,36
+SAMME.R,750- AdaBoostClassifier,LOU,0.857142857143,3,36
+RandomForestClassifier,gini - 10,LOU,0.857142857143,3,36
+NuSVC,kernel: poly,LOU,0.857142857143,3,36
+gini,DecisionTreeClassifier gini random,LOU,0.857142857143,3,36
+entropy,DecisionTreeClassifier entropy random,LOU,0.857142857143,3,36
+SAMME.R,750- AdaBoostClassifier,LOU,0.857142857143,3,36
+RandomForestClassifier,gini - 10,LOU,0.857142857143,3,36
+NuSVC,kernel: poly,LOU,0.857142857143,3,36
+gini,DecisionTreeClassifier gini random,LOU,0.857142857143,3,36
+entropy,DecisionTreeClassifier entropy random,LOU,0.857142857143,3,36
+SAMME.R,750- AdaBoostClassifier,LOU,0.857142857143,3,36

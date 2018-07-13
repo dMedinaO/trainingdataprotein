@@ -1,0 +1,9 @@
+algorithm,description,validation,accuracy,group,iterator
+RandomForestClassifier,gini - 10,LOU,0.84375,1,6
+RandomForestClassifier,gini - 200,LOU,0.84375,1,6
+RandomForestClassifier,gini - 1000,LOU,0.84375,1,6
+RandomForestClassifier,gini - 1500,LOU,0.84375,1,6
+RandomForestClassifier,entropy - 100,LOU,0.84375,1,6
+RandomForestClassifier,entropy - 150,LOU,0.84375,1,6
+RandomForestClassifier,entropy - 1500,LOU,0.84375,1,6
+SAMME,10- AdaBoostClassifier,LOU,0.84375,1,6

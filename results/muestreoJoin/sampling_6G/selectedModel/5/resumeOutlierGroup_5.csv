@@ -1,0 +1,8 @@
+algorithm,description,validation,accuracy,group,iterator
+NuSVC,kernel: linear,LOU,1.0,5,32
+NuSVC,kernel: poly,LOU,1.0,5,32
+NuSVC,kernel: linear,LOU,1.0,5,32
+NuSVC,kernel: poly,LOU,1.0,5,32
+SAMME,1000- AdaBoostClassifier,LOU,0.904761904762,5,66
+NuSVC,kernel: rbf,LOU,1.0,5,80
+NuSVC,kernel: rbf,LOU,1.0,5,80

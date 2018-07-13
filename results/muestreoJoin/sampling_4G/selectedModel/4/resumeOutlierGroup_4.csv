@@ -1,0 +1,59 @@
+algorithm,description,validation,accuracy,group,iterator
+NuSVC,kernel: linear,LOU,0.857142857143,4,41
+NuSVC,kernel: linear,LOU,0.857142857143,4,41
+gini,DecisionTreeClassifier gini best,LOU,0.857142857143,4,74
+entropy,DecisionTreeClassifier entropy best,LOU,0.857142857143,4,74
+gini,DecisionTreeClassifier gini best,LOU,0.857142857143,4,74
+entropy,DecisionTreeClassifier entropy best,LOU,0.857142857143,4,74
+SAMME,20- AdaBoostClassifier,LOU,0.848484848485,4,79
+SAMME,50- AdaBoostClassifier,LOU,0.848484848485,4,79
+SAMME,100- AdaBoostClassifier,LOU,0.848484848485,4,79
+SAMME,200- AdaBoostClassifier,LOU,0.848484848485,4,79
+SAMME,250- AdaBoostClassifier,LOU,0.848484848485,4,79
+SAMME.R,10- AdaBoostClassifier,LOU,0.848484848485,4,79
+SAMME.R,20- AdaBoostClassifier,LOU,0.848484848485,4,79
+SAMME.R,150- AdaBoostClassifier,LOU,0.848484848485,4,79
+SAMME.R,250- AdaBoostClassifier,LOU,0.848484848485,4,79
+GradientBoostingClassifier,GradientBoostingClassifier 10,LOU,0.818181818182,4,79
+SAMME,150- AdaBoostClassifier,LOU,0.818181818182,4,79
+SAMME,1500- AdaBoostClassifier,LOU,0.818181818182,4,79
+SAMME.R,50- AdaBoostClassifier,LOU,0.818181818182,4,79
+SAMME.R,100- AdaBoostClassifier,LOU,0.818181818182,4,79
+SAMME.R,200- AdaBoostClassifier,LOU,0.818181818182,4,79
+SVC,linear,LOU,0.818181818182,4,88
+SVC,poly,LOU,0.818181818182,4,88
+RandomForestClassifier,gini - 20,LOU,0.818181818182,4,88
+RandomForestClassifier,gini - 150,LOU,0.818181818182,4,88
+RandomForestClassifier,gini - 200,LOU,0.818181818182,4,88
+RandomForestClassifier,gini - 250,LOU,0.818181818182,4,88
+RandomForestClassifier,gini - 500,LOU,0.818181818182,4,88
+RandomForestClassifier,gini - 750,LOU,0.818181818182,4,88
+RandomForestClassifier,gini - 1000,LOU,0.818181818182,4,88
+RandomForestClassifier,gini - 1500,LOU,0.818181818182,4,88
+NuSVC,kernel: linear,LOU,0.818181818182,4,88
+NuSVC,kernel: poly,LOU,0.818181818182,4,88
+SAMME,150- AdaBoostClassifier,LOU,0.818181818182,4,88
+SAMME,200- AdaBoostClassifier,LOU,0.818181818182,4,88
+SAMME,250- AdaBoostClassifier,LOU,0.818181818182,4,88
+SAMME,500- AdaBoostClassifier,LOU,0.818181818182,4,88
+SAMME,750- AdaBoostClassifier,LOU,0.818181818182,4,88
+SAMME,1000- AdaBoostClassifier,LOU,0.818181818182,4,88
+SAMME,1500- AdaBoostClassifier,LOU,0.818181818182,4,88
+SAMME.R,10- AdaBoostClassifier,LOU,0.818181818182,4,88
+SAMME.R,20- AdaBoostClassifier,LOU,0.818181818182,4,88
+auto,minkowski-uniform KNN: 4,LOU,0.818181818182,4,88
+auto,euclidean-uniform KNN: 4,LOU,0.818181818182,4,88
+auto,minkowski-distance KNN: 2,LOU,0.818181818182,4,88
+auto,euclidean-distance KNN: 2,LOU,0.818181818182,4,88
+ball_tree,minkowski-uniform KNN: 4,LOU,0.818181818182,4,88
+ball_tree,euclidean-uniform KNN: 4,LOU,0.818181818182,4,88
+ball_tree,minkowski-distance KNN: 2,LOU,0.818181818182,4,88
+ball_tree,euclidean-distance KNN: 2,LOU,0.818181818182,4,88
+kd_tree,minkowski-uniform KNN: 4,LOU,0.818181818182,4,88
+kd_tree,euclidean-uniform KNN: 4,LOU,0.818181818182,4,88
+kd_tree,minkowski-distance KNN: 2,LOU,0.818181818182,4,88
+kd_tree,euclidean-distance KNN: 2,LOU,0.818181818182,4,88
+brute,minkowski-uniform KNN: 4,LOU,0.818181818182,4,88
+brute,euclidean-uniform KNN: 4,LOU,0.818181818182,4,88
+brute,minkowski-distance KNN: 2,LOU,0.818181818182,4,88
+brute,euclidean-distance KNN: 2,LOU,0.818181818182,4,88

@@ -1,0 +1,17 @@
+algorithm,description,validation,accuracy,group,iterator
+RandomForestClassifier,gini - 20,LOU,0.818181818182,2,20
+RandomForestClassifier,entropy - 20,LOU,0.818181818182,2,20
+NuSVC,kernel: sigmoid,LOU,0.846153846154,2,43
+Naive Bayes,BernoulliNB,LOU,0.826086956522,2,77
+SVC,linear,LOU,0.826086956522,2,77
+SVC,rbf,LOU,0.826086956522,2,77
+auto,minkowski-uniform KNN: 4,LOU,0.826086956522,2,77
+auto,euclidean-uniform KNN: 4,LOU,0.826086956522,2,77
+ball_tree,minkowski-uniform KNN: 4,LOU,0.826086956522,2,77
+ball_tree,euclidean-uniform KNN: 4,LOU,0.826086956522,2,77
+kd_tree,minkowski-uniform KNN: 4,LOU,0.826086956522,2,77
+kd_tree,euclidean-uniform KNN: 4,LOU,0.826086956522,2,77
+brute,minkowski-uniform KNN: 4,LOU,0.826086956522,2,77
+brute,euclidean-uniform KNN: 4,LOU,0.826086956522,2,77
+gini,DecisionTreeClassifier gini random,LOU,0.821428571429,2,84
+entropy,DecisionTreeClassifier entropy random,LOU,0.821428571429,2,84

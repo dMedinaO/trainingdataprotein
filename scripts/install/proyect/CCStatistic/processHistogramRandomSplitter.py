@@ -6,7 +6,7 @@ obtener la mejor dependiendo de la performance y poder trabajar con ella para pr
 from proyect.CCStatistic import performanceRandom
 from proyect.CCProcesFile import document
 import subprocess
-
+import pandas as pd
 class processHistogramRandomSplitter(object):
 
     def __init__(self, pathInput, pathOutput, iteration, splitter):
@@ -16,7 +16,9 @@ class processHistogramRandomSplitter(object):
         self.iteration = iteration
         self.splitter = splitter
         self.performanceObjectList = []
-        self.ListGroups = ['A_random', 'B_random', 'C_random', 'F_random', 'H_random', 'M_random', 'N_random', 'O_random', 'P_random', 'R_random', 'T_random', 'U_random', 'Z_random']
+        self.ListGroups = ['group_1', 'group_2']
+        #, 'group_3', 'group_4', 'group_5', 'group_6', 'group_7', 'group_8', 'group_9', 'group_10', 'group_11', 'group_12', 'group_13']
+        #self.ListGroups = ['group_A', 'group_B', 'group_C', 'group_F', 'group_H', 'group_M', 'group_N', 'group_O', 'group_P', 'group_R', 'group_T', 'group_U', 'group_Z']
 
     #metodo que permite parsear la matriz...
     def parserMatrix(self, matrixData):
@@ -47,13 +49,12 @@ class processHistogramRandomSplitter(object):
 
         for i in range(1, self.iteration+1):#comenzamos con la lectura de cada documento..
             for element in self.ListGroups:
-                pathRead = "%siteration_%d/%s/performanceTrainingWithLOU.csv" % (self.pathInput, i, element)
-                matrixData = document.document(pathRead, 'pathOutput').readDocument()#obtenemos la matriz
-                matrixParser = self.parserMatrix(matrixData)#la parseamos
-                matrixParser = matrixParser[1:]
-                maxAccuracy = self.getMaxValueCol(matrixParser, 3)
-                maxR_call = self.getMaxValueCol(matrixParser, 4)
-                maxPrecission = self.getMaxValueCol(matrixParser, 5)
+                pathRead = "%s%d_iteration/%s/performanceTrainingWithLOU.csv" % (self.pathInput, i, element)
+                print pathRead
+                df = pd.read_csv(pathRead)
+                maxAccuracy = max(df['Accuracy'])
+                maxR_call = max(df['Recall'])
+                maxPrecission = max(df['Precision'])
 
                 if maxAccuracy != -1 and maxR_call != -1 and maxPrecission != -1:
                     #instanciamos al objeto... y lo agregamos a la lista...
@@ -91,5 +92,5 @@ class processHistogramRandomSplitter(object):
                 nameFileFull = "%s%s" % (self.pathOutput, nameFile)
 
                 #hacemos la llamada a sistema para la ejecucion del resource R...
-                command = "Rscript /home/dmedina/Escritorio/MisProyectos/UChileProyects/trainingdataprotein/scripts/install/resource/rScripts/histogram.R %s %s %s" % (nameFileFull, nameFilePicture, listPerformance[j])
+                command = "Rscript /home/dmedina/Escritorio/proyects/trainingdataprotein/scripts/install/resource/rScripts/histogram.R %s %s %s" % (nameFileFull, nameFilePicture, listPerformance[j])
                 subprocess.call(command, shell=True)
