@@ -48,7 +48,8 @@ class compareDist(object):
     #metodo que permite manejar las comparaciones...
     def handlerCompareProcess(self):
 
-        valueCorrection = 0.05 / self.getPossibleCombination()
+        valueCorrection = 1-( 1 - (0.05 / self.getPossibleCombination())**self.getPossibleCombination())
+
         header = ["Element A", "Element B", "statistic", "P-Value", "correction Data", "response"]
         matrixResponse = []
         for i in range (1, self.numberGroup+1):
@@ -58,8 +59,8 @@ class compareDist(object):
                     rowCompare.append(i)
                     rowCompare.append(j)
                     #formamos el nombre de los archivos...
-                    nameA = "%scsv/histogramData_Group_group_%s_performance_accuracy.csv" % (self.pathInput, i)
-                    nameB = "%scsv/histogramData_Group_group_%s_performance_accuracy.csv" % (self.pathInput, j)
+                    nameA = "%scsv/histogramData_Group_group_%s_performance_accuracy.csv" % (self.pathInput, self.ListGroups[i-1])
+                    nameB = "%scsv/histogramData_Group_group_%s_performance_accuracy.csv" % (self.pathInput, self.ListGroups[j-1])
 
                     #hacemos las lecturas de los archivos...
                     doc = document.document(nameA, self.pathOutput)
