@@ -42,6 +42,23 @@ class document(object):
 
         return matrixData
 
+    #metodo que permite leer una matriz...
+    def readMatrix(self):
+
+        fileOpen = open(self.nameFile, 'r')
+        line = fileOpen.readline()
+        matrixData = []
+
+        while line:
+            line = line.replace("\n", "")
+            row = line.split(',')
+            matrixData.append(row)
+            line = fileOpen.readline()
+        fileOpen.close()
+
+        return matrixData
+
+
     #metodo que permite poder generar el archivo de salida...
     def createExportFileWithPandas(self, matrixData, header):
         fileExport = self.pathOutput+self.nameFile
