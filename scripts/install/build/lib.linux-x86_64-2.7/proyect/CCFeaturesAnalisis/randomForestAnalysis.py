@@ -19,13 +19,12 @@ class featureImportance(object):
         self.criterionList = ['gini', 'entropy']
         self.n_estimatorsList = [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]
 
-
     #metodo que permite hacer la lectura de la matriz normalizada...
     def getDataSet(self):
 
         doc = document.document(self.dataSet, self.pathOutput)
         self.data = doc.readMatrix()[1:]#remove header
-        
+
     #metodo que recibe una lista y la transforma a flotante...
     def transformFloat(self, listData):
 
@@ -42,3 +41,15 @@ class featureImportance(object):
         for element in self.data:
             self.dataWC.append(self.transformFloat(element[:-1]))
             self.classAttribute.append(element[-1])
+
+    #metodo que permite aplicar el algoritmo y hacer las evaluaciones correspondientes...
+    def checkFeatures(self):
+
+        for criterion in self.criterionList:
+            for n_estimators in self.n_estimatorsList:
+
+                print "RandomForest, criterion: %s n_estimators: %d" % (criterion, n_estimators)
+                clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=n_estimators, n_jobs=-1, criterion=criterion)
+                clf = clf.fit(self.dataWC, self.classAttribute)
+
+                

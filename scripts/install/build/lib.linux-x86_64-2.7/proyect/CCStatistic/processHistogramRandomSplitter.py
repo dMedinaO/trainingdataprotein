@@ -7,6 +7,9 @@ from proyect.CCStatistic import performanceRandom
 from proyect.CCProcesFile import document
 import subprocess
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
 class processHistogramRandomSplitter(object):
 
     def __init__(self, pathInput, pathOutput, iteration, splitter):
@@ -16,9 +19,8 @@ class processHistogramRandomSplitter(object):
         self.iteration = iteration
         self.splitter = splitter
         self.performanceObjectList = []
-        self.ListGroups = ['group_1', 'group_2']
-        #, 'group_3', 'group_4', 'group_5', 'group_6', 'group_7', 'group_8', 'group_9', 'group_10', 'group_11', 'group_12', 'group_13']
-        #self.ListGroups = ['group_A', 'group_B', 'group_C', 'group_F', 'group_H', 'group_M', 'group_N', 'group_O', 'group_P', 'group_R', 'group_T', 'group_U', 'group_Z']
+        #self.ListGroups = ['group_1', 'group_2', 'group_3', 'group_4', 'group_5', 'group_6', 'group_7', 'group_8', 'group_9', 'group_10', 'group_11', 'group_12', 'group_13']
+        self.ListGroups = ['group_A', 'group_B', 'group_C', 'group_F', 'group_H', 'group_M', 'group_N', 'group_O', 'group_P', 'group_R', 'group_T', 'group_U', 'group_Z']
 
     #metodo que permite parsear la matriz...
     def parserMatrix(self, matrixData):
@@ -50,7 +52,6 @@ class processHistogramRandomSplitter(object):
         for i in range(1, self.iteration+1):#comenzamos con la lectura de cada documento..
             for element in self.ListGroups:
                 pathRead = "%s%d_iteration/%s/performanceTrainingWithLOU.csv" % (self.pathInput, i, element)
-                print pathRead
                 df = pd.read_csv(pathRead)
                 maxAccuracy = max(df['Accuracy'])
                 maxR_call = max(df['Recall'])
@@ -86,11 +87,23 @@ class processHistogramRandomSplitter(object):
                 #formamos el nombre del archivo de salida...
                 nameFile = "histogramData_Group_%s_performance_%s.csv" % (element, listPerformance[j])
                 nameFilePicture = "%shistogramData_Group_%s_performance_%s.svg" % (self.pathOutput,element, listPerformance[j])
+                title = "Histogram for %s in %s" % (listPerformance[j], element)
                 print "process file: ", nameFile
                 self.generateDataExportForHistogram(element, j, nameFile)
-
                 nameFileFull = "%s%s" % (self.pathOutput, nameFile)
+                dataValue = pd.read_csv(nameFileFull)
+                self.createHistogram(dataValue, nameFilePicture, listPerformance[j], title)
 
                 #hacemos la llamada a sistema para la ejecucion del resource R...
-                command = "Rscript /home/dmedina/Escritorio/proyects/trainingdataprotein/scripts/install/resource/rScripts/histogram.R %s %s %s" % (nameFileFull, nameFilePicture, listPerformance[j])
-                subprocess.call(command, shell=True)
+                #command = "Rscript /home/dmedina/Escritorio/proyects/trainingdataprotein/scripts/install/resource/rScripts/histogram.R %s %s %s" % (nameFileFull, nameFilePicture, listPerformance[j])
+                #subprocess.call(command, shell=True)
+
+    #metodo que permite generar el histograma...
+    def createHistogram(self, listData, nameExport, label, title):
+        plt.figure()
+        sns.set(color_codes=True)
+        sns.set(style="ticks")
+        sns_plot = sns.distplot( listData , color="red", label=label, kde=False, rug=True)
+        sns.plt.legend()
+        sns.plt.title(title)
+        sns_plot.figure.savefig(nameExport)
