@@ -13,4 +13,4 @@ pathOutput = sys.argv[2]
 randomF = randomForestAnalysis.featureImportance(dataSet, pathOutput)
 randomF.getDataSet()
 randomF.getClassAndAttributes()
-print randomF.dataWC[0]
+randomF.checkFeatures()

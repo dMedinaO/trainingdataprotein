@@ -48,7 +48,7 @@ class compareDist(object):
     #metodo que permite manejar las comparaciones...
     def handlerCompareProcess(self):
 
-        valueCorrection = 1-( 1 - (0.05 / self.getPossibleCombination())**self.getPossibleCombination())
+        valueCorrection = (0.05 / self.getPossibleCombination())
 
         header = ["Element A", "Element B", "statistic", "P-Value", "correction Data", "response"]
         matrixResponse = []

@@ -7,6 +7,9 @@ Recibe como entrada el set de datos normalizado y el path donde se dispondra de 
 '''
 from sklearn.ensemble import RandomForestClassifier
 from proyect.CCProcesFile import document
+from sklearn.model_selection import cross_val_score
+import numpy as np
+import pandas as pd
 
 class featureImportance(object):
 
@@ -23,8 +26,11 @@ class featureImportance(object):
     def getDataSet(self):
 
         doc = document.document(self.dataSet, self.pathOutput)
-        self.data = doc.readMatrix()[1:]#remove header
-
+        self.data = doc.readMatrix()
+        self.header = self.data[0]
+        self.data = self.data[1:]
+        self.header = self.header[:-1]
+        print self.header
     #metodo que recibe una lista y la transforma a flotante...
     def transformFloat(self, listData):
 
@@ -49,7 +55,14 @@ class featureImportance(object):
             for n_estimators in self.n_estimatorsList:
 
                 print "RandomForest, criterion: %s n_estimators: %d" % (criterion, n_estimators)
-                clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=n_estimators, n_jobs=-1, criterion=criterion)
-                clf = clf.fit(self.dataWC, self.classAttribute)
-
-                
+                random_forest = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=n_estimators, n_jobs=-1, criterion=criterion)
+                random_forest = random_forest.fit(self.dataWC, self.classAttribute)
+                scores = cross_val_score(random_forest, self.dataWC, self.classAttribute, cv=10, scoring='accuracy')
+                print("Scores:", scores)
+                print("Mean:", scores.mean())
+                print("Standard Deviation:", scores.std())
+                importances = pd.DataFrame({'feature':self.header,'importance':np.round(random_forest.feature_importances_,3)})
+                importances = importances.sort_values('importance',ascending=False).set_index('feature')
+                print importances.head(15)
+                break
+            break

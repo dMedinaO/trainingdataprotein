@@ -2,7 +2,7 @@
 script que permite realizar un conunto de analisis estadisticos a las variables de interes, generando un flujo de trabajo completo al set de datos recibido...
 '''
 
-from proyect.CCStatistic import boxPlotForDataSet, histogramesForFeature
+from proyect.CCStatistic import boxPlotForDataSet, histogramesForFeature, pieChartForAttributes
 import sys
 import subprocess
 
@@ -22,5 +22,17 @@ print "process Histograme"
 command = "mkdir -p %shistogram" % pathOutput
 subprocess.call(command, shell=True)
 
-histograms = histogramesForFeature.histogrameForDataSet(dataSet, pathOutput+"histogram/")
-histograms.readDataSet()
+#histograms = histogramesForFeature.histogrameForDataSet(dataSet, pathOutput+"histogram/")
+#histograms.readDataSet()
+
+print "process Pie Chart"
+command = "mkdir -p %spiechart" % pathOutput
+subprocess.call(command, shell=True)
+
+pieCharts = pieChartForAttributes.pieChart(dataSet, pathOutput+"piechart/")
+#pieCharts.processInformation()
+
+print "process Bar Chart"
+command = "mkdir -p %sbarchart" % pathOutput
+subprocess.call(command, shell=True)
+pieCharts.processInformationBC(pathOutput+"barchart/")
