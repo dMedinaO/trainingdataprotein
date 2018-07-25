@@ -1,0 +1,3 @@
+Description: entropy, 10
+Mean: 0.555521
+Standard Deviation: 0.096543

@@ -1,0 +1,3 @@
+Description: gini, 250
+Mean: 0.570456
+Standard Deviation: 0.092990

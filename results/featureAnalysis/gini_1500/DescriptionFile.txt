@@ -1,0 +1,3 @@
+Description: gini, 1500
+Mean: 0.566598
+Standard Deviation: 0.114217
