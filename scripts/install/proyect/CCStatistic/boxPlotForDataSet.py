@@ -43,8 +43,9 @@ class boxPlotDataSet(object):
         plt.figure(figsize=(15,15))
         sns.set(color_codes=True)
         sns.set(style="ticks")
-        sns.plt.title('boxPlot for features with Normaliced Values', fontsize=18)
+        sns.plt.title('boxPlot for features with Normaliced Values', fontsize=25)
         sns_plot = sns.boxplot(x='Features', y='value', data=df)
-        plt.xticks(rotation=45)
+        plt.xticks(rotation=45, fontsize=18)
+        plt.yticks(fontsize=18)
         exportFile = self.pathOutput+"/boxPlot.svg"
         sns_plot.figure.savefig(exportFile)

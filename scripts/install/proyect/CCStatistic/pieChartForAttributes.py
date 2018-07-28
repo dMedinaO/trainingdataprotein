@@ -14,7 +14,7 @@ class pieChart(object):
 
         self.dataSet = dataSet
         self.pathOutput = pathOutput
-        self.ListFeatures = ['AAWt','AAMt', 'Sstruct', 'ShbondsW', 'ShbondsM', 'Result', 'Positiontype', 'SectorSuperficie', 'Clinical']
+        self.ListFeatures = ['AAWt','AAMt', 'Sstruct', 'ShbondsW', 'ShbondsM', 'Result', 'Positiontype', 'Clinical']
 
     #hacemos el procesamiento de la informacion...
     def processInformation(self):

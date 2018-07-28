@@ -35,9 +35,9 @@ class correlationMatrix(object):
         correlation_matrix = self.df.corr()
         plt.figure(figsize=(30,28))
         heatmap = sns.heatmap(correlation_matrix, vmax=1, square=True, annot=False,fmt='.2f', cmap ='GnBu', cbar_kws={"shrink": .5}, robust=True)
-        plt.title(self.title, fontsize=30)
+        plt.title(self.title, fontsize=50)
 
         loc, labels = plt.xticks()
-        heatmap.set_xticklabels(labels, rotation=45, fontsize=20)
-        heatmap.set_yticklabels(labels[::-1], rotation=45, fontsize=20)
+        heatmap.set_xticklabels(labels, rotation=45, fontsize=35)
+        heatmap.set_yticklabels(labels[::-1], rotation=45, fontsize=35)
         plt.savefig(self.pathFile+"correlationMatrix.svg")

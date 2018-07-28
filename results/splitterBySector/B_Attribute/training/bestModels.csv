@@ -1,0 +1,104 @@
+Algorithm,Description,Accuracy
+Naive Bayes,GaussianNB,0.818181818182
+RandomForestClassifier,gini - 50,0.818181818182
+RandomForestClassifier,gini - 100,0.818181818182
+RandomForestClassifier,gini - 150,0.818181818182
+RandomForestClassifier,gini - 200,0.818181818182
+RandomForestClassifier,gini - 250,0.818181818182
+RandomForestClassifier,gini - 500,0.818181818182
+RandomForestClassifier,gini - 750,0.818181818182
+RandomForestClassifier,gini - 1000,0.818181818182
+RandomForestClassifier,gini - 1500,0.818181818182
+RandomForestClassifier,entropy - 50,0.818181818182
+RandomForestClassifier,entropy - 100,0.818181818182
+RandomForestClassifier,entropy - 150,0.818181818182
+RandomForestClassifier,entropy - 200,0.818181818182
+RandomForestClassifier,entropy - 250,0.818181818182
+RandomForestClassifier,entropy - 500,0.818181818182
+RandomForestClassifier,entropy - 750,0.818181818182
+RandomForestClassifier,entropy - 1000,0.818181818182
+RandomForestClassifier,entropy - 1500,0.818181818182
+SAMME,200- AdaBoostClassifier,0.818181818182
+SAMME,1000- AdaBoostClassifier,0.818181818182
+MLPClassifier,identity-sgd-invscaling (5-5-5),0.818181818182
+MLPClassifier,identity-adam-constant (15-15-10),0.818181818182
+MLPClassifier,logistic-sgd-invscaling (5-15-5),0.818181818182
+MLPClassifier,tanh-lbfgs-constant (15-10-5),0.818181818182
+MLPClassifier,tanh-sgd-invscaling (10-10-15),0.818181818182
+MLPClassifier,tanh-sgd-invscaling (15-5-5),0.909090909091
+MLPClassifier,relu-lbfgs-constant (5-5-5),0.818181818182
+SAMME,10- AdaBoostClassifier,0.727272727273
+SAMME,20- AdaBoostClassifier,0.727272727273
+SAMME,150- AdaBoostClassifier,0.727272727273
+SAMME,250- AdaBoostClassifier,0.727272727273
+SAMME,500- AdaBoostClassifier,0.727272727273
+SAMME,750- AdaBoostClassifier,0.727272727273
+SAMME,1500- AdaBoostClassifier,0.727272727273
+SAMME.R,100- AdaBoostClassifier,0.727272727273
+SAMME.R,150- AdaBoostClassifier,0.727272727273
+SAMME.R,200- AdaBoostClassifier,0.727272727273
+SAMME.R,250- AdaBoostClassifier,0.727272727273
+SAMME.R,500- AdaBoostClassifier,0.727272727273
+SAMME.R,1000- AdaBoostClassifier,0.727272727273
+SAMME.R,1500- AdaBoostClassifier,0.727272727273
+MLPClassifier,identity-lbfgs-constant (10-10-15),0.727272727273
+MLPClassifier,identity-lbfgs-constant (15-15-10),0.727272727273
+MLPClassifier,identity-lbfgs-invscaling (15-10-15),0.727272727273
+MLPClassifier,identity-lbfgs-invscaling (15-15-10),0.727272727273
+MLPClassifier,identity-lbfgs-invscaling (15-15-15),0.727272727273
+MLPClassifier,identity-lbfgs-adaptive (10-15-10),0.727272727273
+MLPClassifier,identity-lbfgs-adaptive (15-10-15),0.727272727273
+MLPClassifier,identity-adam-constant (5-10-15),0.727272727273
+MLPClassifier,identity-adam-constant (10-5-10),0.727272727273
+MLPClassifier,identity-adam-constant (15-5-15),0.727272727273
+MLPClassifier,identity-adam-invscaling (5-10-5),0.727272727273
+MLPClassifier,identity-adam-invscaling (15-5-15),0.727272727273
+MLPClassifier,identity-adam-invscaling (15-10-5),0.727272727273
+MLPClassifier,identity-adam-adaptive (5-15-15),0.727272727273
+MLPClassifier,identity-adam-adaptive (10-10-10),0.727272727273
+MLPClassifier,identity-adam-adaptive (10-15-5),0.727272727273
+MLPClassifier,identity-adam-adaptive (15-10-15),0.727272727273
+MLPClassifier,identity-adam-adaptive (15-15-15),0.727272727273
+MLPClassifier,logistic-sgd-invscaling (10-10-10),0.727272727273
+MLPClassifier,tanh-lbfgs-constant (5-10-15),0.727272727273
+MLPClassifier,tanh-lbfgs-constant (10-5-10),0.727272727273
+MLPClassifier,tanh-lbfgs-constant (10-10-10),0.727272727273
+MLPClassifier,tanh-lbfgs-constant (10-15-10),0.727272727273
+MLPClassifier,tanh-lbfgs-invscaling (5-10-5),0.727272727273
+MLPClassifier,tanh-lbfgs-invscaling (5-15-10),0.727272727273
+MLPClassifier,tanh-lbfgs-invscaling (5-15-15),0.727272727273
+MLPClassifier,tanh-lbfgs-adaptive (5-5-5),0.727272727273
+MLPClassifier,tanh-sgd-invscaling (5-15-10),0.727272727273
+MLPClassifier,tanh-sgd-invscaling (10-15-15),0.727272727273
+MLPClassifier,tanh-adam-constant (10-5-15),0.727272727273
+MLPClassifier,tanh-adam-constant (10-10-5),0.727272727273
+MLPClassifier,tanh-adam-constant (10-15-5),0.727272727273
+MLPClassifier,tanh-adam-constant (15-5-10),0.727272727273
+MLPClassifier,tanh-adam-constant (15-10-5),0.727272727273
+MLPClassifier,tanh-adam-invscaling (5-5-10),0.727272727273
+MLPClassifier,tanh-adam-invscaling (10-10-15),0.727272727273
+MLPClassifier,tanh-adam-invscaling (15-5-5),0.727272727273
+MLPClassifier,tanh-adam-invscaling (15-5-10),0.727272727273
+MLPClassifier,tanh-adam-invscaling (15-10-5),0.727272727273
+MLPClassifier,tanh-adam-invscaling (15-10-10),0.727272727273
+MLPClassifier,tanh-adam-invscaling (15-10-15),0.727272727273
+MLPClassifier,tanh-adam-invscaling (15-15-5),0.727272727273
+MLPClassifier,tanh-adam-adaptive (10-5-10),0.727272727273
+MLPClassifier,tanh-adam-adaptive (10-10-10),0.727272727273
+MLPClassifier,tanh-adam-adaptive (10-15-5),0.727272727273
+MLPClassifier,tanh-adam-adaptive (10-15-10),0.727272727273
+MLPClassifier,tanh-adam-adaptive (15-5-10),0.727272727273
+MLPClassifier,tanh-adam-adaptive (15-5-15),0.727272727273
+MLPClassifier,tanh-adam-adaptive (15-15-10),0.727272727273
+MLPClassifier,relu-lbfgs-constant (10-5-15),0.727272727273
+MLPClassifier,relu-lbfgs-invscaling (15-5-5),0.727272727273
+MLPClassifier,relu-lbfgs-invscaling (15-5-15),0.727272727273
+MLPClassifier,relu-lbfgs-adaptive (5-10-15),0.727272727273
+MLPClassifier,relu-lbfgs-adaptive (15-15-5),0.727272727273
+MLPClassifier,relu-sgd-invscaling (5-15-5),0.727272727273
+MLPClassifier,relu-sgd-invscaling (10-5-5),0.727272727273
+MLPClassifier,relu-sgd-invscaling (15-5-15),0.727272727273
+MLPClassifier,relu-sgd-invscaling (15-10-15),0.727272727273
+MLPClassifier,relu-adam-invscaling (15-15-15),0.727272727273
+MLPClassifier,relu-adam-adaptive (15-15-5),0.727272727273
+MLPClassifier,relu-adam-adaptive (15-15-10),0.727272727273

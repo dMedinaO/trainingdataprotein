@@ -8,7 +8,7 @@ Trabaja con la data normalizada...
 Como salida, genera un archivo de entrenamiento por cada divisor...
 '''
 from proyect.CCProcesFile import procesFile
-from proyect.CCTraining.LOU import knnAlgorithm, adaBoost, decisionTrees, gradientTreeBoost, naiveBayes, nuSVC, randomForest, SVC
+from proyect.CCTraining.LOU import knnAlgorithm, adaBoost, decisionTrees, gradientTreeBoost, naiveBayes, nuSVC, randomForest, SVC, mlpClassifier
 from proyect.CCTraining.LOU import processResult
 
 import sys
@@ -48,7 +48,7 @@ for i in range(len(df['grupo'])):
     except:
         pass
 
-    #aplicamos SVC
+     #aplicamos SVC
     for kernel in ['linear', 'poly', 'rbf', 'sigmoid']:
         try:
             print "Apply SVC %s" % kernel
@@ -58,7 +58,7 @@ for i in range(len(df['grupo'])):
         except:
             pass
 
-    #aplicamos randomForest
+     #aplicamos randomForest
     for criterion in ['gini', 'entropy']:
         for estimator in [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]:
             try:
@@ -69,7 +69,7 @@ for i in range(len(df['grupo'])):
             except:
                 pass
 
-    #aplicamos NuSVC
+     #aplicamos NuSVC
     for kernel in ['linear', 'poly', 'rbf', 'sigmoid']:
         try:
             print "Apply NuSVC %s" % kernel
@@ -78,7 +78,8 @@ for i in range(len(df['grupo'])):
             ListResultAlgorithm.append(nuSVCValues.performanceValues)
         except:
             pass
-    #aplicamos arboles de decision...
+
+     #aplicamos arboles de decision...
     for estimator in [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]:
         try:
             print "Apply GradientBoostingClassifier %d" % estimator
@@ -88,7 +89,7 @@ for i in range(len(df['grupo'])):
         except:
             pass
 
-    #aplicamos arboles de decision...
+     #aplicamos arboles de decision...
     for criterion in ['gini', 'entropy']:
         for splitter in ['best', 'random']:
             try:
@@ -99,7 +100,7 @@ for i in range(len(df['grupo'])):
             except:
                 pass
 
-    #aplicamos adaBoost...
+     #aplicamos adaBoost...
     for algorithm in ['SAMME', 'SAMME.R']:
         for estimator in [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]:
             try:
@@ -110,7 +111,7 @@ for i in range(len(df['grupo'])):
             except:
                 pass
 
-    #aplicamos knn...
+     #aplicamos knn...
     for algorithm in ['auto', 'ball_tree', 'kd_tree', 'brute']:
         for weight in ['uniform', 'distance']:
             for metric in ['minkowski', 'euclidean']:
@@ -122,6 +123,23 @@ for i in range(len(df['grupo'])):
                         ListResultAlgorithm.append(knn.performanceValues)
                     except:
                         pass
+
+    #aplicamos redes neuronales...
+    for activation in ['identity', 'logistic', 'tanh', 'relu']:
+        for solver in ['lbfgs', 'sgd', 'adam']:
+            for learning_rate in ['constant', 'invscaling', 'adaptive']:
+                ListCapas = [5, 10, 15]
+                for c1 in ListCapas:
+                    for c2 in ListCapas:
+                        for c3 in ListCapas:
+                            try:
+                                print "MLPClassifier, activation: %s, solver: %s, learning_rate: %s %dX%dX%d" % (activation, solver, learning_rate, c1, c2, c3)
+                                mlp = mlpClassifier.mlpClassifier(process.matrixData, activation, solver, learning_rate, c1, c2, c3)
+                                mlp.applyAlgorithm()
+                                ListResultAlgorithm.append(mlp.performanceValues)
+
+                            except:
+                                pass
     #procesamos la salida...
     dirDataTraining = dirData+"training/"
     nameFile = "performanceTrainingWithLOU.csv"

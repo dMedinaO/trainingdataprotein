@@ -2,7 +2,7 @@
 script que permite realizar un conunto de analisis estadisticos a las variables de interes, generando un flujo de trabajo completo al set de datos recibido...
 '''
 
-from proyect.CCStatistic import boxPlotForDataSet, histogramesForFeature, pieChartForAttributes
+from proyect.CCStatistic import boxPlotForDataSet, histogramesForFeature, pieChartForAttributes, createCorrelationMatrix
 import sys
 import subprocess
 
@@ -35,4 +35,10 @@ pieCharts = pieChartForAttributes.pieChart(dataSet, pathOutput+"piechart/")
 print "process Bar Chart"
 command = "mkdir -p %sbarchart" % pathOutput
 subprocess.call(command, shell=True)
-pieCharts.processInformationBC(pathOutput+"barchart/")
+#pieCharts.processInformationBC(pathOutput+"barchart/")
+
+print "process Correlation Matrix Data"
+command = "mkdir -p %scorrelation" % pathOutput
+subprocess.call(command, shell=True)
+corr = createCorrelationMatrix.correlationMatrix(dataSet, pathOutput+"correlation/")
+corr.createCorrelationMatrixData()

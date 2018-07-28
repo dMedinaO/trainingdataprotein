@@ -29,11 +29,13 @@ class histogrameForDataSet(object):
         dataInput = pd.read_csv(self.dataSet)
 
         for key in self.keys:
-            print "Process feature: ", key
-            nameExport = "%shistogram_%s.svg" % (self.pathOutput, key)
-            title = "Histograme for Feature %s" % key
-            self.createHistogram(dataInput[key], nameExport, key, title)
-
+            try:
+                print "Process feature: ", key
+                nameExport = "%shistogram_%s.svg" % (self.pathOutput, key)
+                title = "Histograme for Feature %s" % key
+                self.createHistogram(dataInput[key], nameExport, key, title)
+            except:
+                pass
     #metodo que permite generar el histograma...
     def createHistogram(self, listData, nameExport, label, title):
         plt.figure()
