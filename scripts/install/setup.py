@@ -14,9 +14,9 @@ class SetupConfiguration:
             version='alpha',
             description='Proyect Data Training and its scripts for manipulation data sets',
             author='david medina',
-            author_email='d.medina@imserltda.com',
+            author_email='david.medina@cebib.cl',
             license='Open GPL 3',
-            packages=['proyect', 'proyect.CCConnectDB', 'proyect.CCCRUD', 'proyect.CCClustering', 'proyect.CCFeaturesAnalisis',  'proyect.CCProcesFile',  'proyect.CCStatistic', 'proyect.CCTraining', 'proyect.CCTraining.LOU', 'proyect.CCMakeGroups', 'proyect.CCProcessPDB', 'proyect.CCModels' ],)
+            packages=['proyect', 'proyect.CCConnectDB', 'proyect.CCCRUD', 'proyect.CCClustering', 'proyect.CCFeaturesAnalisis',  'proyect.CCProcesFile',  'proyect.CCStatistic', 'proyect.CCTraining', 'proyect.CCTraining.LOU', 'proyect.CCMakeGroups', 'proyect.CCProcessPDB', 'proyect.CCModels', 'proyect.CCMakeModels' ],)
 
 def main():
 
