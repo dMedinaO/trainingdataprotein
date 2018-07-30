@@ -3,6 +3,8 @@ script que permite realizar un conunto de analisis estadisticos a las variables 
 '''
 
 from proyect.CCStatistic import boxPlotForDataSet, histogramesForFeature, pieChartForAttributes, createCorrelationMatrix
+from proyect.CCStatistic import statisticalSummary
+
 import sys
 import subprocess
 
@@ -10,6 +12,10 @@ import subprocess
 dataSet = sys.argv[1]
 pathOutput = sys.argv[2]
 
+print "process statisticalSummary"
+statisticalSummary.statisticalSummary(dataSet, pathOutput).generateStatisticalSummary()
+
+'''
 #creamos el directorio para el box plot...
 print "process box plot"
 command = "mkdir -p %sboxPlot" % pathOutput
@@ -42,3 +48,4 @@ command = "mkdir -p %scorrelation" % pathOutput
 subprocess.call(command, shell=True)
 corr = createCorrelationMatrix.correlationMatrix(dataSet, pathOutput+"correlation/")
 corr.createCorrelationMatrixData()
+'''

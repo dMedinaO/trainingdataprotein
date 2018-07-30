@@ -1,0 +1,4 @@
+Algorithm,Description,Accuracy
+MLPClassifier,logistic-adam-adaptive (15-5-5),0.739130434783
+MLPClassifier,relu-sgd-constant (10-5-5),0.739130434783
+MLPClassifier,relu-sgd-constant (10-15-5),0.739130434783

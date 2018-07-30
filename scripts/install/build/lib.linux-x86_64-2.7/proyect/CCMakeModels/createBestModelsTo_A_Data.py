@@ -28,6 +28,7 @@ from sklearn.metrics import average_precision_score
 from sklearn.metrics import precision_recall_curve
 from sklearn.preprocessing import label_binarize
 from sklearn.multiclass import OneVsRestClassifier
+from sklearn.naive_bayes import GaussianNB, MultinomialNB, BernoulliNB
 
 from proyect.CCProcesFile import document
 import matplotlib.pyplot as plt
@@ -51,47 +52,53 @@ class createBestModels(object):
     #metodo que permite procesar los modelos, crea los clf y genera los resultados
     def processModels(self):
 
-        print "GradientBoostingClassifier n_estimators: 50"
-        clf = GradientBoostingClassifier(n_estimators=50)
-        param_name = "n_estimators"
-        param_range = [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]
-        self.createModel(clf, "GradientBoostingClassifier/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with GradientBoostingClassifier', 1)
-
-        print "NuSVC kernel=poly"
-        clf = NuSVC(kernel='poly', degree=3, gamma=10, probability=True)
-        param_name = "gamma"
-        param_range = np.logspace(-6, -1, 5)
-        self.createModel(clf, "NuSVC/", 0.2, param_name, param_range, '$\gamma$', 'Validation curve with NuSVC', 0)
-
-        print "Random RandomForestClassifier: 150, entropy"
-        clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=150, n_jobs=-1, criterion='entropy')
-        param_name = "n_estimators"
-        param_range = [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]
-        self.createModel(clf, "RandomForestClassifier/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1)
-
-        print "MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 5-10-10"
-        clf = MLPClassifier(hidden_layer_sizes=(5,10,10), activation='tanh', solver='lbfgs', learning_rate='constant')
+        print "MLPClassifier, logistic-sgd-invscaling (10-10-15)"
+        clf = MLPClassifier(hidden_layer_sizes=(10,10,15), activation='logistic', solver='sgd', learning_rate='invscaling')
         param_name = "alpha"
         param_range = np.logspace(-6, -1, 5)
-        self.createModel(clf, "MLPClassifier_Constant_5-10-10/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0)
+        self.createModel(clf, "MLPClassifier_logistic_10-10-15/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0)
 
-        print "MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 5-10-15"
-        clf = MLPClassifier(hidden_layer_sizes=(5,10,15), activation='tanh', solver='lbfgs', learning_rate='constant')
+        print "MLPClassifier, identity-sgd-invscaling (5-5-10)"
+        clf = MLPClassifier(hidden_layer_sizes=(5,5,10), activation='identity', solver='sgd', learning_rate='invscaling')
         param_name = "alpha"
         param_range = np.logspace(-6, -1, 5)
-        self.createModel(clf, "MLPClassifier_Constant_5-10-15/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0)
+        self.createModel(clf, "MLPClassifier_identity_5-5-10/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0)
 
-        print "MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-15-10"
-        clf = MLPClassifier(hidden_layer_sizes=(5,15,10), activation='tanh', solver='lbfgs', learning_rate='adaptive')
+        print "MLPClassifier, logistic-sgd-invscaling (5-15-15)"
+        clf = MLPClassifier(hidden_layer_sizes=(5,15,15), activation='logistic', solver='sgd', learning_rate='invscaling')
         param_name = "alpha"
         param_range = np.logspace(-6, -1, 5)
-        self.createModel(clf, "MLPClassifier_Adaptative_5-15-10/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0)
+        self.createModel(clf, "MLPClassifier_logistic_5-15-15/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0)
 
-        print "MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 10-15-15"
-        clf = MLPClassifier(hidden_layer_sizes=(10,15,15), activation='tanh', solver='lbfgs', learning_rate='adaptive')
+        print "MLPClassifier, tanh-sgd-invscaling (10-5-15)"
+        clf = MLPClassifier(hidden_layer_sizes=(10,5,15), activation='tanh', solver='sgd', learning_rate='invscaling')
         param_name = "alpha"
         param_range = np.logspace(-6, -1, 5)
-        self.createModel(clf, "MLPClassifier_Adaptative_10-15-15/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0)
+        self.createModel(clf, "MLPClassifier_tanh_10-5-15/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0)
+
+        print "MLPClassifier, tanh-sgd-invscaling (15-5-10)"
+        clf = MLPClassifier(hidden_layer_sizes=(15,5,10), activation='tanh', solver='sgd', learning_rate='invscaling')
+        param_name = "alpha"
+        param_range = np.logspace(-6, -1, 5)
+        self.createModel(clf, "MLPClassifier_tanh_10-5-15/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0)
+
+        print "MLPClassifier, relu-sgd-invscaling (15-10-5)"
+        clf = MLPClassifier(hidden_layer_sizes=(15,10,5), activation='relu', solver='sgd', learning_rate='invscaling')
+        param_name = "alpha"
+        param_range = np.logspace(-6, -1, 5)
+        self.createModel(clf, "MLPClassifier_relu_15-10-5/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0)
+
+        print "MLPClassifier, relu-sgd-invscaling (15-15-5)"
+        clf = MLPClassifier(hidden_layer_sizes=(15,15,5), activation='relu', solver='sgd', learning_rate='invscaling')
+        param_name = "alpha"
+        param_range = np.logspace(-6, -1, 5)
+        self.createModel(clf, "MLPClassifier_relu_15-15-5/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0)
+
+        print "naiveBayes, GaussianNB"
+        clf = GaussianNB()
+        param_name = "alpha"
+        param_range = np.array(-6, -1, 5)
+        self.createModel(clf, "GaussianNB/", 0.2, param_name, param_range, 'alpha', 'Validation curve with GaussianNB', 0)
 
     #metodo que permite crear un directorio...
     def createPath(self, namePath):
