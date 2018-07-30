@@ -1,0 +1,11 @@
+algorithm,desc,actualScore,new score
+MLPClassifier,tanh-lbfgs-invscaling (15-15-10),0.74358974359,0.4
+auto,minkowski-uniform KNN: 2,0.717948717949,0.7
+auto,euclidean-uniform KNN: 2,0.717948717949,0.7
+ball_tree,minkowski-uniform KNN: 2,0.717948717949,0.7
+ball_tree,euclidean-uniform KNN: 2,0.717948717949,0.7
+kd_tree,minkowski-uniform KNN: 2,0.717948717949,0.7
+kd_tree,euclidean-uniform KNN: 2,0.717948717949,0.7
+brute,minkowski-uniform KNN: 2,0.717948717949,0.7
+brute,euclidean-uniform KNN: 2,0.717948717949,0.7
+MLPClassifier,relu-lbfgs-invscaling (15-5-15),0.717948717949,0.7

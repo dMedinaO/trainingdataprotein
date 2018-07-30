@@ -9,7 +9,7 @@ import subprocess
 
 class processMatrix(object):
 
-    def __init__(self, codePDB, pathFile, namePDB, pathOutput, distMin, distMax):
+    def __init__(self, codePDB, pathFile, namePDB, pathOutput, distMin):
 
         self.codePDB = codePDB
         self.pathFile = pathFile
@@ -17,7 +17,6 @@ class processMatrix(object):
         self.namePDB = namePDB
         self.residuesValids = ['ALA', 'LYS', 'ARG', 'HIS', 'PHE', 'THR', 'PRO', 'MET', 'GLY', 'ASN', 'ASP', 'GLN', 'GLU', 'SER', 'TYR', 'TRP', 'VAL', 'ILE', 'LEU', 'CYS']
         self.ListResidues = []
-        self.distMax = distMax
         self.distMin = distMin
 
 
@@ -38,6 +37,7 @@ class processMatrix(object):
     def createHeader(self):
 
         self.header = []
+        self.header.append("-")
         for element in self.ListResidues:#para cada residuo obtenemos el full name...
             fullID = element.get_full_id()
             nameResidue = "%s-%d-%s" % (element.resname, int(fullID[3][1]), fullID[2])
@@ -48,15 +48,15 @@ class processMatrix(object):
 
         matrixData = []
         self.createHeader()#creamos el header...
-
         #creamos los elementos de la matriz...
         for i in range(len(self.header)):
             row = []
+            row.append(self.header[i])
             #completamos con 0....
             for j in range(len(self.ListResidues)):
                 row.append(0)
             matrixData.append(row)
-        return matrixData
+        return matrixData[1:]
 
     #metodo que permite generar la matriz de elementos...
     def createMatrixEnergyVoid(self):
@@ -85,8 +85,8 @@ class processMatrix(object):
 
         for i in range (len(self.names)-1):#para los criterios, no esta contando la matriz de energia...
             #creamos el path de salida...
-            pathOutputMatrix = "%s%d_%d/" % (self.pathOutput, self.distMin, self.distMax)
+            pathOutputMatrix = "%s%d/" % (self.pathOutput, self.distMin)
             self.createPath(pathOutputMatrix)
-            distancesO = createDistances.processDistance(self.names[i], self.pathOutput, self.distMin, self.distMax, i+1, pathOutputMatrix, self.header, self.structure)
+            distancesO = createDistances.processDistance(self.names[i], self.pathOutput, self.distMin, i+1, pathOutputMatrix, self.header, self.structure)
             print "process ", self.names[i]
             distancesO.changeValueMatrix()

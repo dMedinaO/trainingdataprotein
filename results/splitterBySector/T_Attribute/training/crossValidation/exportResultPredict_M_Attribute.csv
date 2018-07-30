@@ -1,0 +1,11 @@
+algorithm,desc,actualScore,new score
+MLPClassifier,tanh-sgd-invscaling (15-15-5),0.818181818182,0.444444444444
+MLPClassifier,relu-sgd-invscaling (15-5-15),0.818181818182,0.555555555556
+auto,minkowski-uniform KNN: 4,0.727272727273,0.444444444444
+auto,euclidean-uniform KNN: 4,0.727272727273,0.444444444444
+ball_tree,minkowski-uniform KNN: 4,0.727272727273,0.444444444444
+ball_tree,euclidean-uniform KNN: 4,0.727272727273,0.444444444444
+kd_tree,minkowski-uniform KNN: 4,0.727272727273,0.444444444444
+kd_tree,euclidean-uniform KNN: 4,0.727272727273,0.444444444444
+brute,minkowski-uniform KNN: 4,0.727272727273,0.444444444444
+brute,euclidean-uniform KNN: 4,0.727272727273,0.444444444444

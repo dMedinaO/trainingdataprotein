@@ -1,0 +1,11 @@
+algorithm,desc,actualScore,new score
+MLPClassifier,tanh-lbfgs-constant (10-5-10),0.777777777778,0.568965517241
+MLPClassifier,tanh-sgd-invscaling (15-10-5),0.777777777778,0.431034482759
+MLPClassifier,relu-lbfgs-adaptive (5-10-5),0.777777777778,0.586206896552
+MLPClassifier,relu-sgd-invscaling (10-5-5),0.777777777778,0.568965517241
+MLPClassifier,relu-sgd-invscaling (15-15-5),0.777777777778,0.534482758621
+auto,minkowski-distance KNN: 3,0.722222222222,0.465517241379
+auto,euclidean-distance KNN: 3,0.722222222222,0.465517241379
+ball_tree,minkowski-distance KNN: 3,0.722222222222,0.465517241379
+ball_tree,euclidean-distance KNN: 3,0.722222222222,0.465517241379
+kd_tree,minkowski-distance KNN: 3,0.722222222222,0.465517241379
