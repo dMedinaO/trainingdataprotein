@@ -1,0 +1,5 @@
+data,value
+algorithm,AgglomerativeClustering
+description,ward-euclidean
+silohuette,0.60100786215079682
+calinski,23.571635834117298

@@ -16,7 +16,7 @@ class SetupConfiguration:
             author='david medina',
             author_email='david.medina@cebib.cl',
             license='Open GPL 3',
-            packages=['proyect', 'proyect.CCConnectDB', 'proyect.CCCRUD', 'proyect.CCClustering', 'proyect.CCFeaturesAnalisis',  'proyect.CCProcesFile',  'proyect.CCStatistic', 'proyect.CCTraining', 'proyect.CCTraining.LOU', 'proyect.CCMakeGroups', 'proyect.CCProcessPDB', 'proyect.CCModels', 'proyect.CCMakeModels' ],)
+            packages=['proyect', 'proyect.CCConnectDB', 'proyect.CCCRUD', 'proyect.CCClustering', 'proyect.CCFeaturesAnalisis',  'proyect.CCProcesFile',  'proyect.CCStatistic', 'proyect.CCTraining', 'proyect.CCTraining.LOU', 'proyect.CCMakeGroups', 'proyect.CCProcessPDB', 'proyect.CCModels', 'proyect.CCMakeModels', 'proyect.CCSplitter' ],)
 
 def main():
 
