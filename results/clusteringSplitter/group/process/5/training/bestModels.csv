@@ -1,0 +1,15 @@
+Algorithm,Description,Accuracy
+MLPClassifier,identity-adam-invscaling (10-5-15),0.833333333333
+MLPClassifier,identity-adam-invscaling (10-10-10),0.833333333333
+MLPClassifier,identity-adam-invscaling (15-5-15),0.833333333333
+MLPClassifier,identity-adam-adaptive (5-15-10),0.833333333333
+MLPClassifier,identity-adam-adaptive (10-10-5),0.833333333333
+MLPClassifier,logistic-adam-invscaling (15-10-5),0.833333333333
+MLPClassifier,tanh-adam-constant (15-10-5),0.833333333333
+MLPClassifier,relu-sgd-invscaling (5-5-15),0.833333333333
+MLPClassifier,relu-sgd-adaptive (5-15-5),0.833333333333
+MLPClassifier,relu-adam-invscaling (10-15-5),0.833333333333
+MLPClassifier,relu-adam-invscaling (15-5-5),0.833333333333
+MLPClassifier,relu-adam-invscaling (15-5-10),0.833333333333
+MLPClassifier,relu-adam-adaptive (10-10-5),0.833333333333
+MLPClassifier,relu-adam-adaptive (15-5-5),0.833333333333

@@ -73,9 +73,9 @@ class processPerformance(object):
         stdData = np.std(self.data['Accuracy'])
         meanData= np.mean(self.data['Accuracy'])
 
-        outliers = [x for x in self.data['Accuracy'] if (x >= meanData + 3 * stdData)]
+        outliers = [x for x in self.data['Accuracy'] if (x >= meanData + 2 * stdData)]
 
-        if len(outliers) == 0:            
+        if len(outliers) == 0:
             outliers.append(max(self.data['Accuracy']))
 
         return outliers

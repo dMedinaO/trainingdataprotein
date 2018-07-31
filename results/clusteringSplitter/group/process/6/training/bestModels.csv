@@ -1,0 +1,26 @@
+Algorithm,Description,Accuracy
+GradientBoostingClassifier,GradientBoostingClassifier 10,0.838709677419
+GradientBoostingClassifier,GradientBoostingClassifier 20,0.838709677419
+GradientBoostingClassifier,GradientBoostingClassifier 50,0.822580645161
+GradientBoostingClassifier,GradientBoostingClassifier 100,0.806451612903
+GradientBoostingClassifier,GradientBoostingClassifier 200,0.806451612903
+GradientBoostingClassifier,GradientBoostingClassifier 250,0.806451612903
+GradientBoostingClassifier,GradientBoostingClassifier 500,0.806451612903
+GradientBoostingClassifier,GradientBoostingClassifier 750,0.806451612903
+GradientBoostingClassifier,GradientBoostingClassifier 1000,0.806451612903
+GradientBoostingClassifier,GradientBoostingClassifier 1500,0.806451612903
+GradientBoostingClassifier,GradientBoostingClassifier 150,0.790322580645
+gini,DecisionTreeClassifier gini best,0.677419354839
+SAMME,20- AdaBoostClassifier,0.677419354839
+SAMME,50- AdaBoostClassifier,0.725806451613
+SAMME,150- AdaBoostClassifier,0.677419354839
+SAMME,200- AdaBoostClassifier,0.709677419355
+SAMME,250- AdaBoostClassifier,0.709677419355
+SAMME,500- AdaBoostClassifier,0.709677419355
+SAMME,750- AdaBoostClassifier,0.709677419355
+SAMME,1000- AdaBoostClassifier,0.709677419355
+SAMME,1500- AdaBoostClassifier,0.709677419355
+SAMME.R,250- AdaBoostClassifier,0.677419354839
+SAMME.R,500- AdaBoostClassifier,0.677419354839
+SAMME.R,750- AdaBoostClassifier,0.677419354839
+SAMME.R,1500- AdaBoostClassifier,0.693548387097
