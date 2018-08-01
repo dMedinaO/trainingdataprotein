@@ -1,0 +1,7 @@
+algorithm,desc,actualScore,new score
+MLPClassifier,relu-sgd-invscaling (10-15-15),0.846153846154,0.41935483871
+SVC,poly,0.769230769231,0.564516129032
+MLPClassifier,logistic-sgd-invscaling (15-5-10),0.769230769231,0.435483870968
+MLPClassifier,tanh-sgd-invscaling (5-15-5),0.769230769231,0.435483870968
+NuSVC,kernel: poly,0.692307692308,0.564516129032
+NuSVC,kernel: rbf,0.692307692308,0.564516129032
