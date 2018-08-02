@@ -2,24 +2,42 @@
 clase con la responsabilidad de generar la ejecución de los mejores modelos obtenidos en la ejecucion full data y obtener
 todos los posibles resultados para un clasificador
 '''
+
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.neural_network import MLPClassifier
+from sklearn.model_selection import LeaveOneOut
+
+from sklearn.svm import NuSVC
+from sklearn.naive_bayes import GaussianNB, MultinomialNB, BernoulliNB
+from sklearn.ensemble import RandomForestClassifier
+
 from scipy import interp
 from itertools import cycle
-import itertools
-import numpy as np
-import subprocess
-import matplotlib.pyplot as plt
-
-from sklearn.metrics import fbeta_score, make_scorer, confusion_matrix, roc_curve, auc, precision_score, recall_score, f1_score, precision_recall_curve, average_precision_score
-from sklearn.metrics import accuracy_score, cohen_kappa_score, f1_score, precision_score, recall_score, log_loss, hamming_loss
-from sklearn.model_selection import cross_validate, cross_val_predict, cross_val_score, KFold, StratifiedKFold, validation_curve, learning_curve, train_test_split, ShuffleSplit, LeaveOneOut
+from sklearn.metrics import fbeta_score, make_scorer
+from sklearn.model_selection import cross_validate
+from sklearn.model_selection import cross_val_predict
+from sklearn.model_selection import cross_val_score
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import roc_curve, auc
+from sklearn.model_selection import StratifiedKFold
+from sklearn.metrics import precision_score, recall_score, f1_score
+from sklearn.metrics import precision_recall_curve
+from sklearn.model_selection import validation_curve
+from sklearn.model_selection import learning_curve
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import ShuffleSplit
+from sklearn.metrics import average_precision_score
+from sklearn.metrics import precision_recall_curve
 from sklearn.preprocessing import label_binarize
 from sklearn.multiclass import OneVsRestClassifier
+
 from proyect.CCProcesFile import document
-from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier
-from sklearn.neural_network import MLPClassifier
-from sklearn.svm import NuSVC
-from proyect.CCTraining.LOU import performance
-from proyect.CCTraining.LOU import performanceScoreValues
+import matplotlib.pyplot as plt
+import itertools
+
+import numpy as np
+import subprocess
 
 class createBestModels(object):
 
@@ -32,17 +50,15 @@ class createBestModels(object):
         self.classAttribute = []
         self.dataWC = []
         self.prepareDataSet()
-        self.performaceObject = performance.performanceTraining()#para almacenar las performance...
 
     #metodo que permite procesar los modelos, crea los clf y genera los resultados
     def processModels(self):
 
-        print "MLPClassifier logistic-sgd-invscaling (10-10-15)"
-        clf = MLPClassifier(hidden_layer_sizes=(10,10,15), activation='logistic', solver='sgd', learning_rate='invscaling')
-        param_name = "alpha"
-        param_range = np.logspace(-6, -1, 5)
-        self.createModel(clf, "MLPClassifier_invscaling_logistinc_sgd_10-10-15/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0)
-
+        print "RandomForestClassifier gini-10"
+        clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=10, n_jobs=-1, criterion='gini')
+        param_name = "n_estimators"
+        param_range = [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]
+        self.createModel(clf, "RandomForestClassifier_gini_10/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1)
 
     #metodo que permite crear un directorio...
     def createPath(self, namePath):
@@ -70,9 +86,9 @@ class createBestModels(object):
         print "Process summary score"
         self.crossValidateModel(clf, path)
 
-        # print "Process confusion matrix"
-        # nameMatrix = "%sConfusionMatrix.svg" % path
-        # self.createConfusionMatrix(self.dataWC, self.classAttribute, clf, nameMatrix)
+        print "Process confusion matrix"
+        nameMatrix = "%sConfusionMatrix.svg" % path
+        self.createConfusionMatrix(self.dataWC, self.classAttribute, clf, nameMatrix)
         # try:
         #     print "Process Precision and recall curve"
         #     fig1 = "%sprecision_recall_curve.svg" % path
@@ -81,14 +97,13 @@ class createBestModels(object):
         # except:
         #     print "Not precision_recall_curve"
         #     pass
-        #
-        # try:
-        #     print "Process ROC curve"
-        #     namePicture = "%sroc_curve.svg" % path
-        #     self.createCurveRoc(clfNull, namePicture)
-        # except:
-        #     print "Not roc_curve"
-        #     pass
+        #try:
+        print "Process ROC curve"
+        namePicture = "%sroc_curve.svg" % path
+        self.createCurveRoc(clfNull, namePicture)
+        #except:
+        #    print "Not roc_curve"
+        #    pass
         #
         # try:
         #     print "Process validation curve"
@@ -97,7 +112,6 @@ class createBestModels(object):
         # except:
         #     print "Not validation_curve"
         #     pass
-        #
         # try:
         #     print "Process learning curve"
         #     namePicture = "%slearning_curve.svg" % path
@@ -128,29 +142,16 @@ class createBestModels(object):
     #generamos la validacion del modelo...
     def crossValidateModel(self, clf, path):
 
-        accuracy = []
-        precision = []
-        recall = []
-        for i in range(100):
-
+        scoreData = []
+        for element in self.ListScore:
             loocv = LeaveOneOut()
-            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')
-            accuracy.append(scores.mean())
-
-            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='precision')
-            precision.append(scores.mean())
-
-            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='recall')
-            recall.append(scores.mean())
-
-        print np.mean(accuracy)
-        print np.mean(precision)
-        print np.mean(recall)
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring=element)
+            scoreData.append(scores.mean())
 
         #exportamos la data...
-        #header = ["Metric", "Score"]
-        #matrixData = [['accuracy', scoreData[0]], ['recall', scoreData[1]], ['precision', scoreData[2]], ['neg_log_loss', scoreData[3]], ['f1', scoreData[4]]]
-        #document.document("summaryScore.csv", path).createExportFileWithPandas(matrixData, header)
+        header = ["Metric", "Score"]
+        matrixData = [['accuracy', scoreData[0]], ['recall', scoreData[1]], ['precision', scoreData[2]]]
+        document.document("summaryScore.csv", path).createExportFileWithPandas(matrixData, header)
 
     #desarrollo del plot de la matriz de confusion...
     def plot_confusion_matrix(self, cm, classes, normalize=False, title='Confusion matrix', cmap=plt.cm.Oranges):
@@ -188,7 +189,8 @@ class createBestModels(object):
     #metodo que permite generar la matriz de confusion...
     def createConfusionMatrix(self, xTrain, yTrain, clf, nameFig):
 
-        self.predictions = cross_val_predict(clf, xTrain, yTrain, cv=10)
+        loocv = LeaveOneOut()
+        self.predictions = cross_val_predict(clf, xTrain, yTrain, cv=loocv)
         matrix = confusion_matrix(yTrain, self.predictions)
 
         np.set_printoptions(precision=2)
@@ -205,7 +207,7 @@ class createBestModels(object):
         X = np.array(self.dataWC)
         y = np.array(self.transformInt(self.classAttribute))
 
-        cv = StratifiedKFold(n_splits=10)
+        cv = LeaveOneOut()
         classifier = clf
         tprs = []
         aucs = []
@@ -254,8 +256,8 @@ class createBestModels(object):
 
         X = np.array(self.dataWC)
         y = np.array(self.transformInt(self.classAttribute))
-
-        train_scores, test_scores = validation_curve(clf, X, y, param_name=param_name, param_range=param_range,cv=10, scoring="accuracy", n_jobs=1)
+        loocv = LeaveOneOut()
+        train_scores, test_scores = validation_curve(clf, X, y, param_name=param_name, param_range=param_range,cv=loocv, scoring="accuracy", n_jobs=1)
         train_scores_mean = np.mean(train_scores, axis=1)
         train_scores_std = np.std(train_scores, axis=1)
         test_scores_mean = np.mean(test_scores, axis=1)

@@ -13,7 +13,8 @@ class barChartModels(object):
         self.pathInput = pathInput
         self.pathOutput = pathOutput
         self.group = group
-        self.ListGroups = ['1', '2', '3', '4', '5', '6', '7', '8']
+        self.ListGroups = ['A', 'B', 'C', 'F', 'H', 'M', 'N', 'O', 'P', 'T', 'U']
+        #self.ListGroups = ['1', '2', '3', '4', '5', '6', '7', '8']
 
     #metodo que permite hacer las lecturas de todos las comparaciones generadas para cada modelo...
     def readDocuments(self):
@@ -22,7 +23,8 @@ class barChartModels(object):
 
         for element in self.ListGroups:
             if element != self.group:
-                nameFile = "%sexportResultPredict_%s.csv" % (self.pathInput, element)
+                nameFile = "%sexportResultPredict_%s_Attribute.csv" % (self.pathInput, element)
+                #nameFile = "%sexportResultPredict_%s.csv" % (self.pathInput, element)
                 self.pandasFiles.append(pd.read_csv(nameFile))
 
     #metodo que permite hacer los graficos por cada modelo...

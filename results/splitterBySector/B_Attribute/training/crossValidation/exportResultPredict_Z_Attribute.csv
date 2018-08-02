@@ -1,0 +1,11 @@
+algorithm,desc,actualScore,new score
+Naive Bayes,GaussianNB,0.818181818182,0.478260869565
+RandomForestClassifier,gini - 50,0.818181818182,0.434782608696
+RandomForestClassifier,gini - 100,0.818181818182,0.282608695652
+RandomForestClassifier,gini - 150,0.818181818182,0.391304347826
+RandomForestClassifier,gini - 200,0.818181818182,0.391304347826
+RandomForestClassifier,gini - 250,0.818181818182,0.391304347826
+RandomForestClassifier,gini - 500,0.818181818182,0.391304347826
+RandomForestClassifier,gini - 750,0.818181818182,0.391304347826
+RandomForestClassifier,gini - 1000,0.818181818182,0.391304347826
+RandomForestClassifier,gini - 1500,0.818181818182,0.391304347826

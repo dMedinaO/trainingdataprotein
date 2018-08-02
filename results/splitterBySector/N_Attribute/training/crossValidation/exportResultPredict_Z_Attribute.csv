@@ -1,0 +1,11 @@
+algorithm,desc,actualScore,new score
+RandomForestClassifier,gini - 10,0.75,0.304347826087
+RandomForestClassifier,gini - 20,0.75,0.304347826087
+RandomForestClassifier,gini - 50,0.75,0.304347826087
+RandomForestClassifier,gini - 100,0.75,0.304347826087
+RandomForestClassifier,gini - 150,0.75,0.304347826087
+RandomForestClassifier,gini - 200,0.75,0.304347826087
+RandomForestClassifier,gini - 250,0.75,0.304347826087
+RandomForestClassifier,gini - 500,0.75,0.304347826087
+RandomForestClassifier,gini - 750,0.75,0.304347826087
+RandomForestClassifier,gini - 1000,0.75,0.304347826087

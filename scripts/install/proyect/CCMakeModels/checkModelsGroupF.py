@@ -55,14 +55,11 @@ class evaluacionCruzada(object):
         nameFile = self.pathInput+group+"/normaliced/dataSetNormaliced.csv"
         dataSet, classList = self.getValuesInDataSet(nameFile)
 
-        listDesc = ['identity-sgd-invscaling (10-10-15)', 'tanh-sgd-invscaling (15-15-10)', 'relu-sgd-invscaling (15-15-5)', 'kernel: poly', 'kernel: rbf', 'minkowski-distance KNN: 2', 'euclidean-distance KNN: 2', 'minkowski-distance KNN: 2', 'euclidean-distance KNN: 2', 'minkowski-distance KNN: 2']
-        listAlgth = ['MLPClassifier', 'MLPClassifier','MLPClassifier','NuSVC', 'NuSVC', 'auto', 'auto', 'ball_tree', 'ball_tree', 'kd_tree']
-        actualData = [0.818181818182, 0.818181818182, 0.818181818182,0.727272727273,0.727272727273,0.727272727273,0.727272727273,0.727272727273,0.727272727273,0.727272727273]
+        listDesc = ['kernel: poly', 'kernel: rbf', 'minkowski-distance KNN: 2', 'euclidean-distance KNN: 2', 'minkowski-distance KNN: 2', 'euclidean-distance KNN: 2', 'minkowski-distance KNN: 2', 'euclidean-distance KNN: 2', 'minkowski-distance KNN: 2', 'euclidean-distance KNN: 2']
+        listAlgth = ['NuSVC', 'NuSVC', 'auto', 'auto', 'ball_tree', 'ball_tree', 'kd_tree', 'kd_tree', 'brute', 'brute']
+        actualData = 0.727272727273
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
-        clf.append(MLPClassifier(hidden_layer_sizes=(10,10,15), activation='identity', solver='sgd', learning_rate='invscaling'))#logistic-sgd-invscaling (10-10-15)
-        clf.append(MLPClassifier(hidden_layer_sizes=(15,15,10), activation='tanh', solver='sgd', learning_rate='invscaling'))#identity-sgd-invscaling (5-5-10)
-        clf.append(MLPClassifier(hidden_layer_sizes=(15,15,5), activation='relu', solver='sgd', learning_rate='invscaling'))#logistic-sgd-invscaling (5-15-15)
         clf.append(NuSVC(kernel='poly', degree=3, gamma=10, probability=True))
         clf.append(NuSVC(kernel='rbf', degree=3, gamma=10, probability=True))
         clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='auto',weights='uniform', n_jobs=-1))
@@ -70,14 +67,17 @@ class evaluacionCruzada(object):
         clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='ball_tree',weights='uniform', n_jobs=-1))
         clf.append(KNeighborsClassifier(n_neighbors=2,metric='euclidean',algorithm='ball_tree',weights='uniform', n_jobs=-1))
         clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='kd_tree',weights='uniform', n_jobs=-1))
-        
+        clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='kd_tree',weights='uniform', n_jobs=-1))
+        clf.append(KNeighborsClassifier(n_neighbors=2,metric='euclidean',algorithm='brute',weights='uniform', n_jobs=-1))
+        clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='brute',weights='uniform', n_jobs=-1))
+
         matrixResult = []
 
         for i in range (len(clf)):
             clf[i] = clf[i].fit(self.dataSetTraining, self.classLearning)
             predict = clf[i].predict(dataSet)
             scoredata = clf[i].score(dataSet, classList)
-            row = [listAlgth[i], listDesc[i], actualData[i], scoredata]
+            row = [listAlgth[i], listDesc[i], actualData, scoredata]
             matrixResult.append(row)
 
         #exportamos el resultado...

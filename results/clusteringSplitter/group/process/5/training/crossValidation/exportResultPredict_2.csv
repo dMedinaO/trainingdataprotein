@@ -1,5 +1,0 @@
-algorithm,desc,actualScore,new score
-MLPClassifier,identity-adam-invscaling (10-5-15),0.833333333333,0.461538461538
-MLPClassifier,identity-adam-invscaling (10-10-10),0.833333333333,0.538461538462
-MLPClassifier,identity-adam-invscaling (15-5-15),0.833333333333,0.615384615385
-MLPClassifier,identity-adam-adaptive (5-15-10),0.833333333333,0.461538461538

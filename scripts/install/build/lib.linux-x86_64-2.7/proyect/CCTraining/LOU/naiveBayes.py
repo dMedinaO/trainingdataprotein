@@ -47,7 +47,7 @@ class naiveBayes(object):
         precision = []
         recall = []
         clf = GaussianNB()
-        for i in range(1):
+        for i in range(100):
 
             loocv = LeaveOneOut()
             scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')

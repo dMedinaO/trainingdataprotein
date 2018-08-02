@@ -1,0 +1,9 @@
+Algorithm,Description,Accuracy
+auto,minkowski-distance KNN: 3,0.722222222222
+auto,euclidean-distance KNN: 3,0.722222222222
+ball_tree,minkowski-distance KNN: 3,0.722222222222
+ball_tree,euclidean-distance KNN: 3,0.722222222222
+kd_tree,minkowski-distance KNN: 3,0.722222222222
+kd_tree,euclidean-distance KNN: 3,0.722222222222
+brute,minkowski-distance KNN: 3,0.722222222222
+brute,euclidean-distance KNN: 3,0.722222222222

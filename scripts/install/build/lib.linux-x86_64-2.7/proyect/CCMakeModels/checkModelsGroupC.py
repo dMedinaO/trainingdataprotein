@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 
 from sklearn.neural_network import MLPClassifier
+from sklearn.svm import NuSVC, SVC
 from sklearn.naive_bayes import GaussianNB, MultinomialNB, BernoulliNB
 from sklearn.ensemble import RandomForestClassifier
 
@@ -55,17 +56,13 @@ class evaluacionCruzada(object):
         nameFile = self.pathInput+group+"/normaliced/dataSetNormaliced.csv"
         dataSet, classList = self.getValuesInDataSet(nameFile)
 
-        listDesc = ['identity-sgd-constant (5-15-5)', 'identity-sgd-constant (10-15-10)', 'identity-sgd-constant (15-10-10)', 'identity-sgd-invscaling (5-15-10)', 'identity-sgd-invscaling (10-5-10)', 'identity-sgd-adaptive (10-15-10)', 'logistic-sgd-invscaling (10-15-5)', 'tanh-sgd-invscaling (5-15-15)', 'relu-adam-constant (5-5-10)', 'relu-adam-constant (10-5-10)']
-        listAlgth = 'MLPClassifier'
-        actualData = 0.8
+        listDesc = ['linear', 'kernel: linear']
+        listAlgth = ['SVC', 'NuSVC']
+        actualData = 0.7
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
-        clf.append(MLPClassifier(hidden_layer_sizes=(5,15,5), activation='identity', solver='sgd', learning_rate='constant'))
-        clf.append(MLPClassifier(hidden_layer_sizes=(10,15,10), activation='identity', solver='sgd', learning_rate='constant'))
-        clf.append(MLPClassifier(hidden_layer_sizes=(15,10,10), activation='identity', solver='sgd', learning_rate='constant'))
-        clf.append(MLPClassifier(hidden_layer_sizes=(5,15,10), activation='identity', solver='sgd', learning_rate='invscaling'))
-        clf.append(MLPClassifier(hidden_layer_sizes=(10,15,10), activation='identity', solver='sgd', learning_rate='invscaling'))
-        clf.append(MLPClassifier(hidden_layer_sizes=(10,15,10), activation='identity', solver='sgd', learning_rate='adaptive'))
+        clf.append(SVC(kernel='linear', degree=3, gamma=10, probability=True))
+        clf.append(NuSVC(kernel='linear', degree=3, gamma=10, probability=True))
 
         matrixResult = []
 
@@ -73,7 +70,7 @@ class evaluacionCruzada(object):
             clf[i] = clf[i].fit(self.dataSetTraining, self.classLearning)
             predict = clf[i].predict(dataSet)
             scoredata = clf[i].score(dataSet, classList)
-            row = [listAlgth, listDesc[i], actualData, scoredata]
+            row = [listAlgth[i], listDesc[i], actualData, scoredata]
             matrixResult.append(row)
 
         #exportamos el resultado...

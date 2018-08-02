@@ -1,5 +1,0 @@
-algorithm,desc,actualScore,new score
-MLPClassifier,tanh-lbfgs-constant (5-10-15),0.682926829268,0.483870967742
-MLPClassifier,tanh-lbfgs-adaptive (15-10-5),0.682926829268,0.451612903226
-MLPClassifier,relu-lbfgs-adaptive (10-5-15),0.682926829268,0.548387096774
-MLPClassifier,relu-sgd-invscaling (15-5-5),0.682926829268,0.435483870968

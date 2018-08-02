@@ -55,22 +55,20 @@ class evaluacionCruzada(object):
         nameFile = self.pathInput+group+"/normaliced/dataSetNormaliced.csv"
         dataSet, classList = self.getValuesInDataSet(nameFile)
 
-        listDesc = ['tanh-lbfgs-constant (10-5-10)', 'tanh-sgd-invscaling (15-10-5)', 'relu-lbfgs-adaptive (5-10-5)', 'relu-sgd-invscaling (10-5-5)', 'relu-sgd-invscaling (15-15-5)', 'minkowski-distance KNN: 3', 'euclidean-distance KNN: 3', 'minkowski-distance KNN: 3', 'euclidean-distance KNN: 3', 'minkowski-distance KNN: 3']
-        listAlgth = ['MLPClassifier','MLPClassifier','MLPClassifier','MLPClassifier','MLPClassifier','auto','auto','ball_tree','ball_tree','kd_tree']
+        listDesc = ['minkowski-distance KNN: 3', 'euclidean-distance KNN: 3', 'minkowski-distance KNN: 3', 'euclidean-distance KNN: 3', 'minkowski-distance KNN: 3', 'euclidean-distance KNN: 3', 'minkowski-distance KNN: 3', 'euclidean-distance KNN: 3']
+        listAlgth = ['auto', 'auto', 'ball_tree', 'ball_tree', 'kd_tree', 'kd_tree', 'brute', 'brute']
 
-        actualData = [0.777777777778,0.777777777778,0.777777777778, 0.777777777778, 0.777777777778, 0.722222222222, 0.722222222222, 0.722222222222, 0.722222222222, 0.722222222222]
+        actualData = 0.722222222222
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
-        clf.append(MLPClassifier(hidden_layer_sizes=(10,5,10), activation='tanh', solver='sgd', learning_rate='invscaling'))#logistic-sgd-invscaling (10-10-15)
-        clf.append(MLPClassifier(hidden_layer_sizes=(15,10,5), activation='tanh', solver='sgd', learning_rate='invscaling'))#identity-sgd-invscaling (5-5-10)
-        clf.append(MLPClassifier(hidden_layer_sizes=(5,10,5), activation='relu', solver='lbfgs', learning_rate='adaptive'))#logistic-sgd-invscaling (5-15-15)
-        clf.append(MLPClassifier(hidden_layer_sizes=(10,5,5), activation='relu', solver='sgd', learning_rate='invscaling'))#identity-sgd-invscaling (5-5-10)
-        clf.append(MLPClassifier(hidden_layer_sizes=(15,15,5), activation='relu', solver='sgd', learning_rate='invscaling'))#logistic-sgd-invscaling (5-15-15)
         clf.append(KNeighborsClassifier(n_neighbors=3,metric='minkowski',algorithm='auto',weights='uniform', n_jobs=-1))
         clf.append(KNeighborsClassifier(n_neighbors=3,metric='euclidean',algorithm='auto',weights='uniform', n_jobs=-1))
         clf.append(KNeighborsClassifier(n_neighbors=3,metric='minkowski',algorithm='ball_tree',weights='uniform', n_jobs=-1))
         clf.append(KNeighborsClassifier(n_neighbors=3,metric='euclidean',algorithm='ball_tree',weights='uniform', n_jobs=-1))
         clf.append(KNeighborsClassifier(n_neighbors=3,metric='minkowski',algorithm='kd_tree',weights='uniform', n_jobs=-1))
+        clf.append(KNeighborsClassifier(n_neighbors=3,metric='minkowski',algorithm='kd_tree',weights='uniform', n_jobs=-1))
+        clf.append(KNeighborsClassifier(n_neighbors=3,metric='euclidean',algorithm='brute',weights='uniform', n_jobs=-1))
+        clf.append(KNeighborsClassifier(n_neighbors=3,metric='minkowski',algorithm='brute',weights='uniform', n_jobs=-1))
 
         matrixResult = []
 
@@ -78,7 +76,7 @@ class evaluacionCruzada(object):
             clf[i] = clf[i].fit(self.dataSetTraining, self.classLearning)
             predict = clf[i].predict(dataSet)
             scoredata = clf[i].score(dataSet, classList)
-            row = [listAlgth[i], listDesc[i], actualData[i], scoredata]
+            row = [listAlgth[i], listDesc[i], actualData, scoredata]
             matrixResult.append(row)
 
         #exportamos el resultado...

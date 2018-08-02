@@ -42,7 +42,7 @@ class gradientTreeBoost(object):
         precision = []
         recall = []
         clf = GradientBoostingClassifier(n_estimators=self.estimator)
-        for i in range(1):
+        for i in range(100):
 
             loocv = LeaveOneOut()
             scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')

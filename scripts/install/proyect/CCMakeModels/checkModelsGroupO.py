@@ -55,12 +55,11 @@ class evaluacionCruzada(object):
         nameFile = self.pathInput+group+"/normaliced/dataSetNormaliced.csv"
         dataSet, classList = self.getValuesInDataSet(nameFile)
 
-        listDesc = ['tanh-lbfgs-invscaling (15-15-10)', 'minkowski-uniform KNN: 2', 'euclidean-uniform KNN: 2', 'minkowski-uniform KNN: 2', 'euclidean-uniform KNN: 2', 'minkowski-uniform KNN: 2', 'euclidean-uniform KNN: 2', 'minkowski-uniform KNN: 2', 'euclidean-uniform KNN: 2', 'relu-lbfgs-invscaling (15-5-15)']
-        listAlgth = ['MLPClassifier','auto','auto','ball_tree','ball_tree','kd_tree','kd_tree','brute','brute','MLPClassifier']
-        actualData = [0.74358974359, 0.717948717949, 0.717948717949, 0.717948717949, 0.717948717949, 0.717948717949, 0.717948717949, 0.717948717949, 0.717948717949, 0.717948717949]
+        listDesc = ['minkowski-uniform KNN: 2', 'euclidean-uniform KNN: 2', 'minkowski-uniform KNN: 2', 'euclidean-uniform KNN: 2', 'minkowski-uniform KNN: 2', 'euclidean-uniform KNN: 2', 'minkowski-uniform KNN: 2', 'euclidean-uniform KNN: 2']
+        listAlgth = ['auto','auto','ball_tree','ball_tree','kd_tree','kd_tree','brute','brute']
+        actualData = 0.717948717949
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
-        clf.append(MLPClassifier(hidden_layer_sizes=(15,15,10), activation='tanh', solver='lbfgs', learning_rate='invscaling'))
         clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='auto',weights='uniform', n_jobs=-1))
         clf.append(KNeighborsClassifier(n_neighbors=2,metric='euclidean',algorithm='auto',weights='uniform', n_jobs=-1))
         clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='ball_tree',weights='uniform', n_jobs=-1))
@@ -68,8 +67,7 @@ class evaluacionCruzada(object):
         clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='kd_tree',weights='uniform', n_jobs=-1))
         clf.append(KNeighborsClassifier(n_neighbors=2,metric='euclidean',algorithm='kd_tree',weights='uniform', n_jobs=-1))
         clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='brute',weights='uniform', n_jobs=-1))
-        clf.append(KNeighborsClassifier(n_neighbors=2,metric='euclidean',algorithm='brute',weights='uniform', n_jobs=-1))
-        clf.append(MLPClassifier(hidden_layer_sizes=(15,15,10), activation='relu', solver='lbfgs', learning_rate='invscaling'))#identity-sgd-invscaling (5-5-10)
+        clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='brute',weights='uniform', n_jobs=-1))
 
         matrixResult = []
 
@@ -77,7 +75,7 @@ class evaluacionCruzada(object):
             clf[i] = clf[i].fit(self.dataSetTraining, self.classLearning)
             predict = clf[i].predict(dataSet)
             scoredata = clf[i].score(dataSet, classList)
-            row = [listAlgth[i], listDesc[i], actualData[i], scoredata]
+            row = [listAlgth[i], listDesc[i], actualData, scoredata]
             matrixResult.append(row)
 
         #exportamos el resultado...

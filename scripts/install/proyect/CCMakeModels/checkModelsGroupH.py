@@ -5,6 +5,7 @@ compararlos con los del resto de los grupos, genera un archivo resumen por cada 
 import pandas as pd
 import numpy as np
 
+from sklearn.svm import NuSVC
 from sklearn.neural_network import MLPClassifier
 from sklearn.naive_bayes import GaussianNB, MultinomialNB, BernoulliNB
 from proyect.CCProcesFile import document
@@ -53,21 +54,12 @@ class evaluacionCruzada(object):
         nameFile = self.pathInput+group+"/normaliced/dataSetNormaliced.csv"
         dataSet, classList = self.getValuesInDataSet(nameFile)
 
-        listDesc = ['identity-sgd-invscaling (5-15-5)', 'logistic-sgd-invscaling (15-15-15)', 'tanh-sgd-invscaling (5-10-5)', 'tanh-sgd-invscaling (5-15-5)', 'identity-sgd-invscaling (5-5-15)', 'identity-sgd-invscaling (10-10-10)', 'identity-sgd-invscaling (10-15-5)', 'identity-sgd-invscaling (10-15-15)', 'identity-sgd-invscaling (15-15-10)', 'logistic-sgd-invscaling (5-10-5)']
-        listAlgth = 'MLPClassifier'
-        actualData = [0.857142857143,0.857142857143,0.857142857143,0.857142857143,0.714285714286,0.714285714286,0.714285714286,0.714285714286,0.714285714286,0.714285714286]
+        listDesc = ['kernel: sigmoid']
+        listAlgth = 'NuSVC'
+        actualData = [0.571428571429]
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
         clf.append(MLPClassifier(hidden_layer_sizes=(5,15,5), activation='identity', solver='sgd', learning_rate='invscaling'))#logistic-sgd-invscaling (10-10-15)
-        clf.append(MLPClassifier(hidden_layer_sizes=(15,15,15), activation='logistic', solver='sgd', learning_rate='invscaling'))#identity-sgd-invscaling (5-5-10)
-        clf.append(MLPClassifier(hidden_layer_sizes=(5,10,15), activation='tanh', solver='sgd', learning_rate='invscaling'))#logistic-sgd-invscaling (5-15-15)
-        clf.append(MLPClassifier(hidden_layer_sizes=(5,15,5), activation='tanh', solver='sgd', learning_rate='invscaling'))#tanh-sgd-invscaling (10-5-15)
-        clf.append(MLPClassifier(hidden_layer_sizes=(5,5,15), activation='identity', solver='sgd', learning_rate='invscaling'))#tanh-sgd-invscaling (15-5-10)
-        clf.append(MLPClassifier(hidden_layer_sizes=(10,10,10), activation='identity', solver='sgd', learning_rate='invscaling'))#relu-sgd-invscaling (15-10-5)
-        clf.append(MLPClassifier(hidden_layer_sizes=(10,15,5), activation='identity', solver='sgd', learning_rate='invscaling'))#relu-sgd-invscaling (15-15-5)
-        clf.append(MLPClassifier(hidden_layer_sizes=(10,15,15), activation='identity', solver='sgd', learning_rate='invscaling'))#identity-sgd-invscaling (5-15-10)
-        clf.append(MLPClassifier(hidden_layer_sizes=(15,15,10), activation='identity', solver='sgd', learning_rate='invscaling'))#identity-sgd-invscaling (5-15-15)
-        clf.append(MLPClassifier(hidden_layer_sizes=(5,10,5), activation='logistic', solver='sgd', learning_rate='invscaling'))#relu-sgd-invscaling (15-15-5)
 
         matrixResult = []
 

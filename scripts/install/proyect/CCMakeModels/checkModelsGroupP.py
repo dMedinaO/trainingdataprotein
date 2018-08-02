@@ -57,7 +57,7 @@ class evaluacionCruzada(object):
 
         listDesc = ['gini - 20', 'gini - 50', 'gini - 100', 'gini - 150', 'gini - 200', 'gini - 250', 'gini - 500', 'gini - 750', 'gini - 1000', 'gini - 1500']
         listAlgth = 'RandomForestClassifier'
-        actualData = 0.75
+        actualData = 0.846153846154
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
         clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=10, n_jobs=-1, criterion='gini'))

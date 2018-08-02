@@ -1,0 +1,20 @@
+Algorithm,Description,Accuracy
+Naive Bayes,GaussianNB,0.818181818182
+RandomForestClassifier,gini - 50,0.818181818182
+RandomForestClassifier,gini - 100,0.818181818182
+RandomForestClassifier,gini - 150,0.818181818182
+RandomForestClassifier,gini - 200,0.818181818182
+RandomForestClassifier,gini - 250,0.818181818182
+RandomForestClassifier,gini - 500,0.818181818182
+RandomForestClassifier,gini - 750,0.818181818182
+RandomForestClassifier,gini - 1000,0.818181818182
+RandomForestClassifier,gini - 1500,0.818181818182
+RandomForestClassifier,entropy - 50,0.818181818182
+RandomForestClassifier,entropy - 100,0.818181818182
+RandomForestClassifier,entropy - 150,0.818181818182
+RandomForestClassifier,entropy - 200,0.818181818182
+RandomForestClassifier,entropy - 250,0.818181818182
+RandomForestClassifier,entropy - 500,0.818181818182
+RandomForestClassifier,entropy - 750,0.818181818182
+RandomForestClassifier,entropy - 1000,0.818181818182
+RandomForestClassifier,entropy - 1500,0.818181818182

@@ -48,7 +48,7 @@ class mlpClassifier(object):
         precision = []
         recall = []
         clf = MLPClassifier(hidden_layer_sizes=(self.c1,self.c2,self.c3), activation=self.activation, solver=self.solver, learning_rate=self.learning_rate)
-        for i in range(1):
+        for i in range(100):
 
             loocv = LeaveOneOut()
             scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')

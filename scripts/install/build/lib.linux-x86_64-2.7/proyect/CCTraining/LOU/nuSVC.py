@@ -48,7 +48,7 @@ class nuSVC(object):
         precision = []
         recall = []
         clf = NuSVC(kernel=self.kernel, degree=3, gamma=10, probability=True)
-        for i in range(1):
+        for i in range(100):
 
             loocv = LeaveOneOut()
             scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')

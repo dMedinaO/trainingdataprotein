@@ -1,0 +1,9 @@
+Algorithm,Description,Accuracy
+auto,minkowski-uniform KNN: 2,0.717948717949
+auto,euclidean-uniform KNN: 2,0.717948717949
+ball_tree,minkowski-uniform KNN: 2,0.717948717949
+ball_tree,euclidean-uniform KNN: 2,0.717948717949
+kd_tree,minkowski-uniform KNN: 2,0.717948717949
+kd_tree,euclidean-uniform KNN: 2,0.717948717949
+brute,minkowski-uniform KNN: 2,0.717948717949
+brute,euclidean-uniform KNN: 2,0.717948717949

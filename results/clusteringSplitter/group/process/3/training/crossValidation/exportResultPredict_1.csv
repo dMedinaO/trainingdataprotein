@@ -1,7 +1,0 @@
-algorithm,desc,actualScore,new score
-SVC,rbf,0.785714285714,0.40243902439
-MLPClassifier,tanh-lbfgs-invscaling (10-10-15),0.75,0.621951219512
-MLPClassifier,tanh-lbfgs-adaptive (10-15-15),0.75,0.634146341463
-MLPClassifier,tanh-lbfgs-adaptive (15-15-5),0.75,0.609756097561
-MLPClassifier,relu-lbfgs-invscaling (10-10-15),0.75,0.621951219512
-MLPClassifier,relu-adam-adaptive (15-10-10),0.75,0.59756097561

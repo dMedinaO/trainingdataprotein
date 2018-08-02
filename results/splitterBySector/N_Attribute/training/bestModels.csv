@@ -1,0 +1,92 @@
+Algorithm,Description,Accuracy
+SAMME,10- AdaBoostClassifier,0.75
+SAMME,20- AdaBoostClassifier,0.75
+SAMME,50- AdaBoostClassifier,0.75
+SAMME,100- AdaBoostClassifier,0.75
+SAMME,150- AdaBoostClassifier,0.75
+SAMME,200- AdaBoostClassifier,0.75
+SAMME,250- AdaBoostClassifier,0.75
+SAMME,500- AdaBoostClassifier,0.75
+SAMME,750- AdaBoostClassifier,0.75
+SAMME,1000- AdaBoostClassifier,0.75
+SAMME,1500- AdaBoostClassifier,0.75
+SAMME.R,20- AdaBoostClassifier,0.75
+SAMME.R,50- AdaBoostClassifier,0.75
+SAMME.R,200- AdaBoostClassifier,0.75
+SAMME.R,250- AdaBoostClassifier,0.75
+SAMME.R,750- AdaBoostClassifier,0.75
+SAMME.R,1000- AdaBoostClassifier,0.75
+SAMME.R,1500- AdaBoostClassifier,0.75
+Naive Bayes,GaussianNB,0.75
+Naive Bayes,BernoulliNB,0.75
+RandomForestClassifier,gini - 10,0.75
+RandomForestClassifier,gini - 20,0.75
+RandomForestClassifier,gini - 50,0.75
+RandomForestClassifier,gini - 100,0.75
+RandomForestClassifier,gini - 150,0.75
+RandomForestClassifier,gini - 200,0.75
+RandomForestClassifier,gini - 250,0.75
+RandomForestClassifier,gini - 500,0.75
+RandomForestClassifier,gini - 750,0.75
+RandomForestClassifier,gini - 1000,0.75
+RandomForestClassifier,gini - 1500,0.75
+RandomForestClassifier,entropy - 10,0.75
+RandomForestClassifier,entropy - 20,0.75
+RandomForestClassifier,entropy - 50,0.75
+RandomForestClassifier,entropy - 100,0.75
+RandomForestClassifier,entropy - 150,0.75
+RandomForestClassifier,entropy - 200,0.75
+RandomForestClassifier,entropy - 250,0.75
+RandomForestClassifier,entropy - 500,0.75
+RandomForestClassifier,entropy - 750,0.75
+RandomForestClassifier,entropy - 1000,0.75
+RandomForestClassifier,entropy - 1500,0.75
+gini,DecisionTreeClassifier gini best,0.75
+gini,DecisionTreeClassifier gini random,0.75
+entropy,DecisionTreeClassifier entropy best,0.75
+entropy,DecisionTreeClassifier entropy random,0.75
+auto,minkowski-uniform KNN: 3,0.75
+auto,euclidean-uniform KNN: 3,0.75
+auto,minkowski-distance KNN: 2,0.75
+auto,minkowski-distance KNN: 3,0.75
+auto,euclidean-distance KNN: 2,0.75
+auto,euclidean-distance KNN: 3,0.75
+ball_tree,minkowski-uniform KNN: 3,0.75
+ball_tree,euclidean-uniform KNN: 3,0.75
+ball_tree,minkowski-distance KNN: 2,0.75
+ball_tree,minkowski-distance KNN: 3,0.75
+ball_tree,euclidean-distance KNN: 2,0.75
+ball_tree,euclidean-distance KNN: 3,0.75
+kd_tree,minkowski-uniform KNN: 3,0.75
+kd_tree,euclidean-uniform KNN: 3,0.75
+kd_tree,minkowski-distance KNN: 2,0.75
+kd_tree,minkowski-distance KNN: 3,0.75
+kd_tree,euclidean-distance KNN: 2,0.75
+kd_tree,euclidean-distance KNN: 3,0.75
+brute,minkowski-uniform KNN: 3,0.75
+brute,euclidean-uniform KNN: 3,0.75
+brute,minkowski-distance KNN: 2,0.75
+brute,minkowski-distance KNN: 3,0.75
+brute,euclidean-distance KNN: 2,0.75
+brute,euclidean-distance KNN: 3,0.75
+MLPClassifier,identity-lbfgs-constant (5-5-5),0.75
+MLPClassifier,identity-lbfgs-constant (5-5-10),0.75
+MLPClassifier,identity-lbfgs-constant (5-5-15),0.75
+MLPClassifier,identity-lbfgs-constant (5-10-5),0.75
+MLPClassifier,identity-lbfgs-constant (5-10-10),0.75
+MLPClassifier,identity-lbfgs-constant (5-10-15),0.75
+MLPClassifier,identity-lbfgs-constant (5-15-10),0.75
+MLPClassifier,identity-lbfgs-constant (5-15-15),0.75
+MLPClassifier,identity-lbfgs-constant (10-5-5),0.75
+MLPClassifier,identity-lbfgs-constant (10-10-10),0.75
+MLPClassifier,identity-lbfgs-constant (10-10-15),0.75
+MLPClassifier,identity-lbfgs-constant (10-15-5),0.75
+MLPClassifier,identity-lbfgs-constant (10-15-10),0.75
+MLPClassifier,identity-lbfgs-constant (10-15-15),0.75
+MLPClassifier,identity-lbfgs-constant (15-5-5),0.75
+MLPClassifier,identity-lbfgs-constant (15-5-10),0.75
+MLPClassifier,identity-lbfgs-constant (15-5-15),0.75
+MLPClassifier,identity-lbfgs-constant (15-10-5),0.75
+MLPClassifier,identity-lbfgs-constant (15-10-10),0.75
+MLPClassifier,identity-lbfgs-constant (15-10-15),0.75
+MLPClassifier,identity-lbfgs-constant (15-15-5),0.75

@@ -43,7 +43,7 @@ class decisionTrees(object):
         precision = []
         recall = []
         clf = DecisionTreeClassifier(random_state=0, criterion=self.criterion, splitter=self.splitter)
-        for i in range(1):
+        for i in range(100):
 
             loocv = LeaveOneOut()
             scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')

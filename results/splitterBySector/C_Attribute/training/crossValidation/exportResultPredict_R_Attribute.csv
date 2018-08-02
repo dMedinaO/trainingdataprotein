@@ -1,0 +1,3 @@
+algorithm,desc,actualScore,new score
+SVC,linear,0.7,0.465517241379
+NuSVC,kernel: linear,0.7,0.431034482759

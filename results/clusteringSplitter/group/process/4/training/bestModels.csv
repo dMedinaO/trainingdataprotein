@@ -1,3 +1,0 @@
-Algorithm,Description,Accuracy
-MLPClassifier,logistic-sgd-invscaling (10-10-15),0.730769230769
-MLPClassifier,relu-sgd-invscaling (15-15-10),0.730769230769
