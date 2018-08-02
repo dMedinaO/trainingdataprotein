@@ -26,8 +26,8 @@ pathInput = sys.argv[1]
 #check6 = checkG6.evaluacionCruzada(pathInput, pathInput+"6/training/crossValidation/")
 #check6.processGroup()
 
-#check7 = checkG7.evaluacionCruzada(pathInput, pathInput+"7/training/crossValidation/")
-#check7.processGroup()
+check7 = checkG7.evaluacionCruzada(pathInput, pathInput+"7/training/crossValidation/")
+check7.processGroup()
 
 check8 = checkG8.evaluacionCruzada(pathInput, pathInput+"8/training/crossValidation/")
 check8.processGroup()

@@ -1,7 +1,0 @@
-algorithm,desc,actualScore,new score
-MLPClassifier,identity-sgd-constant (5-15-5),0.8,0.428571428571
-MLPClassifier,identity-sgd-constant (10-15-10),0.8,0.428571428571
-MLPClassifier,identity-sgd-constant (15-10-10),0.8,0.428571428571
-MLPClassifier,identity-sgd-invscaling (5-15-10),0.8,0.428571428571
-MLPClassifier,identity-sgd-invscaling (10-5-10),0.8,0.428571428571
-MLPClassifier,identity-sgd-adaptive (10-15-10),0.8,0.428571428571

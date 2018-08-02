@@ -6,7 +6,7 @@ la tecnica leave one out...
 from proyect.CCTraining.LOU import performance
 from proyect.CCTraining.LOU import performanceScoreValues
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import LeaveOneOut
+from sklearn.model_selection import LeaveOneOut, cross_val_score
 import numpy as np
 
 class decisionTrees(object):
@@ -36,36 +36,28 @@ class decisionTrees(object):
             self.dataWC.append(element[:-1])
             self.classAttribute.append(element[-1])
 
-    #metodo que permite estimar las performance del algorithm...
-    def processPerformance(self, clf, x_test, y_test):
-
-        prediction = clf.predict(x_test)
-        self.performaceObject.calculatePerformance(y_test, prediction)
-
     #hacemos el entrenamiento con leave one out...
     def applyAlgorithm(self):
 
-        for i in range(len(self.dataWC)):
+        accuracy = []
+        precision = []
+        recall = []
+        clf = DecisionTreeClassifier(random_state=0, criterion=self.criterion, splitter=self.splitter)
+        for i in range(1):
 
-            #obtenemos el test y su clase...
-            x_test = []
-            y_test = []
-            x_test.append(self.dataWC[i])
-            y_test.append(self.classAttribute[i])
+            loocv = LeaveOneOut()
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')
+            accuracy.append(scores.mean())
 
-            #formamos el training...
-            x_training = []
-            y_training = []
-            for j in range(len(self.dataWC)):
-                if i != j:
-                    x_training.append(self.dataWC[j])
-                    y_training.append(self.classAttribute[j])
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='precision')
+            precision.append(scores.mean())
 
-            #aplicamos el entrenamiento...
-            clf = DecisionTreeClassifier(random_state=0, criterion=self.criterion, splitter=self.splitter)
-            clf = clf.fit(x_training, y_training)
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='recall')
+            recall.append(scores.mean())
 
-            self.processPerformance(clf, x_test, y_test)
+        self.performaceObject.ListAccuracy=accuracy
+        self.performaceObject.ListRecall=recall
+        self.performaceObject.ListPrecision=precision
 
         #hacemos la instancia al performanceScoreValues
         desc = "DecisionTreeClassifier %s %s" % (self.criterion, self.splitter)

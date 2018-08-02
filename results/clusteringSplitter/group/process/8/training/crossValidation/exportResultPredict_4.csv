@@ -1,11 +1,11 @@
 algorithm,desc,actualScore,new score
-"['MLPClassifier', 'SAMME.R', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier']",relu-sgd-invscaling (15-5-5),"[0.9, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]",0.576923076923
-"['MLPClassifier', 'SAMME.R', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier']",750- AdaBoostClassifier,"[0.9, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]",0.5
-"['MLPClassifier', 'SAMME.R', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier']",gini - 10,"[0.9, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]",0.461538461538
-"['MLPClassifier', 'SAMME.R', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier']",gini - 20,"[0.9, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]",0.5
-"['MLPClassifier', 'SAMME.R', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier']",gini - 50,"[0.9, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]",0.5
-"['MLPClassifier', 'SAMME.R', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier']",gini - 100,"[0.9, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]",0.5
-"['MLPClassifier', 'SAMME.R', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier']",gini - 150,"[0.9, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]",0.5
-"['MLPClassifier', 'SAMME.R', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier']",entropy - 10,"[0.9, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]",0.461538461538
-"['MLPClassifier', 'SAMME.R', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier']",entropy - 20,"[0.9, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]",0.5
-"['MLPClassifier', 'SAMME.R', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier', 'RandomForestClassifier']",entropy - 50,"[0.9, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]",0.5
+MLPClassifier,relu-sgd-invscaling (15-5-5),0.9,0.576923076923
+SAMME.R,750- AdaBoostClassifier,0.8,0.5
+RandomForestClassifier,gini - 10,0.8,0.461538461538
+RandomForestClassifier,gini - 20,0.8,0.5
+RandomForestClassifier,gini - 50,0.8,0.5
+RandomForestClassifier,gini - 100,0.8,0.5
+RandomForestClassifier,gini - 150,0.8,0.5
+RandomForestClassifier,entropy - 10,0.8,0.461538461538
+RandomForestClassifier,entropy - 20,0.8,0.5
+RandomForestClassifier,entropy - 50,0.8,0.5

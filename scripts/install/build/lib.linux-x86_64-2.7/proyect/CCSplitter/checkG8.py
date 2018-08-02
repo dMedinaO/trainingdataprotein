@@ -81,7 +81,7 @@ class evaluacionCruzada(object):
             clf[i] = clf[i].fit(self.dataSetTraining, self.classLearning)
             predict = clf[i].predict(dataSet)
             scoredata = clf[i].score(dataSet, classList)
-            row = [listAlgth, listDesc[i], actualData, scoredata]
+            row = [listAlgth[i], listDesc[i], actualData[i], scoredata]
             matrixResult.append(row)
 
         #exportamos el resultado...

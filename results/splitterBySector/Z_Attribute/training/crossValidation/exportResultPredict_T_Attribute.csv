@@ -1,4 +1,0 @@
-algorithm,desc,actualScore,new score
-MLPClassifier,logistic-adam-adaptive (15-5-5),0.739130434783,0.454545454545
-MLPClassifier,relu-sgd-constant (10-5-5),0.739130434783,0.454545454545
-MLPClassifier,relu-sgd-constant (10-15-5),0.739130434783,0.545454545455

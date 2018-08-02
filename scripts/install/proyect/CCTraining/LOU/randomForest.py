@@ -6,7 +6,7 @@ la tecnica leave one out...
 from proyect.CCTraining.LOU import performance
 from proyect.CCTraining.LOU import performanceScoreValues
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import LeaveOneOut
+from sklearn.model_selection import LeaveOneOut, cross_val_score
 import numpy as np
 
 class randomForest(object):
@@ -45,27 +45,25 @@ class randomForest(object):
     #hacemos el entrenamiento con leave one out...
     def applyAlgorithm(self):
 
-        for i in range(len(self.dataWC)):
+        accuracy = []
+        precision = []
+        recall = []
+        clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=self.estimator, n_jobs=-1, criterion=self.criterion)
+        for i in range(100):
 
-            #obtenemos el test y su clase...
-            x_test = []
-            y_test = []
-            x_test.append(self.dataWC[i])
-            y_test.append(self.classAttribute[i])
+            loocv = LeaveOneOut()
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')
+            accuracy.append(scores.mean())
 
-            #formamos el training...
-            x_training = []
-            y_training = []
-            for j in range(len(self.dataWC)):
-                if i != j:
-                    x_training.append(self.dataWC[j])
-                    y_training.append(self.classAttribute[j])
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='precision')
+            precision.append(scores.mean())
 
-            #aplicamos el entrenamiento...
-            clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=self.estimator, n_jobs=-1, criterion=self.criterion)
-            clf = clf.fit(x_training, y_training)
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='recall')
+            recall.append(scores.mean())
 
-            self.processPerformance(clf, x_test, y_test)
+        self.performaceObject.ListAccuracy=accuracy
+        self.performaceObject.ListRecall=recall
+        self.performaceObject.ListPrecision=precision
 
         #hacemos la instancia al performanceScoreValues
         desc = "%s - %d" % (self.criterion, self.estimator)

@@ -7,7 +7,7 @@ from proyect.CCTraining.LOU import performance
 from proyect.CCTraining.LOU import performanceScoreValues
 from sklearn.neural_network import MLPClassifier
 
-from sklearn.model_selection import LeaveOneOut
+from sklearn.model_selection import LeaveOneOut, cross_val_score
 import numpy as np
 
 class mlpClassifier(object):
@@ -41,36 +41,28 @@ class mlpClassifier(object):
             self.dataWC.append(element[:-1])
             self.classAttribute.append(element[-1])
 
-    #metodo que permite estimar las performance del algorithm...
-    def processPerformance(self, clf, x_test, y_test):
-
-        prediction = clf.predict(x_test)
-        self.performaceObject.calculatePerformance(y_test, prediction)
-
     #hacemos el entrenamiento con leave one out...
     def applyAlgorithm(self):
 
-        for i in range(len(self.dataWC)):
+        accuracy = []
+        precision = []
+        recall = []
+        clf = MLPClassifier(hidden_layer_sizes=(self.c1,self.c2,self.c3), activation=self.activation, solver=self.solver, learning_rate=self.learning_rate)
+        for i in range(100):
 
-            #obtenemos el test y su clase...
-            x_test = []
-            y_test = []
-            x_test.append(self.dataWC[i])
-            y_test.append(self.classAttribute[i])
+            loocv = LeaveOneOut()
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')
+            accuracy.append(scores.mean())
 
-            #formamos el training...
-            x_training = []
-            y_training = []
-            for j in range(len(self.dataWC)):
-                if i != j:
-                    x_training.append(self.dataWC[j])
-                    y_training.append(self.classAttribute[j])
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='precision')
+            precision.append(scores.mean())
 
-            #aplicamos el entrenamiento...
-            clf = MLPClassifier(hidden_layer_sizes=(self.c1,self.c2,self.c3), activation=self.activation, solver=self.solver, learning_rate=self.learning_rate)
-            clf = clf.fit(x_training, y_training)
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='recall')
+            recall.append(scores.mean())
 
-            self.processPerformance(clf, x_test, y_test)
+        self.performaceObject.ListAccuracy=accuracy
+        self.performaceObject.ListRecall=recall
+        self.performaceObject.ListPrecision=precision
 
         #hacemos la instancia al performanceScoreValues
         desc = "%s-%s-%s (%d-%d-%d)" % (self.activation, self.solver, self.learning_rate, self.c1, self.c2, self.c3)

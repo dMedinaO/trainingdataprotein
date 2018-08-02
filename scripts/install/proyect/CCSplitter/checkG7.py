@@ -57,9 +57,8 @@ class evaluacionCruzada(object):
         dataSet, classList = self.getValuesInDataSet(nameFile)
 
         listDesc = ['tanh-sgd-invscaling (5-5-5)','tanh-sgd-invscaling (5-15-10)','relu-lbfgs-invscaling (10-10-15)','relu-adam-constant (5-15-5)','kernel: rbf','logistic-sgd-invscaling (15-10-5)','relu-lbfgs-adaptive (5-5-5)','relu-lbfgs-adaptive (10-15-10)','relu-sgd-invscaling (10-5-5)','relu-adam-invscaling (5-15-5)','relu-adam-adaptive (15-5-5)']
-        listAlgth = ['MLPClassifier','MLPClassifier','MLPClassifier','MLPClassifier','NuSVC''MLPClassifier','MLPClassifier','MLPClassifier','MLPClassifier','MLPClassifier','MLPClassifier']
+        listAlgth = ['MLPClassifier','MLPClassifier','MLPClassifier','MLPClassifier','NuSVC','MLPClassifier','MLPClassifier','MLPClassifier','MLPClassifier','MLPClassifier','MLPClassifier']
         actualData = [0.823529411765,0.764705882353,0.764705882353,0.764705882353,0.705882352941,0.705882352941,0.705882352941,0.705882352941,0.705882352941,0.705882352941,0.705882352941]
-
         clf = []## NOTE: solo se trabajara con un maximo de 5 clasificadores...
 
         clf.append(MLPClassifier(hidden_layer_sizes=(5,5,5), activation='tanh', solver='sgd', learning_rate='invscaling'))
@@ -80,7 +79,7 @@ class evaluacionCruzada(object):
             clf[i] = clf[i].fit(self.dataSetTraining, self.classLearning)
             predict = clf[i].predict(dataSet)
             scoredata = clf[i].score(dataSet, classList)
-            row = [listAlgth, listDesc[i], actualData, scoredata]
+            row = [listAlgth[i], listDesc[i], actualData[i], scoredata]
             matrixResult.append(row)
 
         #exportamos el resultado...

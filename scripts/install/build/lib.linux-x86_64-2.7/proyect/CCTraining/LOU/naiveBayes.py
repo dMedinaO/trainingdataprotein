@@ -6,7 +6,7 @@ la tecnica leave one out...
 from proyect.CCTraining.LOU import performance
 from proyect.CCTraining.LOU import performanceScoreValues
 from sklearn.naive_bayes import GaussianNB, MultinomialNB, BernoulliNB
-from sklearn.model_selection import LeaveOneOut
+from sklearn.model_selection import LeaveOneOut, cross_val_score
 import numpy as np
 
 class naiveBayes(object):
@@ -43,27 +43,25 @@ class naiveBayes(object):
     #hacemos el entrenamiento con leave one out...
     def applyAlgorithmGaussian(self):
 
-        for i in range(len(self.dataWC)):
+        accuracy = []
+        precision = []
+        recall = []
+        clf = GaussianNB()
+        for i in range(1):
 
-            #obtenemos el test y su clase...
-            x_test = []
-            y_test = []
-            x_test.append(self.dataWC[i])
-            y_test.append(self.classAttribute[i])
+            loocv = LeaveOneOut()
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')
+            accuracy.append(scores.mean())
 
-            #formamos el training...
-            x_training = []
-            y_training = []
-            for j in range(len(self.dataWC)):
-                if i != j:
-                    x_training.append(self.dataWC[j])
-                    y_training.append(self.classAttribute[j])
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='precision')
+            precision.append(scores.mean())
 
-            #aplicamos el entrenamiento...
-            clf = GaussianNB()
-            clf = clf.fit(x_training, y_training)
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='recall')
+            recall.append(scores.mean())
 
-            self.processPerformance(clf, x_test, y_test)
+        self.performaceObject.ListAccuracy=accuracy
+        self.performaceObject.ListRecall=recall
+        self.performaceObject.ListPrecision=precision
 
         #hacemos la instancia al performanceScoreValues
         desc = "GaussianNB"
@@ -72,27 +70,25 @@ class naiveBayes(object):
     #hacemos el entrenamiento con leave one out...
     def applyAlgorithmBernoulliNB(self):
 
-        for i in range(len(self.dataWC)):
+        accuracy = []
+        precision = []
+        recall = []
+        clf = BernoulliNB()
+        for i in range(1):
 
-            #obtenemos el test y su clase...
-            x_test = []
-            y_test = []
-            x_test.append(self.dataWC[i])
-            y_test.append(self.classAttribute[i])
+            loocv = LeaveOneOut()
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')
+            accuracy.append(scores.mean())
 
-            #formamos el training...
-            x_training = []
-            y_training = []
-            for j in range(len(self.dataWC)):
-                if i != j:
-                    x_training.append(self.dataWC[j])
-                    y_training.append(self.classAttribute[j])
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='precision')
+            precision.append(scores.mean())
 
-            #aplicamos el entrenamiento...
-            clf = BernoulliNB()
-            clf = clf.fit(x_training, y_training)
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='recall')
+            recall.append(scores.mean())
 
-            self.processPerformance(clf, x_test, y_test)
+        self.performaceObject.ListAccuracy=accuracy
+        self.performaceObject.ListRecall=recall
+        self.performaceObject.ListPrecision=precision
 
         #hacemos la instancia al performanceScoreValues
         desc = "BernoulliNB"

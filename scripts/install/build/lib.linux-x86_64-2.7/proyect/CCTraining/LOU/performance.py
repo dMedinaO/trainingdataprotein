@@ -9,10 +9,7 @@ class performanceTraining(object):
         self.ListAccuracy = []
         self.ListRecall = []
         self.ListPrecision = []
-        self.ListHamming = []
-        self.ListF = []
-        self.ListCohen = []
-
+        
     #metodo que permite calcular cada una de las performance y agregarla a la lista...
     def calculatePerformance(self, classTest, predictionValue):
         self.ListAccuracy.append(accuracy_score(classTest, predictionValue))
