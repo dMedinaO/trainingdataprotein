@@ -21,8 +21,8 @@ pathOutput = sys.argv[2]
 # checkF = checkModelsGroupF.evaluacionCruzada(pathInput, pathOutput+"F_Attribute/training/crossValidation/")
 # checkF.processGroup()
 #
-# checkH = checkModelsGroupH.evaluacionCruzada(pathInput, pathOutput+"H_Attribute/training/crossValidation/")
-# checkH.processGroup()
+checkH = checkModelsGroupH.evaluacionCruzada(pathInput, pathOutput+"H_Attribute/training/crossValidation/")
+checkH.processGroup()
 #
 # checkM = checkModelsGroupM.evaluacionCruzada(pathInput, pathOutput+"M_Attribute/training/crossValidation/")
 # checkM.processGroup()
@@ -36,8 +36,8 @@ pathOutput = sys.argv[2]
 # checkP = checkModelsGroupP.evaluacionCruzada(pathInput, pathOutput+"P_Attribute/training/crossValidation/")
 # checkP.processGroup()
 
-checkR = checkModelsGroupR.evaluacionCruzada(pathInput, pathOutput+"R_Attribute/training/crossValidation/")
-checkR.processGroup()
+#checkR = checkModelsGroupR.evaluacionCruzada(pathInput, pathOutput+"R_Attribute/training/crossValidation/")
+#checkR.processGroup()
 
 #checkT = checkModelsGroupT.evaluacionCruzada(pathInput, pathOutput+"T_Attribute/training/crossValidation/")
 #checkT.processGroup()
@@ -45,5 +45,5 @@ checkR.processGroup()
 #checkU = checkModelsGroupU.evaluacionCruzada(pathInput, pathOutput+"U_Attribute/training/crossValidation/")
 #checkU.processGroup()
 
-checkZ = checkModelsGroupZ.evaluacionCruzada(pathInput, pathOutput+"Z_Attribute/training/crossValidation/")
-checkZ.processGroup()
+#checkZ = checkModelsGroupZ.evaluacionCruzada(pathInput, pathOutput+"Z_Attribute/training/crossValidation/")
+#checkZ.processGroup()

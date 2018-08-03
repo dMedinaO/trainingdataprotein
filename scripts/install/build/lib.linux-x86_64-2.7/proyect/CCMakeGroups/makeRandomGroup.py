@@ -25,7 +25,7 @@ class makeGroup(object):
     def __init__(self):
 
         print "void building"
-        
+
     #metodo que permite generar los grupos dado el diccionario obtenido...
     def processGroup(self):
 
@@ -150,6 +150,22 @@ class makeGroup(object):
                             ListResultAlgorithm.append(knn.performanceValues)
                         except:
                             pass
+        #aplicamos redes neuronales...
+        for activation in ['identity', 'logistic', 'tanh', 'relu']:
+            for solver in ['lbfgs', 'sgd', 'adam']:
+                for learning_rate in ['constant', 'invscaling', 'adaptive']:
+                    ListCapas = [5, 10, 15]
+                    for c1 in ListCapas:
+                        for c2 in ListCapas:
+                            for c3 in ListCapas:
+                                try:
+                                    print "MLPClassifier, activation: %s, solver: %s, learning_rate: %s %dX%dX%d" % (activation, solver, learning_rate, c1, c2, c3)
+                                    mlp = mlpClassifier.mlpClassifier(process.matrixData, activation, solver, learning_rate, c1, c2, c3)
+                                    mlp.applyAlgorithm()
+                                    ListResultAlgorithm.append(mlp.performanceValues)
+                                except:
+                                    pass
+
         #procesamos la salida...
         nameFile = "performanceTrainingWithLOU.csv"
         #procesamos los resultados...

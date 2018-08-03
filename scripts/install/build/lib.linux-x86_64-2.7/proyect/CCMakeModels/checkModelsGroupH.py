@@ -59,7 +59,7 @@ class evaluacionCruzada(object):
         actualData = [0.571428571429]
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
-        clf.append(MLPClassifier(hidden_layer_sizes=(5,15,5), activation='identity', solver='sgd', learning_rate='invscaling'))#logistic-sgd-invscaling (10-10-15)
+        clf.append(NuSVC(kernel='sigmoid', degree=3, gamma=10, probability=True))#logistic-sgd-invscaling (10-10-15)
 
         matrixResult = []
 
