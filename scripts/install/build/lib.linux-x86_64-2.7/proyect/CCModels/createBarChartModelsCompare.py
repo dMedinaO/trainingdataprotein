@@ -13,7 +13,7 @@ class barChartModels(object):
         self.pathInput = pathInput
         self.pathOutput = pathOutput
         self.group = group
-        self.ListGroups = ['A', 'B', 'C', 'F', 'H', 'M', 'N', 'O', 'P', 'T', 'U']
+        self.ListGroups = ['A', 'B', 'C', 'F', 'H', 'M', 'N', 'O', 'P', 'T', 'U', 'R', 'Z']
         #self.ListGroups = ['1', '2', '3', '4', '5', '6', '7', '8']
 
     #metodo que permite hacer las lecturas de todos las comparaciones generadas para cada modelo...

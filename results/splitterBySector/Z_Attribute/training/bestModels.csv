@@ -1,0 +1,4 @@
+Algorithm,Description,Accuracy
+SVC,linear,0.695652173913
+SVC,rbf,0.695652173913
+SVC,sigmoid,0.695652173913

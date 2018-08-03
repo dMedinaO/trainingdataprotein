@@ -54,11 +54,49 @@ class createBestModels(object):
     #metodo que permite procesar los modelos, crea los clf y genera los resultados
     def processModels(self):
 
-        print "RandomForestClassifier gini-10"
-        clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=10, n_jobs=-1, criterion='gini')
+        print "GaussianNB"
+        clf = GaussianNB()
+        param_name = "alpha"
+        param_range = np.logspace(-6,1,6)
+        self.createModel(clf, "GaussianNB/", 0.2, param_name, param_range, 'alpha', 'Validation curve with GaussianNB', 0, 1)
+
+        print "RandomForestClassifier gini 50"
+        clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=50, n_jobs=-1, criterion='gini')
         param_name = "n_estimators"
         param_range = [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]
-        self.createModel(clf, "RandomForestClassifier_gini_10/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1)
+        self.createModel(clf, "RandomForestClassifier_gini_50/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1, 1)
+
+        print "RandomForestClassifier gini 10"
+        clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=10, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RandomForestClassifier_gini_10/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1, 1)
+
+        print "RandomForestClassifier gini 150"
+        clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=150, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RandomForestClassifier_gini_150/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1, 1)
+
+        print "RandomForestClassifier gini 200"
+        clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=200, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RandomForestClassifier_gini_200/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1, 1)
+
+        print "RandomForestClassifier gini 250"
+        clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=250, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RandomForestClassifier_gini_250/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1, 1)
+
+        print "RandomForestClassifier gini 500"
+        clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=500, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RandomForestClassifier_gini_500/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1, 1)
+
+        print "RandomForestClassifier gini 750"
+        clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=750, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RandomForestClassifier_gini_750/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1, 1)
+
+        print "RandomForestClassifier gini 1000"
+        clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=1000, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RandomForestClassifier_gini_1000/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1, 1)
+
+        print "RandomForestClassifier gini 1500"
+        clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=1500, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RandomForestClassifier_gini_1500/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1, 1)
 
     #metodo que permite crear un directorio...
     def createPath(self, namePath):
@@ -77,7 +115,7 @@ class createBestModels(object):
             self.classAttribute.append(element[-1])
 
     #crear el modelo para gradientes...
-    def createModel(self, clf, pathName, size, param_name, param_range, xlabel, title, index):
+    def createModel(self, clf, pathName, size, param_name, param_range, xlabel, title, index, value):
 
         path = self.createPath(pathName)
         clfNull = clf
@@ -86,39 +124,27 @@ class createBestModels(object):
         print "Process summary score"
         self.crossValidateModel(clf, path)
 
-        print "Process confusion matrix"
-        nameMatrix = "%sConfusionMatrix.svg" % path
-        self.createConfusionMatrix(self.dataWC, self.classAttribute, clf, nameMatrix)
-        # try:
-        #     print "Process Precision and recall curve"
-        #     fig1 = "%sprecision_recall_curve.svg" % path
-        #     fig2 = "%sprecision_recall_curve_for_class.svg" % path
-        #     self.plot_precision_and_recall_curve(clfNull, fig1, fig2)
-        # except:
-        #     print "Not precision_recall_curve"
-        #     pass
-        #try:
-        print "Process ROC curve"
-        namePicture = "%sroc_curve.svg" % path
-        self.createCurveRoc(clfNull, namePicture)
-        #except:
-        #    print "Not roc_curve"
-        #    pass
-        #
-        # try:
-        #     print "Process validation curve"
-        #     namePicture = "%svalidation_curve.svg" % path
-        #     self.createCurveValidation(clfNull, namePicture, param_name, param_range, xlabel, title, index)
-        # except:
-        #     print "Not validation_curve"
-        #     pass
-        # try:
-        #     print "Process learning curve"
-        #     namePicture = "%slearning_curve.svg" % path
-        #     self.createLearningCurve(clfNull, namePicture, "Learning Curve For GradientBoostingClassifier", size)
-        # except:
-        #     print "It is not possible create learning curve"
-        #     pass
+        try:
+            print "Process confusion matrix"
+            nameMatrix = "%sConfusionMatrix.svg" % path
+            self.createConfusionMatrix(self.dataWC, self.classAttribute, clf, nameMatrix)
+        except:
+            pass
+
+        try:
+            print "Process validation curve"
+            namePicture = "%svalidation_curve.svg" % path
+            self.createCurveValidation(clfNull, namePicture, param_name, param_range, xlabel, title, index)
+        except:
+            print "Not validation_curve"
+            pass
+        try:
+            print "Process learning curve"
+            namePicture = "%slearning_curve.svg" % path
+            self.createLearningCurve(clfNull, namePicture, "Learning Curve For GradientBoostingClassifier", size)
+        except:
+            print "It is not possible create learning curve"
+            pass
 
     def transformInt(self, listData):
         for i in range(len(listData)):
@@ -200,57 +226,6 @@ class createBestModels(object):
         self.plot_confusion_matrix(matrix, classes=['Clinical','No clinical'], title='Confusion matrix, without normalization')
         plt.savefig(nameFig)
 
-    #metodo que permite crear una curva roc con la data...
-    def createCurveRoc(self, clf, nameFig):
-
-        #recibimos la data y la transformamos en
-        X = np.array(self.dataWC)
-        y = np.array(self.transformInt(self.classAttribute))
-
-        cv = LeaveOneOut()
-        classifier = clf
-        tprs = []
-        aucs = []
-        mean_fpr = np.linspace(0, 1, 100)
-        plt.figure(figsize=(20,10))
-        i = 0
-        for train, test in cv.split(X, y):
-            probas_ = classifier.fit(X[train], y[train]).predict_proba(X[test])
-            # Compute ROC curve and area the curve
-            fpr, tpr, thresholds = roc_curve(y[test], probas_[:, 1])
-            tprs.append(interp(mean_fpr, fpr, tpr))
-            tprs[-1][0] = 0.0
-            roc_auc = auc(fpr, tpr)
-            aucs.append(roc_auc)
-            plt.plot(fpr, tpr, lw=1, alpha=0.3,
-                     label='ROC fold %d (AUC = %0.2f)' % (i, roc_auc))
-
-            i += 1
-        plt.plot([0, 1], [0, 1], linestyle='--', lw=2, color='r',
-                 label='Luck', alpha=.8)
-
-        mean_tpr = np.mean(tprs, axis=0)
-        mean_tpr[-1] = 1.0
-        mean_auc = auc(mean_fpr, mean_tpr)
-        std_auc = np.std(aucs)
-        plt.plot(mean_fpr, mean_tpr, color='b',
-                 label=r'Mean ROC (AUC = %0.2f $\pm$ %0.2f)' % (mean_auc, std_auc),
-                 lw=2, alpha=.8)
-
-        std_tpr = np.std(tprs, axis=0)
-        tprs_upper = np.minimum(mean_tpr + std_tpr, 1)
-        tprs_lower = np.maximum(mean_tpr - std_tpr, 0)
-        plt.fill_between(mean_fpr, tprs_lower, tprs_upper, color='grey', alpha=.2,
-                         label=r'$\pm$ 1 std. dev.')
-
-        plt.xlim([-0.05, 1.05])
-        plt.ylim([-0.05, 1.05])
-        plt.xlabel('False Positive Rate')
-        plt.ylabel('True Positive Rate')
-        plt.title('Receiver operating characteristic example', fontsize=25)
-        plt.legend(loc="lower right")
-        plt.savefig(nameFig)
-
     #metodo que permite crear la curva de validacion
     def createCurveValidation(self, clf, nameFig, param_name, param_range, xlabel, title, option):
 
@@ -319,13 +294,13 @@ class createBestModels(object):
 
         # Cross validation with 100 iterations to get smoother mean test and train
         # score curves, each time with 20% data randomly selected as a validation set.
-        cv = ShuffleSplit(n_splits=100, test_size=size, random_state=0)
+        cv = LeaveOneOut()
         self.plot_learning_curve(clf, title, X, y, cv, ylim=(0.01, 1.01), n_jobs=4)
 
         plt.savefig(nameFig)
 
     #metodo que permite aplicar las diversas curvas de precision vs recall
-    def plot_precision_and_recall_curve(self, classifier, fig1, fig2):
+    def plot_precision_and_recall_curve(self, classifier, fig1, fig2, value):
 
         X = np.array(self.dataWC)
         y = np.array(self.transformInt(self.classAttribute))
@@ -335,7 +310,10 @@ class createBestModels(object):
 
         # Create a simple classifier
         classifier.fit(X_train, y_train)
-        y_score = classifier.decision_function(X_test)
+        if value == 0:
+            y_score = classifier.decision_function(X_test)
+        else:
+            y_score = classifier.decision_path(X_test)
         average_precision = average_precision_score(y_test, y_score)
 
         print('Average precision-recall score: {0:0.2f}'.format(average_precision))

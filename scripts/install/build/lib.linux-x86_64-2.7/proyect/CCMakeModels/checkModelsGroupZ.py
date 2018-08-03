@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 
 from sklearn.neural_network import MLPClassifier
+from sklearn.svm import NuSVC, SVC
 from sklearn.naive_bayes import GaussianNB, MultinomialNB, BernoulliNB
 from proyect.CCProcesFile import document
 
@@ -53,15 +54,15 @@ class evaluacionCruzada(object):
         nameFile = self.pathInput+group+"/normaliced/dataSetNormaliced.csv"
         dataSet, classList = self.getValuesInDataSet(nameFile)
 
-        listDesc = ['logistic-adam-adaptive (15-5-5)', 'relu-sgd-constant (10-5-5)', 'relu-sgd-constant (10-15-5)']
-        listAlgth = 'MLPClassifier'
-        actualData = 0.739130434783
+        listDesc = ['linear', 'rbf', 'sigmoid']
+        listAlgth = 'SVC'
+        actualData = 0.695652173913
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
-        clf.append(MLPClassifier(hidden_layer_sizes=(15,5,5), activation='logistic', solver='adam', learning_rate='adaptive'))#logistic-sgd-invscaling (10-10-15)
-        clf.append(MLPClassifier(hidden_layer_sizes=(10,5,5), activation='relu', solver='sgd', learning_rate='constant'))#identity-sgd-invscaling (5-5-10)
-        clf.append(MLPClassifier(hidden_layer_sizes=(10,15,5), activation='relu', solver='sgd', learning_rate='constant'))#logistic-sgd-invscaling (5-15-15)
-
+        clf.append(SVC(kernel='linear', degree=3, gamma=10, probability=True))
+        clf.append(SVC(kernel='rbf', degree=3, gamma=10, probability=True))
+        clf.append(SVC(kernel='sigmoid', degree=3, gamma=10, probability=True))
+        
         matrixResult = []
 
         for i in range (len(clf)):

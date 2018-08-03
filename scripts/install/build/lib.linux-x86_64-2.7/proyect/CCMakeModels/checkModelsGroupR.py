@@ -55,22 +55,15 @@ class evaluacionCruzada(object):
         nameFile = self.pathInput+group+"/normaliced/dataSetNormaliced.csv"
         dataSet, classList = self.getValuesInDataSet(nameFile)
 
-        listDesc = ['kernel: linear','logistic-sgd-invscaling (10-10-10)', 'identity-sgd-invscaling (10-10-10)', 'identity-sgd-invscaling (15-15-5)', 'identity-adam-adaptive (5-15-15)', 'tanh-lbfgs-constant (15-5-5)', 'relu-sgd-invscaling (5-10-10)', 'relu-sgd-adaptive (15-5-5)', 'BernoulliNB', 'logistic-sgd-invscaling (15-10-10)']
-        listAlgth = ['NuSVC', 'MLPClassifier','MLPClassifier','MLPClassifier','MLPClassifier','MLPClassifier','MLPClassifier','MLPClassifier','Naive Bayes','MLPClassifier']
-        actualData = [0.655172413793,0.655172413793,0.637931034483,0.637931034483,0.637931034483,0.637931034483,0.637931034483,0.637931034483,0.620689655172, 0.620689655172]
+        listDesc = ['BernoulliNB', 'kernel: linear', 'kernel: sigmoid']
+        listAlgth = ['Naive Bayes', 'NuSVC', 'NuSVC']
+        actualData = [0.620689655172, 0.655172413793, 0.603448275862]
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
-        clf.append(NuSVC(kernel='linear', degree=3, gamma=10, probability=True))
-        clf.append(MLPClassifier(hidden_layer_sizes=(10,10,10), activation='logistic', solver='sgd', learning_rate='invscaling'))#logistic-sgd-invscaling (10-10-15)
-        clf.append(MLPClassifier(hidden_layer_sizes=(10,10,10), activation='identity', solver='sgd', learning_rate='invscaling'))#identity-sgd-invscaling (5-5-10)
-        clf.append(MLPClassifier(hidden_layer_sizes=(15,15,5), activation='identity', solver='sgd', learning_rate='invscaling'))#logistic-sgd-invscaling (5-15-15)
-        clf.append(MLPClassifier(hidden_layer_sizes=(5,15,15), activation='identity', solver='adam', learning_rate='adaptive'))#logistic-sgd-invscaling (10-10-15)
-        clf.append(MLPClassifier(hidden_layer_sizes=(15,5,5), activation='tanh', solver='lbfgs', learning_rate='constant'))#identity-sgd-invscaling (5-5-10)
-        clf.append(MLPClassifier(hidden_layer_sizes=(5,10,10), activation='relu', solver='sgd', learning_rate='invscaling'))#logistic-sgd-invscaling (5-15-15)
-        clf.append(MLPClassifier(hidden_layer_sizes=(15,5,5), activation='relu', solver='sgd', learning_rate='adaptive'))#logistic-sgd-invscaling (5-15-15)
         clf.append(BernoulliNB())
-        clf.append(MLPClassifier(hidden_layer_sizes=(15,10,10), activation='logistic', solver='sgd', learning_rate='invscaling'))#logistic-sgd-invscaling (5-15-15)
-
+        clf.append(NuSVC(kernel='linear', degree=3, gamma=10, probability=True))
+        clf.append(NuSVC(kernel='sigmoid', degree=3, gamma=10, probability=True))
+        
         matrixResult = []
 
         for i in range (len(clf)):
