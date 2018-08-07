@@ -1,7 +1,7 @@
 '''
 clase que permite poder representar la performance obtenida por algun algoritmo
 '''
-from sklearn.model_selection import cross_validate
+from sklearn.model_selection import cross_validate, cross_val_predict
 from sklearn.model_selection import cross_val_score
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import fbeta_score, make_scorer
@@ -31,3 +31,12 @@ class performanceAlgoritmo(object):
         scores = cross_val_score(clf, dataInput, dataClass, cv=valueCV, scoring=self.ftwo_scorer)
         meanScore = np.mean(scores)
         self.scoreData.append(meanScore)
+
+        #generamos la matriz de confusion...
+        predictions = cross_val_predict(clf, dataInput, dataClass, cv=valueCV)
+        tn, fp, fn, tp = confusion_matrix(dataClass, predictions).ravel()
+        #siempre con respecto a la clase de interes...
+        self.scoreData.append(tn)
+        self.scoreData.append(fp)
+        self.scoreData.append(fn)
+        self.scoreData.append(tp)

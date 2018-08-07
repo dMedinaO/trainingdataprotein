@@ -27,5 +27,10 @@ class processPerformance(object):
             dictResponse.update({'neg_log_loss': performance.scoreData[3]})
             dictResponse.update({'f1': performance.scoreData[4]})
             dictResponse.update({'ftwo_scorer': performance.scoreData[5]})
+            dictResponse.update({'tn': performance.scoreData[6]})
+            dictResponse.update({'fp': performance.scoreData[7]})
+            dictResponse.update({'fn': performance.scoreData[8]})
+            dictResponse.update({'tp': performance.scoreData[9]})
+
 
             self.dictValue.append(dictResponse)

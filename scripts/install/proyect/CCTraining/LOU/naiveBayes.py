@@ -6,7 +6,8 @@ la tecnica leave one out...
 from proyect.CCTraining.LOU import performance
 from proyect.CCTraining.LOU import performanceScoreValues
 from sklearn.naive_bayes import GaussianNB, MultinomialNB, BernoulliNB
-from sklearn.model_selection import LeaveOneOut, cross_val_score
+from sklearn.model_selection import LeaveOneOut, cross_val_score, cross_val_predict
+from sklearn.metrics import confusion_matrix
 import numpy as np
 
 class naiveBayes(object):
@@ -46,6 +47,11 @@ class naiveBayes(object):
         accuracy = []
         precision = []
         recall = []
+        ListTN = []
+        ListFP = []
+        ListFN = []
+        ListTP = []
+
         clf = GaussianNB()
         for i in range(100):
 
@@ -59,9 +65,20 @@ class naiveBayes(object):
             scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='recall')
             recall.append(scores.mean())
 
+            predictions = cross_val_predict(clf, self.dataWC, self.classAttribute, cv=loocv)
+            tn, fp, fn, tp = confusion_matrix(self.classAttribute, predictions).ravel()
+            ListTN.append(tn)
+            ListFP.append(fp)
+            ListFN.append(fn)
+            ListTP.append(tp)
+
         self.performaceObject.ListAccuracy=accuracy
         self.performaceObject.ListRecall=recall
         self.performaceObject.ListPrecision=precision
+        self.performaceObject.ListTN=ListTN
+        self.performaceObject.ListFP=ListFP
+        self.performaceObject.ListFN=ListFN
+        self.performaceObject.ListTP=ListTP
 
         #hacemos la instancia al performanceScoreValues
         desc = "GaussianNB"
@@ -73,6 +90,11 @@ class naiveBayes(object):
         accuracy = []
         precision = []
         recall = []
+        ListTN = []
+        ListFP = []
+        ListFN = []
+        ListTP = []
+
         clf = BernoulliNB()
         for i in range(1):
 
@@ -86,9 +108,21 @@ class naiveBayes(object):
             scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='recall')
             recall.append(scores.mean())
 
+            predictions = cross_val_predict(clf, self.dataWC, self.classAttribute, cv=loocv)
+            tn, fp, fn, tp = confusion_matrix(self.classAttribute, predictions).ravel()
+            ListTN.append(tn)
+            ListFP.append(fp)
+            ListFN.append(fn)
+            ListTP.append(tp)
+
+
         self.performaceObject.ListAccuracy=accuracy
         self.performaceObject.ListRecall=recall
         self.performaceObject.ListPrecision=precision
+        self.performaceObject.ListTN=ListTN
+        self.performaceObject.ListFP=ListFP
+        self.performaceObject.ListFN=ListFN
+        self.performaceObject.ListTP=ListTP
 
         #hacemos la instancia al performanceScoreValues
         desc = "BernoulliNB"

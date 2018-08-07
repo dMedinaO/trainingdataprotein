@@ -11,7 +11,7 @@ class resumePerformance(object):
         self.ListResultAlgorithm = ListResultAlgorithm
         self.DictListFull = []
         self.matrixData = []
-        self.header = ['algoritmo', 'description', 'validation', 'accuracy', 'recall', 'precision', 'neg_log_loss', 'f1', 'ftwo_scorer']
+        self.header = ['algoritmo', 'description', 'validation', 'accuracy', 'recall', 'precision', 'neg_log_loss', 'f1', 'ftwo_scorer', 'tn', 'fp', 'fn', 'tp']
 
         self.addElementPerformanceResponse()
         self.addElementMatrix()

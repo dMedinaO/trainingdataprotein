@@ -26,16 +26,17 @@ ListResultAlgorithm = []
 
 #aplicamos adaBoost...
 for algorithm in ['SAMME', 'SAMME.R']:
-    for estimator in [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]:
-        try:
-            print "Apply adaBoost: %d, %s" % (estimator, algorithm)
-            adaBoostValue = adaBoost.adaBoostLOU(process.matrixData, algorithm, estimator)
-            adaBoostValue.applyAlgorithm()
-            ListResultAlgorithm.append(adaBoostValue.performanceValues)
-        except:
-            pass
+ for estimator in [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]:
+     try:
+         print "Apply adaBoost: %d, %s" % (estimator, algorithm)
+         adaBoostValue = adaBoost.adaBoostLOU(process.matrixData, algorithm, estimator)
+         adaBoostValue.applyAlgorithm()
+         ListResultAlgorithm.append(adaBoostValue.performanceValues)
+     except:
+         pass
 
 #aplicamos naiveBayes
+
 try:
     print "Apply GaussianNB"
     naiveBayesGB = naiveBayes.naiveBayes(process.matrixData)
@@ -62,7 +63,7 @@ for kernel in ['linear', 'poly', 'rbf', 'sigmoid']:
         ListResultAlgorithm.append(SVCValues.performanceValues)
     except:
         pass
-
+#
  #aplicamos randomForest
 for criterion in ['gini', 'entropy']:
     for estimator in [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]:
@@ -73,7 +74,7 @@ for criterion in ['gini', 'entropy']:
             ListResultAlgorithm.append(randomForestValues.performanceValues)
         except:
             pass
-
+#
  #aplicamos NuSVC
 for kernel in ['linear', 'poly', 'rbf', 'sigmoid']:
     try:
@@ -83,7 +84,7 @@ for kernel in ['linear', 'poly', 'rbf', 'sigmoid']:
         ListResultAlgorithm.append(nuSVCValues.performanceValues)
     except:
         pass
-
+#
  #aplicamos arboles de decision...
 for estimator in [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]:
     try:
@@ -93,7 +94,7 @@ for estimator in [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]:
         ListResultAlgorithm.append(gradientTreeBoostValue.performanceValues)
     except:
         pass
-
+#
  #aplicamos arboles de decision...
 for criterion in ['gini', 'entropy']:
     for splitter in ['best', 'random']:
@@ -104,7 +105,7 @@ for criterion in ['gini', 'entropy']:
             ListResultAlgorithm.append(decisionTreesValue.performanceValues)
         except:
             pass
-
+#
 #aplicamos knn...
 for algorithm in ['auto', 'ball_tree', 'kd_tree', 'brute']:
     for weight in ['uniform', 'distance']:
@@ -117,11 +118,11 @@ for algorithm in ['auto', 'ball_tree', 'kd_tree', 'brute']:
                     ListResultAlgorithm.append(knn.performanceValues)
                 except:
                     pass
-
+#
 #aplicamos redes neuronales...
-for activation in ['identity']:#, 'logistic', 'tanh', 'relu']:
-    for solver in ['lbfgs']:#, 'sgd', 'adam']:
-        for learning_rate in ['constant']:#, 'invscaling', 'adaptive']:
+for activation in ['identity', 'logistic', 'tanh', 'relu']:
+    for solver in ['lbfgs', 'sgd', 'adam']:
+        for learning_rate in ['constant', 'invscaling', 'adaptive']:
             ListCapas = [5, 10, 15]
             for c1 in ListCapas:
                 for c2 in ListCapas:
