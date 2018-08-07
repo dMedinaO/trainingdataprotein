@@ -19,10 +19,12 @@ from proyect.CCProcesFile import document
 
 class processPerformance(object):
 
-    def __init__(self, dataProcess, pathOutput):
+    def __init__(self, dataProcess, pathOutput, valueHeader, stdValue):
 
         self.dataProcess = dataProcess
         self.pathOutput = pathOutput
+        self.valueHeader = valueHeader
+        self.stdValue = stdValue
 
     #metodo que permite obtener la informacion y hacer el histograma...
     def processInfo(self):
@@ -31,10 +33,10 @@ class processPerformance(object):
 
         #process histogram...
         title = "Histogram for performance distribution"
-        label = "Accuracy"
+        label = self.valueHeader
         nameExport = "%sHist.png" % self.pathOutput
         print "Create histogram data..."
-        self.createHistogram(self.data['Accuracy'], nameExport, label, title)
+        self.createHistogram(self.data[self.valueHeader], nameExport, label, title)
 
         print "Create summary data..."
         self.createSummaryStatistic()
@@ -55,11 +57,11 @@ class processPerformance(object):
     #metodo que permite crear el resumen estadistico de la distribucion...
     def createSummaryStatistic(self):
 
-        minData = min(self.data['Accuracy'])
-        maxData = max(self.data['Accuracy'])
-        meanData = np.mean(self.data['Accuracy'])
-        stdData = np.std(self.data['Accuracy'])
-        varData = np.var(self.data['Accuracy'])
+        minData = min(self.data[self.valueHeader])
+        maxData = max(self.data[self.valueHeader])
+        meanData = np.mean(self.data[self.valueHeader])
+        stdData = np.std(self.data[self.valueHeader])
+        varData = np.var(self.data[self.valueHeader])
 
         header = ['Statistic', 'Value']
         #creamos un array lo exportamos a un data frame y generamos el resultado...
@@ -70,13 +72,13 @@ class processPerformance(object):
     #metodo que permite obtener los outliers...
     def getOuliersDistribution(self):
 
-        stdData = np.std(self.data['Accuracy'])
-        meanData= np.mean(self.data['Accuracy'])
+        stdData = np.std(self.data[self.valueHeader])
+        meanData= np.mean(self.data[self.valueHeader])
 
-        outliers = [x for x in self.data['Accuracy'] if (x >= meanData + 2 * stdData)]
+        outliers = [x for x in self.data[self.valueHeader] if (x <= meanData -  self.stdValue * stdData)]
 
         if len(outliers) == 0:
-            outliers.append(max(self.data['Accuracy']))
+            outliers.append(max(self.data[self.valueHeader]))
 
         return outliers
 
@@ -85,16 +87,16 @@ class processPerformance(object):
 
         outliers = self.getOuliersDistribution()
 
-        header = ['Algorithm',	'Description',	'Accuracy']
+        header = ['Algorithm',	'Description',	self.valueHeader]
         matrix =[]
 
         for outlier in outliers:
-            for i in range (len(self.data['Accuracy'])):
+            for i in range (len(self.data[self.valueHeader])):
                 row = []
-                if self.data['Accuracy'][i] >=outlier:
-                    row.append(self.data['algorithm'][i])
+                if self.data[self.valueHeader][i] <=outlier:
+                    row.append(self.data['algoritmo'][i])
                     row.append(self.data['description'][i])
-                    row.append(self.data['Accuracy'][i])
+                    row.append(self.data[self.valueHeader][i])
 
                     if row not in matrix:
                         matrix.append(row)

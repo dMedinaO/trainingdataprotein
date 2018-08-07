@@ -55,6 +55,7 @@ class naiveBayes(object):
         clf = GaussianNB()
         for i in range(100):
 
+            print "Iteration ", i
             loocv = LeaveOneOut()
             scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')
             accuracy.append(scores.mean())

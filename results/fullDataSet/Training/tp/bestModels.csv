@@ -1,0 +1,3 @@
+Algorithm,Description,tp
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-10-5",121
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-5-15",107

@@ -1,0 +1,8 @@
+Algorithm,Description,accuracy
+50,GradientBoostingClassifier,0.605874643875
+poly,nuSVC,0.585435897436
+entropy,"RandomForest, n_estimators: 150",0.585851851852
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 15-10-10",0.593435897436
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 5-5-10",0.594336182336
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 5-10-10",0.58558974359
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 10-10-10",0.585293447293

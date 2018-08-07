@@ -56,6 +56,7 @@ class mlpClassifier(object):
         clf = MLPClassifier(hidden_layer_sizes=(self.c1,self.c2,self.c3), activation=self.activation, solver=self.solver, learning_rate=self.learning_rate)
         for i in range(100):
 
+            print "Iteration ", i
             loocv = LeaveOneOut()
             scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')
             accuracy.append(scores.mean())

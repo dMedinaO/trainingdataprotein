@@ -53,7 +53,7 @@ class knnAlgorithmLOU(object):
 
         clf = KNeighborsClassifier(n_neighbors=self.nearest,metric=self.metric,algorithm=self.algorithm,weights=self.weight, n_jobs=-1)
         for i in range(100):
-
+            print "Iteration ", i
             loocv = LeaveOneOut()
             scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')
             accuracy.append(scores.mean())

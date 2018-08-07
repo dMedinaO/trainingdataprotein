@@ -51,7 +51,7 @@ class adaBoostLOU(object):
 
         clf = AdaBoostClassifier(n_estimators=self.estimator, algorithm=self.algorithm)
         for i in range(100):
-
+            print "Iteration ", i
             loocv = LeaveOneOut()
             scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')
             accuracy.append(scores.mean())
@@ -75,7 +75,7 @@ class adaBoostLOU(object):
         self.performaceObject.ListFP=ListFP
         self.performaceObject.ListFN=ListFN
         self.performaceObject.ListTP=ListTP
-        
+
         #hacemos la instancia al performanceScoreValues
         desc = str(self.estimator) + "- AdaBoostClassifier"
         self.performanceValues = performanceScoreValues.performanceScoreValues(self.algorithm,desc, 'LOU', self.performaceObject)

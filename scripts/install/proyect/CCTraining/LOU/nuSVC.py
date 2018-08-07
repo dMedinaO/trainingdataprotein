@@ -56,6 +56,7 @@ class nuSVC(object):
         clf = NuSVC(kernel=self.kernel, degree=3, gamma=10, probability=True)
         for i in range(100):
 
+            print "Iteration ", i
             loocv = LeaveOneOut()
             scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')
             accuracy.append(scores.mean())
@@ -81,7 +82,7 @@ class nuSVC(object):
         self.performaceObject.ListFP=ListFP
         self.performaceObject.ListFN=ListFN
         self.performaceObject.ListTP=ListTP
-        
+
         #hacemos la instancia al performanceScoreValues
         desc = "kernel: %s" % self.kernel
         self.performanceValues = performanceScoreValues.performanceScoreValues("NuSVC",desc, 'LOU', self.performaceObject)

@@ -51,7 +51,7 @@ class decisionTrees(object):
 
         clf = DecisionTreeClassifier(random_state=0, criterion=self.criterion, splitter=self.splitter)
         for i in range(100):
-
+            print "Iteration ", i
             loocv = LeaveOneOut()
             scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')
             accuracy.append(scores.mean())
