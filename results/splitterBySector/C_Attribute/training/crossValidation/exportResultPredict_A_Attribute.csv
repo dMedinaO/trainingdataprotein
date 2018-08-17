@@ -1,3 +1,0 @@
-algorithm,desc,actualScore,new score
-SVC,linear,0.7,0.6
-NuSVC,kernel: linear,0.7,0.6

@@ -1,0 +1,2 @@
+Algorithm,Description,Accuracy_Mean
+NuSVC,kernel: sigmoid,0.571428571429

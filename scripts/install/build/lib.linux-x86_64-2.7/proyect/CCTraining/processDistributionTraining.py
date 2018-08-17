@@ -93,13 +93,22 @@ class processPerformance(object):
         for outlier in outliers:
             for i in range (len(self.data[self.valueHeader])):
                 row = []
-                if self.data[self.valueHeader][i] <=outlier:
-                    row.append(self.data['algoritmo'][i])
-                    row.append(self.data['description'][i])
-                    row.append(self.data[self.valueHeader][i])
+                if self.valueHeader == 'fp' or self.valueHeader == 'fn':
+                    if self.data[self.valueHeader][i] <=outlier:
+                        row.append(self.data['algorithm'][i])
+                        row.append(self.data['description'][i])
+                        row.append(self.data[self.valueHeader][i])
 
-                    if row not in matrix:
-                        matrix.append(row)
+                        if row not in matrix:
+                            matrix.append(row)
+                else:
+                    if self.data[self.valueHeader][i] >=outlier:
+                        row.append(self.data['algorithm'][i])
+                        row.append(self.data['description'][i])
+                        row.append(self.data[self.valueHeader][i])
+
+                        if row not in matrix:
+                            matrix.append(row)
 
         #generamos el export...
         document.document("bestModels.csv", self.pathOutput).createExportFileWithPandas(matrix, header)

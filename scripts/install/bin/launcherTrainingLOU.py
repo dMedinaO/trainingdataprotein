@@ -136,7 +136,7 @@ for activation in ['identity', 'logistic', 'tanh', 'relu']:
                             pass
 
 #procesamos la salida...
-nameFile = "performanceTrainingWithLOU.csv"
+nameFile = sys.argv[3]
 #procesamos los resultados...
 resultProcess = processResult.exportResult(ListResultAlgorithm, pathOutput, nameFile)
 resultProcess.processMatrixValues()

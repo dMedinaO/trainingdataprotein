@@ -55,7 +55,7 @@ class randomForest(object):
         ListTP = []
 
         clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=self.estimator, n_jobs=-1, criterion=self.criterion)
-        for i in range(100):
+        for i in range(10):
             print "Iteration ", i
             loocv = LeaveOneOut()
             scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')

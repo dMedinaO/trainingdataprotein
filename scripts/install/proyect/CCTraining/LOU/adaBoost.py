@@ -50,7 +50,7 @@ class adaBoostLOU(object):
         ListTP = []
 
         clf = AdaBoostClassifier(n_estimators=self.estimator, algorithm=self.algorithm)
-        for i in range(100):
+        for i in range(10):
             print "Iteration ", i
             loocv = LeaveOneOut()
             scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')

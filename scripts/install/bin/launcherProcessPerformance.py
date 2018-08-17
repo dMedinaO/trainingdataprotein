@@ -11,7 +11,7 @@ inputData = sys.argv[1]
 pathOutput = sys.argv[2]
 stdValue = float(sys.argv[3])
 
-headerList = ['fp', 'fn']
+headerList = ['Accuracy_Mean',	'recall_Mean', 'precision_Mean', 'tn', 'fp', 'fn', 'tp']
 
 for header in headerList:
 

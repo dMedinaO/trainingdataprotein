@@ -29,6 +29,13 @@ class splitterGroup(object):
             for j in range (len(self.dataSet[i])):
                 self.dataSet[i][j] = float(self.dataSet[i][j])
 
+        #quitamos un elemento...
+        #matrixData = []
+
+        #for element in self.dataSet:
+        #    matrixData.append(element[:-1])
+        #self.dataSet = matrixData
+
     #metodo que permite aplicar k-means al set de datos...
     def applyKMeans(self):
 

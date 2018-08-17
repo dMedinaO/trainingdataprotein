@@ -1,9 +1,0 @@
-algorithm,desc,actualScore,new score
-auto,minkowski-uniform KNN: 2,0.717948717949,0.673913043478
-auto,euclidean-uniform KNN: 2,0.717948717949,0.673913043478
-ball_tree,minkowski-uniform KNN: 2,0.717948717949,0.673913043478
-ball_tree,euclidean-uniform KNN: 2,0.717948717949,0.673913043478
-kd_tree,minkowski-uniform KNN: 2,0.717948717949,0.673913043478
-kd_tree,euclidean-uniform KNN: 2,0.717948717949,0.673913043478
-brute,minkowski-uniform KNN: 2,0.717948717949,0.673913043478
-brute,euclidean-uniform KNN: 2,0.717948717949,0.673913043478

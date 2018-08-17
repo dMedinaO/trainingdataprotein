@@ -1,9 +1,0 @@
-algorithm,desc,actualScore,new score
-auto,minkowski-distance KNN: 3,0.722222222222,0.625
-auto,euclidean-distance KNN: 3,0.722222222222,0.625
-ball_tree,minkowski-distance KNN: 3,0.722222222222,0.625
-ball_tree,euclidean-distance KNN: 3,0.722222222222,0.625
-kd_tree,minkowski-distance KNN: 3,0.722222222222,0.625
-kd_tree,euclidean-distance KNN: 3,0.722222222222,0.625
-brute,minkowski-distance KNN: 3,0.722222222222,0.625
-brute,euclidean-distance KNN: 3,0.722222222222,0.625

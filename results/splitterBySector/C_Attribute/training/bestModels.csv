@@ -1,3 +1,0 @@
-Algorithm,Description,Accuracy
-SVC,linear,0.7
-NuSVC,kernel: linear,0.7

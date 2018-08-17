@@ -1,0 +1,2 @@
+Algorithm,Description,tn
+MLPClassifier,relu-sgd-invscaling (5-10-5),1.6

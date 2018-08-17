@@ -48,7 +48,7 @@ class gradientTreeBoost(object):
         ListTP = []
 
         clf = GradientBoostingClassifier(n_estimators=self.estimator)
-        for i in range(100):
+        for i in range(10):
             print "Iteration ", i
             loocv = LeaveOneOut()
             scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=loocv, scoring='accuracy')

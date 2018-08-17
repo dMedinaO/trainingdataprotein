@@ -1,0 +1,36 @@
+Algorithm,Description,Accuracy_Mean
+Naive Bayes,GaussianNB,1.0
+RandomForestClassifier,gini - 10,1.0
+RandomForestClassifier,gini - 20,1.0
+RandomForestClassifier,gini - 50,1.0
+RandomForestClassifier,gini - 100,1.0
+RandomForestClassifier,gini - 150,1.0
+RandomForestClassifier,gini - 200,1.0
+RandomForestClassifier,gini - 250,1.0
+RandomForestClassifier,gini - 500,1.0
+RandomForestClassifier,gini - 750,1.0
+RandomForestClassifier,gini - 1000,1.0
+RandomForestClassifier,gini - 1500,1.0
+RandomForestClassifier,entropy - 10,1.0
+RandomForestClassifier,entropy - 20,1.0
+RandomForestClassifier,entropy - 50,1.0
+RandomForestClassifier,entropy - 100,1.0
+RandomForestClassifier,entropy - 150,1.0
+RandomForestClassifier,entropy - 200,1.0
+RandomForestClassifier,entropy - 250,1.0
+RandomForestClassifier,entropy - 500,1.0
+RandomForestClassifier,entropy - 750,1.0
+RandomForestClassifier,entropy - 1000,1.0
+RandomForestClassifier,entropy - 1500,1.0
+GradientBoostingClassifier,GradientBoostingClassifier 20,1.0
+GradientBoostingClassifier,GradientBoostingClassifier 50,1.0
+GradientBoostingClassifier,GradientBoostingClassifier 100,1.0
+GradientBoostingClassifier,GradientBoostingClassifier 150,1.0
+GradientBoostingClassifier,GradientBoostingClassifier 200,1.0
+GradientBoostingClassifier,GradientBoostingClassifier 250,1.0
+GradientBoostingClassifier,GradientBoostingClassifier 500,1.0
+GradientBoostingClassifier,GradientBoostingClassifier 750,1.0
+GradientBoostingClassifier,GradientBoostingClassifier 1000,1.0
+GradientBoostingClassifier,GradientBoostingClassifier 1500,1.0
+gini,DecisionTreeClassifier gini best,1.0
+entropy,DecisionTreeClassifier entropy best,1.0

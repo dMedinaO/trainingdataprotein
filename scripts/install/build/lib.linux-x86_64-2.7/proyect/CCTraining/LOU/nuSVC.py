@@ -54,7 +54,7 @@ class nuSVC(object):
         ListTP = []
 
         clf = NuSVC(kernel=self.kernel, degree=3, gamma=10, probability=True)
-        for i in range(100):
+        for i in range(10):
 
             print "Iteration ", i
             loocv = LeaveOneOut()

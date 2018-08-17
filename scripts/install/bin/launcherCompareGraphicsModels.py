@@ -6,7 +6,7 @@ import sys
 from proyect.CCModels import createBarChartModelsCompare
 
 pathInput = sys.argv[1]
-groups = ['A', 'B', 'C', 'F', 'H', 'M', 'N', 'O', 'P', 'T', 'U', 'R', 'Z']
+groups = ['H', 'N', 'U']
 #groups = ['1', '2', '3', '4', '5', '6', '7', '8']
 
 #formamos el objeto...

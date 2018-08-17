@@ -1,0 +1,46 @@
+Algorithm,Description,precision_Mean
+Naive Bayes,GaussianNB,0.5
+SVC,poly,0.5
+RandomForestClassifier,gini - 10,0.5
+RandomForestClassifier,gini - 20,0.5
+RandomForestClassifier,gini - 50,0.5
+RandomForestClassifier,gini - 100,0.5
+RandomForestClassifier,gini - 150,0.5
+RandomForestClassifier,gini - 200,0.5
+RandomForestClassifier,gini - 250,0.5
+RandomForestClassifier,gini - 500,0.5
+RandomForestClassifier,gini - 750,0.5
+RandomForestClassifier,gini - 1000,0.5
+RandomForestClassifier,gini - 1500,0.5
+RandomForestClassifier,entropy - 10,0.5
+RandomForestClassifier,entropy - 20,0.5
+RandomForestClassifier,entropy - 50,0.5
+RandomForestClassifier,entropy - 100,0.5
+RandomForestClassifier,entropy - 150,0.5
+RandomForestClassifier,entropy - 200,0.5
+RandomForestClassifier,entropy - 250,0.5
+RandomForestClassifier,entropy - 500,0.5
+RandomForestClassifier,entropy - 750,0.5
+RandomForestClassifier,entropy - 1000,0.5
+RandomForestClassifier,entropy - 1500,0.5
+NuSVC,kernel: sigmoid,0.5
+GradientBoostingClassifier,GradientBoostingClassifier 20,0.5
+GradientBoostingClassifier,GradientBoostingClassifier 50,0.5
+GradientBoostingClassifier,GradientBoostingClassifier 100,0.5
+GradientBoostingClassifier,GradientBoostingClassifier 150,0.5
+GradientBoostingClassifier,GradientBoostingClassifier 200,0.5
+GradientBoostingClassifier,GradientBoostingClassifier 250,0.5
+GradientBoostingClassifier,GradientBoostingClassifier 500,0.5
+GradientBoostingClassifier,GradientBoostingClassifier 750,0.5
+GradientBoostingClassifier,GradientBoostingClassifier 1000,0.5
+GradientBoostingClassifier,GradientBoostingClassifier 1500,0.5
+gini,DecisionTreeClassifier gini best,0.5
+entropy,DecisionTreeClassifier entropy best,0.5
+auto,minkowski-distance KNN: 2,0.5
+auto,euclidean-distance KNN: 2,0.5
+ball_tree,minkowski-distance KNN: 2,0.5
+ball_tree,euclidean-distance KNN: 2,0.5
+kd_tree,minkowski-distance KNN: 2,0.5
+kd_tree,euclidean-distance KNN: 2,0.5
+brute,minkowski-distance KNN: 2,0.5
+brute,euclidean-distance KNN: 2,0.5

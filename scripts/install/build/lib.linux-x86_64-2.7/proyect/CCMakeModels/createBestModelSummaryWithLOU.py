@@ -56,14 +56,38 @@ class createBestModels(object):
     #metodo que permite procesar los modelos, crea los clf y genera los resultados
     def processModels(self):
 
-        param_name = "gamma"
-        param_range = np.logspace(-6,1,5)
+        param_name = "n_estimators"
+        param_range = [10,20,50,100,150,200,250,500,750,1000,1500]
 
-        clf = NuSVC(kernel='linear', degree=3, gamma=10, probability=True)
-        self.createModel(clf, "NuSVC_Linear/", 0.2, param_name, param_range, 'gamma', 'Validation curve with NuSVC', 0,0)
+        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=10, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RF_gini_10/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
 
-        clf = NuSVC(kernel='sigmoid', degree=3, gamma=10, probability=True)
-        self.createModel(clf, "NuSVC_Sigmoid/", 0.2, param_name, param_range, 'gamma', 'Validation curve with NuSVC', 0,0)
+        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=20, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RF_gini_20/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+
+        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=50, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RF_gini_50/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+
+        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=100, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RF_gini_100/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+
+        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=150, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RF_gini_150/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+
+        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=200, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RF_gini_200/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+
+        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=250, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RF_gini_250/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+
+        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=500, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RF_gini_500/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+
+        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=750, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RF_gini_750/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+
+        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=1000, n_jobs=-1, criterion='gini')
+        self.createModel(clf, "RF_gini_1000/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
 
     #metodo que permite crear un directorio...
     def createPath(self, namePath):
