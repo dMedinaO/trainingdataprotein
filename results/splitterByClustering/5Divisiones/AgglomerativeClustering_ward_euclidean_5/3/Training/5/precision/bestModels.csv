@@ -1,0 +1,2 @@
+Algorithm,Description,precision
+entropy,"RandomForest, n_estimators: 1000",0.928571428571

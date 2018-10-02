@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 
 from sklearn.neural_network import MLPClassifier
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import NuSVC, SVC
 from sklearn.naive_bayes import GaussianNB, MultinomialNB, BernoulliNB
 from sklearn.ensemble import RandomForestClassifier
@@ -56,13 +57,14 @@ class evaluacionCruzada(object):
         nameFile = self.pathInput+group+"/normaliced/dataSetNormaliced.csv"
         dataSet, classList = self.getValuesInDataSet(nameFile)
 
-        listDesc = ['linear', 'kernel: linear']
-        listAlgth = ['SVC', 'NuSVC']
-        actualData = 0.7
+        listDesc = ['minkowski-uniform KNN: 2', 'minkowski-uniform KNN: 3', 'minkowski-uniform KNN: 4']
+        listAlgth = ['KNN','KNN', 'KNN' ]
+        actualData = 0.6
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
-        clf.append(SVC(kernel='linear', degree=3, gamma=10, probability=True))
-        clf.append(NuSVC(kernel='linear', degree=3, gamma=10, probability=True))
+        clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='auto',weights='uniform', n_jobs=-1))
+        clf.append(KNeighborsClassifier(n_neighbors=3,metric='minkowski',algorithm='auto',weights='uniform', n_jobs=-1))
+        clf.append(KNeighborsClassifier(n_neighbors=4,metric='minkowski',algorithm='auto',weights='uniform', n_jobs=-1))
 
         matrixResult = []
 

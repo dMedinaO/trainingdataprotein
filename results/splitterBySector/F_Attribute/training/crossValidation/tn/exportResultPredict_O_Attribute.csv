@@ -1,0 +1,4 @@
+algorithm,desc,actualScore,new score
+auto,minkowski-distance KNN: 2,0.727272727273,0.717948717949
+auto,euclidean-distance KNN: 2,0.727272727273,0.717948717949
+ball_tree,minkowski-distance KNN: 2,0.727272727273,0.717948717949

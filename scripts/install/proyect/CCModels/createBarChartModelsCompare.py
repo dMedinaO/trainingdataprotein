@@ -57,6 +57,6 @@ class barChartModels(object):
         plt.figure()
         y_pos = np.arange(len(xTicks))
         plt.bar(y_pos, listData, color = (0.5,0.1,0.5,0.6))
-        plt.xticks(y_pos, xTicks)
+        plt.xticks(y_pos, xTicks, rotation=45)
         plt.title(title, fontsize=12)
         plt.savefig(nameExport)

@@ -1,0 +1,9 @@
+algorithm,desc,actualScore,new score
+auto,minkowski-uniform KNN: 4,0.727272727273,0.25
+auto,euclidean-uniform KNN: 4,0.727272727273,0.25
+ball_tree,minkowski-uniform KNN: 4,0.727272727273,0.25
+ball_tree,euclidean-uniform KNN: 4,0.727272727273,0.25
+kd_tree,minkowski-uniform KNN: 4,0.727272727273,0.25
+kd_tree,euclidean-uniform KNN: 4,0.727272727273,0.25
+brute,minkowski-uniform KNN: 4,0.727272727273,0.25
+brute,euclidean-uniform KNN: 4,0.727272727273,0.25

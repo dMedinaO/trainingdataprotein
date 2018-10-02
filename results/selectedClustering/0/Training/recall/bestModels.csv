@@ -1,0 +1,5 @@
+Algorithm,Description,recall
+sigmoid,nuSVC,1.0
+linear,SVC,1.0
+rbf,SVC,1.0
+sigmoid,SVC,1.0

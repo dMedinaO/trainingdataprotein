@@ -1,0 +1,3 @@
+Algorithm,Description,precision
+gini,"RandomForest, n_estimators: 50",1.0
+entropy,"RandomForest, n_estimators: 50",1.0

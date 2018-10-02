@@ -1,0 +1,10 @@
+Algorithm,Description,precision
+auto,KNN con 7 vecinos peso: uniform metrica: minkowski,0.75
+auto,KNN con 7 vecinos peso: uniform metrica: euclidean,0.75
+ball_tree,KNN con 7 vecinos peso: uniform metrica: minkowski,0.75
+ball_tree,KNN con 7 vecinos peso: uniform metrica: euclidean,0.75
+kd_tree,KNN con 7 vecinos peso: uniform metrica: minkowski,0.75
+kd_tree,KNN con 7 vecinos peso: uniform metrica: euclidean,0.75
+brute,KNN con 7 vecinos peso: uniform metrica: minkowski,0.75
+brute,KNN con 7 vecinos peso: uniform metrica: euclidean,0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 5-5-15",0.75

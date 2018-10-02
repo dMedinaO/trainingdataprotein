@@ -1,0 +1,3 @@
+algorithm,desc,actualScore,new score
+naive_bayes,BernoulliNB,0.692307692308,0.448275862069
+naive_bayes,GaussianNB,0.692307692308,0.431034482759

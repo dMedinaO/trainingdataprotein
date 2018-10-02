@@ -1,0 +1,2 @@
+Algorithm,Description,recall_Mean
+MLPClassifier,relu-sgd-invscaling (15-10-10),0.20987804878

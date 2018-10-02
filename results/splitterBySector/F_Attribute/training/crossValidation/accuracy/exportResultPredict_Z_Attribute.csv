@@ -1,0 +1,6 @@
+algorithm,desc,actualScore,new score
+NuSVC,kernel: poly,0.727272727273,0.5
+NuSVC,kernel: rbf,0.727272727273,0.478260869565
+auto,minkowski-distance KNN: 2,0.727272727273,0.45652173913
+auto,euclidean-distance KNN: 2,0.727272727273,0.45652173913
+ball_tree,minkowski-distance KNN: 2,0.727272727273,0.45652173913

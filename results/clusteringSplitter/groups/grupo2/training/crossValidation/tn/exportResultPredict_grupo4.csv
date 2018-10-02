@@ -1,0 +1,9 @@
+algorithm,desc,actualScore,new score
+MLPClassifier,logistic-adam-invscaling (10-5-10),0.75,0.392857142857
+Naive Bayes,GaussianNB,0.75,0.464285714286
+Naive Bayes,BernoulliNB,0.75,0.392857142857
+SVC,linear,0.75,0.392857142857
+SVC,sigmoid,0.75,0.642857142857
+RandomForestClassifier,gini - 10,0.75,0.5
+RandomForestClassifier,gini - 20,0.75,0.392857142857
+RandomForestClassifier,gini - 200,0.75,0.392857142857

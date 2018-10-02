@@ -95,7 +95,7 @@ class processPerformance(object):
                 row = []
                 if self.valueHeader == 'fp' or self.valueHeader == 'fn':
                     if self.data[self.valueHeader][i] <=outlier:
-                        row.append(self.data['algorithm'][i])
+                        row.append(self.data['algoritmo'][i])
                         row.append(self.data['description'][i])
                         row.append(self.data[self.valueHeader][i])
 
@@ -103,7 +103,7 @@ class processPerformance(object):
                             matrix.append(row)
                 else:
                     if self.data[self.valueHeader][i] >=outlier:
-                        row.append(self.data['algorithm'][i])
+                        row.append(self.data['algoritmo'][i])
                         row.append(self.data['description'][i])
                         row.append(self.data[self.valueHeader][i])
 

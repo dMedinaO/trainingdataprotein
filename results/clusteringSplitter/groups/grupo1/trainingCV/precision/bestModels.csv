@@ -1,0 +1,2 @@
+Algorithm,Description,precision
+SAMME,AdaBoostClassifier con 10 estimadores,0.726666666667

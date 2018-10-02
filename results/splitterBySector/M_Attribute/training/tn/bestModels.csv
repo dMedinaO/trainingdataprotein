@@ -1,0 +1,8 @@
+Algorithm,Description,tn
+SVC,linear,10.0
+SVC,sigmoid,10.0
+MLPClassifier,logistic-adam-constant (10-15-15),10.0
+MLPClassifier,logistic-adam-constant (15-15-15),10.0
+MLPClassifier,logistic-adam-invscaling (15-15-15),10.0
+MLPClassifier,logistic-adam-adaptive (10-15-15),10.0
+MLPClassifier,logistic-adam-adaptive (15-10-15),10.0

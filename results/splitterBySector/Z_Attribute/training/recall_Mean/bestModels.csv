@@ -1,0 +1,2 @@
+Algorithm,Description,recall_Mean
+Naive Bayes,GaussianNB,0.173913043478

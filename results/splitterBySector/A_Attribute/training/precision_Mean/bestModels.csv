@@ -1,0 +1,2 @@
+Algorithm,Description,precision_Mean
+MLPClassifier,logistic-adam-adaptive (10-15-15),0.55

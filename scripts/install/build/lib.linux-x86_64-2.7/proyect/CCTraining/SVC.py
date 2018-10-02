@@ -5,6 +5,7 @@ input: matriz de datos normalizados (csv)
 output: diccionario con la informacion de la performance
 '''
 
+
 from sklearn.svm import SVC
 from proyect.CCTraining import performanceScore
 from proyect.CCTraining import processPerformance
@@ -33,13 +34,16 @@ class SVCObjet(object):
     def applyAlgorithm(self):
 
         for kernel in self.kernelList:
-            print "SVC, kernel: %s" % kernel
-            clf = SVC(kernel=kernel, degree=3, gamma=10, probability=True)
-            clf = clf.fit(self.dataWC, self.classAttribute)
-            descripcion = "SVC"
-            performanceData = performanceScore.performanceAlgoritmo(kernel, descripcion, str(self.validator))
-            performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
-            self.performanceDataList.append(performanceData)
+            try:
+                print "SVC, kernel: %s" % kernel
+                clf = SVC(kernel=kernel, degree=3, gamma=10, probability=True)
+                clf = clf.fit(self.dataWC, self.classAttribute)
+                descripcion = "SVC"
+                performanceData = performanceScore.performanceAlgoritmo(kernel, descripcion, str(self.validator))
+                performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
+                self.performanceDataList.append(performanceData)
+            except:
+                pass
 
     #metodo que permite procesar la performance...
     def processValuesScore(self):

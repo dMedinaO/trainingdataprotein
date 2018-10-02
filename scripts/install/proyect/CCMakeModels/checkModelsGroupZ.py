@@ -54,15 +54,15 @@ class evaluacionCruzada(object):
         nameFile = self.pathInput+group+"/normaliced/dataSetNormaliced.csv"
         dataSet, classList = self.getValuesInDataSet(nameFile)
 
-        listDesc = ['linear', 'rbf', 'sigmoid']
-        listAlgth = 'SVC'
-        actualData = 0.695652173913
+        listDesc = ['GaussianNB']
+        listAlgth = 'naive_bayes'
+        actualData = 0.391304347826
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
-        clf.append(SVC(kernel='linear', degree=3, gamma=10, probability=True))
-        clf.append(SVC(kernel='rbf', degree=3, gamma=10, probability=True))
-        clf.append(SVC(kernel='sigmoid', degree=3, gamma=10, probability=True))
-        
+        clf.append(GaussianNB())
+        #clf.append(SVC(kernel='rbf', degree=3, gamma=10, probability=True))
+        #clf.append(SVC(kernel='sigmoid', degree=3, gamma=10, probability=True))
+
         matrixResult = []
 
         for i in range (len(clf)):

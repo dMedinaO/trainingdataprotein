@@ -1,0 +1,1170 @@
+Algorithm,Description,accuracy
+GaussianNB,Naive Bayes algoritmo,0.833333333333
+BernoulliNB,Naive Bayes algoritmo,0.75
+SAMME,AdaBoostClassifier con 10 estimadores,0.583333333333
+SAMME,AdaBoostClassifier con 20 estimadores,0.583333333333
+SAMME,AdaBoostClassifier con 50 estimadores,0.583333333333
+SAMME,AdaBoostClassifier con 100 estimadores,0.583333333333
+SAMME,AdaBoostClassifier con 150 estimadores,0.583333333333
+SAMME,AdaBoostClassifier con 200 estimadores,0.583333333333
+SAMME,AdaBoostClassifier con 250 estimadores,0.583333333333
+SAMME,AdaBoostClassifier con 500 estimadores,0.583333333333
+SAMME,AdaBoostClassifier con 750 estimadores,0.583333333333
+SAMME,AdaBoostClassifier con 1000 estimadores,0.583333333333
+SAMME,AdaBoostClassifier con 1500 estimadores,0.583333333333
+SAMME.R,AdaBoostClassifier con 10 estimadores,0.583333333333
+SAMME.R,AdaBoostClassifier con 20 estimadores,0.5
+SAMME.R,AdaBoostClassifier con 50 estimadores,0.5
+SAMME.R,AdaBoostClassifier con 100 estimadores,0.583333333333
+SAMME.R,AdaBoostClassifier con 150 estimadores,0.583333333333
+SAMME.R,AdaBoostClassifier con 200 estimadores,0.5
+SAMME.R,AdaBoostClassifier con 250 estimadores,0.583333333333
+SAMME.R,AdaBoostClassifier con 500 estimadores,0.5
+SAMME.R,AdaBoostClassifier con 750 estimadores,0.583333333333
+SAMME.R,AdaBoostClassifier con 1000 estimadores,0.583333333333
+SAMME.R,AdaBoostClassifier con 1500 estimadores,0.583333333333
+auto,KNN con 1 vecinos peso: uniform metrica: minkowski,0.666666666667
+auto,KNN con 2 vecinos peso: uniform metrica: minkowski,0.75
+auto,KNN con 3 vecinos peso: uniform metrica: minkowski,0.666666666667
+auto,KNN con 4 vecinos peso: uniform metrica: minkowski,0.75
+auto,KNN con 5 vecinos peso: uniform metrica: minkowski,0.75
+auto,KNN con 6 vecinos peso: uniform metrica: minkowski,0.75
+auto,KNN con 7 vecinos peso: uniform metrica: minkowski,0.75
+auto,KNN con 8 vecinos peso: uniform metrica: minkowski,0.75
+auto,KNN con 1 vecinos peso: uniform metrica: euclidean,0.666666666667
+auto,KNN con 2 vecinos peso: uniform metrica: euclidean,0.75
+auto,KNN con 3 vecinos peso: uniform metrica: euclidean,0.666666666667
+auto,KNN con 4 vecinos peso: uniform metrica: euclidean,0.75
+auto,KNN con 5 vecinos peso: uniform metrica: euclidean,0.75
+auto,KNN con 6 vecinos peso: uniform metrica: euclidean,0.75
+auto,KNN con 7 vecinos peso: uniform metrica: euclidean,0.75
+auto,KNN con 8 vecinos peso: uniform metrica: euclidean,0.75
+auto,KNN con 1 vecinos peso: distance metrica: minkowski,0.666666666667
+auto,KNN con 2 vecinos peso: distance metrica: minkowski,0.666666666667
+auto,KNN con 3 vecinos peso: distance metrica: minkowski,0.666666666667
+auto,KNN con 4 vecinos peso: distance metrica: minkowski,0.75
+auto,KNN con 5 vecinos peso: distance metrica: minkowski,0.75
+auto,KNN con 6 vecinos peso: distance metrica: minkowski,0.75
+auto,KNN con 7 vecinos peso: distance metrica: minkowski,0.75
+auto,KNN con 8 vecinos peso: distance metrica: minkowski,0.75
+auto,KNN con 1 vecinos peso: distance metrica: euclidean,0.666666666667
+auto,KNN con 2 vecinos peso: distance metrica: euclidean,0.666666666667
+auto,KNN con 3 vecinos peso: distance metrica: euclidean,0.666666666667
+auto,KNN con 4 vecinos peso: distance metrica: euclidean,0.75
+auto,KNN con 5 vecinos peso: distance metrica: euclidean,0.75
+auto,KNN con 6 vecinos peso: distance metrica: euclidean,0.75
+auto,KNN con 7 vecinos peso: distance metrica: euclidean,0.75
+auto,KNN con 8 vecinos peso: distance metrica: euclidean,0.75
+ball_tree,KNN con 1 vecinos peso: uniform metrica: minkowski,0.666666666667
+ball_tree,KNN con 2 vecinos peso: uniform metrica: minkowski,0.75
+ball_tree,KNN con 3 vecinos peso: uniform metrica: minkowski,0.666666666667
+ball_tree,KNN con 4 vecinos peso: uniform metrica: minkowski,0.75
+ball_tree,KNN con 5 vecinos peso: uniform metrica: minkowski,0.75
+ball_tree,KNN con 6 vecinos peso: uniform metrica: minkowski,0.75
+ball_tree,KNN con 7 vecinos peso: uniform metrica: minkowski,0.75
+ball_tree,KNN con 8 vecinos peso: uniform metrica: minkowski,0.75
+ball_tree,KNN con 1 vecinos peso: uniform metrica: euclidean,0.666666666667
+ball_tree,KNN con 2 vecinos peso: uniform metrica: euclidean,0.75
+ball_tree,KNN con 3 vecinos peso: uniform metrica: euclidean,0.666666666667
+ball_tree,KNN con 4 vecinos peso: uniform metrica: euclidean,0.75
+ball_tree,KNN con 5 vecinos peso: uniform metrica: euclidean,0.75
+ball_tree,KNN con 6 vecinos peso: uniform metrica: euclidean,0.75
+ball_tree,KNN con 7 vecinos peso: uniform metrica: euclidean,0.75
+ball_tree,KNN con 8 vecinos peso: uniform metrica: euclidean,0.75
+ball_tree,KNN con 1 vecinos peso: distance metrica: minkowski,0.666666666667
+ball_tree,KNN con 2 vecinos peso: distance metrica: minkowski,0.666666666667
+ball_tree,KNN con 3 vecinos peso: distance metrica: minkowski,0.666666666667
+ball_tree,KNN con 4 vecinos peso: distance metrica: minkowski,0.75
+ball_tree,KNN con 5 vecinos peso: distance metrica: minkowski,0.75
+ball_tree,KNN con 6 vecinos peso: distance metrica: minkowski,0.75
+ball_tree,KNN con 7 vecinos peso: distance metrica: minkowski,0.75
+ball_tree,KNN con 8 vecinos peso: distance metrica: minkowski,0.75
+ball_tree,KNN con 1 vecinos peso: distance metrica: euclidean,0.666666666667
+ball_tree,KNN con 2 vecinos peso: distance metrica: euclidean,0.666666666667
+ball_tree,KNN con 3 vecinos peso: distance metrica: euclidean,0.666666666667
+ball_tree,KNN con 4 vecinos peso: distance metrica: euclidean,0.75
+ball_tree,KNN con 5 vecinos peso: distance metrica: euclidean,0.75
+ball_tree,KNN con 6 vecinos peso: distance metrica: euclidean,0.75
+ball_tree,KNN con 7 vecinos peso: distance metrica: euclidean,0.75
+ball_tree,KNN con 8 vecinos peso: distance metrica: euclidean,0.75
+kd_tree,KNN con 1 vecinos peso: uniform metrica: minkowski,0.666666666667
+kd_tree,KNN con 2 vecinos peso: uniform metrica: minkowski,0.75
+kd_tree,KNN con 3 vecinos peso: uniform metrica: minkowski,0.666666666667
+kd_tree,KNN con 4 vecinos peso: uniform metrica: minkowski,0.75
+kd_tree,KNN con 5 vecinos peso: uniform metrica: minkowski,0.75
+kd_tree,KNN con 6 vecinos peso: uniform metrica: minkowski,0.75
+kd_tree,KNN con 7 vecinos peso: uniform metrica: minkowski,0.75
+kd_tree,KNN con 8 vecinos peso: uniform metrica: minkowski,0.75
+kd_tree,KNN con 1 vecinos peso: uniform metrica: euclidean,0.666666666667
+kd_tree,KNN con 2 vecinos peso: uniform metrica: euclidean,0.75
+kd_tree,KNN con 3 vecinos peso: uniform metrica: euclidean,0.666666666667
+kd_tree,KNN con 4 vecinos peso: uniform metrica: euclidean,0.75
+kd_tree,KNN con 5 vecinos peso: uniform metrica: euclidean,0.75
+kd_tree,KNN con 6 vecinos peso: uniform metrica: euclidean,0.75
+kd_tree,KNN con 7 vecinos peso: uniform metrica: euclidean,0.75
+kd_tree,KNN con 8 vecinos peso: uniform metrica: euclidean,0.75
+kd_tree,KNN con 1 vecinos peso: distance metrica: minkowski,0.666666666667
+kd_tree,KNN con 2 vecinos peso: distance metrica: minkowski,0.666666666667
+kd_tree,KNN con 3 vecinos peso: distance metrica: minkowski,0.666666666667
+kd_tree,KNN con 4 vecinos peso: distance metrica: minkowski,0.75
+kd_tree,KNN con 5 vecinos peso: distance metrica: minkowski,0.75
+kd_tree,KNN con 6 vecinos peso: distance metrica: minkowski,0.75
+kd_tree,KNN con 7 vecinos peso: distance metrica: minkowski,0.75
+kd_tree,KNN con 8 vecinos peso: distance metrica: minkowski,0.75
+kd_tree,KNN con 1 vecinos peso: distance metrica: euclidean,0.666666666667
+kd_tree,KNN con 2 vecinos peso: distance metrica: euclidean,0.666666666667
+kd_tree,KNN con 3 vecinos peso: distance metrica: euclidean,0.666666666667
+kd_tree,KNN con 4 vecinos peso: distance metrica: euclidean,0.75
+kd_tree,KNN con 5 vecinos peso: distance metrica: euclidean,0.75
+kd_tree,KNN con 6 vecinos peso: distance metrica: euclidean,0.75
+kd_tree,KNN con 7 vecinos peso: distance metrica: euclidean,0.75
+kd_tree,KNN con 8 vecinos peso: distance metrica: euclidean,0.75
+brute,KNN con 1 vecinos peso: uniform metrica: minkowski,0.666666666667
+brute,KNN con 2 vecinos peso: uniform metrica: minkowski,0.75
+brute,KNN con 3 vecinos peso: uniform metrica: minkowski,0.666666666667
+brute,KNN con 4 vecinos peso: uniform metrica: minkowski,0.75
+brute,KNN con 5 vecinos peso: uniform metrica: minkowski,0.75
+brute,KNN con 6 vecinos peso: uniform metrica: minkowski,0.75
+brute,KNN con 7 vecinos peso: uniform metrica: minkowski,0.75
+brute,KNN con 8 vecinos peso: uniform metrica: minkowski,0.75
+brute,KNN con 1 vecinos peso: uniform metrica: euclidean,0.666666666667
+brute,KNN con 2 vecinos peso: uniform metrica: euclidean,0.75
+brute,KNN con 3 vecinos peso: uniform metrica: euclidean,0.666666666667
+brute,KNN con 4 vecinos peso: uniform metrica: euclidean,0.75
+brute,KNN con 5 vecinos peso: uniform metrica: euclidean,0.75
+brute,KNN con 6 vecinos peso: uniform metrica: euclidean,0.75
+brute,KNN con 7 vecinos peso: uniform metrica: euclidean,0.75
+brute,KNN con 8 vecinos peso: uniform metrica: euclidean,0.75
+brute,KNN con 1 vecinos peso: distance metrica: minkowski,0.666666666667
+brute,KNN con 2 vecinos peso: distance metrica: minkowski,0.666666666667
+brute,KNN con 3 vecinos peso: distance metrica: minkowski,0.666666666667
+brute,KNN con 4 vecinos peso: distance metrica: minkowski,0.75
+brute,KNN con 5 vecinos peso: distance metrica: minkowski,0.75
+brute,KNN con 6 vecinos peso: distance metrica: minkowski,0.75
+brute,KNN con 7 vecinos peso: distance metrica: minkowski,0.75
+brute,KNN con 8 vecinos peso: distance metrica: minkowski,0.75
+brute,KNN con 1 vecinos peso: distance metrica: euclidean,0.666666666667
+brute,KNN con 2 vecinos peso: distance metrica: euclidean,0.666666666667
+brute,KNN con 3 vecinos peso: distance metrica: euclidean,0.666666666667
+brute,KNN con 4 vecinos peso: distance metrica: euclidean,0.75
+brute,KNN con 5 vecinos peso: distance metrica: euclidean,0.75
+brute,KNN con 6 vecinos peso: distance metrica: euclidean,0.75
+brute,KNN con 7 vecinos peso: distance metrica: euclidean,0.75
+brute,KNN con 8 vecinos peso: distance metrica: euclidean,0.75
+gini,DecisionTreeClassifier splitter:best,0.5
+gini,DecisionTreeClassifier splitter:random,0.666666666667
+entropy,DecisionTreeClassifier splitter:best,0.5
+entropy,DecisionTreeClassifier splitter:random,0.583333333333
+10,GradientBoostingClassifier,0.5
+20,GradientBoostingClassifier,0.5
+50,GradientBoostingClassifier,0.5
+100,GradientBoostingClassifier,0.5
+150,GradientBoostingClassifier,0.5
+200,GradientBoostingClassifier,0.5
+250,GradientBoostingClassifier,0.5
+500,GradientBoostingClassifier,0.5
+750,GradientBoostingClassifier,0.5
+1000,GradientBoostingClassifier,0.5
+1500,GradientBoostingClassifier,0.5
+linear,nuSVC,0.25
+poly,nuSVC,0.25
+rbf,nuSVC,0.25
+sigmoid,nuSVC,0.25
+linear,SVC,0.75
+poly,SVC,0.666666666667
+rbf,SVC,0.75
+sigmoid,SVC,0.75
+gini,"RandomForest, n_estimators: 10",0.75
+gini,"RandomForest, n_estimators: 20",0.583333333333
+gini,"RandomForest, n_estimators: 50",0.666666666667
+gini,"RandomForest, n_estimators: 100",0.75
+gini,"RandomForest, n_estimators: 150",0.75
+gini,"RandomForest, n_estimators: 200",0.75
+gini,"RandomForest, n_estimators: 250",0.75
+gini,"RandomForest, n_estimators: 500",0.75
+gini,"RandomForest, n_estimators: 750",0.75
+gini,"RandomForest, n_estimators: 1000",0.75
+gini,"RandomForest, n_estimators: 1500",0.75
+entropy,"RandomForest, n_estimators: 10",0.75
+entropy,"RandomForest, n_estimators: 20",0.583333333333
+entropy,"RandomForest, n_estimators: 50",0.666666666667
+entropy,"RandomForest, n_estimators: 100",0.666666666667
+entropy,"RandomForest, n_estimators: 150",0.75
+entropy,"RandomForest, n_estimators: 200",0.75
+entropy,"RandomForest, n_estimators: 250",0.75
+entropy,"RandomForest, n_estimators: 500",0.75
+entropy,"RandomForest, n_estimators: 750",0.75
+entropy,"RandomForest, n_estimators: 1000",0.75
+entropy,"RandomForest, n_estimators: 1500",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 5-5-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 5-5-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 5-10-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 5-10-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 5-15-15",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 10-10-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 10-10-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 10-15-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 10-15-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 15-5-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 15-5-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 15-10-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 15-15-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 5-5-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 5-5-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 5-10-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 5-10-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 5-15-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 5-15-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 10-5-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 10-5-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 10-5-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 10-10-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 10-10-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 10-15-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 10-15-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 10-15-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 15-10-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 15-15-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 15-15-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 5-5-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 5-5-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 5-10-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 5-10-15",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 5-15-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 5-15-15",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 10-5-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 10-5-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 10-5-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 10-10-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 10-10-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 10-15-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 10-15-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 15-5-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 15-5-15",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 15-15-5",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 15-15-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 15-15-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-10-5",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 5-5-5",0.583333333333
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 5-5-10",0.583333333333
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 5-5-15",0.25
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 5-10-5",0.5
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 5-10-10",0.583333333333
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 5-15-5",0.583333333333
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 5-15-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 10-5-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 10-5-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 10-5-15",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 10-10-5",0.5
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 10-10-10",0.583333333333
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 10-10-15",0.583333333333
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 10-15-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-5-5",0.583333333333
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-5-10",0.416666666667
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-5-15",0.5
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-10-5",0.416666666667
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-10-15",0.583333333333
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-15-5",0.583333333333
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-15-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 10-10-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 5-5-15",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 5-10-10",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 5-10-15",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-5-5",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-5-10",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-5-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-10-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-15-5",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-15-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 15-5-5",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 15-10-5",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 15-10-15",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 15-15-10",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 15-15-15",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 5-5-10",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 5-5-15",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 5-10-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 5-10-15",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 5-15-10",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 5-15-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 10-5-5",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 10-10-5",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 10-15-10",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 15-10-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 15-10-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 5-5-10",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 5-15-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 10-5-10",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 10-5-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 10-10-5",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 10-10-10",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 10-10-15",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 10-15-5",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 10-15-15",0.833333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 15-5-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 15-5-15",0.583333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 15-10-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 15-15-5",0.583333333333
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 15-15-10",0.666666666667
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 15-15-15",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 5-5-5",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 5-5-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 5-5-15",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 5-10-5",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 5-10-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 5-15-5",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 5-15-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 5-15-15",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 10-5-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 10-10-5",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 10-10-15",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 10-15-5",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 10-15-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 15-5-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 15-5-15",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 15-10-10",0.833333333333
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 15-15-5",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: constant, capas: 15-15-15",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 5-5-5",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 5-5-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 5-10-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 5-10-15",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 5-15-5",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 5-15-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 5-15-15",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 10-5-5",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 10-5-15",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 10-10-5",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 10-10-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 10-15-5",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 10-15-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 10-15-15",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 15-5-5",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 15-5-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 15-10-5",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 15-10-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 15-15-5",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 15-15-15",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 5-5-5",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 5-5-15",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 5-10-5",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 5-15-5",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 5-15-15",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 10-5-5",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 10-5-15",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 10-10-5",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 10-10-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 10-10-15",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 10-15-5",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 10-15-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 10-15-15",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 15-5-5",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 15-5-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 15-10-5",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 15-10-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 15-15-5",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 15-15-10",0.666666666667
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: adaptive, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 10-10-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: constant, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 5-5-5",0.416666666667
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 5-5-10",0.416666666667
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 5-5-15",0.25
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 5-10-5",0.416666666667
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 5-10-10",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 5-10-15",0.416666666667
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 5-15-5",0.25
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 5-15-10",0.25
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 5-15-15",0.416666666667
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 10-5-5",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 10-5-10",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 10-5-15",0.416666666667
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 10-10-5",0.416666666667
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 10-10-10",0.416666666667
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 10-10-15",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 10-15-10",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 10-15-15",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-5-5",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-5-10",0.25
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-5-15",0.25
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-10-5",0.416666666667
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-10-10",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-10-15",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-15-10",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-15-15",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 10-10-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: adaptive, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 10-10-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 10-15-5",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: constant, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 10-10-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: invscaling, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 10-10-5",0.583333333333
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: logistic, solver: adam, learning_rate: adaptive, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 5-5-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 5-5-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 5-10-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 5-10-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 5-10-15",0.583333333333
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 5-15-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 10-5-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 10-5-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 10-10-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 10-10-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 10-15-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 15-5-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 15-10-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 15-10-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 15-15-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 15-15-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 5-5-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 5-5-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 5-5-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 5-10-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 5-10-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 5-15-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 5-15-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 5-15-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 10-5-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 10-10-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 10-15-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 10-15-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 15-5-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 15-5-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 15-15-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 15-15-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-10-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-10-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-10-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-15-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-15-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-15-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 10-5-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 10-5-15",0.583333333333
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 10-10-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 10-10-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 10-10-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 10-15-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 10-15-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 15-5-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 15-10-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 15-10-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 15-10-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 10-10-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 5-5-5",0.583333333333
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 5-5-10",0.416666666667
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 5-5-15",0.5
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 5-10-5",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 5-10-10",0.583333333333
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 5-10-15",0.416666666667
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 5-15-10",0.5
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 5-15-15",0.583333333333
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-5-5",0.416666666667
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-5-10",0.416666666667
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-10-5",0.416666666667
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-10-15",0.583333333333
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-15-15",0.583333333333
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-5-5",0.5
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-5-10",0.583333333333
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-5-15",0.5
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-10-5",0.416666666667
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-10-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-10-15",0.583333333333
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-15-5",0.583333333333
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-15-10",0.583333333333
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 10-10-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: adaptive, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 5-5-15",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 5-10-10",0.583333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 5-15-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 10-10-5",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 10-10-15",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 10-15-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 10-15-10",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 15-5-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 15-5-10",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 15-5-15",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 15-10-5",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 15-10-10",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 15-15-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 15-15-10",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 15-15-15",0.583333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 5-5-15",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 5-10-5",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 5-10-10",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 5-15-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 10-10-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 10-10-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 10-15-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 15-5-10",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 15-10-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 15-15-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 5-5-15",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 5-10-5",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 5-10-10",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 5-10-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 5-15-5",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 5-15-10",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 5-15-15",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 10-5-15",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 10-10-5",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 10-10-10",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 10-15-15",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 15-5-5",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 15-5-10",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 15-10-10",0.666666666667
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 15-10-15",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 15-15-10",0.833333333333
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 15-15-15",0.833333333333
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 5-5-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 5-10-5",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 5-10-10",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 5-10-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 5-15-10",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 5-15-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 10-5-5",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 10-5-10",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 10-5-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 10-10-5",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 10-10-10",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 10-15-5",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 10-15-10",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 10-15-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-5-5",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-5-10",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-5-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-10-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-15-10",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 5-5-10",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 5-5-15",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 5-10-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 5-15-10",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 10-5-5",0.833333333333
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 10-5-10",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 10-10-5",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 10-10-10",0.833333333333
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 10-15-10",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 10-15-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-10-5",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-10-10",0.833333333333
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-15-5",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-15-10",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-15-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 5-5-5",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 5-5-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 5-10-5",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 5-15-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 10-5-5",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 10-5-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 10-10-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 10-10-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 10-15-10",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 10-15-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 15-5-5",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 15-5-10",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 15-5-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 15-10-5",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 15-10-15",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 15-15-10",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 15-15-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 10-10-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 15-5-5",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 5-5-10",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 5-5-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 5-10-10",0.416666666667
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 5-10-15",0.833333333333
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 5-15-5",0.416666666667
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 5-15-10",0.416666666667
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 5-15-15",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 10-5-5",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 10-5-10",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 10-5-15",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 10-10-5",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 10-10-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 10-15-10",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 10-15-15",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 15-5-5",0.5
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 15-5-10",0.25
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 15-5-15",0.25
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 15-10-10",0.416666666667
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 15-15-5",0.416666666667
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 15-15-15",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 5-10-5",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 5-15-5",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 10-10-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 5-5-5",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 5-10-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 10-5-10",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 10-10-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 15-5-5",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: constant, capas: 15-15-15",0.833333333333
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 5-10-5",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 5-10-10",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 10-10-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 10-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 10-15-5",0.833333333333
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 10-15-10",0.833333333333
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 15-5-5",0.583333333333
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 15-10-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 15-10-15",0.833333333333
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 15-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 15-15-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 15-15-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 5-5-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 5-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 5-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 5-10-5",0.833333333333
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 5-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 5-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 5-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 5-15-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 5-15-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 10-5-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 10-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 10-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 10-10-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 10-10-10",0.833333333333
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 10-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 10-15-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 10-15-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 10-15-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 15-5-5",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 15-5-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 15-5-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 15-10-5",0.5
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 15-10-10",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 15-10-15",0.75
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 15-15-5",0.916666666667
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 15-15-10",0.666666666667
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 15-15-15",0.833333333333

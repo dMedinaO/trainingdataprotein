@@ -55,15 +55,18 @@ class evaluacionCruzada(object):
         nameFile = self.pathInput+group+"/normaliced/dataSetNormaliced.csv"
         dataSet, classList = self.getValuesInDataSet(nameFile)
 
-        listDesc = ['BernoulliNB', 'kernel: linear', 'kernel: sigmoid']
-        listAlgth = ['Naive Bayes', 'NuSVC', 'NuSVC']
-        actualData = [0.620689655172, 0.655172413793, 0.603448275862]
+        listDesc = ['BernoulliNB', 'kernel: linear']#, 'kernel: sigmoid']
+        #listDesc = ['kernel: linear']
+        listAlgth = ['Naive Bayes', 'NuSVC']#, 'NuSVC']
+        #listAlgth = ['NuSVC']
+        actualData = [0.620689655172, 0.655172413793]#, 0.603448275862]
+        #actualData = [0.655172413793]
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
         clf.append(BernoulliNB())
-        clf.append(NuSVC(kernel='linear', degree=3, gamma=10, probability=True))
-        clf.append(NuSVC(kernel='sigmoid', degree=3, gamma=10, probability=True))
-        
+        #clf.append(NuSVC(kernel='linear', degree=3, gamma=10, probability=True))
+        #clf.append(NuSVC(kernel='sigmoid', degree=3, gamma=10, probability=True))
+
         matrixResult = []
 
         for i in range (len(clf)):

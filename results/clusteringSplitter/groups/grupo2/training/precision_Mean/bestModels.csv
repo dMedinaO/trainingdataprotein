@@ -1,0 +1,2 @@
+Algorithm,Description,precision_Mean
+MLPClassifier,logistic-sgd-invscaling (15-15-5),0.131666666667

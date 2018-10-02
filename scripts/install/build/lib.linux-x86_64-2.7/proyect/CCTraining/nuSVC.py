@@ -33,14 +33,16 @@ class nuSVC(object):
     def applyAlgorithm(self):
 
         for kernel in self.kernelList:
-            print "NuSVC, kernel: %s" % kernel
-            clf = NuSVC(kernel=kernel, degree=3, gamma=10, probability=True)
-            clf = clf.fit(self.dataWC, self.classAttribute)
-            descripcion = "nuSVC"
-            performanceData = performanceScore.performanceAlgoritmo(kernel, descripcion, str(self.validator))
-            performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
-            self.performanceDataList.append(performanceData)
-
+            try:
+                print "NuSVC, kernel: %s" % kernel
+                clf = NuSVC(kernel=kernel, degree=3, gamma=10, probability=True)
+                clf = clf.fit(self.dataWC, self.classAttribute)
+                descripcion = "nuSVC"
+                performanceData = performanceScore.performanceAlgoritmo(kernel, descripcion, str(self.validator))
+                performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
+                self.performanceDataList.append(performanceData)
+            except:
+                pass
     #metodo que permite procesar la performance...
     def processValuesScore(self):
 

@@ -54,13 +54,13 @@ class evaluacionCruzada(object):
         nameFile = self.pathInput+group+"/normaliced/dataSetNormaliced.csv"
         dataSet, classList = self.getValuesInDataSet(nameFile)
 
-        listDesc = ['kernel: sigmoid']
-        listAlgth = 'NuSVC'
-        actualData = [0.571428571429]
+        listDesc = ['relu-sgd-invscaling (5-10-5)']
+        listAlgth = 'MLP'
+        actualData = [0.502857142857]
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
-        clf.append(NuSVC(kernel='sigmoid', degree=3, gamma=10, probability=True))#logistic-sgd-invscaling (10-10-15)
-
+        #clf.append(NuSVC(kernel='sigmoid', degree=3, gamma=10, probability=True))#logistic-sgd-invscaling (10-10-15)
+        clf.append(MLPClassifier(hidden_layer_sizes=(5,10,5), activation='relu', solver='sgd', learning_rate='invscaling'))
         matrixResult = []
 
         for i in range (len(clf)):

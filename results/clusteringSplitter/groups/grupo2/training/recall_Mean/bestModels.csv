@@ -1,0 +1,2 @@
+Algorithm,Description,recall_Mean
+MLPClassifier,logistic-sgd-invscaling (10-15-5),0.131666666667

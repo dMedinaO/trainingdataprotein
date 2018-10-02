@@ -35,13 +35,16 @@ class adaBoost(object):
 
         for value in self.algorithmList:
             for estimator in self.n_estimatorsList:
-                print "AdaBoostClassifier, algorithm: %s, estimator: %d" % (value, estimator)
-                clf = AdaBoostClassifier(n_estimators=estimator, algorithm=value)
-                clf = clf.fit(self.dataWC, self.classAttribute)
-                descripcion = "AdaBoostClassifier con %d estimadores" % estimator
-                performanceData = performanceScore.performanceAlgoritmo(value, descripcion, str(self.validator))
-                performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
-                self.performanceDataList.append(performanceData)
+                try:
+                    print "AdaBoostClassifier, algorithm: %s, estimator: %d" % (value, estimator)
+                    clf = AdaBoostClassifier(n_estimators=estimator, algorithm=value)
+                    clf = clf.fit(self.dataWC, self.classAttribute)
+                    descripcion = "AdaBoostClassifier con %d estimadores" % estimator
+                    performanceData = performanceScore.performanceAlgoritmo(value, descripcion, str(self.validator))
+                    performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
+                    self.performanceDataList.append(performanceData)
+                except:
+                    pass
 
     #metodo que permite procesar la performance...
     def processValuesScore(self):

@@ -1,0 +1,2 @@
+Algorithm,Description,accuracy
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 15-15-5",0.866666666667

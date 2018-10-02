@@ -4,6 +4,7 @@ todos los posibles resultados para un clasificador
 '''
 
 from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import NuSVC, SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
@@ -56,38 +57,143 @@ class createBestModels(object):
     #metodo que permite procesar los modelos, crea los clf y genera los resultados
     def processModels(self):
 
+        param_name = "alpha"
+        param_range = np.logspace(-6,1,5)
+        # #
+        # clf= BernoulliNB()
+        # self.createModel(clf, "BernoulliNB/", 0.2, param_name, param_range, 'alpha', 'Validation curve with BernoulliNB', 0,0)
+        #
+        # clf= GaussianNB()
+        # self.createModel(clf, "GaussianNB/", 0.2, param_name, param_range, 'alpha', 'Validation curve with GaussianNB', 0,0)
+
+        clf = MLPClassifier(hidden_layer_sizes=(5,15,10), activation='logistic', solver='sgd', learning_rate='invscaling')
+        self.createModel(clf, "MLP_logistic/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0,0)
+        #
+        # param_name = "gamma"
+        # param_range = np.logspace(-6,1,5)
+        #
+        # clf = NuSVC(kernel='linear', degree=3, gamma=10, probability=True)
+        # self.createModel(clf, "NuSVC_Linear/", 0.2, param_name, param_range, 'gamma', 'Validation curve with NuSVC', 0,0)
+        # # #
+        # clf = NuSVC(kernel='sigmoid', degree=3, gamma=10, probability=True)
+        # self.createModel(clf, "NuSVC_sigmoid/", 0.2, param_name, param_range, 'gamma', 'Validation curve with NuSVC', 0,0)
+        # # #
+        # clf = SVC(kernel='linear', degree=3, gamma=10, probability=True)
+        # self.createModel(clf, "SVC_linear/", 0.2, param_name, param_range, 'gamma', 'Validation curve with SVC', 0,0)
+        #
+        # clf = SVC(kernel='poly', degree=3, gamma=10, probability=True)
+        # self.createModel(clf, "SVC_poly/", 0.2, param_name, param_range, 'gamma', 'Validation curve with SVC', 0,0)
+        #
+        # clf = NuSVC(kernel='sigmoid', degree=3, gamma=10, probability=True)
+        # self.createModel(clf, "NuSVC_sigmoid/", 0.2, param_name, param_range, 'gamma', 'Validation curve with NuSVC', 0,0)
+        #
+        # param_name = "random_state"
+        # param_range = [0,1,2,3,4,5]
+        # clf = DecisionTreeClassifier(random_state=0, criterion='gini', splitter='best')
+        # self.createModel(clf, "GiniBest/", 0.2, param_name, param_range, 'random_state', 'Validation curve with DecisionTreeClassifier', 1,0)
+        #
+        # clf = DecisionTreeClassifier(random_state=0, criterion='gini', splitter='random')
+        # self.createModel(clf, "GiniRandom/", 0.2, param_name, param_range, 'random_state', 'Validation curve with DecisionTreeClassifier', 1,0)
+        #
+        # clf = DecisionTreeClassifier(random_state=0, criterion='entropy', splitter='random')
+        # self.createModel(clf, "entropyRandom/", 0.2, param_name, param_range, 'random_state', 'Validation curve with DecisionTreeClassifier', 1,0)
+
         param_name = "n_estimators"
         param_range = [10,20,50,100,150,200,250,500,750,1000,1500]
 
-        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=10, n_jobs=-1, criterion='gini')
-        self.createModel(clf, "RF_gini_10/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+        #clf = GradientBoostingClassifier(n_estimators=20)
+        #self.createModel(clf, "GradientBoostingClassifier20/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with GradientBoostingClassifier', 1,0)
 
-        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=20, n_jobs=-1, criterion='gini')
-        self.createModel(clf, "RF_gini_20/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+        # clf = GradientBoostingClassifier(n_estimators=10)
+        # self.createModel(clf, "GradientBoostingClassifier10/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with GradientBoostingClassifier', 1,0)
+        #
+        # clf = GradientBoostingClassifier(n_estimators=50)
+        # self.createModel(clf, "GradientBoostingClassifier50/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with GradientBoostingClassifier', 1,0)
+        #
+        # clf = GradientBoostingClassifier(n_estimators=200)
+        # self.createModel(clf, "GradientBoostingClassifier200/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with GradientBoostingClassifier', 1,0)
+        #
+        # clf = GradientBoostingClassifier(n_estimators=500)
+        # self.createModel(clf, "GradientBoostingClassifier500/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with GradientBoostingClassifier', 1,0)
+        #
+        # clf = GradientBoostingClassifier(n_estimators=1500)
+        # self.createModel(clf, "GradientBoostingClassifier1500/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with GradientBoostingClassifier', 1,0)
+        #
+        # clf = GradientBoostingClassifier(n_estimators=250)
+        # self.createModel(clf, "GradientBoostingClassifier250/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with GradientBoostingClassifier', 1,0)
+        #
+        # clf = GradientBoostingClassifier(n_estimators=750)
+        # self.createModel(clf, "GradientBoostingClassifier750/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with GradientBoostingClassifier', 1,0)
+        #
+        # clf = GradientBoostingClassifier(n_estimators=1000)
+        # self.createModel(clf, "GradientBoostingClassifier1000/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with GradientBoostingClassifier', 1,0)
+        #
+        # clf = GradientBoostingClassifier(n_estimators=100)
+        # self.createModel(clf, "GradientBoostingClassifier100/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with GradientBoostingClassifier', 1,0)
 
-        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=50, n_jobs=-1, criterion='gini')
-        self.createModel(clf, "RF_gini_50/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+        #clf = SVC(kernel='linear', degree=3, gamma=10, probability=True)
+        #self.createModel(clf, "SVC_linear/", 0.2, param_name, param_range, 'gamma', 'Validation curve with SVC', 0,0)
 
-        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=100, n_jobs=-1, criterion='gini')
-        self.createModel(clf, "RF_gini_100/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+        #clf = SVC(kernel='rbf', degree=3, gamma=10, probability=True)
+        #self.createModel(clf, "SVC_rbf/", 0.2, param_name, param_range, 'gamma', 'Validation curve with SVC', 0,0)
 
-        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=150, n_jobs=-1, criterion='gini')
-        self.createModel(clf, "RF_gini_150/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+        # #
+        #clf = SVC(kernel='sigmoid', degree=3, gamma=10, probability=True)
+        #self.createModel(clf, "SVC_sigmoid/", 0.2, param_name, param_range, 'gamma', 'Validation curve with SVC', 0,0)
+        #
+        # param_name = "n_neighbors"
+        # param_range = [1,2,3,4,5,6]
+        # #
+        # clf= KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='auto',weights='uniform', n_jobs=-1)
+        # self.createModel(clf, "KNN_min_auto_2/", 0.2, param_name, param_range, 'n_neighbors', 'Validation curve with KNN', 1,0)
+        # # # #
+        # clf= KNeighborsClassifier(n_neighbors=2,metric='euclidean',algorithm='auto',weights='uniform', n_jobs=-1)
+        # self.createModel(clf, "KNN_euc_auto_2/", 0.2, param_name, param_range, 'n_neighbors', 'Validation curve with KNN', 1,0)
+        # # # #
+        # clf= KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='ball_tree',weights='uniform', n_jobs=-1)
+        # self.createModel(clf, "KNN_min_ball_2/", 0.2, param_name, param_range, 'n_neighbors', 'Validation curve with KNN', 1,0)
+        # # #
+        # clf= KNeighborsClassifier(n_neighbors=2,metric='euclidean',algorithm='ball_tree',weights='uniform', n_jobs=-1)
+        # self.createModel(clf, "KNN_euc_ball_2/", 0.2, param_name, param_range, 'n_neighbors', 'Validation curve with KNN', 0,0)
+        #
+        #clf= KNeighborsClassifier(n_neighbors=4,metric='euclidean',algorithm='ball_tree',weights='uniform', n_jobs=-1)
+        #self.createModel(clf, "KNN_euc_ball_4/", 0.2, param_name, param_range, 'n_neighbors', 'Validation curve with KNN', 1,0)
 
-        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=200, n_jobs=-1, criterion='gini')
-        self.createModel(clf, "RF_gini_200/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+        #clf = MLPClassifier(hidden_layer_sizes=(5,10,5), activation='relu', solver='sgd', learning_rate='invscaling')
+        #self.createModel(clf, "MLP_invscaling/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0,0)
+        # clf = SVC(kernel='linear', degree=3, gamma=10, probability=True)
+        # self.createModel(clf, "SVC_Linear/", 0.2, param_name, param_range, 'gamma', 'Validation curve with SVC', 0,0)
+        #
+        # clf = NuSVC(kernel='linear', degree=3, gamma=10, probability=True)
+        # self.createModel(clf, "NuSVC_Linear/", 0.2, param_name, param_range, 'gamma', 'Validation curve with NuSVC', 0,0)
 
-        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=250, n_jobs=-1, criterion='gini')
-        self.createModel(clf, "RF_gini_250/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
 
-        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=500, n_jobs=-1, criterion='gini')
-        self.createModel(clf, "RF_gini_500/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
-
-        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=750, n_jobs=-1, criterion='gini')
-        self.createModel(clf, "RF_gini_750/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
-
-        clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=1000, n_jobs=-1, criterion='gini')
-        self.createModel(clf, "RF_gini_1000/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+        # param_name = "n_estimators"
+        # param_range = [10,20,50,100,150,200,250,500,750,1000,1500]
+        # # # # #
+        # clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=20, n_jobs=-1, criterion='entropy')
+        # self.createModel(clf, "RF_entropy_20/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+        # # # # #
+        # clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=10, n_jobs=-1, criterion='gini')
+        # self.createModel(clf, "RF_gini_10/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+        # # # # #
+        # clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=1500, n_jobs=-1, criterion='gini')
+        # self.createModel(clf, "RF_gini_1500/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+        # # # # #
+        # clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=10, n_jobs=-1, criterion='entropy')
+        # self.createModel(clf, "RF_entropy_10/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+        # # # # #
+        # clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=250, n_jobs=-1, criterion='gini')
+        # self.createModel(clf, "RF_gini_250/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+        # # # #
+        # clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=500, n_jobs=-1, criterion='gini')
+        # self.createModel(clf, "RF_gini_500/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+        # # # #
+        # clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=750, n_jobs=-1, criterion='gini')
+        # self.createModel(clf, "RF_gini_750/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
+        # # # #
+        # clf= RandomForestClassifier(max_depth=2, random_state=0, n_estimators=1000, n_jobs=-1, criterion='gini')
+        # self.createModel(clf, "RF_gini_1000/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1,0)
 
     #metodo que permite crear un directorio...
     def createPath(self, namePath):

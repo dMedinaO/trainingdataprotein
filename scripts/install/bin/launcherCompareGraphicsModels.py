@@ -6,14 +6,14 @@ import sys
 from proyect.CCModels import createBarChartModelsCompare
 
 pathInput = sys.argv[1]
-groups = ['H', 'N', 'U']
+groups = ['R']
 #groups = ['1', '2', '3', '4', '5', '6', '7', '8']
 
 #formamos el objeto...
 for group in groups:
     #formamos el path...
     print "Create bar charts to grpup ", group
-    pathData = "%s%s_Attribute/training/crossValidation/" % (pathInput, group)
+    pathData = "%s%s_Attribute/training/crossValidation/precision/" % (pathInput, group)
     barCharts = createBarChartModelsCompare.barChartModels(pathData, pathData, group)
     barCharts.readDocuments()
     barCharts.makeGraphsByModel()

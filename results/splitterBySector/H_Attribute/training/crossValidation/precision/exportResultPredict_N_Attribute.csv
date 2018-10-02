@@ -1,0 +1,2 @@
+algorithm,desc,actualScore,new score
+NuSVC,kernel: sigmoid,0.571428571429,0.75

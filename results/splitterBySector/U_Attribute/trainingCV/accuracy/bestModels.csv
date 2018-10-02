@@ -1,0 +1,73 @@
+Algorithm,Description,accuracy
+SAMME,AdaBoostClassifier con 100 estimadores,1.0
+SAMME,AdaBoostClassifier con 150 estimadores,1.0
+SAMME,AdaBoostClassifier con 500 estimadores,1.0
+SAMME.R,AdaBoostClassifier con 20 estimadores,1.0
+SAMME.R,AdaBoostClassifier con 100 estimadores,1.0
+SAMME.R,AdaBoostClassifier con 1500 estimadores,1.0
+gini,DecisionTreeClassifier splitter:best,1.0
+entropy,DecisionTreeClassifier splitter:best,1.0
+100,GradientBoostingClassifier,1.0
+150,GradientBoostingClassifier,1.0
+250,GradientBoostingClassifier,1.0
+1000,GradientBoostingClassifier,1.0
+1500,GradientBoostingClassifier,1.0
+gini,"RandomForest, n_estimators: 10",1.0
+gini,"RandomForest, n_estimators: 20",1.0
+gini,"RandomForest, n_estimators: 50",1.0
+gini,"RandomForest, n_estimators: 100",1.0
+gini,"RandomForest, n_estimators: 150",1.0
+gini,"RandomForest, n_estimators: 200",1.0
+gini,"RandomForest, n_estimators: 250",1.0
+gini,"RandomForest, n_estimators: 500",1.0
+gini,"RandomForest, n_estimators: 750",1.0
+gini,"RandomForest, n_estimators: 1000",1.0
+gini,"RandomForest, n_estimators: 1500",1.0
+entropy,"RandomForest, n_estimators: 10",1.0
+entropy,"RandomForest, n_estimators: 20",1.0
+entropy,"RandomForest, n_estimators: 50",1.0
+entropy,"RandomForest, n_estimators: 100",1.0
+entropy,"RandomForest, n_estimators: 150",1.0
+entropy,"RandomForest, n_estimators: 200",1.0
+entropy,"RandomForest, n_estimators: 250",1.0
+entropy,"RandomForest, n_estimators: 500",1.0
+entropy,"RandomForest, n_estimators: 750",1.0
+entropy,"RandomForest, n_estimators: 1000",1.0
+entropy,"RandomForest, n_estimators: 1500",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 5-5-10",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 5-15-5",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-5-5",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-10-10",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-15-5",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 15-5-5",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 15-5-10",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 15-15-5",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 15-15-10",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 10-10-5",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: invscaling, capas: 15-5-5",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 5-10-15",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 5-15-5",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 10-5-15",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 10-10-10",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 15-5-5",1.0
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 15-10-10",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 10-10-10",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 10-15-15",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 15-5-15",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 15-10-5",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 5-15-10",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 10-5-10",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 10-5-15",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 10-10-10",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 15-5-10",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 15-5-15",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 15-10-10",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 15-15-15",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 5-5-15",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 10-5-10",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 10-10-5",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 10-10-10",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 15-10-5",1.0
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 15-10-10",1.0
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 5-15-5",1.0
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 10-5-15",1.0

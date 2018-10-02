@@ -1,0 +1,3 @@
+Algorithm,Description,recall_Mean
+MLPClassifier,logistic-adam-invscaling (10-15-15),0.5495
+MLPClassifier,logistic-adam-adaptive (10-15-15),0.5495

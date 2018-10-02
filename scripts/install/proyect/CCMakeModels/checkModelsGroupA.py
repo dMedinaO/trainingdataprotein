@@ -5,6 +5,8 @@ compararlos con los del resto de los grupos, genera un archivo resumen por cada 
 import pandas as pd
 import numpy as np
 
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import NuSVC, SVC
 from sklearn.neural_network import MLPClassifier
 from sklearn.naive_bayes import GaussianNB, MultinomialNB, BernoulliNB
 from proyect.CCProcesFile import document
@@ -53,12 +55,15 @@ class evaluacionCruzada(object):
         nameFile = self.pathInput+group+"/normaliced/dataSetNormaliced.csv"
         dataSet, classList = self.getValuesInDataSet(nameFile)
 
-        listDesc = ['BernoulliNB']
-        listAlgth = ['Naive Bayes']
-        actualData = [0.65]
+        listDesc = ['kernel: sigmoid' , 'minkowski-uniform KNN: 2', 'minkowski-uniform KNN: 4', 'euclidean-uniform KNN: 2']
+        listAlgth = ['NuSVC',  'auto', 'auto', 'auto']
+        actualData = [0.55, 0.5, 0.5, 0.5]
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
-        clf.append(BernoulliNB())#BernoulliNB
+        clf.append(NuSVC(kernel='sigmoid', degree=3, gamma=10, probability=True))
+        clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='auto',weights='uniform', n_jobs=-1))
+        clf.append(KNeighborsClassifier(n_neighbors=2,metric='euclidean',algorithm='auto',weights='uniform', n_jobs=-1))
+        clf.append(KNeighborsClassifier(n_neighbors=4,metric='minkowski',algorithm='auto',weights='uniform', n_jobs=-1))
 
         matrixResult = []
 

@@ -1,0 +1,17 @@
+Algorithm,Description,accuracy
+auto,KNN con 3 vecinos peso: uniform metrica: minkowski,0.736111111111
+auto,KNN con 3 vecinos peso: uniform metrica: euclidean,0.736111111111
+auto,KNN con 3 vecinos peso: distance metrica: minkowski,0.736111111111
+auto,KNN con 3 vecinos peso: distance metrica: euclidean,0.736111111111
+ball_tree,KNN con 3 vecinos peso: uniform metrica: minkowski,0.736111111111
+ball_tree,KNN con 3 vecinos peso: uniform metrica: euclidean,0.736111111111
+ball_tree,KNN con 3 vecinos peso: distance metrica: minkowski,0.736111111111
+ball_tree,KNN con 3 vecinos peso: distance metrica: euclidean,0.736111111111
+kd_tree,KNN con 3 vecinos peso: uniform metrica: minkowski,0.736111111111
+kd_tree,KNN con 3 vecinos peso: uniform metrica: euclidean,0.736111111111
+kd_tree,KNN con 3 vecinos peso: distance metrica: minkowski,0.736111111111
+kd_tree,KNN con 3 vecinos peso: distance metrica: euclidean,0.736111111111
+brute,KNN con 3 vecinos peso: uniform metrica: minkowski,0.736111111111
+brute,KNN con 3 vecinos peso: uniform metrica: euclidean,0.736111111111
+brute,KNN con 3 vecinos peso: distance metrica: minkowski,0.736111111111
+brute,KNN con 3 vecinos peso: distance metrica: euclidean,0.736111111111

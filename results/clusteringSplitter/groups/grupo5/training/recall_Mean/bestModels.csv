@@ -1,0 +1,2 @@
+Algorithm,Description,recall_Mean
+MLPClassifier,identity-lbfgs-constant (10-15-15),0.239615384615

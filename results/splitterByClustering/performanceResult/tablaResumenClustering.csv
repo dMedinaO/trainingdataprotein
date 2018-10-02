@@ -1,0 +1,29 @@
+Algoritmo,División,Accuracy,Recall,Precisión,Grupo,Integrantes
+Agglomerative Clustering ,Complete euclidean,"0,6337018837","0,6069387755","0,8181818182",0,221
+Agglomerative Clustering ,Complete euclidean,"0,772875817",1,"0,8221153846",1,35
+Dos Divisiones,Promedio,"0,7032888503","0,8034693878","0,8201486014",,
+,Desviación,"0,098410832","0,2779362573","0,0027814515",,
+,,,,,,
+Algoritmo,División,Accuracy,Recall,Precisión,Grupo,Integrantes
+Agglomerative Clustering ,Complete euclidean,"0,7104166667","0,7571428571","0,8174603175",0,62
+Agglomerative Clustering ,Complete euclidean,"0,772875817",1,"0,8221153846",1,35
+Agglomerative Clustering ,Complete euclidean,"0,6041139241","0,6857142857","0,5449657869",2,159
+Tres Divisiones,Promedio,"0,6958021359","0,8142857143","0,7281804963",,
+,Desviación,"0,0853248645","0,1647508942","0,1586856633",,
+,,,,,,
+Algoritmo,División,Accuracy,Recall,Precisión,Grupo,Integrantes
+Agglomerative Clustering ,Complete euclidean,"0,772875817",1,"0,8221153846",0,35
+Agglomerative Clustering ,Complete euclidean,"0,6378676471",1,"0,75",1,33
+Agglomerative Clustering ,Complete euclidean,"0,6163765823","0,6857142857","0,5507590133",2,159
+Agglomerative Clustering ,Complete euclidean,"0,6547619048",1,"0,8571428571",3,29
+Cuatro Divisiones,Promedio,"0,6704704878","0,9214285714","0,7450043138",,
+,Desviación,"0,0700540431","0,1571428571","0,1369639415",,
+,,,,,,
+Algoritmo,División,Accuracy,Recall,Precisión,Grupo,Integrantes
+Agglomerative Clustering ,ward euclidean,"0,7361111111",1,"0,7662337662",0,38
+Agglomerative Clustering ,ward euclidean,"0,6166666667","0,6111111111","0,6191176471",1,120
+Agglomerative Clustering ,ward euclidean,"0,730952381","0,5625","0,7777777778",2,41
+Agglomerative Clustering ,ward euclidean,"0,7013888889","0,6875","0,9285714286",3,34
+Agglomerative Clustering ,ward euclidean,"0,7424242424","0,9",1,4,23
+Cinco Divisiones,Promedio,"0,705508658","0,7522222222","0,8183401239",,
+,Desviación,"0,0520973259","0,1892933782","0,1493328688",,

@@ -23,7 +23,7 @@ process.processMatrixData()
 
 ListResultAlgorithm = []
 
-
+'''
 #aplicamos adaBoost...
 for algorithm in ['SAMME', 'SAMME.R']:
  for estimator in [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]:
@@ -44,7 +44,7 @@ try:
     ListResultAlgorithm.append(naiveBayesGB.performanceValues)
 except:
     pass
-
+'''
 try:
     print "Apply BernoulliNB"
     naiveBayesBB = naiveBayes.naiveBayes(process.matrixData)
@@ -53,7 +53,7 @@ try:
 except:
     pass
 
-
+'''
  #aplicamos SVC
 for kernel in ['linear', 'poly', 'rbf', 'sigmoid']:
     try:
@@ -134,7 +134,7 @@ for activation in ['identity', 'logistic', 'tanh', 'relu']:
                             ListResultAlgorithm.append(mlp.performanceValues)
                         except:
                             pass
-
+'''
 #procesamos la salida...
 nameFile = sys.argv[3]
 #procesamos los resultados...

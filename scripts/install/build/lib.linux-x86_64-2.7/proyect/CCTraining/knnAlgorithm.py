@@ -39,13 +39,16 @@ class knnAlgorithm(object):
             for weight in self.weightsList:
                 for metric in self.metricList:
                     for i in range(1,10):#numero de vecinos
-                        print "KNN, algorithm: %s, weight: %s, metric: %s, nearest:%d" % (value, weight, metric, i)
-                        clf = KNeighborsClassifier(n_neighbors=i,metric=metric,algorithm=value,weights=weight, n_jobs=-1)
-                        clf = clf.fit(self.dataWC, self.classAttribute)
-                        descripcion = "KNN con %d vecinos peso: %s metrica: %s" % (i, weight, metric)
-                        performanceData = performanceScore.performanceAlgoritmo(value, descripcion, str(self.validator))
-                        performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
-                        self.performanceDataList.append(performanceData)
+                        try:
+                            print "KNN, algorithm: %s, weight: %s, metric: %s, nearest:%d" % (value, weight, metric, i)
+                            clf = KNeighborsClassifier(n_neighbors=i,metric=metric,algorithm=value,weights=weight, n_jobs=-1)
+                            clf = clf.fit(self.dataWC, self.classAttribute)
+                            descripcion = "KNN con %d vecinos peso: %s metrica: %s" % (i, weight, metric)
+                            performanceData = performanceScore.performanceAlgoritmo(value, descripcion, str(self.validator))
+                            performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
+                            self.performanceDataList.append(performanceData)
+                        except:
+                            pass
 
     #metodo que permite procesar la performance...
     def processValuesScore(self):

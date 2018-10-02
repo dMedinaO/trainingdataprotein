@@ -1,0 +1,2 @@
+algorithm,desc,actualScore,new score
+MLP,logistic-adam-adaptive-10-15-15,0.55,0.5

@@ -1,0 +1,2 @@
+Algorithm,Description,precision
+gini,"RandomForest, n_estimators: 250",0.619117647059

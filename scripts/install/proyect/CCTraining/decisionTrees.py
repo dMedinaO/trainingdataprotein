@@ -36,13 +36,16 @@ class decisionTrees(object):
 
         for criterion in self.criterionList:
             for splitter in self.spliterList:
-                print "DecisionTreeClassifier, criterion %s, splitter: %s" % (criterion, splitter)
-                clf = DecisionTreeClassifier(random_state=0, criterion=criterion, splitter=splitter)
-                clf = clf.fit(self.dataWC, self.classAttribute)
-                descripcion = "DecisionTreeClassifier splitter:%s" % splitter
-                performanceData = performanceScore.performanceAlgoritmo(criterion, descripcion, str(self.validator))
-                performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
-                self.performanceDataList.append(performanceData)
+                try:
+                    print "DecisionTreeClassifier, criterion %s, splitter: %s" % (criterion, splitter)
+                    clf = DecisionTreeClassifier(random_state=0, criterion=criterion, splitter=splitter)
+                    clf = clf.fit(self.dataWC, self.classAttribute)
+                    descripcion = "DecisionTreeClassifier splitter:%s" % splitter
+                    performanceData = performanceScore.performanceAlgoritmo(criterion, descripcion, str(self.validator))
+                    performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
+                    self.performanceDataList.append(performanceData)
+                except:
+                    pass
 
     #metodo que permite procesar la performance...
     def processValuesScore(self):

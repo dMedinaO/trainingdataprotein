@@ -1,0 +1,4 @@
+algorithm,desc,actualScore,new score
+KNN,minkowski-uniform KNN: 2,0.6,0.695652173913
+KNN,minkowski-uniform KNN: 3,0.6,0.673913043478
+KNN,minkowski-uniform KNN: 4,0.6,0.695652173913

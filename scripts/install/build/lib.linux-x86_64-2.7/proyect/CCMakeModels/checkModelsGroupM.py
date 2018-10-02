@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 
 from sklearn.neural_network import MLPClassifier
-from sklearn.svm import NuSVC
+from sklearn.svm import NuSVC, SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB, MultinomialNB, BernoulliNB
 from proyect.CCProcesFile import document
@@ -58,9 +58,14 @@ class evaluacionCruzada(object):
         listDesc = ['minkowski-distance KNN: 3', 'euclidean-distance KNN: 3', 'minkowski-distance KNN: 3', 'euclidean-distance KNN: 3', 'minkowski-distance KNN: 3', 'euclidean-distance KNN: 3', 'minkowski-distance KNN: 3', 'euclidean-distance KNN: 3']
         listAlgth = ['auto', 'auto', 'ball_tree', 'ball_tree', 'kd_tree', 'kd_tree', 'brute', 'brute']
 
+        #listDesc = ['minkowski-distance KNN: 3', 'euclidean-distance KNN: 3', 'minkowski-distance KNN: 3', 'euclidean-distance KNN: 3', 'minkowski-distance KNN: 3', 'euclidean-distance KNN: 3', 'minkowski-distance KNN: 3', 'euclidean-distance KNN: 3']
+        #listAlgth = ['auto', 'auto', 'ball_tree', 'ball_tree', 'kd_tree', 'kd_tree', 'brute', 'brute']
+
         actualData = 0.722222222222
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
+        #clf.append(SVC(kernel='linear', degree=3, gamma=10, probability=True))
+        #clf.append(SVC(kernel='sigmoid', degree=3, gamma=10, probability=True))
         clf.append(KNeighborsClassifier(n_neighbors=3,metric='minkowski',algorithm='auto',weights='uniform', n_jobs=-1))
         clf.append(KNeighborsClassifier(n_neighbors=3,metric='euclidean',algorithm='auto',weights='uniform', n_jobs=-1))
         clf.append(KNeighborsClassifier(n_neighbors=3,metric='minkowski',algorithm='ball_tree',weights='uniform', n_jobs=-1))

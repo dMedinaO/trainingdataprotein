@@ -55,21 +55,21 @@ class evaluacionCruzada(object):
         nameFile = self.pathInput+group+"/normaliced/dataSetNormaliced.csv"
         dataSet, classList = self.getValuesInDataSet(nameFile)
 
-        listDesc = ['gini - 20', 'gini - 50', 'gini - 100', 'gini - 150', 'gini - 200', 'gini - 250', 'gini - 500', 'gini - 750', 'gini - 1000', 'gini - 1500']
-        listAlgth = 'RandomForestClassifier'
-        actualData = 0.846153846154
+        listDesc = ['BernoulliNB', 'GaussianNB']
+        listAlgth = 'naive_bayes'
+        actualData = 0.6923076923076923
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
-        clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=10, n_jobs=-1, criterion='gini'))
-        clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=20, n_jobs=-1, criterion='gini'))
-        clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=50, n_jobs=-1, criterion='gini'))
-        clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=100, n_jobs=-1, criterion='gini'))
-        clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=150, n_jobs=-1, criterion='gini'))
-        clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=200, n_jobs=-1, criterion='gini'))
-        clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=250, n_jobs=-1, criterion='gini'))
-        clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=500, n_jobs=-1, criterion='gini'))
-        clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=750, n_jobs=-1, criterion='gini'))
-        clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=1000, n_jobs=-1, criterion='gini'))
+        clf.append(BernoulliNB())
+        clf.append(GaussianNB())
+        # clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=50, n_jobs=-1, criterion='gini'))
+        # clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=100, n_jobs=-1, criterion='gini'))
+        # clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=150, n_jobs=-1, criterion='gini'))
+        # clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=200, n_jobs=-1, criterion='gini'))
+        # clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=250, n_jobs=-1, criterion='gini'))
+        # clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=500, n_jobs=-1, criterion='gini'))
+        # clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=750, n_jobs=-1, criterion='gini'))
+        # clf.append(RandomForestClassifier(max_depth=2, random_state=0, n_estimators=1000, n_jobs=-1, criterion='gini'))
 
 
         matrixResult = []

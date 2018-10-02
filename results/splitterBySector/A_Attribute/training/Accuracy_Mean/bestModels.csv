@@ -1,0 +1,2 @@
+Algorithm,Description,Accuracy_Mean
+Naive Bayes,BernoulliNB,0.65

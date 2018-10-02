@@ -1,0 +1,5 @@
+algorithm,desc,actualScore,new score
+auto,minkowski-uniform KNN: 2,0.57,0.435483870968
+auto,euclidean-uniform KNN: 2,0.57,0.435483870968
+ball_tree,minkowski-uniform KNN: 2,0.57,0.435483870968
+ball_tree,euclidean-uniform KNN: 2,0.57,0.435483870968

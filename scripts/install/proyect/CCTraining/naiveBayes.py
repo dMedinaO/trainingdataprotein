@@ -31,19 +31,25 @@ class naiveBayes(object):
 
     #metodo que permite aplicar el algoritmo como GaussianNB...
     def applyAlgorithmGaussian(self):
-        clf = GaussianNB()
-        clf = clf.fit(self.dataWC, self.classAttribute)
-        performanceData = performanceScore.performanceAlgoritmo('GaussianNB', 'Naive Bayes algoritmo', str(self.validator))
-        performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
-        self.performanceDataList.append(performanceData)
+        try:
+            clf = GaussianNB()
+            clf = clf.fit(self.dataWC, self.classAttribute)
+            performanceData = performanceScore.performanceAlgoritmo('GaussianNB', 'Naive Bayes algoritmo', str(self.validator))
+            performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
+            self.performanceDataList.append(performanceData)
+        except:
+            pass
 
     #metodo que permite aplicar el algoritmo como bernulli
     def applyAlgorithmBernoulliNB(self):
-        clf = BernoulliNB()
-        clf = clf.fit(self.dataWC, self.classAttribute)
-        performanceData = performanceScore.performanceAlgoritmo('BernoulliNB', 'Naive Bayes algoritmo', str(self.validator))
-        performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
-        self.performanceDataList.append(performanceData)
+        try:
+            clf = BernoulliNB()
+            clf = clf.fit(self.dataWC, self.classAttribute)
+            performanceData = performanceScore.performanceAlgoritmo('BernoulliNB', 'Naive Bayes algoritmo', str(self.validator))
+            performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
+            self.performanceDataList.append(performanceData)
+        except:
+            pass
 
     #metodo que permite procesar la performance...
     def processValuesScore(self):

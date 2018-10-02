@@ -1,0 +1,2 @@
+Algorithm,Description,precision
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-5-15",0.777777777778

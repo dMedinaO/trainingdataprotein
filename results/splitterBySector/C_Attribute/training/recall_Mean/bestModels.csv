@@ -1,0 +1,2 @@
+Algorithm,Description,recall_Mean
+MLPClassifier,relu-lbfgs-adaptive (5-5-10),0.213

@@ -36,15 +36,16 @@ class randomForest(object):
 
         for criterion in self.criterionList:
             for n_estimators in self.n_estimatorsList:
-
-                print "RandomForest, criterion: %s n_estimators: %d" % (criterion, n_estimators)
-                clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=n_estimators, n_jobs=-1, criterion=criterion)
-                clf = clf.fit(self.dataWC, self.classAttribute)
-                descripcion = "RandomForest, n_estimators: %d" % n_estimators
-                performanceData = performanceScore.performanceAlgoritmo(criterion, descripcion, str(self.validator))
-                performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
-                self.performanceDataList.append(performanceData)
-
+                try:
+                    print "RandomForest, criterion: %s n_estimators: %d" % (criterion, n_estimators)
+                    clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=n_estimators, n_jobs=-1, criterion=criterion)
+                    clf = clf.fit(self.dataWC, self.classAttribute)
+                    descripcion = "RandomForest, n_estimators: %d" % n_estimators
+                    performanceData = performanceScore.performanceAlgoritmo(criterion, descripcion, str(self.validator))
+                    performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
+                    self.performanceDataList.append(performanceData)
+                except:
+                    pass
     #metodo que permite procesar la performance...
     def processValuesScore(self):
 

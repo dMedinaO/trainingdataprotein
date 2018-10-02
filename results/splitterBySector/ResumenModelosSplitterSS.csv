@@ -1,0 +1,299 @@
+Modelos para Sector A,,,
+Modelo,Descripción,Métrica,Valor Métrica
+Naive Bayes,Bernoulli,Accuracy,0.65
+MLP,logistic-adam-adaptive (10-15-15),Precision,0.55
+MLP,logistic-adam-invscaling (10-15-15),Re-call,0.5495
+MLP,logistic-adam-adaptive (10-15-15),,0.5495
+KNN,euclidean-uniform KNN: 4,TN,6
+KNN,minkowski-uniform KNN: 2,,6
+KNN,minkowski-uniform KNN: 4,,6
+SVM,SVC-sigmoid,,6
+MLP,logistic-adam-invscaling (10-15-15),TP,11
+MLP,logistic-adam-adaptive (10-15-15),,11
+Modelos para Sector B,,,
+Modelo,Descripción,Métrica,Valor Métrica
+Random Forest,"Gini, 50",Accuracy,0.818181818182
+Random Forest,"Gini, 100",,0.818181818182
+Random Forest,"Gini, 150",,0.818181818182
+Random Forest,"Gini, 200",,0.818181818182
+Random Forest,"Gini, 250",,0.818181818182
+Random Forest,"Gini, 500",,0.818181818182
+Random Forest,"Gini, 750",,0.818181818182
+Random Forest,"Gini, 1000",,0.818181818182
+SVM,SVC-sigmoid,Precision,0.545454545455
+SVM,NuSVC-sigmoid,,0.545454545455
+SVM,SVC-sigmoid,Re-call,0.545454545455
+SVM,NuSVC-sigmoid,,0.545454545455
+Random Forest,"Gini, 50",TN,4
+Random Forest,"Gini, 100",,4
+Random Forest,"Gini, 150",,4
+Random Forest,"Gini, 200",,4
+Random Forest,"Gini, 250",,4
+Random Forest,"Gini, 500",,4
+Random Forest,"Gini, 750",,4
+Random Forest,"Gini, 1000",,4
+SVM,SVC-sigmoid,TP,6
+SVM,NuSVC-sigmoid,,6
+Modelos para Sector C,,,
+SVM,SVC-Linear,Accuracy,0.7
+SVM,NuSVC-Linear,,0.7
+MLPClassifier,relu-sgd-invscaling (15-5-5),Precision,224
+MLPClassifier,Relu-lbfgs-adaptative (5-5-10),Re-call,213
+KNN,minkowski-uniform KNN: 2,TN,6
+KNN,minkowski-uniform KNN: 3,,6
+KNN,minkowski-uniform KNN: 4,,6
+MLPClassifier,Relu-sgd-invscaling (10-10-10),TP,2.22
+Modelos para Sector F,,,
+SVM,NuSVC-kernel: poly,Accuracy,0.7272727272727276
+SVM,NuSVC-kernel: rbf,,0.7272727272727276
+KNN,Auto-minkowski-distance KNN: 2,,0.7272727272727276
+KNN,Auto-euclidean-distance KNN: 2,,0.7272727272727276
+KNN,Ball-tree-minkowski-distance KNN: 2,,0.7272727272727276
+KNN,Ball-tree-euclidean-distance KNN: 2,,0.7272727272727276
+KNN,KD-tree-minkowski-distance KNN: 2,,0.7272727272727276
+KNN,KD-tree-euclidean-distance KNN: 2,,0.7272727272727276
+KNN,Brute-minkowski-distance KNN: 2,,0.7272727272727276
+KNN,Brute-euclidean-distance KNN: 2,,0.7272727272727276
+SVM,SVC-Linear,Precision,0.545454545455
+SVM,NuSVC-kernel: poly,,0.545454545455
+SVM,NuSVC-kernel: rbf,,0.545454545455
+SVM,SVC-Linear,Re-call,0.545454545455
+SVM,NuSVC-kernel: poly,,0.545454545455
+SVM,NuSVC-kernel: rbf,,0.545454545455
+KNN,Auto-minkowski-distance KNN: 2,TN,4
+KNN,Auto-euclidean-distance KNN: 2,,4
+KNN,Ball-tree-minkowski-distance KNN: 2,,4
+SVM,SVC-Linear,TP,6
+SVM,NuSVC-kernel: poly,,6
+SVM,NuSVC-kernel: rbf,,6
+Modelos para Sector H,,,
+SVM,NuSVC-kernel: sigmoid,Accuracy,0.571428571429
+SVM,NuSVC-kernel: sigmoid,Precision,0.571428571429
+SVM,NuSVC-kernel: sigmoid,Re-call,0.571428571429
+MLP,relu-sgd-invscaling (5-10-5),TN,1.6
+SVM,NuSVC-kernel: sigmoid,TP,4
+Modelos para Sector M,,,
+KNN,minkowski-distance KNN: 3,Accuracy,0.722222222222
+KNN,euclidean-distance KNN: 3,,0.722222222222
+KNN,minkowski-distance KNN: 3,,0.722222222222
+KNN,euclidean-distance KNN: 3,,0.722222222222
+KNN,minkowski-distance KNN: 3,,0.722222222222
+KNN,euclidean-distance KNN: 3,,0.722222222222
+KNN,minkowski-distance KNN: 3,,0.722222222222
+KNN,euclidean-distance KNN: 3,,0.722222222222
+SVM,NuSVC-kernel: poly,Precision,0.277777777778
+KNN,minkowski-distance KNN: 2,,0.277777777778
+KNN,euclidean-distance KNN: 2,,0.277777777778
+KNN,minkowski-distance KNN: 2,,0.277777777778
+KNN,euclidean-distance KNN: 2,,0.277777777778
+KNN,minkowski-distance KNN: 2,,0.277777777778
+KNN,euclidean-distance KNN: 2,,0.277777777778
+KNN,minkowski-distance KNN: 2,,0.277777777778
+KNN,euclidean-distance KNN: 2,,0.277777777778
+SVM,NuSVC-kernel: poly,Re-call,0.277777777778
+KNN,minkowski-distance KNN: 2,,0.277777777778
+KNN,euclidean-distance KNN: 2,,0.277777777778
+KNN,minkowski-distance KNN: 2,,0.277777777778
+KNN,euclidean-distance KNN: 2,,0.277777777778
+KNN,minkowski-distance KNN: 2,,0.277777777778
+KNN,euclidean-distance KNN: 2,,0.277777777778
+KNN,minkowski-distance KNN: 2,,0.277777777778
+KNN,euclidean-distance KNN: 2,,0.277777777778
+SVM,SVC-Linear,TN,10
+SVM,SVC-sigmoid,,10
+KNN,minkowski-distance KNN: 2,TP,5
+KNN,euclidean-distance KNN: 2,,5
+KNN,minkowski-distance KNN: 2,,5
+KNN,euclidean-distance KNN: 2,,5
+KNN,minkowski-distance KNN: 2,,5
+KNN,euclidean-distance KNN: 2,,5
+KNN,minkowski-distance KNN: 2,,5
+KNN,euclidean-distance KNN: 2,,5
+Modelos para Sector N,,,
+Random Forest,"Gini, 50",Accuracy,0.75
+Random Forest,"Gini, 100",,0.75
+Random Forest,"Gini, 150",,0.75
+Random Forest,"Gini, 200",,0.75
+Random Forest,"Gini, 250",,0.75
+Random Forest,"Gini, 500",,0.75
+Random Forest,"Gini, 750",,0.75
+Random Forest,"Gini, 1000",,0.75
+Random Forest,"Gini, 50",Precision,0.75
+Random Forest,"Gini, 100",,0.75
+Random Forest,"Gini, 150",,0.75
+Random Forest,"Gini, 200",,0.75
+Random Forest,"Gini, 250",,0.75
+Random Forest,"Gini, 500",,0.75
+Random Forest,"Gini, 750",,0.75
+Random Forest,"Gini, 1000",,0.75
+Random Forest,"Gini, 50",Re-call,0.75
+Random Forest,"Gini, 100",,0.75
+Random Forest,"Gini, 150",,0.75
+Random Forest,"Gini, 200",,0.75
+Random Forest,"Gini, 250",,0.75
+Random Forest,"Gini, 500",,0.75
+Random Forest,"Gini, 750",,0.75
+Random Forest,"Gini, 1000",,0.75
+Random Forest,"Gini, 50",TN,0
+Random Forest,"Gini, 100",,0
+Random Forest,"Gini, 150",,0
+Random Forest,"Gini, 200",,0
+Random Forest,"Gini, 250",,0
+Random Forest,"Gini, 500",,0
+Random Forest,"Gini, 750",,0
+Random Forest,"Gini, 1000",,0
+Random Forest,"Gini, 50",TP,3
+Random Forest,"Gini, 100",,3
+Random Forest,"Gini, 150",,3
+Random Forest,"Gini, 200",,3
+Random Forest,"Gini, 250",,3
+Random Forest,"Gini, 500",,3
+Random Forest,"Gini, 750",,3
+Random Forest,"Gini, 1000",,3
+Modelos para Sector O,,,
+KNN,minkowski-distance KNN: 2,Accuracy,0.717948717949
+KNN,euclidean-distance KNN: 2,,0.717948717949
+KNN,minkowski-distance KNN: 2,,0.717948717949
+KNN,euclidean-distance KNN: 2,,0.717948717949
+KNN,minkowski-distance KNN: 2,,0.717948717949
+KNN,euclidean-distance KNN: 2,,0.717948717949
+KNN,minkowski-distance KNN: 2,,0.717948717949
+KNN,euclidean-distance KNN: 2,,0.717948717949
+SVM,NuSVC-kernel: sigmoid,Precision,0.333333333333
+SVM,NuSVC-kernel: sigmoid,Re-call,0.333333333333
+MLPClassifier,logistic-sgd-constant (5-5-15),TN,23.0
+MLPClassifier,logistic-sgd-constant (10-5-15),,23.0
+MLPClassifier,logistic-sgd-constant (15-15-15),,23.0
+MLPClassifier,logistic-sgd-adaptive (5-5-15),,23.0
+MLPClassifier,logistic-sgd-adaptive (5-10-15),,23.0
+MLPClassifier,logistic-sgd-adaptive (5-15-15),,23.0
+MLPClassifier,logistic-sgd-adaptive (10-5-15),,23.0
+MLPClassifier,logistic-sgd-adaptive (10-10-15),,23.0
+MLPClassifier,logistic-sgd-adaptive (10-15-15),,23.0
+SVM,NuSVC-kernel: sigmoid,TP,13
+Modelos para Sector P,,,
+Random Forest,"Gini, 50",Accuracy,0.846153846154
+Random Forest,"Gini, 100",,0.846153846154
+Random Forest,"Gini, 150",,0.846153846154
+Random Forest,"Gini, 200",,0.846153846154
+Random Forest,"Gini, 250",,0.846153846154
+Random Forest,"Gini, 500",,0.846153846154
+Random Forest,"Gini, 750",,0.846153846154
+Random Forest,"Gini, 1000",,0.846153846154
+Naive Bayes,Bernoulli,Precision,0.38
+Naive Bayes,Bernoulli,Re-call,0.38
+Random Forest,"Gini, 50",TN,7
+Random Forest,"Gini, 100",,7
+Random Forest,"Gini, 150",,7
+Random Forest,"Gini, 200",,7
+Random Forest,"Gini, 250",,7
+Random Forest,"Gini, 500",,7
+Random Forest,"Gini, 750",,7
+Random Forest,"Gini, 1000",,7
+Naive Bayes,Bernoulli,TP,5
+Modelos para Sector R,,,
+NuSVC,kernel: linear,Accuracy,0.655172413793
+Naive Bayes,BernoulliNB,,0.620689655172
+NuSVC,kernel: sigmoid,,0.603448275862
+SVC,linear,Precision,0.568965517241
+MLPClassifier,logistic-lbfgs-constant (5-5-15),,0.568965517241
+MLPClassifier,logistic-lbfgs-constant (5-10-10),,0.568965517241
+MLPClassifier,logistic-lbfgs-constant (5-10-15),,0.568965517241
+MLPClassifier,logistic-lbfgs-constant (5-15-5),,0.568965517241
+MLPClassifier,logistic-lbfgs-constant (5-15-10),,0.568965517241
+MLPClassifier,logistic-lbfgs-constant (10-5-15),,0.568965517241
+MLPClassifier,logistic-lbfgs-constant (10-10-15),,0.568965517241
+MLPClassifier,logistic-lbfgs-constant (10-15-5),,0.568965517241
+SVC,linear,Re-call,0.568965517241
+MLPClassifier,logistic-lbfgs-constant (5-5-15),,0.568965517241
+MLPClassifier,logistic-lbfgs-constant (5-10-10),,0.568965517241
+MLPClassifier,logistic-lbfgs-constant (5-10-15),,0.568965517241
+MLPClassifier,logistic-lbfgs-constant (5-15-5),,0.568965517241
+MLPClassifier,logistic-lbfgs-constant (5-15-10),,0.568965517241
+MLPClassifier,logistic-lbfgs-constant (10-5-15),,0.568965517241
+MLPClassifier,logistic-lbfgs-constant (10-10-15),,0.568965517241
+MLPClassifier,logistic-lbfgs-constant (10-15-5),,0.568965517241
+Naive Bayes,GaussianNB,TN,19
+SVC,linear,TP,33.0
+MLPClassifier,logistic-lbfgs-constant (5-5-10),,33.0
+MLPClassifier,logistic-lbfgs-constant (5-5-15),,33.0
+MLPClassifier,logistic-lbfgs-constant (5-15-15),,33.0
+MLPClassifier,logistic-lbfgs-constant (10-5-10),,33.0
+MLPClassifier,logistic-lbfgs-constant (10-5-15),,33.0
+MLPClassifier,logistic-lbfgs-constant (10-10-15),,33.0
+MLPClassifier,logistic-lbfgs-constant (10-15-15),,33.0
+MLPClassifier,logistic-lbfgs-constant (15-5-10),,33.0
+Modelos para Sector T,,,
+KNN,minkowski-uniform KNN: 4,Accuracy,0.727272727273
+KNN,euclidean-uniform KNN: 4,,0.727272727273
+KNN,minkowski-uniform KNN: 4,,0.727272727273
+KNN,euclidean-uniform KNN: 4,,0.727272727273
+KNN,minkowski-uniform KNN: 4,,0.727272727273
+KNN,euclidean-uniform KNN: 4,,0.727272727273
+KNN,minkowski-uniform KNN: 4,,0.727272727273
+KNN,euclidean-uniform KNN: 4,,0.727272727273
+SVC,sigmoid,Precision,0.454545454545
+NuSVC,kernel: sigmoid,,0.454545454545
+SVC,sigmoid,Re-call,0.454545454545
+NuSVC,kernel: sigmoid,,0.454545454545
+KNN,minkowski-uniform KNN: 4,TN,4.0
+KNN,euclidean-uniform KNN: 4,,4.0
+KNN,minkowski-uniform KNN: 4,,4.0
+KNN,euclidean-uniform KNN: 4,,4.0
+KNN,minkowski-uniform KNN: 4,,4.0
+KNN,euclidean-uniform KNN: 4,,4.0
+KNN,minkowski-uniform KNN: 4,,4.0
+KNN,euclidean-uniform KNN: 4,,4.0
+SVC,sigmoid,TP,5
+NuSVC,kernel: sigmoid,,5
+Modelos para Sector U,,,
+Random Forest,"Gini, 50",Accuracy,1.0
+Random Forest,"Gini, 100",,1.0
+Random Forest,"Gini, 150",,1.0
+Random Forest,"Gini, 200",,1.0
+Random Forest,"Gini, 250",,1.0
+Random Forest,"Gini, 500",,1.0
+Random Forest,"Gini, 750",,1.0
+Random Forest,"Gini, 1000",,1.0
+Random Forest,"Gini, 50",Precision,0.5
+Random Forest,"Gini, 100",,0.5
+Random Forest,"Gini, 150",,0.5
+Random Forest,"Gini, 200",,0.5
+Random Forest,"Gini, 250",,0.5
+Random Forest,"Gini, 500",,0.5
+Random Forest,"Gini, 750",,0.5
+Random Forest,"Gini, 1000",,0.5
+Random Forest,"Gini, 50",Re-call,0.5
+Random Forest,"Gini, 100",,0.5
+Random Forest,"Gini, 150",,0.5
+Random Forest,"Gini, 200",,0.5
+Random Forest,"Gini, 250",,0.5
+Random Forest,"Gini, 500",,0.5
+Random Forest,"Gini, 750",,0.5
+Random Forest,"Gini, 1000",,0.5
+Random Forest,"Gini, 50",TN,4.0
+Random Forest,"Gini, 100",,4.0
+Random Forest,"Gini, 150",,4.0
+Random Forest,"Gini, 200",,4.0
+Random Forest,"Gini, 250",,4.0
+Random Forest,"Gini, 500",,4.0
+Random Forest,"Gini, 750",,4.0
+Random Forest,"Gini, 1000",,4.0
+Random Forest,"Gini, 50",TP,4.0
+Random Forest,"Gini, 100",,4.0
+Random Forest,"Gini, 150",,4.0
+Random Forest,"Gini, 200",,4.0
+Random Forest,"Gini, 250",,4.0
+Random Forest,"Gini, 500",,4.0
+Random Forest,"Gini, 750",,4.0
+Random Forest,"Gini, 1000",,4.0
+Modelos para Sector Z,,,
+SVC,linear,Accuracy,0.695652173913
+SVC,rbf,,0.695652173913
+SVC,sigmoid,,0.695652173913
+Naive Bayes,GaussianNB,Precision,0.173913043478
+Naive Bayes,GaussianNB,Re-call,0.173913043478
+SVC,linear,TN,32.0
+SVC,rbf,,32.0
+SVC,sigmoid,,32.0
+Naive Bayes,GaussianNB,TP,8

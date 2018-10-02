@@ -4,10 +4,12 @@ todos los posibles resultados para un clasificador
 '''
 
 from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 from sklearn.neural_network import MLPClassifier
+from sklearn.naive_bayes import GaussianNB, MultinomialNB, BernoulliNB
+from sklearn.neighbors import KNeighborsClassifier
 
-from sklearn.svm import NuSVC
+from sklearn.svm import NuSVC, SVC
 
 from scipy import interp
 from itertools import cycle
@@ -51,47 +53,28 @@ class createBestModels(object):
     #metodo que permite procesar los modelos, crea los clf y genera los resultados
     def processModels(self):
 
-        print "GradientBoostingClassifier n_estimators: 50"
-        clf = GradientBoostingClassifier(n_estimators=50)
+        # param_name = "alpha"
+        # param_range = np.logspace(-6,1,5)
+        # clf = NuSVC(kernel='linear', degree=3, gamma=10, probability=True)
+        # self.createModel(clf, "NuSVC_linear/", 0.2, param_name, param_range, 'gamma', 'Validation curve with NuSVC', 0)
+
         param_name = "n_estimators"
-        param_range = [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]
-        self.createModel(clf, "GradientBoostingClassifier/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with GradientBoostingClassifier', 1)
+        param_range = [10,20,50,100,150,200,250,500,750,1000,1500]
 
-        print "NuSVC kernel=poly"
-        clf = NuSVC(kernel='poly', degree=3, gamma=10, probability=True)
-        param_name = "gamma"
-        param_range = np.logspace(-6, -1, 5)
-        self.createModel(clf, "NuSVC/", 0.2, param_name, param_range, '$\gamma$', 'Validation curve with NuSVC', 0)
+        clf= AdaBoostClassifier(n_estimators=20, algorithm='SAMME')
+        self.createModel(clf, "AdaBoostClassifier_250/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1)
 
-        print "Random RandomForestClassifier: 150, entropy"
-        clf = RandomForestClassifier(max_depth=2, random_state=0, n_estimators=150, n_jobs=-1, criterion='entropy')
-        param_name = "n_estimators"
-        param_range = [10, 20, 50, 100, 150, 200, 250, 500, 750, 1000, 1500]
-        self.createModel(clf, "RandomForestClassifier/", 0.2, param_name, param_range, 'n_estimators', 'Validation curve with RandomForestClassifier', 1)
-
-        print "MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 5-10-10"
-        clf = MLPClassifier(hidden_layer_sizes=(5,10,10), activation='tanh', solver='lbfgs', learning_rate='constant')
-        param_name = "alpha"
-        param_range = np.logspace(-6, -1, 5)
-        self.createModel(clf, "MLPClassifier_Constant_5-10-10/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0)
-
-        print "MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 5-10-15"
-        clf = MLPClassifier(hidden_layer_sizes=(5,10,15), activation='tanh', solver='lbfgs', learning_rate='constant')
-        param_name = "alpha"
-        param_range = np.logspace(-6, -1, 5)
-        self.createModel(clf, "MLPClassifier_Constant_5-10-15/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0)
-
-        print "MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-15-10"
-        clf = MLPClassifier(hidden_layer_sizes=(5,15,10), activation='tanh', solver='lbfgs', learning_rate='adaptive')
-        param_name = "alpha"
-        param_range = np.logspace(-6, -1, 5)
-        self.createModel(clf, "MLPClassifier_Adaptative_5-15-10/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0)
-
-        print "MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 10-15-15"
-        clf = MLPClassifier(hidden_layer_sizes=(10,15,15), activation='tanh', solver='lbfgs', learning_rate='adaptive')
-        param_name = "alpha"
-        param_range = np.logspace(-6, -1, 5)
-        self.createModel(clf, "MLPClassifier_Adaptative_10-15-15/", 0.2, param_name, param_range, 'alpha', 'Validation curve with MLPClassifier', 0)
+        # clf= KNeighborsClassifier(n_neighbors=3,metric='minkowski',algorithm='auto',weights='uniform', n_jobs=-1)
+        # self.createModel(clf, "KNN_min_auto_3_uni/", 0.2, param_name, param_range, 'n_neighbors', 'Validation curve with KNN', 1)
+        # #
+        # clf= KNeighborsClassifier(n_neighbors=3,metric='euclidean',algorithm='auto',weights='uniform', n_jobs=-1)
+        # self.createModel(clf, "KNN_euc_auto_3_uni/", 0.2, param_name, param_range, 'n_neighbors', 'Validation curve with KNN', 1)
+        # #
+        # clf= KNeighborsClassifier(n_neighbors=3,metric='minkowski',algorithm='auto',weights='distance', n_jobs=-1)
+        # self.createModel(clf, "KNN_min_auto_3_dist/", 0.2, param_name, param_range, 'n_neighbors', 'Validation curve with KNN', 1)
+        # #
+        # clf= KNeighborsClassifier(n_neighbors=3,metric='euclidean',algorithm='auto',weights='distance', n_jobs=-1)
+        # self.createModel(clf, "KNN_euc_auto_3_dist/", 0.2, param_name, param_range, 'n_neighbors', 'Validation curve with KNN', 1)
 
     #metodo que permite crear un directorio...
     def createPath(self, namePath):
@@ -179,11 +162,11 @@ class createBestModels(object):
 
         scoreData = []
         for element in self.ListScore:
-            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=10, scoring=element)
+            scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=5, scoring=element)
             meanScore = np.mean(scores)
             scoreData.append(meanScore)
         #aplicamos el scrore fbeta...
-        scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=10, scoring=self.ftwo_scorer)
+        scores = cross_val_score(clf, self.dataWC, self.classAttribute, cv=5, scoring=self.ftwo_scorer)
         meanScore = np.mean(scores)
         scoreData.append(meanScore)
 
@@ -228,7 +211,7 @@ class createBestModels(object):
     #metodo que permite generar la matriz de confusion...
     def createConfusionMatrix(self, xTrain, yTrain, clf, nameFig):
 
-        self.predictions = cross_val_predict(clf, xTrain, yTrain, cv=10)
+        self.predictions = cross_val_predict(clf, xTrain, yTrain, cv=5)
         matrix = confusion_matrix(yTrain, self.predictions)
 
         np.set_printoptions(precision=2)
@@ -245,7 +228,7 @@ class createBestModels(object):
         X = np.array(self.dataWC)
         y = np.array(self.transformInt(self.classAttribute))
 
-        cv = StratifiedKFold(n_splits=10)
+        cv = StratifiedKFold(n_splits=5)
         classifier = clf
         tprs = []
         aucs = []
@@ -295,7 +278,7 @@ class createBestModels(object):
         X = np.array(self.dataWC)
         y = np.array(self.transformInt(self.classAttribute))
 
-        train_scores, test_scores = validation_curve(clf, X, y, param_name=param_name, param_range=param_range,cv=10, scoring="accuracy", n_jobs=1)
+        train_scores, test_scores = validation_curve(clf, X, y, param_name=param_name, param_range=param_range,cv=5, scoring="accuracy", n_jobs=1)
         train_scores_mean = np.mean(train_scores, axis=1)
         train_scores_std = np.std(train_scores, axis=1)
         test_scores_mean = np.mean(test_scores, axis=1)

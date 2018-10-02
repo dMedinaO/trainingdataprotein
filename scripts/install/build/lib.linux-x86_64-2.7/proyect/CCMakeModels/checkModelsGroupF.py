@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 
 from sklearn.neural_network import MLPClassifier
-from sklearn.svm import NuSVC
+from sklearn.svm import NuSVC, SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB, MultinomialNB, BernoulliNB
 from proyect.CCProcesFile import document
@@ -55,21 +55,17 @@ class evaluacionCruzada(object):
         nameFile = self.pathInput+group+"/normaliced/dataSetNormaliced.csv"
         dataSet, classList = self.getValuesInDataSet(nameFile)
 
-        listDesc = ['kernel: poly', 'kernel: rbf', 'minkowski-distance KNN: 2', 'euclidean-distance KNN: 2', 'minkowski-distance KNN: 2', 'euclidean-distance KNN: 2', 'minkowski-distance KNN: 2', 'euclidean-distance KNN: 2', 'minkowski-distance KNN: 2', 'euclidean-distance KNN: 2']
-        listAlgth = ['NuSVC', 'NuSVC', 'auto', 'auto', 'ball_tree', 'ball_tree', 'kd_tree', 'kd_tree', 'brute', 'brute']
-        actualData = 0.727272727273
+        listDesc = ['minkowski-distance KNN: 2', 'euclidean-distance KNN: 2', 'minkowski-distance KNN: 2']
+        listAlgth = ['auto', 'auto', 'ball_tree']
+        actualData = 0.7272727272727276
 
         clf = []## NOTE: solo se trabajara con un maximo de 10 clasificadores...
-        clf.append(NuSVC(kernel='poly', degree=3, gamma=10, probability=True))
-        clf.append(NuSVC(kernel='rbf', degree=3, gamma=10, probability=True))
+        #clf.append(NuSVC(kernel='poly', degree=3, gamma=10, probability=True))
+        #clf.append(NuSVC(kernel='rbf', degree=3, gamma=10, probability=True))
+        #clf.append(SVC(kernel='linear', degree=3, gamma=10, probability=True))
         clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='auto',weights='uniform', n_jobs=-1))
         clf.append(KNeighborsClassifier(n_neighbors=2,metric='euclidean',algorithm='auto',weights='uniform', n_jobs=-1))
         clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='ball_tree',weights='uniform', n_jobs=-1))
-        clf.append(KNeighborsClassifier(n_neighbors=2,metric='euclidean',algorithm='ball_tree',weights='uniform', n_jobs=-1))
-        clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='kd_tree',weights='uniform', n_jobs=-1))
-        clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='kd_tree',weights='uniform', n_jobs=-1))
-        clf.append(KNeighborsClassifier(n_neighbors=2,metric='euclidean',algorithm='brute',weights='uniform', n_jobs=-1))
-        clf.append(KNeighborsClassifier(n_neighbors=2,metric='minkowski',algorithm='brute',weights='uniform', n_jobs=-1))
 
         matrixResult = []
 

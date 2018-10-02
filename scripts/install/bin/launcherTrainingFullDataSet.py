@@ -10,6 +10,7 @@ import sys
 #recibimos el set de datos con la data normalizada...
 matrixNormalized = sys.argv[1]
 pathOutput = sys.argv[2]
+cv = int(sys.argv[3])
 
 matrix = document.document(matrixNormalized, pathOutput).readMatrix()#hacemos la lectura de la matriz de datos...
 
@@ -23,15 +24,15 @@ for i in range (len(matrix)):
         else:
             matrix[i][j] = float(matrix[i][j])
 
-naiveBayesValue = naiveBayes.naiveBayes(matrix, 10)
-adaBoostValue = adaBoost.adaBoost(matrix, 10)
-knnAlgorithmValue = knnAlgorithm.knnAlgorithm(matrix, 10)
-decisionTreesValue = decisionTrees.decisionTrees(matrix, 10)
-gradientTreeBoostValues = gradientTreeBoost.gradientTreeBoost(matrix, 10)
-nuSVCValue = nuSVC.nuSVC(matrix, 10)
-SVCValue = SVC.SVCObjet(matrix, 10)
-randomForestValue = randomForest.randomForest(matrix, 10)
-mlpClfValue = mlpClf.mlpModel(matrix, 10)
+naiveBayesValue = naiveBayes.naiveBayes(matrix, cv)
+adaBoostValue = adaBoost.adaBoost(matrix, cv)
+knnAlgorithmValue = knnAlgorithm.knnAlgorithm(matrix, cv)
+decisionTreesValue = decisionTrees.decisionTrees(matrix, cv)
+gradientTreeBoostValues = gradientTreeBoost.gradientTreeBoost(matrix, cv)
+nuSVCValue = nuSVC.nuSVC(matrix, cv)
+SVCValue = SVC.SVCObjet(matrix, cv)
+randomForestValue = randomForest.randomForest(matrix, cv)
+mlpClfValue = mlpClf.mlpModel(matrix, cv)
 
 ListResultAlgorithm = [naiveBayesValue, adaBoostValue, knnAlgorithmValue, decisionTreesValue, gradientTreeBoostValues, nuSVCValue, SVCValue, randomForestValue, mlpClfValue]
 

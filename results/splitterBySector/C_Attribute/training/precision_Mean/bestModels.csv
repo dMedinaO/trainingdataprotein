@@ -1,0 +1,2 @@
+Algorithm,Description,precision_Mean
+MLPClassifier,relu-sgd-invscaling (15-5-5),0.224

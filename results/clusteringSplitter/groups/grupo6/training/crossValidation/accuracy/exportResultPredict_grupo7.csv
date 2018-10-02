@@ -1,0 +1,10 @@
+algorithm,desc,actualScore,new score
+GradientBoostingClassifier,GradientBoostingClassifier 10,0.57696969697,0.564516129032
+MLPClassifier,logistic-adam-invscaling (10-5-10),0.576363636364,0.564516129032
+MLPClassifierSVC,logistic-adam-invscaling (10-10-15),0.576060606061,0.564516129032
+SVC,linear,0.575757575758,0.564516129032
+SVC,poly,0.575757575758,0.564516129032
+SVC,rbf,0.575757575758,0.564516129032
+gini,sigmoid,0.575757575758,0.564516129032
+gini,DecisionTreeClassifier gini best,0.575757575758,0.564516129032
+entropy,DecisionTreeClassifier gini random,0.575757575758,0.564516129032

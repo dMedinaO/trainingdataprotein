@@ -1,0 +1,3 @@
+algorithm,desc,actualScore,new score
+logistic-adam-invscaling (10-15-15),MLPClassifier,0.549,0.568965517241
+logistic-adam-adaptive (10-15-15),MLPClassifier,0.549,0.568965517241

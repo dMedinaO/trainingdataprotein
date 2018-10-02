@@ -34,13 +34,16 @@ class gradientTreeBoost(object):
     def applyAlgorithm(self):
 
         for estimator in self.n_estimatorsList:
-            print "GradientBoostingClassifier, estimator: %d" % estimator
-            clf = GradientBoostingClassifier(n_estimators=estimator)
-            clf = clf.fit(self.dataWC, self.classAttribute)
-            descripcion = "GradientBoostingClassifier"
-            performanceData = performanceScore.performanceAlgoritmo(estimator, descripcion, str(self.validator))
-            performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
-            self.performanceDataList.append(performanceData)
+            try:
+                print "GradientBoostingClassifier, estimator: %d" % estimator
+                clf = GradientBoostingClassifier(n_estimators=estimator)
+                clf = clf.fit(self.dataWC, self.classAttribute)
+                descripcion = "GradientBoostingClassifier"
+                performanceData = performanceScore.performanceAlgoritmo(estimator, descripcion, str(self.validator))
+                performanceData.estimatedMetricsPerformance(clf, self.dataWC, self.classAttribute,self.validator)
+                self.performanceDataList.append(performanceData)
+            except:
+                pass
 
     #metodo que permite procesar la performance...
     def processValuesScore(self):

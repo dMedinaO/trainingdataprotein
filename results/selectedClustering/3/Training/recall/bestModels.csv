@@ -1,0 +1,2 @@
+Algorithm,Description,recall
+entropy,"RandomForest, n_estimators: 10",0.6875

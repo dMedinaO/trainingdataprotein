@@ -1,0 +1,2 @@
+Algorithm,Description,precision
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 15-15-10",0.777777777778
