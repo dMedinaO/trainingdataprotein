@@ -1,0 +1,52 @@
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+
+  <div id="myDiv" style="width: 880px; height: 800px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+  <script>
+    var trace1 = {
+      x: ['Accuracy', 'Recall', 'Precision'],
+      y: [0.7361111111,	1,	0.7662337662],
+      name: 'Group 1',
+      type: 'bar'
+    };
+
+    var trace2 = {
+      x: ['Accuracy', 'Recall', 'Precision'],
+      y: [0.6166666667, 0.6111111111, 0.6191176471],
+      name: 'Group 2',
+      type: 'bar'
+    };
+
+    var trace3 = {
+      x: ['Accuracy', 'Recall', 'Precision'],
+      y: [0.730952381, 0.5625, 0.7777777778],
+      name: 'Group 3',
+      type: 'bar'
+    };
+
+    var trace4 = {
+      x: ['Accuracy', 'Recall', 'Precision'],
+      y: [0.7013888889, 0.6875, 0.9285714286],
+      name: 'Group 4',
+      type: 'bar'
+    };
+
+    var trace5 = {
+      x: ['Accuracy', 'Recall', 'Precision'],
+      y: [0.7424242424, 0.9, 1],
+      name: 'Group 5',
+      type: 'bar'
+    };
+
+    var data = [trace1, trace2, trace3, trace4, trace5];
+    var layout = {barmode: 'group',
+    title: 'Best Performance for training step in Splitter By Clustering'
+   };
+Plotly.newPlot('myDiv', data, layout);
+
+  </script>
+</body>

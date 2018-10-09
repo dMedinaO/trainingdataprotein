@@ -1,0 +1,68 @@
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+
+  <div id="myDiv" style="width: 880px; height: 800px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+  <script>
+
+  var trace1 = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.7052941176, 1, 0.7266666667],
+    name: 'Group 1',
+    type: 'bar'
+  };
+
+  var trace2 = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.9166666667, 1, 0.6666666667],
+    name: 'Group 2',
+    type: 'bar'
+  };
+
+  var trace3 = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.8666666667, 1, 1],
+    name: 'Group 3',
+    type: 'bar'
+  };
+
+  var trace4 = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.75, 1, 0.9166666667],
+    name: 'Group 4',
+    type: 'bar'
+  };
+
+  var trace5 = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.6203703704, 0.6944444444, 0.75],
+    name: 'Group 5',
+    type: 'bar'
+  };
+
+  var trace6 = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.7232323232, 1, 0.7777777778],
+    name: 'Group 6',
+    type: 'bar'
+  };
+
+  var trace7 = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.6301587302, 1, 0.6952380952],
+    name: 'Group 7',
+    type: 'bar'
+  };
+
+
+    var data = [trace1, trace2, trace3, trace4, trace5, trace6, trace7];
+    var layout = {barmode: 'group',
+            title: 'Best Performance for training step in Splitter By Recursive Clustering'
+           };
+    Plotly.newPlot('myDiv', data, layout);
+
+  </script>
+</body>

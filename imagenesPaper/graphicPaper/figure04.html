@@ -1,0 +1,110 @@
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+
+  <div id="myDiv" style="width: 880px; height: 800px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+  <script>
+  var traceA = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.6933333333,	1, 0.7],
+    name: 'Group A',
+    type: 'bar'
+  };
+
+  var traceB = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.8,	1,0.9],
+    name: 'Group B',
+    type: 'bar'
+  };
+
+  var traceC = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.8888888889, 1, 0.6666666667],
+    name: 'Group C',
+    type: 'bar'
+  };
+
+  var traceF = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.7222222222, 1, 0.7222222222],
+    name: 'Group F',
+    type: 'bar'
+  };
+
+  var traceH = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.6666666667, 1, 0.6666666667],
+    name: 'Group H',
+    type: 'bar'
+  };
+
+  var traceM = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.8, 1, 0.7],
+    name: 'Group M',
+    type: 'bar'
+  };
+
+  var traceN = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.75,	0.75, 0.75],
+    name: 'Group N',
+    type: 'bar'
+  };
+
+
+  var traceO = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.669047619, 1, 0.7333333333],
+    name: 'Group O',
+    type: 'bar'
+  };
+
+
+  var traceP = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.7166666667, 0.8333333333, 0.8],
+    name: 'Group P',
+    type: 'bar'
+  };
+
+  var traceR = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.603030303, 1, 0.6828571429],
+    name: 'Group R',
+    type: 'bar'
+  };
+
+  var traceT = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.6944444444, 0.8333333333, 0.7222222222],
+    name: 'Group T',
+    type: 'bar'
+  };
+
+  var traceU = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [1, 1, 1],
+    name: 'Group U',
+    type: 'bar'
+  };
+
+  var traceZ = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [0.7410714286, 1, 0.8333333333],
+    name: 'Group Z',
+    type: 'bar'
+  };
+
+var data = [traceA, traceB, traceC, traceF, traceH, traceM, traceN, traceO, traceP, traceR, traceT, traceU, traceZ];
+var layout = {barmode: 'group',
+        title: 'Best Performance for training step in Splitter By Interaction Sector'
+       };
+Plotly.newPlot('myDiv', data, layout);
+
+  </script>
+</body>
