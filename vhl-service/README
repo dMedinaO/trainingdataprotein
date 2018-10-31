@@ -1,0 +1,15 @@
+INSTALL MODULES PYTHON
+
+As root user, execute setup.py:
+
+python setup.py install
+
+This scripts will create all modules in dir proyect.
+
+For add more modules, you create a new directories in proyect dir and add its __init__.py corresponding file.
+Add the dir in setup.py and execute the script.
+
+For execution your need the libraries:
+
+distutils : allow install modules
+ConfigParser: allow create and parser configs files.
