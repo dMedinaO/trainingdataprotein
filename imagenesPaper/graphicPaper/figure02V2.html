@@ -3451,16 +3451,18 @@
 
   };
 
-  var data = [trace3];
+  var data = [trace1, trace2, trace3];
 
     var layout = {
 
+      //yaxis: {anchor:'x1'},
+      //xaxis: {domain: [0, 0.33]},
       bargap: 0.05,
       bargroupgap: 0.2,
-      barmode: "overlay",
-      title: "Histogram for Precision in training step",
-      xaxis: {title: "Precision"},
-      yaxis: {title: "Frequency"}
+      //barmode: "overlay",
+      title: "Histogram for Performance in training step",
+      //xaxis: {title: "Precision"},
+      //yaxis: {title: "Frequency"}
     };
 
     Plotly.newPlot('myDiv', data, layout);

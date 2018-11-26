@@ -1,292 +1,292 @@
-Modelos para grupo 1,,,
-Modelo,Descripción,Métrica,Valor
-SAMME,AdaBoostClassifier con 10 estimadores,Accuracy,0.705294117647
-50,GradientBoostingClassifier,,0.695098039216
-SAMME,AdaBoostClassifier con 20 estimadores,,0.694362745098
-SAMME.R,AdaBoostClassifier con 10 estimadores,,0.681862745098
-SAMME.R,AdaBoostClassifier con 100 estimadores,,0.669264705882
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 5-5-5",,0.668529411765
-20,GradientBoostingClassifier,,0.657598039216
-SAMME,AdaBoostClassifier con 150 estimadores,,0.6575
-SAMME,AdaBoostClassifier con 50 estimadores,,0.656764705882
-SAMME.R,AdaBoostClassifier con 20 estimadores,,0.652058823529
-SAMME,AdaBoostClassifier con 10 estimadores,Precision,0.726666666667
-MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 5-5-10",Recall,1
-MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-15-15",,1
-MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 5-10-10",,1
-Modelos para grupo 2,,,
-MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 15-15-5",Accuracy,0.916666666667
-GaussianNB,Naive Bayes algoritmo,,0.833333333333
-BernoulliNB,Naive Bayes algoritmo,,0.75
-auto,KNN con 2 vecinos peso: uniform metrica: minkowski,,0.75
-auto,KNN con 4 vecinos peso: uniform metrica: minkowski,,0.75
-auto,KNN con 5 vecinos peso: uniform metrica: minkowski,,0.75
-auto,KNN con 6 vecinos peso: uniform metrica: minkowski,,0.75
-auto,KNN con 7 vecinos peso: uniform metrica: minkowski,,0.75
-auto,KNN con 8 vecinos peso: uniform metrica: minkowski,,0.75
-auto,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.75
-auto,KNN con 4 vecinos peso: uniform metrica: euclidean,,0.75
-auto,KNN con 5 vecinos peso: uniform metrica: euclidean,,0.75
-auto,KNN con 6 vecinos peso: uniform metrica: euclidean,,0.75
-auto,KNN con 7 vecinos peso: uniform metrica: euclidean,,0.75
-auto,KNN con 8 vecinos peso: uniform metrica: euclidean,,0.75
-auto,KNN con 4 vecinos peso: distance metrica: minkowski,,0.75
-auto,KNN con 5 vecinos peso: distance metrica: minkowski,,0.75
-auto,KNN con 6 vecinos peso: distance metrica: minkowski,,0.75
-auto,KNN con 7 vecinos peso: distance metrica: minkowski,,0.75
-auto,KNN con 8 vecinos peso: distance metrica: minkowski,,0.75
-auto,KNN con 4 vecinos peso: distance metrica: euclidean,,0.75
-auto,KNN con 5 vecinos peso: distance metrica: euclidean,,0.75
-auto,KNN con 6 vecinos peso: distance metrica: euclidean,,0.75
-auto,KNN con 7 vecinos peso: distance metrica: euclidean,,0.75
-auto,KNN con 8 vecinos peso: distance metrica: euclidean,,0.75
-MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-5-5",Precision,0.666666666667
-MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-5-15",,0.666666666667
-MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-15-10",,0.666666666667
-MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 5-15-15",,0.666666666667
-MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 10-10-5",,0.666666666667
-linear,nuSVC,Recall,1.0
-poly,nuSVC,,1.0
-rbf,nuSVC,,1.0
-sigmoid,nuSVC,,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 5-10-5",,1.0
-MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 10-10-10",,1.0
-MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 10-15-15",,1.0
-MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 5-5-5",,1.0
-MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-10-10",,1.0
-MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 10-5-5",,1.0
-Modelos para grupo 3,,,
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 15-15-5",Accuracy,0.866666666667
-gini,"RandomForest, n_estimators: 50",Precision,1.0
-entropy,"RandomForest, n_estimators: 50",,1.0
-20,GradientBoostingClassifier,Recall,1.0
-500,GradientBoostingClassifier,,1.0
-linear,SVC,,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-5-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-10",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-10-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-15-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-5-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-10-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-5-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-10-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-15-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 5-5-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 10-15-5",,1.0
-Modelos para grupo 4,,,
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 15-5-5",Accuracy,0.758333333333
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-10-10",,0.758333333333
-1500,GradientBoostingClassifier,,0.75
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 15-5-10",,0.75
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 5-5-15",,0.75
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 5-5-15",,0.75
-rbf,SVC,,0.741666666667
-500,GradientBoostingClassifier,,0.716666666667
-750,GradientBoostingClassifier,,0.716666666667
-MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 5-10-15",,0.716666666667
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 5-15-10",,0.716666666667
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 15-10-10",,0.716666666667
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 10-5-10",,0.716666666667
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-5-10",,0.716666666667
-MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 10-15-15",,0.716666666667
-rbf,nuSVC,,0.708333333333
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 5-15-15",Precision,0.933333333333
-auto,KNN con 2 vecinos peso: uniform metrica: minkowski,,0.916666666667
-auto,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.916666666667
-ball_tree,KNN con 2 vecinos peso: uniform metrica: minkowski,,0.916666666667
-ball_tree,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.916666666667
-kd_tree,KNN con 2 vecinos peso: uniform metrica: minkowski,,0.916666666667
-kd_tree,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.916666666667
-brute,KNN con 2 vecinos peso: uniform metrica: minkowski,,0.916666666667
-brute,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.916666666667
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 10-15-5",,0.904761904762
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-10-15",,0.904761904762
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 15-10-15",,0.877777777778
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-5-10",,0.877777777778
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 5-10-15",,0.877777777778
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-10-5",,0.866666666667
-100,GradientBoostingClassifier,,0.85
-150,GradientBoostingClassifier,,0.85
-200,GradientBoostingClassifier,,0.85
-750,GradientBoostingClassifier,,0.85
-linear,SVC,Recall,1.0
-sigmoid,SVC,,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-5-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-5-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-10",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-15-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-15-10",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-15-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-5-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-5-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-10-10",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-10-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-15-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-15-10",,1.0
-Modelos para grupo 5,,,
-MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 5-15-5",Accuracy,0.652777777778
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 5-10-5",,0.652777777778
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-5-5",,0.648148148148
-gini,"RandomForest, n_estimators: 20",,0.62037037037
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 10-10-10",,0.62037037037
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 15-15-15",,0.62037037037
-MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 10-10-15",,0.62037037037
-auto,KNN con 8 vecinos peso: uniform metrica: minkowski,,0.615740740741
-auto,KNN con 8 vecinos peso: uniform metrica: euclidean,,0.615740740741
-ball_tree,KNN con 8 vecinos peso: uniform metrica: minkowski,,0.615740740741
-ball_tree,KNN con 8 vecinos peso: uniform metrica: euclidean,,0.615740740741
-kd_tree,KNN con 8 vecinos peso: uniform metrica: minkowski,,0.615740740741
-kd_tree,KNN con 8 vecinos peso: uniform metrica: euclidean,,0.615740740741
-brute,KNN con 8 vecinos peso: uniform metrica: minkowski,,0.615740740741
-brute,KNN con 8 vecinos peso: uniform metrica: euclidean,,0.615740740741
-sigmoid,nuSVC,,0.615740740741
-auto,KNN con 7 vecinos peso: uniform metrica: minkowski,Precision,0.75
-auto,KNN con 7 vecinos peso: uniform metrica: euclidean,,0.75
-ball_tree,KNN con 7 vecinos peso: uniform metrica: minkowski,,0.75
-ball_tree,KNN con 7 vecinos peso: uniform metrica: euclidean,,0.75
-kd_tree,KNN con 7 vecinos peso: uniform metrica: minkowski,,0.75
-kd_tree,KNN con 7 vecinos peso: uniform metrica: euclidean,,0.75
-brute,KNN con 7 vecinos peso: uniform metrica: minkowski,,0.75
-brute,KNN con 7 vecinos peso: uniform metrica: euclidean,,0.75
-MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 5-5-15",,0.75
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 10-15-5",Recall,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-5-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-15-10",,1.0
-MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 5-15-5",,1.0
-MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-10-5",,1.0
-MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-15-15",,1.0
-MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-5-5",,1.0
-MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-5-15",,1.0
-MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-10-5",,1.0
-MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 10-5-5",,1.0
-MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 10-15-5",,1.0
-MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 15-15-15",,1.0
-MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 15-5-5",,1.0
-Modelos para grupo 6,,,
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 10-5-15",Accuracy,0.723232323232
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 10-10-5",,0.703535353535
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-10-15",,0.70101010101
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-10-15",,0.70101010101
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-5-10",,0.700505050505
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 10-15-5",,0.69797979798
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-5-15",,0.69797979798
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 10-10-15",,0.695454545455
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 5-5-15",,0.692929292929
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 15-10-5",,0.689393939394
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 10-5-5",,0.670202020202
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 5-5-5",,0.670202020202
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 15-5-5",,0.670202020202
-MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 5-15-5",,0.667676767677
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-15-15",,0.667171717172
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 10-15-15",,0.667171717172
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-10-5",,0.667171717172
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 5-5-10",,0.665151515152
-MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 5-15-5",,0.664646464646
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 15-5-5",,0.644949494949
-MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 10-10-10",,0.642424242424
-MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 10-10-15",,0.640404040404
-auto,KNN con 7 vecinos peso: uniform metrica: minkowski,,0.639898989899
-auto,KNN con 8 vecinos peso: uniform metrica: minkowski,,0.639898989899
-auto,KNN con 9 vecinos peso: uniform metrica: minkowski,,0.639898989899
-auto,KNN con 7 vecinos peso: uniform metrica: euclidean,,0.639898989899
-auto,KNN con 8 vecinos peso: uniform metrica: euclidean,,0.639898989899
-auto,KNN con 9 vecinos peso: uniform metrica: euclidean,,0.639898989899
-MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 15-15-10",Precision,0.777777777778
-sigmoid,nuSVC,Recall,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 5-10-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 10-5-10",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 10-15-10",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-10-15",,1.0
-MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 5-10-10",,1.0
-MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 10-10-5",,1.0
-MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-15-15",,1.0
-MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 5-15-15",,1.0
-MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-5-10",,1.0
-MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-10-10",,1.0
-MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-5-5",,1.0
-MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-5-10",,1.0
-MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 5-5-5",,1.0
-MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 5-15-15",,1.0
-MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 10-5-15",,1.0
-Modelos para grupo 7,,,
-auto,KNN con 1 vecinos peso: uniform metrica: minkowski,Accuracy,0.630158730159
-auto,KNN con 1 vecinos peso: uniform metrica: euclidean,,0.630158730159
-auto,KNN con 1 vecinos peso: distance metrica: minkowski,,0.630158730159
-auto,KNN con 2 vecinos peso: distance metrica: minkowski,,0.630158730159
-auto,KNN con 1 vecinos peso: distance metrica: euclidean,,0.630158730159
-auto,KNN con 2 vecinos peso: distance metrica: euclidean,,0.630158730159
-ball_tree,KNN con 1 vecinos peso: uniform metrica: minkowski,,0.630158730159
-ball_tree,KNN con 1 vecinos peso: uniform metrica: euclidean,,0.630158730159
-ball_tree,KNN con 1 vecinos peso: distance metrica: minkowski,,0.630158730159
-ball_tree,KNN con 2 vecinos peso: distance metrica: minkowski,,0.630158730159
-ball_tree,KNN con 1 vecinos peso: distance metrica: euclidean,,0.630158730159
-ball_tree,KNN con 2 vecinos peso: distance metrica: euclidean,,0.630158730159
-kd_tree,KNN con 1 vecinos peso: uniform metrica: minkowski,,0.630158730159
-kd_tree,KNN con 1 vecinos peso: uniform metrica: euclidean,,0.630158730159
-kd_tree,KNN con 1 vecinos peso: distance metrica: minkowski,,0.630158730159
-kd_tree,KNN con 2 vecinos peso: distance metrica: minkowski,,0.630158730159
-kd_tree,KNN con 1 vecinos peso: distance metrica: euclidean,,0.630158730159
-kd_tree,KNN con 2 vecinos peso: distance metrica: euclidean,,0.630158730159
-brute,KNN con 1 vecinos peso: uniform metrica: minkowski,,0.630158730159
-brute,KNN con 1 vecinos peso: uniform metrica: euclidean,,0.630158730159
-brute,KNN con 1 vecinos peso: distance metrica: minkowski,,0.630158730159
-brute,KNN con 2 vecinos peso: distance metrica: minkowski,,0.630158730159
-brute,KNN con 1 vecinos peso: distance metrica: euclidean,,0.630158730159
-brute,KNN con 2 vecinos peso: distance metrica: euclidean,,0.630158730159
-750,GradientBoostingClassifier,,0.630158730159
-1000,GradientBoostingClassifier,,0.630158730159
-rbf,nuSVC,,0.615079365079
-200,GradientBoostingClassifier,,0.614285714286
-250,GradientBoostingClassifier,,0.614285714286
-500,GradientBoostingClassifier,,0.614285714286
-1500,GradientBoostingClassifier,,0.614285714286
-150,GradientBoostingClassifier,,0.613492063492
-auto,KNN con 2 vecinos peso: uniform metrica: minkowski,Precision,0.695238095238
-auto,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.695238095238
-ball_tree,KNN con 2 vecinos peso: uniform metrica: minkowski,,0.695238095238
-ball_tree,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.695238095238
-kd_tree,KNN con 2 vecinos peso: uniform metrica: minkowski,,0.695238095238
-kd_tree,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.695238095238
-brute,KNN con 2 vecinos peso: uniform metrica: minkowski,,0.695238095238
-brute,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.695238095238
-1000,GradientBoostingClassifier,,0.680504680505
-1500,GradientBoostingClassifier,,0.680504680505
-rbf,nuSVC,,0.666666666667
-auto,KNN con 1 vecinos peso: uniform metrica: minkowski,,0.652991452991
-auto,KNN con 1 vecinos peso: uniform metrica: euclidean,,0.652991452991
-auto,KNN con 1 vecinos peso: distance metrica: minkowski,,0.652991452991
-auto,KNN con 2 vecinos peso: distance metrica: minkowski,,0.652991452991
-auto,KNN con 1 vecinos peso: distance metrica: euclidean,,0.652991452991
-auto,KNN con 2 vecinos peso: distance metrica: euclidean,,0.652991452991
-ball_tree,KNN con 1 vecinos peso: uniform metrica: minkowski,,0.652991452991
-ball_tree,KNN con 1 vecinos peso: uniform metrica: euclidean,,0.652991452991
-ball_tree,KNN con 1 vecinos peso: distance metrica: minkowski,,0.652991452991
-ball_tree,KNN con 2 vecinos peso: distance metrica: minkowski,,0.652991452991
-ball_tree,KNN con 1 vecinos peso: distance metrica: euclidean,,0.652991452991
-ball_tree,KNN con 2 vecinos peso: distance metrica: euclidean,,0.652991452991
-sigmoid,nuSVC,Recall,1.0
-linear,SVC,,1.0
-sigmoid,SVC,,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-5-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-5-10",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-5-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-10",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-15-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-15-10",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-15-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-5-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-5-10",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-5-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-10-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-10-10",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-10-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-15-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-15-10",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-15-15",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-5-5",,1.0
-MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-5-10",,1.0
+Modelos para grupo 1,,,,
+Modelo,Descripción,Métrica,Valor,
+SAMME,AdaBoostClassifier con 10 estimadores,Accuracy,"0,7052941176","0,6738333333"
+50,GradientBoostingClassifier,,"0,6950980392",
+SAMME,AdaBoostClassifier con 20 estimadores,,"0,6943627451",
+SAMME.R,AdaBoostClassifier con 10 estimadores,,"0,6818627451",
+SAMME.R,AdaBoostClassifier con 100 estimadores,,"0,6692647059",
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 5-5-5",,"0,6685294118",
+20,GradientBoostingClassifier,,"0,6575980392",
+SAMME,AdaBoostClassifier con 150 estimadores,,"0,6575",
+SAMME,AdaBoostClassifier con 50 estimadores,,"0,6567647059",
+SAMME.R,AdaBoostClassifier con 20 estimadores,,"0,6520588235",
+SAMME,AdaBoostClassifier con 10 estimadores,Precision,"0,7266666667",
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 5-5-10",Recall,1,
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-15-15",,1,
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 5-10-10",,1,
+Modelos para grupo 2,,,,
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: adaptive, capas: 15-15-5",Accuracy,"0,9166666667",
+GaussianNB,Naive Bayes algoritmo,,"0,8333333333",
+BernoulliNB,Naive Bayes algoritmo,,"0,75",
+auto,KNN con 2 vecinos peso: uniform metrica: minkowski,,"0,75",
+auto,KNN con 4 vecinos peso: uniform metrica: minkowski,,"0,75",
+auto,KNN con 5 vecinos peso: uniform metrica: minkowski,,"0,75",
+auto,KNN con 6 vecinos peso: uniform metrica: minkowski,,"0,75",
+auto,KNN con 7 vecinos peso: uniform metrica: minkowski,,"0,75",
+auto,KNN con 8 vecinos peso: uniform metrica: minkowski,,"0,75",
+auto,KNN con 2 vecinos peso: uniform metrica: euclidean,,"0,75",
+auto,KNN con 4 vecinos peso: uniform metrica: euclidean,,"0,75",
+auto,KNN con 5 vecinos peso: uniform metrica: euclidean,,"0,75",
+auto,KNN con 6 vecinos peso: uniform metrica: euclidean,,"0,75",
+auto,KNN con 7 vecinos peso: uniform metrica: euclidean,,"0,75",
+auto,KNN con 8 vecinos peso: uniform metrica: euclidean,,"0,75",
+auto,KNN con 4 vecinos peso: distance metrica: minkowski,,"0,75",
+auto,KNN con 5 vecinos peso: distance metrica: minkowski,,"0,75",
+auto,KNN con 6 vecinos peso: distance metrica: minkowski,,"0,75",
+auto,KNN con 7 vecinos peso: distance metrica: minkowski,,"0,75",
+auto,KNN con 8 vecinos peso: distance metrica: minkowski,,"0,75",
+auto,KNN con 4 vecinos peso: distance metrica: euclidean,,"0,75",
+auto,KNN con 5 vecinos peso: distance metrica: euclidean,,"0,75",
+auto,KNN con 6 vecinos peso: distance metrica: euclidean,,"0,75",
+auto,KNN con 7 vecinos peso: distance metrica: euclidean,,"0,75",
+auto,KNN con 8 vecinos peso: distance metrica: euclidean,,"0,75",
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-5-5",Precision,"0,6666666667",
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-5-15",,"0,6666666667",
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: constant, capas: 10-15-10",,"0,6666666667",
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: invscaling, capas: 5-15-15",,"0,6666666667",
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: adaptive, capas: 10-10-5",,"0,6666666667",
+linear,nuSVC,Recall,1,
+poly,nuSVC,,1,
+rbf,nuSVC,,1,
+sigmoid,nuSVC,,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 5-10-5",,1,
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 10-10-10",,1,
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 10-15-15",,1,
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 5-5-5",,1,
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-10-10",,1,
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 10-5-5",,1,
+Modelos para grupo 3,,,,
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 15-15-5",Accuracy,"0,8666666667",
+gini,"RandomForest, n_estimators: 50",Precision,1,
+entropy,"RandomForest, n_estimators: 50",,1,
+20,GradientBoostingClassifier,Recall,1,
+500,GradientBoostingClassifier,,1,
+linear,SVC,,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-5-5",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-10",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-15",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-10-5",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-15-15",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-5-15",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-10-15",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-5-15",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-10-5",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-15-5",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 5-5-15",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 10-15-5",,1,
+Modelos para grupo 4,,,,
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 15-5-5",Accuracy,"0,7583333333",
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-10-10",,"0,7583333333",
+1500,GradientBoostingClassifier,,"0,75",
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 15-5-10",,"0,75",
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 5-5-15",,"0,75",
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 5-5-15",,"0,75",
+rbf,SVC,,"0,7416666667",
+500,GradientBoostingClassifier,,"0,7166666667",
+750,GradientBoostingClassifier,,"0,7166666667",
+MLP,"MLPClassifier, activation: identity, solver: adam, learning_rate: adaptive, capas: 5-10-15",,"0,7166666667",
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 5-15-10",,"0,7166666667",
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 15-10-10",,"0,7166666667",
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 10-5-10",,"0,7166666667",
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-5-10",,"0,7166666667",
+MLP,"MLPClassifier, activation: relu, solver: adam, learning_rate: invscaling, capas: 10-15-15",,"0,7166666667",
+rbf,nuSVC,,0.708333333333,
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 5-15-15",Precision,0.933333333333,
+auto,KNN con 2 vecinos peso: uniform metrica: minkowski,,0.916666666667,
+auto,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.916666666667,
+ball_tree,KNN con 2 vecinos peso: uniform metrica: minkowski,,0.916666666667,
+ball_tree,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.916666666667,
+kd_tree,KNN con 2 vecinos peso: uniform metrica: minkowski,,0.916666666667,
+kd_tree,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.916666666667,
+brute,KNN con 2 vecinos peso: uniform metrica: minkowski,,0.916666666667,
+brute,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.916666666667,
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 10-15-5",,0.904761904762,
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-10-15",,0.904761904762,
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 15-10-15",,0.877777777778,
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-5-10",,0.877777777778,
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 5-10-15",,0.877777777778,
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-10-5",,0.866666666667,
+100,GradientBoostingClassifier,,0.85,
+150,GradientBoostingClassifier,,0.85,
+200,GradientBoostingClassifier,,0.85,
+750,GradientBoostingClassifier,,0.85,
+linear,SVC,Recall,1.0,
+sigmoid,SVC,,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-5-5",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-5-15",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-5",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-10",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-15",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-15-5",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-15-10",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-15-15",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-5-5",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-5-15",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-10-10",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-10-15",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-15-5",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-15-10",,1.0,
+Modelos para grupo 5,,,,
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 5-15-5",Accuracy,0.652777777778,
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 5-10-5",,0.652777777778,
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-5-5",,0.648148148148,
+gini,"RandomForest, n_estimators: 20",,0.62037037037,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: adaptive, capas: 10-10-10",,0.62037037037,
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 15-15-15",,0.62037037037,
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: constant, capas: 10-10-15",,0.62037037037,
+auto,KNN con 8 vecinos peso: uniform metrica: minkowski,,0.615740740741,
+auto,KNN con 8 vecinos peso: uniform metrica: euclidean,,0.615740740741,
+ball_tree,KNN con 8 vecinos peso: uniform metrica: minkowski,,0.615740740741,
+ball_tree,KNN con 8 vecinos peso: uniform metrica: euclidean,,0.615740740741,
+kd_tree,KNN con 8 vecinos peso: uniform metrica: minkowski,,0.615740740741,
+kd_tree,KNN con 8 vecinos peso: uniform metrica: euclidean,,0.615740740741,
+brute,KNN con 8 vecinos peso: uniform metrica: minkowski,,0.615740740741,
+brute,KNN con 8 vecinos peso: uniform metrica: euclidean,,0.615740740741,
+sigmoid,nuSVC,,0.615740740741,
+auto,KNN con 7 vecinos peso: uniform metrica: minkowski,Precision,0.75,
+auto,KNN con 7 vecinos peso: uniform metrica: euclidean,,0.75,
+ball_tree,KNN con 7 vecinos peso: uniform metrica: minkowski,,0.75,
+ball_tree,KNN con 7 vecinos peso: uniform metrica: euclidean,,0.75,
+kd_tree,KNN con 7 vecinos peso: uniform metrica: minkowski,,0.75,
+kd_tree,KNN con 7 vecinos peso: uniform metrica: euclidean,,0.75,
+brute,KNN con 7 vecinos peso: uniform metrica: minkowski,,0.75,
+brute,KNN con 7 vecinos peso: uniform metrica: euclidean,,0.75,
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: constant, capas: 5-5-15",,0.75,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 10-15-5",Recall,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-5-15",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-15-10",,1.0,
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 5-15-5",,1.0,
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-10-5",,1.0,
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-15-15",,1.0,
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-5-5",,1.0,
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-5-15",,1.0,
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-10-5",,1.0,
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 10-5-5",,1.0,
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 10-15-5",,1.0,
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 15-15-15",,1.0,
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: adaptive, capas: 15-5-5",,1.0,
+Modelos para grupo 6,,,,
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 10-5-15",Accuracy,0.723232323232,
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 10-10-5",,0.703535353535,
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 15-10-15",,0.70101010101,
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-10-15",,0.70101010101,
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-5-10",,0.700505050505,
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 10-15-5",,0.69797979798,
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-5-15",,0.69797979798,
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 10-10-15",,0.695454545455,
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: constant, capas: 5-5-15",,0.692929292929,
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 15-10-5",,0.689393939394,
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: constant, capas: 10-5-5",,0.670202020202,
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 5-5-5",,0.670202020202,
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 15-5-5",,0.670202020202,
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: adaptive, capas: 5-15-5",,0.667676767677,
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 5-15-15",,0.667171717172,
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 10-15-15",,0.667171717172,
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: invscaling, capas: 15-10-5",,0.667171717172,
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 5-5-10",,0.665151515152,
+MLP,"MLPClassifier, activation: identity, solver: lbfgs, learning_rate: invscaling, capas: 5-15-5",,0.664646464646,
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: adaptive, capas: 15-5-5",,0.644949494949,
+MLP,"MLPClassifier, activation: tanh, solver: lbfgs, learning_rate: invscaling, capas: 10-10-10",,0.642424242424,
+MLP,"MLPClassifier, activation: relu, solver: lbfgs, learning_rate: adaptive, capas: 10-10-15",,0.640404040404,
+auto,KNN con 7 vecinos peso: uniform metrica: minkowski,,0.639898989899,
+auto,KNN con 8 vecinos peso: uniform metrica: minkowski,,0.639898989899,
+auto,KNN con 9 vecinos peso: uniform metrica: minkowski,,0.639898989899,
+auto,KNN con 7 vecinos peso: uniform metrica: euclidean,,0.639898989899,
+auto,KNN con 8 vecinos peso: uniform metrica: euclidean,,0.639898989899,
+auto,KNN con 9 vecinos peso: uniform metrica: euclidean,,0.639898989899,
+MLP,"MLPClassifier, activation: tanh, solver: adam, learning_rate: constant, capas: 15-15-10",Precision,0.777777777778,
+sigmoid,nuSVC,Recall,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 5-10-5",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 10-5-10",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 10-15-10",,1.0,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: invscaling, capas: 15-10-15",,1.0,
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 5-10-10",,1.0,
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 10-10-5",,1.0,
+MLP,"MLPClassifier, activation: logistic, solver: sgd, learning_rate: invscaling, capas: 15-15-15",,1.0,
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 5-15-15",,1.0,
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-5-10",,1.0,
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 10-10-10",,1.0,
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-5-5",,1.0,
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: invscaling, capas: 15-5-10",,1.0,
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 5-5-5",,1.0,
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 5-15-15",,1.0,
+MLP,"MLPClassifier, activation: relu, solver: sgd, learning_rate: invscaling, capas: 10-5-15",,1.0,
+Modelos para grupo 7,,,,
+auto,KNN con 1 vecinos peso: uniform metrica: minkowski,Accuracy,0.630158730159,
+auto,KNN con 1 vecinos peso: uniform metrica: euclidean,,0.630158730159,
+auto,KNN con 1 vecinos peso: distance metrica: minkowski,,0.630158730159,
+auto,KNN con 2 vecinos peso: distance metrica: minkowski,,0.630158730159,
+auto,KNN con 1 vecinos peso: distance metrica: euclidean,,0.630158730159,
+auto,KNN con 2 vecinos peso: distance metrica: euclidean,,0.630158730159,
+ball_tree,KNN con 1 vecinos peso: uniform metrica: minkowski,,0.630158730159,
+ball_tree,KNN con 1 vecinos peso: uniform metrica: euclidean,,0.630158730159,
+ball_tree,KNN con 1 vecinos peso: distance metrica: minkowski,,0.630158730159,
+ball_tree,KNN con 2 vecinos peso: distance metrica: minkowski,,0.630158730159,
+ball_tree,KNN con 1 vecinos peso: distance metrica: euclidean,,0.630158730159,
+ball_tree,KNN con 2 vecinos peso: distance metrica: euclidean,,0.630158730159,
+kd_tree,KNN con 1 vecinos peso: uniform metrica: minkowski,,0.630158730159,
+kd_tree,KNN con 1 vecinos peso: uniform metrica: euclidean,,0.630158730159,
+kd_tree,KNN con 1 vecinos peso: distance metrica: minkowski,,0.630158730159,
+kd_tree,KNN con 2 vecinos peso: distance metrica: minkowski,,0.630158730159,
+kd_tree,KNN con 1 vecinos peso: distance metrica: euclidean,,0.630158730159,
+kd_tree,KNN con 2 vecinos peso: distance metrica: euclidean,,0.630158730159,
+brute,KNN con 1 vecinos peso: uniform metrica: minkowski,,0.630158730159,
+brute,KNN con 1 vecinos peso: uniform metrica: euclidean,,0.630158730159,
+brute,KNN con 1 vecinos peso: distance metrica: minkowski,,0.630158730159,
+brute,KNN con 2 vecinos peso: distance metrica: minkowski,,0.630158730159,
+brute,KNN con 1 vecinos peso: distance metrica: euclidean,,0.630158730159,
+brute,KNN con 2 vecinos peso: distance metrica: euclidean,,0.630158730159,
+750,GradientBoostingClassifier,,0.630158730159,
+1000,GradientBoostingClassifier,,0.630158730159,
+rbf,nuSVC,,0.615079365079,
+200,GradientBoostingClassifier,,0.614285714286,
+250,GradientBoostingClassifier,,0.614285714286,
+500,GradientBoostingClassifier,,0.614285714286,
+1500,GradientBoostingClassifier,,0.614285714286,
+150,GradientBoostingClassifier,,0.613492063492,
+auto,KNN con 2 vecinos peso: uniform metrica: minkowski,Precision,0.695238095238,
+auto,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.695238095238,
+ball_tree,KNN con 2 vecinos peso: uniform metrica: minkowski,,0.695238095238,
+ball_tree,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.695238095238,
+kd_tree,KNN con 2 vecinos peso: uniform metrica: minkowski,,0.695238095238,
+kd_tree,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.695238095238,
+brute,KNN con 2 vecinos peso: uniform metrica: minkowski,,0.695238095238,
+brute,KNN con 2 vecinos peso: uniform metrica: euclidean,,0.695238095238,
+1000,GradientBoostingClassifier,,0.680504680505,
+1500,GradientBoostingClassifier,,0.680504680505,
+rbf,nuSVC,,0.666666666667,
+auto,KNN con 1 vecinos peso: uniform metrica: minkowski,,0.652991452991,
+auto,KNN con 1 vecinos peso: uniform metrica: euclidean,,0.652991452991,
+auto,KNN con 1 vecinos peso: distance metrica: minkowski,,0.652991452991,
+auto,KNN con 2 vecinos peso: distance metrica: minkowski,,0.652991452991,
+auto,KNN con 1 vecinos peso: distance metrica: euclidean,,0.652991452991,
+auto,KNN con 2 vecinos peso: distance metrica: euclidean,,0.652991452991,
+ball_tree,KNN con 1 vecinos peso: uniform metrica: minkowski,,0.652991452991,
+ball_tree,KNN con 1 vecinos peso: uniform metrica: euclidean,,0.652991452991,
+ball_tree,KNN con 1 vecinos peso: distance metrica: minkowski,,0.652991452991,
+ball_tree,KNN con 2 vecinos peso: distance metrica: minkowski,,0.652991452991,
+ball_tree,KNN con 1 vecinos peso: distance metrica: euclidean,,0.652991452991,
+ball_tree,KNN con 2 vecinos peso: distance metrica: euclidean,,0.652991452991,
+sigmoid,nuSVC,Recall,1,
+linear,SVC,,1,
+sigmoid,SVC,,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-5-5",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-5-10",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-5-15",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-5",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-10",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-10-15",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-15-5",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-15-10",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 5-15-15",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-5-5",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-5-10",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-5-15",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-10-5",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-10-10",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-10-15",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-15-5",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-15-10",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 10-15-15",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-5-5",,1,
+MLP,"MLPClassifier, activation: identity, solver: sgd, learning_rate: constant, capas: 15-5-10",,1,

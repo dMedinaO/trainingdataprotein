@@ -1,0 +1,28 @@
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+
+  <div id="myDiv" style="width: 880px; height: 800px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+  <script>
+    var data = [{
+      values :[ 20.000000, 10.000000, 11.000000, 11.000000, 7.000000, 18.000000, 39.000000, 4.000000, 13.000000, 58.000000, 8.000000, 11.000000, 46.000000],
+      labels : [ 'A', 'C', 'B', 'F', 'H', 'M', 'O', 'N', 'P', 'R', 'U', 'T', 'Z'],
+      type: 'pie'
+  }];
+
+  var layout = {
+    height: 800,
+    width: 900,
+    title: "Sector Superfice distribution in DataSet",
+    font:{
+      size:18
+    }
+  };
+
+  Plotly.newPlot('myDiv', data, layout);
+
+  </script>
+</body>
