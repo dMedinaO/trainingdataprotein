@@ -1,3 +1,0 @@
-Description: gini, 100
-Mean: 0.566456
-Standard Deviation: 0.106933

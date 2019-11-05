@@ -1,3 +1,0 @@
-Algorithm,Description,accuracy
-linear,nuSVC,0.625
-gini,"RandomForest, n_estimators: 250",0.625

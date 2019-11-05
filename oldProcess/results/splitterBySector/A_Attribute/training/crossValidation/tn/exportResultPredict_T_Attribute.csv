@@ -1,0 +1,5 @@
+algorithm,desc,actualScore,new score
+NuSVC,kernel: sigmoid,0.55,0.454545454545
+auto,minkowski-uniform KNN: 2,0.5,0.454545454545
+auto,minkowski-uniform KNN: 4,0.5,0.454545454545
+auto,euclidean-uniform KNN: 2,0.5,0.454545454545

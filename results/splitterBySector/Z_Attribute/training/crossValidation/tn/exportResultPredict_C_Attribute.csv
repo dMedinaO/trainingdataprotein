@@ -1,4 +1,0 @@
-algorithm,desc,actualScore,new score
-SVC,linear,0.695652173913,0.6
-SVC,rbf,0.695652173913,0.6
-SVC,sigmoid,0.695652173913,0.7

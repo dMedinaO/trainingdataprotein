@@ -1,0 +1,19 @@
+algorithm,description,validation,accuracy,group,iterator
+SVC,poly,LOU,0.836734693878,3,32
+gini,DecisionTreeClassifier gini random,LOU,0.836734693878,3,32
+SAMME,50- AdaBoostClassifier,LOU,0.904761904762,3,39
+SAMME,200- AdaBoostClassifier,LOU,0.904761904762,3,39
+SAMME,250- AdaBoostClassifier,LOU,0.904761904762,3,39
+SAMME,500- AdaBoostClassifier,LOU,0.904761904762,3,39
+SAMME,1000- AdaBoostClassifier,LOU,0.904761904762,3,39
+SAMME,1500- AdaBoostClassifier,LOU,0.904761904762,3,39
+SVC,sigmoid,LOU,0.879310344828,3,91
+GradientBoostingClassifier,GradientBoostingClassifier 20,LOU,0.84,3,97
+GradientBoostingClassifier,GradientBoostingClassifier 50,LOU,0.84,3,97
+GradientBoostingClassifier,GradientBoostingClassifier 100,LOU,0.84,3,97
+GradientBoostingClassifier,GradientBoostingClassifier 150,LOU,0.84,3,97
+GradientBoostingClassifier,GradientBoostingClassifier 200,LOU,0.84,3,97
+GradientBoostingClassifier,GradientBoostingClassifier 250,LOU,0.84,3,97
+GradientBoostingClassifier,GradientBoostingClassifier 500,LOU,0.84,3,97
+GradientBoostingClassifier,GradientBoostingClassifier 750,LOU,0.84,3,97
+GradientBoostingClassifier,GradientBoostingClassifier 1500,LOU,0.84,3,97

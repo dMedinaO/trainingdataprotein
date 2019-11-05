@@ -1,4 +1,0 @@
-algorithm,description,validation,accuracy,group,iterator
-RandomForestClassifier,entropy - 50,LOU,0.892857142857,4,6
-SAMME.R,1000- AdaBoostClassifier,LOU,0.892857142857,4,41
-SAMME.R,1500- AdaBoostClassifier,LOU,0.928571428571,4,41

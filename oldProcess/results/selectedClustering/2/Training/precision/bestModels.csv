@@ -1,0 +1,214 @@
+Algorithm,Description,precision
+GaussianNB,Naive Bayes algoritmo,0.541666666667
+BernoulliNB,Naive Bayes algoritmo,0.25
+SAMME,AdaBoostClassifier con 10 estimadores,0.657142857143
+SAMME,AdaBoostClassifier con 20 estimadores,0.732142857143
+SAMME,AdaBoostClassifier con 50 estimadores,0.605769230769
+SAMME,AdaBoostClassifier con 100 estimadores,0.602272727273
+SAMME,AdaBoostClassifier con 150 estimadores,0.597222222222
+SAMME,AdaBoostClassifier con 200 estimadores,0.625
+SAMME,AdaBoostClassifier con 250 estimadores,0.575
+SAMME,AdaBoostClassifier con 500 estimadores,0.597222222222
+SAMME,AdaBoostClassifier con 750 estimadores,0.625
+SAMME,AdaBoostClassifier con 1000 estimadores,0.625
+SAMME,AdaBoostClassifier con 1500 estimadores,0.597222222222
+SAMME.R,AdaBoostClassifier con 10 estimadores,0.428571428571
+SAMME.R,AdaBoostClassifier con 20 estimadores,0.625
+SAMME.R,AdaBoostClassifier con 50 estimadores,0.55
+SAMME.R,AdaBoostClassifier con 100 estimadores,0.7
+SAMME.R,AdaBoostClassifier con 150 estimadores,0.514285714286
+SAMME.R,AdaBoostClassifier con 200 estimadores,0.6
+SAMME.R,AdaBoostClassifier con 250 estimadores,0.708333333333
+SAMME.R,AdaBoostClassifier con 500 estimadores,0.690476190476
+SAMME.R,AdaBoostClassifier con 750 estimadores,0.666666666667
+SAMME.R,AdaBoostClassifier con 1000 estimadores,0.555555555556
+SAMME.R,AdaBoostClassifier con 1500 estimadores,0.666666666667
+auto,KNN con 1 vecinos peso: uniform metrica: minkowski,0.464285714286
+auto,KNN con 2 vecinos peso: uniform metrica: minkowski,0.25
+auto,KNN con 3 vecinos peso: uniform metrica: minkowski,0.392857142857
+auto,KNN con 4 vecinos peso: uniform metrica: minkowski,0.666666666667
+auto,KNN con 5 vecinos peso: uniform metrica: minkowski,0.388888888889
+auto,KNN con 6 vecinos peso: uniform metrica: minkowski,0.166666666667
+auto,KNN con 7 vecinos peso: uniform metrica: minkowski,0.777777777778
+auto,KNN con 8 vecinos peso: uniform metrica: minkowski,0.375
+auto,KNN con 9 vecinos peso: uniform metrica: minkowski,0.285714285714
+auto,KNN con 1 vecinos peso: uniform metrica: euclidean,0.464285714286
+auto,KNN con 2 vecinos peso: uniform metrica: euclidean,0.25
+auto,KNN con 3 vecinos peso: uniform metrica: euclidean,0.392857142857
+auto,KNN con 4 vecinos peso: uniform metrica: euclidean,0.666666666667
+auto,KNN con 5 vecinos peso: uniform metrica: euclidean,0.388888888889
+auto,KNN con 6 vecinos peso: uniform metrica: euclidean,0.166666666667
+auto,KNN con 7 vecinos peso: uniform metrica: euclidean,0.777777777778
+auto,KNN con 8 vecinos peso: uniform metrica: euclidean,0.375
+auto,KNN con 9 vecinos peso: uniform metrica: euclidean,0.285714285714
+auto,KNN con 1 vecinos peso: distance metrica: minkowski,0.464285714286
+auto,KNN con 2 vecinos peso: distance metrica: minkowski,0.464285714286
+auto,KNN con 3 vecinos peso: distance metrica: minkowski,0.388888888889
+auto,KNN con 4 vecinos peso: distance metrica: minkowski,0.392857142857
+auto,KNN con 5 vecinos peso: distance metrica: minkowski,0.35
+auto,KNN con 6 vecinos peso: distance metrica: minkowski,0.416666666667
+auto,KNN con 7 vecinos peso: distance metrica: minkowski,0.45
+auto,KNN con 8 vecinos peso: distance metrica: minkowski,0.5
+auto,KNN con 9 vecinos peso: distance metrica: minkowski,0.458333333333
+auto,KNN con 1 vecinos peso: distance metrica: euclidean,0.464285714286
+auto,KNN con 2 vecinos peso: distance metrica: euclidean,0.464285714286
+auto,KNN con 3 vecinos peso: distance metrica: euclidean,0.388888888889
+auto,KNN con 4 vecinos peso: distance metrica: euclidean,0.392857142857
+auto,KNN con 5 vecinos peso: distance metrica: euclidean,0.35
+auto,KNN con 6 vecinos peso: distance metrica: euclidean,0.416666666667
+auto,KNN con 7 vecinos peso: distance metrica: euclidean,0.45
+auto,KNN con 8 vecinos peso: distance metrica: euclidean,0.5
+auto,KNN con 9 vecinos peso: distance metrica: euclidean,0.458333333333
+ball_tree,KNN con 1 vecinos peso: uniform metrica: minkowski,0.464285714286
+ball_tree,KNN con 2 vecinos peso: uniform metrica: minkowski,0.25
+ball_tree,KNN con 3 vecinos peso: uniform metrica: minkowski,0.392857142857
+ball_tree,KNN con 4 vecinos peso: uniform metrica: minkowski,0.666666666667
+ball_tree,KNN con 5 vecinos peso: uniform metrica: minkowski,0.388888888889
+ball_tree,KNN con 6 vecinos peso: uniform metrica: minkowski,0.166666666667
+ball_tree,KNN con 7 vecinos peso: uniform metrica: minkowski,0.777777777778
+ball_tree,KNN con 8 vecinos peso: uniform metrica: minkowski,0.375
+ball_tree,KNN con 9 vecinos peso: uniform metrica: minkowski,0.285714285714
+ball_tree,KNN con 1 vecinos peso: uniform metrica: euclidean,0.464285714286
+ball_tree,KNN con 2 vecinos peso: uniform metrica: euclidean,0.25
+ball_tree,KNN con 3 vecinos peso: uniform metrica: euclidean,0.392857142857
+ball_tree,KNN con 4 vecinos peso: uniform metrica: euclidean,0.666666666667
+ball_tree,KNN con 5 vecinos peso: uniform metrica: euclidean,0.388888888889
+ball_tree,KNN con 6 vecinos peso: uniform metrica: euclidean,0.166666666667
+ball_tree,KNN con 7 vecinos peso: uniform metrica: euclidean,0.777777777778
+ball_tree,KNN con 8 vecinos peso: uniform metrica: euclidean,0.375
+ball_tree,KNN con 9 vecinos peso: uniform metrica: euclidean,0.285714285714
+ball_tree,KNN con 1 vecinos peso: distance metrica: minkowski,0.464285714286
+ball_tree,KNN con 2 vecinos peso: distance metrica: minkowski,0.464285714286
+ball_tree,KNN con 3 vecinos peso: distance metrica: minkowski,0.388888888889
+ball_tree,KNN con 4 vecinos peso: distance metrica: minkowski,0.392857142857
+ball_tree,KNN con 5 vecinos peso: distance metrica: minkowski,0.35
+ball_tree,KNN con 6 vecinos peso: distance metrica: minkowski,0.416666666667
+ball_tree,KNN con 7 vecinos peso: distance metrica: minkowski,0.45
+ball_tree,KNN con 8 vecinos peso: distance metrica: minkowski,0.5
+ball_tree,KNN con 9 vecinos peso: distance metrica: minkowski,0.458333333333
+ball_tree,KNN con 1 vecinos peso: distance metrica: euclidean,0.464285714286
+ball_tree,KNN con 2 vecinos peso: distance metrica: euclidean,0.464285714286
+ball_tree,KNN con 3 vecinos peso: distance metrica: euclidean,0.388888888889
+ball_tree,KNN con 4 vecinos peso: distance metrica: euclidean,0.392857142857
+ball_tree,KNN con 5 vecinos peso: distance metrica: euclidean,0.35
+ball_tree,KNN con 6 vecinos peso: distance metrica: euclidean,0.416666666667
+ball_tree,KNN con 7 vecinos peso: distance metrica: euclidean,0.45
+ball_tree,KNN con 8 vecinos peso: distance metrica: euclidean,0.5
+ball_tree,KNN con 9 vecinos peso: distance metrica: euclidean,0.458333333333
+kd_tree,KNN con 1 vecinos peso: uniform metrica: minkowski,0.464285714286
+kd_tree,KNN con 2 vecinos peso: uniform metrica: minkowski,0.25
+kd_tree,KNN con 3 vecinos peso: uniform metrica: minkowski,0.392857142857
+kd_tree,KNN con 4 vecinos peso: uniform metrica: minkowski,0.666666666667
+kd_tree,KNN con 5 vecinos peso: uniform metrica: minkowski,0.388888888889
+kd_tree,KNN con 6 vecinos peso: uniform metrica: minkowski,0.166666666667
+kd_tree,KNN con 7 vecinos peso: uniform metrica: minkowski,0.777777777778
+kd_tree,KNN con 8 vecinos peso: uniform metrica: minkowski,0.375
+kd_tree,KNN con 9 vecinos peso: uniform metrica: minkowski,0.285714285714
+kd_tree,KNN con 1 vecinos peso: uniform metrica: euclidean,0.464285714286
+kd_tree,KNN con 2 vecinos peso: uniform metrica: euclidean,0.25
+kd_tree,KNN con 3 vecinos peso: uniform metrica: euclidean,0.392857142857
+kd_tree,KNN con 4 vecinos peso: uniform metrica: euclidean,0.666666666667
+kd_tree,KNN con 5 vecinos peso: uniform metrica: euclidean,0.388888888889
+kd_tree,KNN con 6 vecinos peso: uniform metrica: euclidean,0.166666666667
+kd_tree,KNN con 7 vecinos peso: uniform metrica: euclidean,0.777777777778
+kd_tree,KNN con 8 vecinos peso: uniform metrica: euclidean,0.375
+kd_tree,KNN con 9 vecinos peso: uniform metrica: euclidean,0.285714285714
+kd_tree,KNN con 1 vecinos peso: distance metrica: minkowski,0.464285714286
+kd_tree,KNN con 2 vecinos peso: distance metrica: minkowski,0.464285714286
+kd_tree,KNN con 3 vecinos peso: distance metrica: minkowski,0.388888888889
+kd_tree,KNN con 4 vecinos peso: distance metrica: minkowski,0.392857142857
+kd_tree,KNN con 5 vecinos peso: distance metrica: minkowski,0.35
+kd_tree,KNN con 6 vecinos peso: distance metrica: minkowski,0.416666666667
+kd_tree,KNN con 7 vecinos peso: distance metrica: minkowski,0.45
+kd_tree,KNN con 8 vecinos peso: distance metrica: minkowski,0.5
+kd_tree,KNN con 9 vecinos peso: distance metrica: minkowski,0.458333333333
+kd_tree,KNN con 1 vecinos peso: distance metrica: euclidean,0.464285714286
+kd_tree,KNN con 2 vecinos peso: distance metrica: euclidean,0.464285714286
+kd_tree,KNN con 3 vecinos peso: distance metrica: euclidean,0.388888888889
+kd_tree,KNN con 4 vecinos peso: distance metrica: euclidean,0.392857142857
+kd_tree,KNN con 5 vecinos peso: distance metrica: euclidean,0.35
+kd_tree,KNN con 6 vecinos peso: distance metrica: euclidean,0.416666666667
+kd_tree,KNN con 7 vecinos peso: distance metrica: euclidean,0.45
+kd_tree,KNN con 8 vecinos peso: distance metrica: euclidean,0.5
+kd_tree,KNN con 9 vecinos peso: distance metrica: euclidean,0.458333333333
+brute,KNN con 1 vecinos peso: uniform metrica: minkowski,0.464285714286
+brute,KNN con 2 vecinos peso: uniform metrica: minkowski,0.25
+brute,KNN con 3 vecinos peso: uniform metrica: minkowski,0.392857142857
+brute,KNN con 4 vecinos peso: uniform metrica: minkowski,0.666666666667
+brute,KNN con 5 vecinos peso: uniform metrica: minkowski,0.388888888889
+brute,KNN con 6 vecinos peso: uniform metrica: minkowski,0.166666666667
+brute,KNN con 7 vecinos peso: uniform metrica: minkowski,0.777777777778
+brute,KNN con 8 vecinos peso: uniform metrica: minkowski,0.375
+brute,KNN con 9 vecinos peso: uniform metrica: minkowski,0.285714285714
+brute,KNN con 1 vecinos peso: uniform metrica: euclidean,0.464285714286
+brute,KNN con 2 vecinos peso: uniform metrica: euclidean,0.25
+brute,KNN con 3 vecinos peso: uniform metrica: euclidean,0.392857142857
+brute,KNN con 4 vecinos peso: uniform metrica: euclidean,0.666666666667
+brute,KNN con 5 vecinos peso: uniform metrica: euclidean,0.388888888889
+brute,KNN con 6 vecinos peso: uniform metrica: euclidean,0.166666666667
+brute,KNN con 7 vecinos peso: uniform metrica: euclidean,0.777777777778
+brute,KNN con 8 vecinos peso: uniform metrica: euclidean,0.375
+brute,KNN con 9 vecinos peso: uniform metrica: euclidean,0.285714285714
+brute,KNN con 1 vecinos peso: distance metrica: minkowski,0.464285714286
+brute,KNN con 2 vecinos peso: distance metrica: minkowski,0.464285714286
+brute,KNN con 3 vecinos peso: distance metrica: minkowski,0.388888888889
+brute,KNN con 4 vecinos peso: distance metrica: minkowski,0.392857142857
+brute,KNN con 5 vecinos peso: distance metrica: minkowski,0.35
+brute,KNN con 6 vecinos peso: distance metrica: minkowski,0.416666666667
+brute,KNN con 7 vecinos peso: distance metrica: minkowski,0.45
+brute,KNN con 8 vecinos peso: distance metrica: minkowski,0.5
+brute,KNN con 9 vecinos peso: distance metrica: minkowski,0.458333333333
+brute,KNN con 1 vecinos peso: distance metrica: euclidean,0.464285714286
+brute,KNN con 2 vecinos peso: distance metrica: euclidean,0.464285714286
+brute,KNN con 3 vecinos peso: distance metrica: euclidean,0.388888888889
+brute,KNN con 4 vecinos peso: distance metrica: euclidean,0.392857142857
+brute,KNN con 5 vecinos peso: distance metrica: euclidean,0.35
+brute,KNN con 6 vecinos peso: distance metrica: euclidean,0.416666666667
+brute,KNN con 7 vecinos peso: distance metrica: euclidean,0.45
+brute,KNN con 8 vecinos peso: distance metrica: euclidean,0.5
+brute,KNN con 9 vecinos peso: distance metrica: euclidean,0.458333333333
+gini,DecisionTreeClassifier splitter:best,0.492307692308
+gini,DecisionTreeClassifier splitter:random,0.458333333333
+entropy,DecisionTreeClassifier splitter:best,0.35
+entropy,DecisionTreeClassifier splitter:random,0.458333333333
+10,GradientBoostingClassifier,0.45
+20,GradientBoostingClassifier,0.35
+50,GradientBoostingClassifier,0.4375
+100,GradientBoostingClassifier,0.386363636364
+150,GradientBoostingClassifier,0.35
+200,GradientBoostingClassifier,0.35
+250,GradientBoostingClassifier,0.386363636364
+500,GradientBoostingClassifier,0.4375
+750,GradientBoostingClassifier,0.386363636364
+1000,GradientBoostingClassifier,0.386363636364
+1500,GradientBoostingClassifier,0.4375
+linear,nuSVC,0.55
+poly,nuSVC,0.527777777778
+rbf,nuSVC,0.55
+sigmoid,nuSVC,0.472222222222
+linear,SVC,0.0
+poly,SVC,0.5625
+rbf,SVC,0.0
+sigmoid,SVC,0.0
+gini,"RandomForest, n_estimators: 10",0.625
+gini,"RandomForest, n_estimators: 20",0.416666666667
+gini,"RandomForest, n_estimators: 50",0.5
+gini,"RandomForest, n_estimators: 100",0.6
+gini,"RandomForest, n_estimators: 150",0.466666666667
+gini,"RandomForest, n_estimators: 200",0.5
+gini,"RandomForest, n_estimators: 250",0.5
+gini,"RandomForest, n_estimators: 500",0.55
+gini,"RandomForest, n_estimators: 750",0.55
+gini,"RandomForest, n_estimators: 1000",0.55
+gini,"RandomForest, n_estimators: 1500",0.55
+entropy,"RandomForest, n_estimators: 10",0.625
+entropy,"RandomForest, n_estimators: 20",0.375
+entropy,"RandomForest, n_estimators: 50",0.45
+entropy,"RandomForest, n_estimators: 100",0.55
+entropy,"RandomForest, n_estimators: 150",0.416666666667
+entropy,"RandomForest, n_estimators: 200",0.5
+entropy,"RandomForest, n_estimators: 250",0.5
+entropy,"RandomForest, n_estimators: 500",0.55
+entropy,"RandomForest, n_estimators: 750",0.55
+entropy,"RandomForest, n_estimators: 1000",0.55
+entropy,"RandomForest, n_estimators: 1500",0.55

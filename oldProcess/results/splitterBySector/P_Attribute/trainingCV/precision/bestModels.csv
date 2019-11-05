@@ -1,0 +1,10 @@
+Algorithm,Description,precision
+GaussianNB,Naive Bayes algoritmo,0.8
+gini,"RandomForest, n_estimators: 20",0.8
+gini,"RandomForest, n_estimators: 50",0.8
+entropy,"RandomForest, n_estimators: 20",0.8
+entropy,"RandomForest, n_estimators: 50",0.8
+entropy,"RandomForest, n_estimators: 1500",0.8
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 10-15-5",0.8
+MLP,"MLPClassifier, activation: logistic, solver: lbfgs, learning_rate: invscaling, capas: 15-15-15",0.8
+MLP,"MLPClassifier, activation: tanh, solver: sgd, learning_rate: constant, capas: 10-5-10",0.8

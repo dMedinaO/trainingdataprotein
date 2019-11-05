@@ -1,0 +1,42 @@
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+
+  <div id="myDiv" style="width: 880px; height: 800px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+  <script>
+
+  var trace3 = {
+  x: ['Accuracy', 'Recall', 'Precision'],
+  y: [67.33, 100, 74.43],
+  name: 'Recursive Clustering',
+
+  type: 'bar'
+  };
+
+  var trace2 = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [80.58, 97.25, 80.88],
+    name: 'Interaction Sector',
+
+    type: 'bar'
+  };
+
+  var trace1 = {
+    x: ['Accuracy', 'Recall', 'Precision'],
+    y: [60.23, 90.46, 65.32],
+    name: 'Non Splitter',
+
+    type: 'bar'
+  };
+
+  var data = [trace1, trace2, trace3];
+  var layout = {barmode: 'group',
+
+   };
+   Plotly.newPlot('myDiv', data, layout);
+
+  </script>
+</body>

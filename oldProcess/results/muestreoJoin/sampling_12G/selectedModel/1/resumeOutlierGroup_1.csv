@@ -1,0 +1,10 @@
+algorithm,description,validation,accuracy,group,iterator
+NuSVC,kernel: poly,LOU,1.0,1,11
+NuSVC,kernel: linear,LOU,0.96,1,11
+NuSVC,kernel: rbf,LOU,0.96,1,11
+NuSVC,kernel: poly,LOU,1.0,1,11
+NuSVC,kernel: poly,LOU,0.96,1,19
+NuSVC,kernel: rbf,LOU,0.96,1,19
+NuSVC,kernel: poly,LOU,1.0,1,56
+NuSVC,kernel: rbf,LOU,0.96,1,56
+NuSVC,kernel: poly,LOU,1.0,1,56

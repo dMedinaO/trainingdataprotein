@@ -1,0 +1,8 @@
+algorithm,description,validation,accuracy,group,iterator
+SAMME,100- AdaBoostClassifier,LOU,0.869565217391,2,27
+SAMME,500- AdaBoostClassifier,LOU,0.869565217391,2,27
+gini,DecisionTreeClassifier gini random,LOU,0.84,2,69
+SAMME.R,20- AdaBoostClassifier,LOU,0.796610169492,2,77
+RandomForestClassifier,gini - 10,LOU,0.875,2,93
+SAMME,10- AdaBoostClassifier,LOU,0.875,2,93
+SAMME,100- AdaBoostClassifier,LOU,0.875,2,93

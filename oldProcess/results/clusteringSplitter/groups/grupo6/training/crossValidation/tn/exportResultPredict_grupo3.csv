@@ -1,0 +1,4 @@
+algorithm,desc,actualScore,new score
+SVC,poly,0.575757575758,0.769230769231
+SVC,rbf,0.575757575758,0.538461538462
+SVC,sigmoid,0.575757575758,1.0

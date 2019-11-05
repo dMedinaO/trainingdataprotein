@@ -1,4 +1,0 @@
-algorithm,desc,actualScore,new score
-Naive Bayes,BernoulliNB,0.620689655172,0.545454545455
-NuSVC,kernel: linear,0.655172413793,0.363636363636
-NuSVC,kernel: sigmoid,0.603448275862,0.727272727273

@@ -1,0 +1,6 @@
+Metric,Score
+accuracy,0.603571428571
+recall,1.0
+precision,0.603571428571
+neg_log_loss,-0.672142150689
+f1,0.752447552448

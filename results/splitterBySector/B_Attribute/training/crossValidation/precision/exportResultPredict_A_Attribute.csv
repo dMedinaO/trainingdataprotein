@@ -1,3 +1,0 @@
-algorithm,desc,actualScore,new score
-SVC,Kernel - sigmoid,0.545,0.45
-NuSVC,Kernel - sigmoid,0.545,0.55

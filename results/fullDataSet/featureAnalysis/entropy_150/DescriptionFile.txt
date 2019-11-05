@@ -1,3 +1,0 @@
-Description: entropy, 150
-Mean: 0.585852
-Standard Deviation: 0.109905

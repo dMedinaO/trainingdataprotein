@@ -1,9 +1,0 @@
-Algorithm,Description,tn
-auto,minkowski-uniform KNN: 4,4.0
-auto,euclidean-uniform KNN: 4,4.0
-ball_tree,minkowski-uniform KNN: 4,4.0
-ball_tree,euclidean-uniform KNN: 4,4.0
-kd_tree,minkowski-uniform KNN: 4,4.0
-kd_tree,euclidean-uniform KNN: 4,4.0
-brute,minkowski-uniform KNN: 4,4.0
-brute,euclidean-uniform KNN: 4,4.0

@@ -1,3 +1,0 @@
-Algorithm,Description,tp
-MLPClassifier,logistic-adam-constant (10-15-15),11.0
-MLPClassifier,logistic-adam-invscaling (15-15-15),11.0

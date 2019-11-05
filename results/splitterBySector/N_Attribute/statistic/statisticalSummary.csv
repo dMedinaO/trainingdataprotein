@@ -1,8 +1,0 @@
-feature,mean,var,std,min,max
-SaccW,3.2,0.0,0.0,3.2,3.2
-SaccM,8.375,205.431875,14.3328948576,0.0,33.2
-yDDG,-2.15,6.1525,2.48042335096,-5.8,1.2
-ProteinPropens,0.5,0.0,0.0,0.5,0.5
-Positionaccept,0.92,0.0,0.0,0.92,0.92
-MOSST,-0.6,0.015,0.122474487139,-0.8,-0.5
-Functionalrelevancefunction,0.6,0.0,0.0,0.6,0.6

@@ -1,0 +1,11 @@
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=10,cv=10,0.575000,0.300000,0.250000,-0.735385,0.200000,0.272222
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=20,cv=10,0.575000,0.400000,0.300000,-0.830896,0.266667,0.361111
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=50,cv=10,0.550000,0.400000,0.300000,-1.135430,0.316667,0.372222
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=100,cv=10,0.600000,0.400000,0.400000,-1.663288,0.366667,0.377778
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=150,cv=10,0.633333,0.400000,0.400000,-1.922860,0.333333,0.377778
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=200,cv=10,0.633333,0.400000,0.400000,-2.098912,0.333333,0.377778
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=250,cv=10,0.633333,0.400000,0.400000,-2.123074,0.366667,0.361111
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=500,cv=10,0.633333,0.400000,0.400000,-2.025938,0.333333,0.377778
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=750,cv=10,0.633333,0.400000,0.400000,-2.045239,0.366667,0.377778
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=1000,cv=10,0.633333,0.400000,0.400000,-2.136423,0.366667,0.377778
+GradientBoostingClassifier,GradientBoostingClassifier,n_estimators=1500,cv=10,0.633333,0.400000,0.400000,-2.039654,0.366667,0.377778

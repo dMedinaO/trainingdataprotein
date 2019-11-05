@@ -1,0 +1,2 @@
+algorithm,desc,actualScore,new score
+MLP,relu-sgd-invscaling (10-5-10),0.483,0.45
